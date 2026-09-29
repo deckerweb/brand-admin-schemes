@@ -1,0 +1,65 @@
+/* Brand Admin Schemes login presentation. WordPress owns the form and actions. */
+html:has(body.login.bas-login){min-height:100%;background:#f4f6f9}
+body.login.bas-login{display:grid;grid-template-columns:minmax(0,55fr) minmax(390px,45fr);min-height:100vh;margin:0;background:#f4f6f9;color:#1d2327;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+body.login.bas-login .bas-login-visual{grid-column:1;grid-row:1;position:relative;min-height:100vh;background-color:var(--bas-login-brand);background-image:var(--bas-login-image);background-size:cover;background-position:var(--bas-login-x) var(--bas-login-y);overflow:hidden}
+body.login.bas-login .bas-login-visual:after{content:"";position:absolute;inset:auto -20% -30% 15%;height:65%;border:1px solid #ffffff55;border-radius:50%;transform:rotate(-25deg);pointer-events:none}
+body.login.bas-login .bas-login-visual-mark{position:absolute;left:6%;top:7%;width:34px;height:6px;border-radius:5px;background:#ffffffcc;box-shadow:48px 0 #ffffff55}
+body.login.bas-login #login{grid-column:2;grid-row:1;align-self:center;justify-self:center;box-sizing:border-box;width:min(100%,510px);max-width:none;margin:0;padding:44px clamp(24px,5vw,72px)}
+body.login.bas-login #login h1{margin:0 0 28px;text-align:left}
+body.login.bas-login #login h1 a{display:block;width:min(240px,100%);height:auto;min-height:44px;margin:0;background:none!important;background-size:contain!important;background-position:left center!important;background-repeat:no-repeat!important;text-indent:0;font-size:25px;font-weight:700;line-height:1.25;color:var(--bas-login-deep);outline-offset:4px}
+body.login.bas-login .bas-login-welcome{margin:0 0 25px}
+body.login.bas-login .bas-login-welcome h2{margin:0 0 8px;color:#1d2327;font-size:clamp(23px,2vw,32px);line-height:1.18;letter-spacing:-.025em;max-width:100%;text-wrap:balance;overflow-wrap:anywhere;hyphens:auto}
+body.login.bas-login .bas-login-welcome p{margin:0;color:#505b68;font-size:15px;line-height:1.6;overflow-wrap:anywhere;hyphens:auto}
+body.login.bas-login #loginform,body.login.bas-login #lostpasswordform,body.login.bas-login #registerform,body.login.bas-login #resetpassform{background:var(--bas-login-surface);color:var(--bas-login-surface-text);border:1px solid #dfe3e8;border-radius:16px;box-shadow:0 18px 55px #15233317;padding:28px;overflow:visible}
+body.login.bas-login #login form p{margin-bottom:18px}
+body.login.bas-login #login form label{color:var(--bas-login-surface-text);font-size:13px;font-weight:600}
+body.login.bas-login #login form .input,body.login.bas-login #login form input[type=text],body.login.bas-login #login form input[type=password]{box-sizing:border-box;min-height:46px;border:1px solid #b9c2ce;border-radius:8px;background:#fff;color:#1d2327;padding:8px 12px;font-size:16px;box-shadow:none}
+body.login.bas-login #login form .input:focus{border-color:var(--bas-login-brand);box-shadow:0 0 0 3px #3858e933}
+body.login.bas-login #wp-submit{min-height:44px;padding:0 22px;border:0;border-radius:8px;background:var(--bas-login-button);color:var(--bas-login-button-text);font-size:14px;font-weight:700;box-shadow:none;transition:filter .15s,transform .15s}
+body.login.bas-login #wp-submit:hover{filter:brightness(.88);transform:translateY(-1px)}
+body.login.bas-login #wp-submit:focus-visible{outline:3px solid var(--bas-login-brand);outline-offset:3px}
+body.login.bas-login #nav,body.login.bas-login #backtoblog{margin:16px 0 0;padding:0}
+body.login.bas-login #nav a,body.login.bas-login #backtoblog a{color:#405063}
+body.login.bas-login #language-switcher{position:fixed;right:20px;bottom:10px;z-index:2}
+body.login.bas-login .message,body.login.bas-login #login_error{border-radius:7px;margin-bottom:18px}
+@media(max-width:900px){body.login.bas-login{grid-template-columns:minmax(0,1fr)}body.login.bas-login .bas-login-visual,body.login.bas-login.bas-login-right .bas-login-visual{grid-column:1;grid-row:1;min-height:190px;max-height:25vh}body.login.bas-login #login,body.login.bas-login.bas-login-right #login{grid-column:1;grid-row:2;width:min(100%,530px);padding:30px 24px 80px}body.login.bas-login #language-switcher{position:static;grid-column:1;justify-self:center;margin:0 0 20px}}
+@media(max-width:480px){body.login.bas-login .bas-login-visual,body.login.bas-login.bas-login-right .bas-login-visual{min-height:115px;max-height:18vh}body.login.bas-login #login,body.login.bas-login.bas-login-right #login{padding:24px 18px 32px}body.login.bas-login #loginform,body.login.bas-login #lostpasswordform,body.login.bas-login #registerform,body.login.bas-login #resetpassform{padding:22px 18px;border-radius:12px}body.login.bas-login #login h1{margin-bottom:20px}}
+@media(max-width:900px){body.login.bas-login.bas-login-center #login{grid-column:1;grid-row:1}body.login.bas-login.bas-login-center .bas-login-visual{display:none}}
+body.login.bas-login.interim-login{display:block;min-height:auto}body.login.bas-login.interim-login .bas-login-visual{display:none}body.login.bas-login.interim-login #login{width:100%;padding:20px}
+@media(prefers-reduced-motion:reduce){body.login.bas-login #wp-submit{transition:none}}
+/* Keep the form side in a quiet tint from the brand palette. */
+body.login.bas-login,body.login.bas-login.bas-login-center{background:var(--bas-login-page,#f4f6f9)}
+body.login.bas-login #login{padding-top:clamp(34px,5vh,72px);padding-bottom:clamp(34px,5vh,72px)}
+body.login.bas-login #login h1{margin-bottom:23px}
+body.login.bas-login .bas-login-welcome{margin-bottom:29px}
+body.login.bas-login #loginform,body.login.bas-login #lostpasswordform,body.login.bas-login #registerform,body.login.bas-login #resetpassform{padding:clamp(26px,2.6vw,38px)}
+body.login.bas-login #login form p{margin-bottom:24px}
+body.login.bas-login #login form p.forgetmenot{float:none;clear:both;margin:8px 0 22px}
+body.login.bas-login #login form p.submit{float:none;clear:both;margin:0;padding:10px 0 2px}
+body.login.bas-login #login form #wp-submit{display:block;float:none;width:100%;min-height:48px;margin:0}
+body.login.bas-login #login form:after{content:"";display:block;clear:both}
+body.login.bas-login #nav{margin-top:24px}
+@media(max-width:480px){body.login.bas-login #loginform,body.login.bas-login #lostpasswordform,body.login.bas-login #registerform,body.login.bas-login #resetpassform{padding:24px 20px}}
+body.login.bas-login #login h1 a,body.login.bas-login .bas-login-welcome h2{color:var(--bas-login-page-text,#1d2327)}
+body.login.bas-login .bas-login-welcome p,body.login.bas-login #nav a,body.login.bas-login #backtoblog a{color:var(--bas-login-page-text,#405063);opacity:.78}
+/* WordPress sets a fixed 100% body height. Let extra login footer content
+   extend the document without revealing the HTML fallback background. */
+body.login.bas-login{height:auto!important;min-height:100vh;min-height:100dvh}
+body.login.bas-login .language-switcher{position:fixed;right:20px;bottom:12px;z-index:4;margin:0;background:transparent}
+body.login.bas-login .language-switcher #language-switcher{position:static}
+@media(max-width:900px){body.login.bas-login .language-switcher{position:static;grid-column:1;justify-self:center;margin:0 0 18px}}
+
+/* Align the complete welcome composition without centering form controls. */
+body.login.bas-login.bas-login-align-center #login{text-align:center}
+body.login.bas-login.bas-login-align-center #login h1{text-align:center}
+body.login.bas-login.bas-login-align-center #login h1 a{margin-inline:auto;background-position:center center!important}
+body.login.bas-login.bas-login-align-center #login form{text-align:left}
+body.login.bas-login.bas-login-align-center #login .message,body.login.bas-login.bas-login-align-center #login #login_error{text-align:left}
+/* A wide customer banner fits the same content width as the form below it. */
+body.login.bas-login.bas-login-banner #login h1 a{box-sizing:border-box;width:100%;max-width:100%;height:auto;min-height:0;max-height:130px;aspect-ratio:var(--bas-banner-ratio,4);background-size:contain!important}
+/* Optional copy remains readable over photos and light gradients. */
+body.login.bas-login .bas-login-quote{position:absolute;right:clamp(22px,6%,80px);bottom:clamp(28px,8%,90px);left:clamp(22px,6%,80px);max-width:460px;margin:0;padding:18px 22px;border:1px solid #ffffff55;border-radius:14px;background:rgba(13,22,35,.72);color:#fff;box-shadow:0 12px 38px #0003;backdrop-filter:blur(8px)}
+body.login.bas-login .bas-login-quote blockquote{margin:0;font-size:clamp(17px,1.35vw,23px);font-weight:600;line-height:1.42;overflow-wrap:anywhere;text-wrap:pretty}
+body.login.bas-login .bas-login-quote figcaption{margin-top:12px;font-size:13px;opacity:.84;overflow-wrap:anywhere}
+@media(max-width:900px){body.login.bas-login .bas-login-quote{right:22px;bottom:18px;left:22px;max-width:400px;padding:12px 16px}body.login.bas-login .bas-login-quote blockquote{font-size:15px}body.login.bas-login .bas-login-visual:has(.bas-login-quote){max-height:none;min-height:220px}}
+@media(max-width:480px){body.login.bas-login .bas-login-visual:has(.bas-login-quote){min-height:190px}body.login.bas-login .bas-login-quote{right:16px;bottom:12px;left:16px;padding:10px 13px}body.login.bas-login .bas-login-quote blockquote{font-size:13px;line-height:1.35}body.login.bas-login .bas-login-quote figcaption{margin-top:5px;font-size:11px}}

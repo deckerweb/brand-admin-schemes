@@ -1,0 +1,18 @@
+/* The status color covers the entire toolbar slot, including its top edge. */
+#wpadminbar #wp-admin-bar-bas-environment{--bas-env-bg:#1e5737;background:var(--bas-env-bg)!important}
+#wpadminbar #wp-admin-bar-bas-environment.bas-env-development{--bas-env-bg:#1b5683}
+#wpadminbar #wp-admin-bar-bas-environment.bas-env-staging{--bas-env-bg:#845312}
+#wpadminbar #wp-admin-bar-bas-environment.bas-env-production{--bas-env-bg:#3c4650}
+#wpadminbar #wp-admin-bar-bas-environment > .ab-item{box-sizing:border-box;height:32px;line-height:32px;padding:0 9px;background:var(--bas-env-bg)!important;color:#fff!important}
+#wpadminbar #wp-admin-bar-bas-environment:hover > .ab-item,
+#wpadminbar #wp-admin-bar-bas-environment > .ab-item:focus{background:var(--bas-env-bg)!important;color:#fff!important}
+#wpadminbar #wp-admin-bar-bas-environment .bas-env-pill{display:inline-flex;align-items:center;gap:4px;vertical-align:middle;height:100%;color:#fff!important;font:700 10px/1.2 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:.03em;white-space:nowrap}
+#wpadminbar #wp-admin-bar-bas-environment .bas-env-pill img{display:block;width:16px;height:16px;opacity:1}
+#wpadminbar #wp-admin-bar-bas-environment .ab-sub-wrapper{background:#1d2327}
+#wpadminbar #wp-admin-bar-bas-environment .ab-submenu .ab-item{white-space:nowrap}
+@media(max-width:782px){#wpadminbar #wp-admin-bar-bas-environment{display:block}#wpadminbar #wp-admin-bar-bas-environment > .ab-item{height:46px;line-height:46px}}
+#wpadminbar #wp-admin-bar-bas-environment > .ab-item,
+#wpadminbar #wp-admin-bar-bas-environment:hover > .ab-item,
+#wpadminbar #wp-admin-bar-bas-environment > .ab-item:focus{color:var(--bas-env-text,#fff)!important}
+#wpadminbar #wp-admin-bar-bas-environment .bas-env-pill{color:var(--bas-env-text,#fff)!important}
+#wpadminbar #wp-admin-bar-bas-environment .bas-env-pill img{filter:var(--bas-env-icon-filter,none)}
