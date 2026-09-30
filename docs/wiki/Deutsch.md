@@ -2,7 +2,7 @@
 
 [English](https://github.com/deckerweb/brand-admin-schemes/wiki/English) · [Home](https://github.com/deckerweb/brand-admin-schemes/wiki)
 
-Die praktische Anleitung zu Brand Admin Schemes 0.16.1. Springe über das Inhaltsverzeichnis direkt zur gewünschten Einstellung.
+Die praktische Anleitung zu Brand Admin Schemes 0.16.2. Springe über das Inhaltsverzeichnis direkt zur gewünschten Einstellung.
 
 ## Inhaltsverzeichnis
 
@@ -126,7 +126,7 @@ Englische Quelltexte und deutsche `de_DE`-Dateien (`.po`/`.mo`) sind enthalten. 
 
 ## Erweiterungen
 
-Version 0.16.1 bietet keine eigenen öffentlichen Plugin-Hooks oder -Filter. Wenn eine dokumentierte Anbindung deinem Projekt helfen würde, [erstelle ein Issue](https://github.com/deckerweb/brand-admin-schemes/issues).
+Version 0.16.2 bietet keine eigenen öffentlichen Plugin-Hooks oder -Filter. Wenn eine dokumentierte Anbindung deinem Projekt helfen würde, [erstelle ein Issue](https://github.com/deckerweb/brand-admin-schemes/issues).
 
 <a name="haeufige-fragen"></a>
 

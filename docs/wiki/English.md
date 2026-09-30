@@ -2,7 +2,7 @@
 
 [Deutsch](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) · [Home](https://github.com/deckerweb/brand-admin-schemes/wiki)
 
-A practical guide to Brand Admin Schemes 0.16.1. Use the contents below to jump to a setting.
+A practical guide to Brand Admin Schemes 0.16.2. Use the contents below to jump to a setting.
 
 ## Contents
 
@@ -122,7 +122,7 @@ English source strings and German (`de_DE`) `.po`/`.mo` files are included. Word
 
 ## Extensions
 
-Version 0.16.1 has no dedicated public plugin hooks or filters. Please [open an issue](https://github.com/deckerweb/brand-admin-schemes/issues) if a documented integration would help your project.
+Version 0.16.2 has no dedicated public plugin hooks or filters. Please [open an issue](https://github.com/deckerweb/brand-admin-schemes/issues) if a documented integration would help your project.
 
 <a name="faq"></a>
 

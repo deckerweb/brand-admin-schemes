@@ -4,6 +4,13 @@
 
 Complete version history. Standard readmes show the latest five versions.
 
+### 0.16.2
+
+- **Improved:** Refreshes all four readmes with clear feature summaries, seven short FAQs, and the latest five version entries.
+- **Improved:** Adds a German GitHub banner and expands the bilingual Wiki with 49 themed FAQ answers per language and complete changelogs.
+- **Improved:** Adds checked contents links, presents browser-tab favicons alongside the main features, and explains GitHub updates through the regular WordPress update system.
+- **Misc:** Packages the updated English and German documentation with this release.
+
 ### 0.16.1
 
 - **Improved:** Adopts the Daily Scripture footer layout, adds a documentation link beside the changelog, and includes a translated brand slogan.
