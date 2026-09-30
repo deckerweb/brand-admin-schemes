@@ -17,6 +17,7 @@
 - [Login and toolbar](#login-and-toolbar)
 - [Import, export, and Gutenberg](#import-export-and-gutenberg)
 - [Updates and documentation](#updates-and-documentation)
+- [FAQ](#faq)
 - [Changelog](#changelog)
 - [About](#about)
 
@@ -84,16 +85,61 @@ Updates come directly from the [DECKERWEB plugin repository on GitHub](https://g
 
 The [English wiki guide](https://github.com/deckerweb/brand-admin-schemes/wiki/English) and [German wiki guide](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) cover every setting, palette sources, login images, tab icons, and common questions. Local documentation and the changelog are available in the settings footer. German is included and follows the WordPress site or user language.
 
+<a name="faq"></a>
+
+## FAQ
+
+**Do I need Core Framework, Bricks, or ACSS?** No. Enter your own colors; palette providers are optional.
+
+**What happens if I disable a palette provider?** Saved scheme colors remain available. The provider is needed to read a fresh palette, not to display saved colors.
+
+**Does this change my website or builder design?** It styles the admin shell, optional login and toolbar, and browser-tab icons. Page content and builder canvases keep their design; Gutenberg palette entries only add choices.
+
+**Do I need a logo and a background photo?** No. The Site Icon, theme logo, and site name provide fallbacks; palette gradients work without a photo.
+
+**Does it replace the WordPress Site Icon?** No. It generates contextual browser-tab favicons without changing the stored Site Icon. You can retain the original frontend favicon.
+
+**Does importing immediately change the live design?** No. Review the imported settings and save to apply them. Agency ZIP imports do add bundled images to the Media Library immediately.
+
+**How do updates work?** Updates come from the public DECKERWEB GitHub repository through the regular WordPress plugin update system. No extra updater plugin is required.
+
+[More answers by topic](https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-English)
+
 <a name="changelog"></a>
 
 ## Changelog
 
 ### 0.16.1
 
-- **Improved:** Adopts the Daily Scripture footer layout with documentation and changelog links and a translated brand slogan.
-- **Misc:** Uses © 2022–2026 David Decker – DECKERWEB throughout the plugin and documentation.
+- **Improved:** Adopts the Daily Scripture footer layout, adds a documentation link beside the changelog, and includes a translated brand slogan.
+- **Misc:** Sets the DECKERWEB copyright range to 2022–2026 throughout the plugin and documentation.
 
-[Full changelog](docs/CHANGELOG.md) · [Releases](https://github.com/deckerweb/brand-admin-schemes/releases)
+### 0.16.0
+
+- **New:** Adds a compact settings footer with local documentation and changelog dialogs.
+- **Improved:** Includes matching English and German Markdown and WordPress-style text readmes.
+- **Improved:** Groups each release by New, Improved, Fixed, and Misc, in that order.
+- **Fixed:** Corrects the frontend-toolbar checkbox markup, translates missing German error messages, and registers three missing JavaScript translation labels.
+- **Misc:** Adds a license file, release notes and repository packaging rules.
+
+### 0.15.1
+
+- **Improved:** Refreshes the short plugin description and GitHub documentation for the full feature set.
+- **Misc:** Adds two banner concepts and two matching icon concepts as SVG and PNG design alternatives.
+
+### 0.15.0
+
+- **New:** Marks unsaved editor changes and asks before a reload or navigation would discard them.
+- **New:** Adds optional environment letters to generated browser favicons for Local, Development, Staging and Live.
+- **New:** Adds a contrast audit near the scheme cards with suggested text or background colors when a sample falls below 4.5:1.
+- **New:** Exports a ZIP agency package with settings and supported local raster images, and imports it for review. Imported images are added to the Media Library immediately. SVG assets remain outside the bundle. Requires PHP ZipArchive.
+- **New:** Adds optional Gutenberg palette entries for the four brand roles while preserving existing theme colors.
+
+### 0.14.2
+
+- **Fixed:** Translates the “Color scheme” settings link on the WordPress Plugins screen into German.
+
+[Full changelog in the wiki](https://github.com/deckerweb/brand-admin-schemes/wiki/Changelog-English) · [Releases](https://github.com/deckerweb/brand-admin-schemes/releases)
 
 <a name="about"></a>
 

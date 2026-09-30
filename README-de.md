@@ -1,6 +1,6 @@
 # Markenfarben im Admin · Brand Admin Schemes
 
-![Plugin-Banner von Brand Admin Schemes](assets-github/banner-1544x500.png)
+![Plugin-Banner von Brand Admin Schemes](assets-github/banner-de-1544x500.png)
 
 **Deine Farben. Dein WordPress.** Wenige Markenfarben genügen für einen vertrauten WordPress-Admin, einen schönen Login und Browser-Tabs, die du sofort auseinanderhalten kannst. Verwende Core Framework, Bricks Builder, Automatic.css oder deine eigene Palette. Atmosphäre und Markennähe ausprobieren, Vorschau prüfen, speichern. Kein eigenes CSS nötig.
 
@@ -17,6 +17,7 @@
 - [Login und Toolbar](#login-und-toolbar)
 - [Import, Export und Gutenberg](#import-export-und-gutenberg)
 - [Updates und Dokumentation](#updates-und-dokumentation)
+- [Häufige Fragen](#haeufige-fragen)
 - [Changelog](#changelog)
 - [Über das Plugin](#ueber-das-plugin)
 
@@ -84,16 +85,61 @@ Updates kommen direkt aus dem [DECKERWEB-Plugin-Repository auf GitHub](https://g
 
 Die [deutsche Wiki-Anleitung](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) und die [englische Wiki-Anleitung](https://github.com/deckerweb/brand-admin-schemes/wiki/English) erklären alle Einstellungen, Farbquellen, Login-Bilder, Tab-Icons und häufige Fragen. Lokale Dokumentation und Änderungsverlauf erreichst du im Footer der Einstellungsseite. Deutsch ist enthalten und folgt der WordPress-Website- oder Benutzersprache.
 
+<a name="haeufige-fragen"></a>
+
+## Häufige Fragen
+
+**Brauche ich Core Framework, Bricks oder ACSS?** Nein. Eigene Farben genügen; Farbprovider sind optional.
+
+**Was passiert, wenn ich einen Farbprovider deaktiviere?** Gespeicherte Schemafarben bleiben verfügbar. Der Provider wird zum erneuten Einlesen der Palette benötigt, nicht zur Darstellung gespeicherter Farben.
+
+**Verändert das Plugin mein Website- oder Builderdesign?** Es gestaltet den Adminrahmen, optional Login und Toolbar sowie Browser-Tab-Icons. Seiteninhalte und Builder-Arbeitsflächen behalten ihr Design; Gutenberg-Paletteneinträge ergänzen nur die Farbauswahl.
+
+**Brauche ich ein Logo und ein Hintergrundfoto?** Nein. Website-Icon, Theme-Logo und Websitename liefern Rückfalloptionen; die Farbverläufe funktionieren ohne Foto.
+
+**Ersetzt es das WordPress-Website-Icon?** Nein. Es erzeugt kontextabhängige Browser-Tab-Favicons, ohne das gespeicherte Website-Icon zu ändern. Das ursprüngliche Frontend-Favicon kann erhalten bleiben.
+
+**Verändert ein Import sofort die aktive Gestaltung?** Nein. Prüfe importierte Einstellungen und speichere zum Anwenden. Agentur-ZIP-Importe legen enthaltene Bilder allerdings sofort in der Mediathek an.
+
+**Wie funktionieren Updates?** Updates kommen aus dem öffentlichen DECKERWEB-Repository auf GitHub über das reguläre WordPress-Updatesystem. Ein zusätzliches Updater-Plugin ist nicht nötig.
+
+[Alle Fragen nach Themen](https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-Deutsch)
+
 <a name="changelog"></a>
 
 ## Changelog
 
 ### 0.16.1
 
-- **Verbessert:** Übernimmt den Footer von Daily Scripture mit Dokumentation, Änderungsverlauf und übersetztem Markenslogan.
-- **Sonstiges:** Verwendet © 2022–2026 David Decker – DECKERWEB im Plugin und in der Dokumentation.
+- **Verbessert:** Footer-Layout von Daily Scripture übernommen, Dokumentationslink neben dem Changelog ergänzt und einen übersetzten Markenslogan eingefügt.
+- **Sonstiges:** DECKERWEB-Copyright in Plugin und Dokumentation auf 2022–2026 gesetzt.
 
-[Vollständiger Änderungsverlauf](docs/CHANGELOG-de.md) · [Releases](https://github.com/deckerweb/brand-admin-schemes/releases)
+### 0.16.0
+
+- **Neu:** Kompakter Einstellungsfooter mit lokaler Dokumentation und Changelog-Dialogen.
+- **Verbessert:** Inhaltlich abgestimmte englische und deutsche Markdown- und Text-Readmes.
+- **Verbessert:** Einträge je Version nach Neu, Verbessert, Behoben und Sonstiges sortiert.
+- **Behoben:** HTML der Frontend-Toolbar-Checkbox korrigiert, fehlende deutsche Fehlermeldungen ergänzt und drei fehlende JavaScript-Übersetzungskennungen registriert.
+- **Sonstiges:** Lizenzdatei, Release-Notizen und Regeln für das Repository-Paket ergänzt.
+
+### 0.15.1
+
+- **Verbessert:** Kurze Pluginbeschreibung und GitHub-Dokumentation auf den gesamten Funktionsumfang aktualisiert.
+- **Sonstiges:** Zwei weitere Bannerentwürfe und zwei passende Iconentwürfe als SVG und PNG ergänzt.
+
+### 0.15.0
+
+- **Neu:** Anzeige ungespeicherter Änderungen und Warnung vor dem Verwerfen beim Neuladen oder Verlassen.
+- **Neu:** Optionale Umgebungsbuchstaben auf generierten Favicons für Lokal, Entwicklung, Staging und Live.
+- **Neu:** Kontrastprüfung neben den Schemakarten mit Farbempfehlungen bei Beispielwerten unter 4,5:1.
+- **Neu:** Agentur-ZIP für Einstellungen und unterstützte lokale Rasterbilder mit Import zur Prüfung. Bilder werden sofort zur Mediathek hinzugefügt; SVG bleibt ausgeschlossen. ZipArchive erforderlich.
+- **Neu:** Optionale Gutenberg-Palette mit vier Markenrollen neben vorhandenen Themefarben.
+
+### 0.14.2
+
+- **Behoben:** Einstellungslink „Farbschema“ auf der WordPress-Plugins-Seite ins Deutsche übersetzt.
+
+[Vollständiger Änderungsverlauf im Wiki](https://github.com/deckerweb/brand-admin-schemes/wiki/Changelog-Deutsch) · [Releases](https://github.com/deckerweb/brand-admin-schemes/releases)
 
 <a name="ueber-das-plugin"></a>
 
