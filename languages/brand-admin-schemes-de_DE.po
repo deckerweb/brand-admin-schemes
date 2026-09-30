@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Brand Admin Schemes 0.16.1\n"
+"Project-Id-Version: Brand Admin Schemes 0.16.2\n"
 "PO-Revision-Date: 2026-09-29 12:00+0200\n"
 "Last-Translator: David Decker – DECKERWEB\n"
 "Language-Team: German\n"
