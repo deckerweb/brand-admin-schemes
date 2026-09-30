@@ -2,6 +2,13 @@
 
 [English](CHANGELOG.md) · [Wiki](https://github.com/deckerweb/brand-admin-schemes/wiki)
 
+### 0.16.3
+
+- **Verbessert:** Zeigt das Plugin-Icon in WordPress-Updateangeboten und englische beziehungsweise deutsche Banner in den Plugindetails.
+- **Verbessert:** Verlinkt die Footer-Dokumentation direkt ins sprachabhängige Wiki und öffnet den vollständigen mitgelieferten Änderungsverlauf in einem zugänglichen lokalen Dialog.
+- **Behoben:** Ergänzt fehlende Updategrafiken, auch bei bereits gespeicherten Updateangeboten nach Installation dieser Version.
+- **Sonstiges:** Verwendet den gemeinsamen DECKERWEB GitHub-Updater V2 mit pluginspezifischer Prüfung von Paketidentität und Voraussetzungen.
+
 ### 0.16.2
 
 - **Verbessert:** Überarbeitet alle vier Readmes mit verständlichen Funktionsübersichten, sieben kurzen FAQs und den letzten fünf Versionseinträgen.
