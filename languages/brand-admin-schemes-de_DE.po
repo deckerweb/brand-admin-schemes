@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Brand Admin Schemes 0.16.2\n"
+"Project-Id-Version: Brand Admin Schemes 0.16.3\n"
 "PO-Revision-Date: 2026-09-29 12:00+0200\n"
 "Last-Translator: David Decker – DECKERWEB\n"
 "Language-Team: German\n"
@@ -762,3 +762,27 @@ msgstr "Deine Farben. Dein WordPress."
 
 msgid "Plugin website"
 msgstr "Plugin-Website"
+
+msgid "The update filesystem is unavailable. Please try again."
+msgstr "Das Dateisystem für das Update ist nicht verfügbar. Bitte versuche es erneut."
+
+msgid "The GitHub package does not contain the Brand Admin Schemes plugin file."
+msgstr "Das GitHub-Paket enthält nicht die Plugin-Datei von Brand Admin Schemes."
+
+msgid "The GitHub package could not be prepared. The installed version has been kept."
+msgstr "Das GitHub-Paket konnte nicht vorbereitet werden. Die installierte Version wurde beibehalten."
+
+msgid "The update package could not be checked."
+msgstr "Das Updatepaket konnte nicht geprüft werden."
+
+msgid "The package identity or version does not match a newer Brand Admin Schemes release."
+msgstr "Die Paketidentität oder Version entspricht keinem neueren Release von Brand Admin Schemes."
+
+msgid "The package version differs from the offered update. Please check for updates again."
+msgstr "Die Paketversion weicht vom angebotenen Update ab. Bitte prüfe erneut auf Updates."
+
+msgid "The update package has missing or invalid WordPress/PHP requirements."
+msgstr "Die WordPress-/PHP-Voraussetzungen des Updatepakets fehlen oder sind ungültig."
+
+msgid "This release requires a newer WordPress or PHP version. The installed version has been kept."
+msgstr "Dieses Release benötigt eine neuere WordPress- oder PHP-Version. Die installierte Version wurde beibehalten."
