@@ -4,6 +4,13 @@
 
 Complete version history. Standard readmes show the latest five versions.
 
+### 0.16.3
+
+- **Improved:** Shows the plugin icon in WordPress update offers and localized English/German banners in plugin details.
+- **Improved:** Links footer documentation directly to the localized Wiki and opens the complete bundled changelog in an accessible local dialog.
+- **Fixed:** Restores missing update artwork, including already cached update offers after this version is installed.
+- **Misc:** Uses the shared DECKERWEB GitHub Updater V2 with plugin-scoped package identity and requirements checks.
+
 ### 0.16.2
 
 - **Improved:** Refreshes all four readmes with clear feature summaries, seven short FAQs, and the latest five version entries.
