@@ -1,4 +1,4 @@
-/** Local documentation dialogs preserve the current editor draft. */
+/** The local changelog dialog preserves the current editor draft. */
 (() => {
 	'use strict';
 	let opener;
@@ -9,7 +9,8 @@
 			event.preventDefault();
 			opener = button;
 			dialog.showModal();
-			dialog.querySelector('pre').scrollTop = 0;
+			const content = dialog.querySelector('.bas-document-content');
+			if (content) content.scrollTop = 0;
 		});
 	});
 	document.querySelectorAll('.bas-document-dialog').forEach(dialog => {
