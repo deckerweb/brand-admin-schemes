@@ -3,7 +3,7 @@
  * Plugin Name: Brand Admin Schemes
  * Plugin URI: https://github.com/deckerweb/brand-admin-schemes
  * Description: Bring your brand colors to the WordPress admin, login, toolbar, and browser tabs. Use Core Framework, Bricks, ACSS, or your own palette.
- * Version: 0.16.1
+ * Version: 0.16.2
  * Requires at least: 6.4
  * Requires PHP: 8.0
  * Author: David Decker – DECKERWEB
@@ -29,7 +29,7 @@ if ( !defined( 'ABSPATH' ) ) {
  */
 final class BAS_Plugin {
 	/** Current package version, shared by assets and the settings footer. */
-	const VERSION = '0.16.1';
+	const VERSION = '0.16.2';
 	/**
 	 * Site option containing the editor state and saved schemes.
 	 * @var string

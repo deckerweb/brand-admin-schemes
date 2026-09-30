@@ -4,7 +4,7 @@
 
 **Deine Farben. Dein WordPress.** Wenige Markenfarben genügen für einen vertrauten WordPress-Admin, einen schönen Login und Browser-Tabs, die du sofort auseinanderhalten kannst. Verwende Core Framework, Bricks Builder, Automatic.css oder deine eigene Palette. Atmosphäre und Markennähe ausprobieren, Vorschau prüfen, speichern. Kein eigenes CSS nötig.
 
-**Version:** 0.16.1 · **Voraussetzungen:** WordPress 6.4+ / PHP 8.0+ · **Lizenz:** GPL v2 oder höher
+**Version:** 0.16.2 · **Voraussetzungen:** WordPress 6.4+ / PHP 8.0+ · **Lizenz:** GPL v2 oder höher
 
 [Download](https://github.com/deckerweb/brand-admin-schemes/releases/latest) · [Anleitung](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) · [English](README.md)
 
@@ -109,6 +109,13 @@ Die [deutsche Wiki-Anleitung](https://github.com/deckerweb/brand-admin-schemes/w
 
 ## Changelog
 
+### 0.16.2
+
+- **Verbessert:** Überarbeitet alle vier Readmes mit verständlichen Funktionsübersichten, sieben kurzen FAQs und den letzten fünf Versionseinträgen.
+- **Verbessert:** Ergänzt ein deutsches GitHub-Banner und erweitert das zweisprachige Wiki um 49 thematisch gegliederte FAQ-Antworten je Sprache und vollständige Änderungsverläufe.
+- **Verbessert:** Ergänzt geprüfte Sprungmarken, stellt Browser-Tab-Favicons bei den Hauptfunktionen vor und erklärt GitHub-Updates über das reguläre WordPress-Updatesystem.
+- **Sonstiges:** Liefert die aktualisierte englische und deutsche Dokumentation mit diesem Release aus.
+
 ### 0.16.1
 
 - **Verbessert:** Footer-Layout von Daily Scripture übernommen, Dokumentationslink neben dem Changelog ergänzt und einen übersetzten Markenslogan eingefügt.
@@ -134,10 +141,6 @@ Die [deutsche Wiki-Anleitung](https://github.com/deckerweb/brand-admin-schemes/w
 - **Neu:** Kontrastprüfung neben den Schemakarten mit Farbempfehlungen bei Beispielwerten unter 4,5:1.
 - **Neu:** Agentur-ZIP für Einstellungen und unterstützte lokale Rasterbilder mit Import zur Prüfung. Bilder werden sofort zur Mediathek hinzugefügt; SVG bleibt ausgeschlossen. ZipArchive erforderlich.
 - **Neu:** Optionale Gutenberg-Palette mit vier Markenrollen neben vorhandenen Themefarben.
-
-### 0.14.2
-
-- **Behoben:** Einstellungslink „Farbschema“ auf der WordPress-Plugins-Seite ins Deutsche übersetzt.
 
 [Vollständiger Änderungsverlauf im Wiki](https://github.com/deckerweb/brand-admin-schemes/wiki/Changelog-Deutsch) · [Releases](https://github.com/deckerweb/brand-admin-schemes/releases)
 

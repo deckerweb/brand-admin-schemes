@@ -3,7 +3,7 @@ Contributors: deckerweb
 Tags: admin colors, branding, login, favicon, gutenberg
 Requires at least: 6.4
 Requires PHP: 8.0
-Stable tag: 0.16.1
+Stable tag: 0.16.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,7 +11,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Your colors. Your WordPress. Turn a few brand colors into a familiar WordPress admin, a welcoming login screen, and browser tabs you can tell apart. Use Core Framework, Bricks Builder, Automatic.css, or your own palette. Explore the mood and brand strength, preview, then save. No CSS homework.
 
-Version: 0.16.1 · Requires: WordPress 6.4+ / PHP 8.0+ · License: GPL v2 or later
+Version: 0.16.2 · Requires: WordPress 6.4+ / PHP 8.0+ · License: GPL v2 or later
 
 Download (https://github.com/deckerweb/brand-admin-schemes/releases/latest) · User guide (https://github.com/deckerweb/brand-admin-schemes/wiki/English) · Deutsch (https://github.com/deckerweb/brand-admin-schemes/blob/main/README-de.md)
 
@@ -98,6 +98,13 @@ More answers by topic (https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ
 
 == Changelog ==
 
+= 0.16.2 =
+
+- Improved: Refreshes all four readmes with clear feature summaries, seven short FAQs, and the latest five version entries.
+- Improved: Adds a German GitHub banner and expands the bilingual Wiki with 49 themed FAQ answers per language and complete changelogs.
+- Improved: Adds checked contents links, presents browser-tab favicons alongside the main features, and explains GitHub updates through the regular WordPress update system.
+- Misc: Packages the updated English and German documentation with this release.
+
 = 0.16.1 =
 
 - Improved: Adopts the Daily Scripture footer layout, adds a documentation link beside the changelog, and includes a translated brand slogan.
@@ -123,10 +130,6 @@ More answers by topic (https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ
 - New: Adds a contrast audit near the scheme cards with suggested text or background colors when a sample falls below 4.5:1.
 - New: Exports a ZIP agency package with settings and supported local raster images, and imports it for review. Imported images are added to the Media Library immediately. SVG assets remain outside the bundle. Requires PHP ZipArchive.
 - New: Adds optional Gutenberg palette entries for the four brand roles while preserving existing theme colors.
-
-= 0.14.2 =
-
-- Fixed: Translates the “Color scheme” settings link on the WordPress Plugins screen into German.
 
 Full changelog in the wiki (https://github.com/deckerweb/brand-admin-schemes/wiki/Changelog-English) · Releases (https://github.com/deckerweb/brand-admin-schemes/releases)
 
