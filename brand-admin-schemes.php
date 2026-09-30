@@ -3,7 +3,7 @@
  * Plugin Name: Brand Admin Schemes
  * Plugin URI: https://github.com/deckerweb/brand-admin-schemes
  * Description: Bring your brand colors to the WordPress admin, login, toolbar, and browser tabs. Use Core Framework, Bricks, ACSS, or your own palette.
- * Version: 0.16.2
+ * Version: 0.16.3
  * Requires at least: 6.4
  * Requires PHP: 8.0
  * Author: David Decker – DECKERWEB
@@ -21,6 +21,8 @@
 if ( !defined( 'ABSPATH' ) ) {
 	exit;
 }
+define( 'BAS_PLUGIN_FILE', __FILE__ );
+define( 'BAS_PLUGIN_DIR', __DIR__ . '/' );
 /**
  * Manages source palettes, saved admin schemes, the settings editor and toolbar colors.
  *
@@ -29,7 +31,7 @@ if ( !defined( 'ABSPATH' ) ) {
  */
 final class BAS_Plugin {
 	/** Current package version, shared by assets and the settings footer. */
-	const VERSION = '0.16.2';
+	const VERSION = '0.16.3';
 	/**
 	 * Site option containing the editor state and saved schemes.
 	 * @var string
@@ -682,18 +684,11 @@ final class BAS_Plugin {
 		echo '</div>';
 	}
 
-	/** Render a compact footer and local documentation without leaving the editor. */
+	/** Render the local changelog link and localized Wiki documentation link. */
 	private static function footer(): void {
-		$file = str_starts_with( determine_locale(), 'de' ) ? 'readme-de.txt' : 'readme.txt';
-		$path = __DIR__ . '/' . $file;
-		$documentation = is_readable( $path ) ? file_get_contents( $path ) : '';
-		$documentation = is_string( $documentation ) ? $documentation : '';
-		$changelog = preg_match( '/^== Changelog ==\s*\R(.*?)(?=^== [^\r\n]+ ==\s*$|\z)/ms', $documentation, $section ) ? trim( $section[1] ) : '';
-		$readme_url = plugins_url( $file, __FILE__ );
-		echo '<footer class="bas-footer" aria-label="' . esc_attr__( 'Plugin information', 'brand-admin-schemes' ) . '"><div><strong>' . esc_html__( 'Brand Admin Schemes', 'brand-admin-schemes' ) . '</strong> <span>' . esc_html__( 'Version', 'brand-admin-schemes' ) . ' ' . esc_html( self::VERSION ) . '</span> · <a href="' . esc_url( $readme_url ) . '" data-bas-document="changelog">' . esc_html__( 'Changelog', 'brand-admin-schemes' ) . '</a> · <a href="' . esc_url( $readme_url ) . '" data-bas-document="documentation">' . esc_html__( 'Documentation', 'brand-admin-schemes' ) . '</a><p>' . esc_html__( 'Your colors. Your WordPress.', 'brand-admin-schemes' ) . '</p></div><div><span>© 2022–2026 <a href="https://github.com/deckerweb" target="_blank" rel="noopener noreferrer">David Decker – DECKERWEB</a></span><a href="https://github.com/deckerweb/brand-admin-schemes" target="_blank" rel="noopener noreferrer">' . esc_html__( 'Plugin website', 'brand-admin-schemes' ) . '</a></div></footer>';
-		foreach ( ['documentation' => ['Documentation', $documentation], 'changelog' => ['Changelog', $changelog]] as $id => $document ) {
-			echo '<dialog class="bas-document-dialog" id="bas-document-' . esc_attr( $id ) . '" aria-labelledby="bas-document-title-' . esc_attr( $id ) . '"><div class="bas-document-header"><h2 id="bas-document-title-' . esc_attr( $id ) . '">' . esc_html__( $document[0], 'brand-admin-schemes' ) . '</h2><button type="button" class="button" data-bas-close>' . esc_html__( 'Close', 'brand-admin-schemes' ) . '</button></div><pre tabindex="0">' . esc_html( $document[1] ) . '</pre></dialog>';
-		}
+		$wiki_url = 'https://github.com/deckerweb/brand-admin-schemes/wiki/' . ( \Deckerweb\BrandAdminSchemes\Changelog::is_german() ? 'Deutsch' : 'English' );
+		echo '<footer class="bas-footer" aria-label="' . esc_attr__( 'Plugin information', 'brand-admin-schemes' ) . '"><div><strong>' . esc_html__( 'Brand Admin Schemes', 'brand-admin-schemes' ) . '</strong> <span>' . esc_html__( 'Version', 'brand-admin-schemes' ) . ' ' . esc_html( self::VERSION ) . '</span> · <a href="' . esc_url( \Deckerweb\BrandAdminSchemes\Changelog::url() ) . '" data-bas-document="changelog">' . esc_html__( 'Changelog', 'brand-admin-schemes' ) . '</a> · <a href="' . esc_url( $wiki_url ) . '">' . esc_html__( 'Documentation', 'brand-admin-schemes' ) . '</a><p>' . esc_html__( 'Your colors. Your WordPress.', 'brand-admin-schemes' ) . '</p></div><div><span>© 2022–2026 <a href="https://github.com/deckerweb" target="_blank" rel="noopener noreferrer">David Decker – DECKERWEB</a></span><a href="https://github.com/deckerweb/brand-admin-schemes" target="_blank" rel="noopener noreferrer">' . esc_html__( 'Plugin website', 'brand-admin-schemes' ) . '</a></div></footer>';
+		\Deckerweb\BrandAdminSchemes\Changelog::dialog();
 	}
 
 	/**
@@ -1196,9 +1191,7 @@ final class BAS_Plugin {
 require_once __DIR__ . '/includes/class-bas-context-icons.php';
 require_once __DIR__ . '/includes/class-bas-bundle.php';
 require_once __DIR__ . '/includes/class-bas-gutenberg-palette.php';
+require_once __DIR__ . '/includes/class-bas-changelog.php';
+require_once __DIR__ . '/includes/class-bas-github-updates.php';
 BAS_Plugin::boot();
-// A versioned namespace lets multiple DECKERWEB plugins load the same updater safely.
-if ( !class_exists( 'Deckerweb\\GitHubReleaseUpdater\\V1\\Updater' ) ) {
-	require_once __DIR__ . '/includes/deckerweb-github-release-updater-v1.php';
-}
-( new \Deckerweb\GitHubReleaseUpdater\V1\Updater( __FILE__, 'https://github.com/deckerweb/brand-admin-schemes', 'Brand Admin Schemes', 'Bring your brand colors to the WordPress admin, login, toolbar, and browser tabs. Use Core Framework, Bricks, ACSS, or your own palette.' ) )->register();
+( new \Deckerweb\BrandAdminSchemes\GitHubUpdates() )->register();

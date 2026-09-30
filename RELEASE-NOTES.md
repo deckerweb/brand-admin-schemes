@@ -1,14 +1,10 @@
-# Brand Admin Schemes 0.16.2
+# Brand Admin Schemes 0.16.3
 
-A documentation update. The plugin features and saved settings keep their existing behavior.
+- **Improved:** Shows the plugin icon in WordPress update offers and localized English/German banners in plugin details.
+- **Improved:** Links footer documentation directly to the localized Wiki and opens the complete bundled changelog in an accessible local dialog.
+- **Fixed:** Restores missing update artwork, including already cached update offers after this version is installed.
+- **Misc:** Uses the shared DECKERWEB GitHub Updater V2 with plugin-scoped package identity and requirements checks.
 
-- **Improved:** Refreshes all four readmes with clear feature summaries, seven short FAQs, and the latest five version entries.
-- **Improved:** Adds a German GitHub banner and expands the bilingual Wiki with 49 themed FAQ answers per language and complete changelogs.
-- **Improved:** Adds checked contents links, presents browser-tab favicons alongside the main features, and explains GitHub updates through the regular WordPress update system.
-- **Misc:** Packages the updated English and German documentation with this release.
+**Installation:** Update through WordPress or download `brand-admin-schemes-0.16.3.zip` below. The update icon becomes available after installing this version; older installed versions cannot display artwork they do not provide yet.
 
-**Installation:** Download `brand-admin-schemes-0.16.2.zip` from this release and upload it via Plugins → Add New → Upload Plugin, or update from the regular WordPress Plugins screen when the update appears.
-
-[English guide](https://github.com/deckerweb/brand-admin-schemes/wiki/English) · [Deutsche Anleitung](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch)
-
-Requires WordPress 6.4+ and PHP 8.0+. Updates come from the DECKERWEB GitHub repository through the regular WordPress plugin update system.
+Requires WordPress 6.4+ and PHP 8.0+.

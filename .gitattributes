@@ -7,7 +7,8 @@
 *.mo binary
 *.png binary
 /assets-github/alternatives export-ignore
-/assets-github/banner* export-ignore
+/assets-github/banner.svg export-ignore
+/assets-github/banner-de.svg export-ignore
 /NEXT-UPDATE.md export-ignore
 /docs/internal export-ignore
 /docs/wiki export-ignore

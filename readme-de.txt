@@ -3,7 +3,7 @@ Contributors: deckerweb
 Tags: admin colors, branding, login, favicon, gutenberg
 Requires at least: 6.4
 Requires PHP: 8.0
-Stable tag: 0.16.2
+Stable tag: 0.16.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,7 +11,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Deine Farben. Dein WordPress. Wenige Markenfarben genügen für einen vertrauten WordPress-Admin, einen schönen Login und Browser-Tabs, die du sofort auseinanderhalten kannst. Verwende Core Framework, Bricks Builder, Automatic.css oder deine eigene Palette. Atmosphäre und Markennähe ausprobieren, Vorschau prüfen, speichern. Kein eigenes CSS nötig.
 
-Version: 0.16.2 · Voraussetzungen: WordPress 6.4+ / PHP 8.0+ · Lizenz: GPL v2 oder höher
+Version: 0.16.3 · Voraussetzungen: WordPress 6.4+ / PHP 8.0+ · Lizenz: GPL v2 oder höher
 
 Download (https://github.com/deckerweb/brand-admin-schemes/releases/latest) · Anleitung (https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) · English (https://github.com/deckerweb/brand-admin-schemes/blob/main/README.md)
 
@@ -76,7 +76,7 @@ Auf Wunsch stehen die vier benannten Markenfarben neben der Theme-Palette in Gut
 
 Updates kommen direkt aus dem DECKERWEB-Plugin-Repository auf GitHub (https://github.com/deckerweb/brand-admin-schemes/releases) und erscheinen im regulären WordPress-Updatesystem. Aktualisiere wie gewohnt über Plugins oder Aktualisierungen; ein zusätzliches Updater-Plugin ist nicht nötig.
 
-Die deutsche Wiki-Anleitung (https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) und die englische Wiki-Anleitung (https://github.com/deckerweb/brand-admin-schemes/wiki/English) erklären alle Einstellungen, Farbquellen, Login-Bilder, Tab-Icons und häufige Fragen. Lokale Dokumentation und Änderungsverlauf erreichst du im Footer der Einstellungsseite. Deutsch ist enthalten und folgt der WordPress-Website- oder Benutzersprache.
+Die deutsche Wiki-Anleitung (https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) und die englische Wiki-Anleitung (https://github.com/deckerweb/brand-admin-schemes/wiki/English) erklären alle Einstellungen, Farbquellen, Login-Bilder, Tab-Icons und häufige Fragen. Der Footer der Einstellungsseite verlinkt die Anleitung in deiner Sprache und öffnet den vollständigen lokalen Änderungsverlauf. Deutsch ist enthalten und folgt der WordPress-Website- oder Benutzersprache.
 
 == Häufige Fragen ==
 
@@ -97,6 +97,13 @@ Wie funktionieren Updates? Updates kommen aus dem öffentlichen DECKERWEB-Reposi
 Alle Fragen nach Themen (https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-Deutsch)
 
 == Changelog ==
+
+= 0.16.3 =
+
+- Verbessert: Zeigt das Plugin-Icon in WordPress-Updateangeboten und englische beziehungsweise deutsche Banner in den Plugindetails.
+- Verbessert: Verlinkt die Footer-Dokumentation direkt ins sprachabhängige Wiki und öffnet den vollständigen mitgelieferten Änderungsverlauf in einem zugänglichen lokalen Dialog.
+- Behoben: Ergänzt fehlende Updategrafiken, auch bei bereits gespeicherten Updateangeboten nach Installation dieser Version.
+- Sonstiges: Verwendet den gemeinsamen DECKERWEB GitHub-Updater V2 mit pluginspezifischer Prüfung von Paketidentität und Voraussetzungen.
 
 = 0.16.2 =
 
@@ -122,14 +129,6 @@ Alle Fragen nach Themen (https://github.com/deckerweb/brand-admin-schemes/wiki/F
 
 - Verbessert: Kurze Pluginbeschreibung und GitHub-Dokumentation auf den gesamten Funktionsumfang aktualisiert.
 - Sonstiges: Zwei weitere Bannerentwürfe und zwei passende Iconentwürfe als SVG und PNG ergänzt.
-
-= 0.15.0 =
-
-- Neu: Anzeige ungespeicherter Änderungen und Warnung vor dem Verwerfen beim Neuladen oder Verlassen.
-- Neu: Optionale Umgebungsbuchstaben auf generierten Favicons für Lokal, Entwicklung, Staging und Live.
-- Neu: Kontrastprüfung neben den Schemakarten mit Farbempfehlungen bei Beispielwerten unter 4,5:1.
-- Neu: Agentur-ZIP für Einstellungen und unterstützte lokale Rasterbilder mit Import zur Prüfung. Bilder werden sofort zur Mediathek hinzugefügt; SVG bleibt ausgeschlossen. ZipArchive erforderlich.
-- Neu: Optionale Gutenberg-Palette mit vier Markenrollen neben vorhandenen Themefarben.
 
 Vollständiger Änderungsverlauf im Wiki (https://github.com/deckerweb/brand-admin-schemes/wiki/Changelog-Deutsch) · Releases (https://github.com/deckerweb/brand-admin-schemes/releases)
 

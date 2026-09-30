@@ -3,7 +3,7 @@ Contributors: deckerweb
 Tags: admin colors, branding, login, favicon, gutenberg
 Requires at least: 6.4
 Requires PHP: 8.0
-Stable tag: 0.16.2
+Stable tag: 0.16.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,7 +11,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Your colors. Your WordPress. Turn a few brand colors into a familiar WordPress admin, a welcoming login screen, and browser tabs you can tell apart. Use Core Framework, Bricks Builder, Automatic.css, or your own palette. Explore the mood and brand strength, preview, then save. No CSS homework.
 
-Version: 0.16.2 · Requires: WordPress 6.4+ / PHP 8.0+ · License: GPL v2 or later
+Version: 0.16.3 · Requires: WordPress 6.4+ / PHP 8.0+ · License: GPL v2 or later
 
 Download (https://github.com/deckerweb/brand-admin-schemes/releases/latest) · User guide (https://github.com/deckerweb/brand-admin-schemes/wiki/English) · Deutsch (https://github.com/deckerweb/brand-admin-schemes/blob/main/README-de.md)
 
@@ -76,7 +76,7 @@ Optionally add the four named brand colors to Gutenberg alongside the theme pale
 
 Updates come directly from the DECKERWEB plugin repository on GitHub (https://github.com/deckerweb/brand-admin-schemes/releases) and appear in the regular WordPress plugin update system. Update from the Plugins or Updates screen as usual; no additional updater plugin is needed.
 
-The English wiki guide (https://github.com/deckerweb/brand-admin-schemes/wiki/English) and German wiki guide (https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) cover every setting, palette sources, login images, tab icons, and common questions. Local documentation and the changelog are available in the settings footer. German is included and follows the WordPress site or user language.
+The English wiki guide (https://github.com/deckerweb/brand-admin-schemes/wiki/English) and German wiki guide (https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) cover every setting, palette sources, login images, tab icons, and common questions. The settings footer links to the guide in your language and opens the complete local changelog. German is included and follows the WordPress site or user language.
 
 == FAQ ==
 
@@ -97,6 +97,13 @@ How do updates work? Updates come from the public DECKERWEB GitHub repository th
 More answers by topic (https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-English)
 
 == Changelog ==
+
+= 0.16.3 =
+
+- Improved: Shows the plugin icon in WordPress update offers and localized English/German banners in plugin details.
+- Improved: Links footer documentation directly to the localized Wiki and opens the complete bundled changelog in an accessible local dialog.
+- Fixed: Restores missing update artwork, including already cached update offers after this version is installed.
+- Misc: Uses the shared DECKERWEB GitHub Updater V2 with plugin-scoped package identity and requirements checks.
 
 = 0.16.2 =
 
@@ -122,14 +129,6 @@ More answers by topic (https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ
 
 - Improved: Refreshes the short plugin description and GitHub documentation for the full feature set.
 - Misc: Adds two banner concepts and two matching icon concepts as SVG and PNG design alternatives.
-
-= 0.15.0 =
-
-- New: Marks unsaved editor changes and asks before a reload or navigation would discard them.
-- New: Adds optional environment letters to generated browser favicons for Local, Development, Staging and Live.
-- New: Adds a contrast audit near the scheme cards with suggested text or background colors when a sample falls below 4.5:1.
-- New: Exports a ZIP agency package with settings and supported local raster images, and imports it for review. Imported images are added to the Media Library immediately. SVG assets remain outside the bundle. Requires PHP ZipArchive.
-- New: Adds optional Gutenberg palette entries for the four brand roles while preserving existing theme colors.
 
 Full changelog in the wiki (https://github.com/deckerweb/brand-admin-schemes/wiki/Changelog-English) · Releases (https://github.com/deckerweb/brand-admin-schemes/releases)
 
