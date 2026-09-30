@@ -128,17 +128,21 @@ Version 0.16.1 has no dedicated public plugin hooks or filters. Please [open an 
 
 ## FAQ
 
-**Do I need Core Framework, Bricks, or ACSS?** No. Manual colors always work; integrations simply offer colors already present on the site.
+**Do I need Core Framework, Bricks, or ACSS?** No. Enter your own colors; palette providers are optional.
 
-**Why is my palette missing?** This version accepts readable hex values. Core Framework needs to expose a generated stylesheet through its Helper. ACSS expressions such as OKLCH/HSL, `light-dark()`, and CSS variables are not parsed as role values.
+**What happens if I disable a palette provider?** Saved scheme colors remain available. The provider is needed to read a fresh palette, not to display saved colors.
 
-**Does this recolor Gutenberg or the Bricks editor?** The saved scheme styles the WordPress admin shell and selected elements. Editor and builder canvases are outside this version's styling scope.
+**Does this change my website or builder design?** It styles the admin shell, optional login and toolbar, and browser-tab icons. Page content and builder canvases keep their design; Gutenberg palette entries only add choices.
 
-**What does the Gutenberg option change?** It adds named brand colors to the editor picker. It does not change existing block colors or the editor interface.
+**Do I need a logo and a background photo?** No. The Site Icon, theme logo, and site name provide fallbacks; palette gradients work without a photo.
 
-**Will importing change the live scheme immediately?** No. Inspect the imported settings and save to activate.
+**Does it replace the WordPress Site Icon?** No. It generates contextual browser-tab favicons without changing the stored Site Icon. You can retain the original frontend favicon.
 
-**Can I update a private repository?** No. The updater supports public GitHub Releases without authentication.
+**Does importing immediately change the live design?** No. Review the imported settings and save to apply them. Agency ZIP imports do add bundled images to the Media Library immediately.
+
+**How do updates work?** Updates come from the public DECKERWEB GitHub repository through the regular WordPress plugin update system. No extra updater plugin is required.
+
+[More answers by topic](https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-English)
 
 <a name="the-story"></a>
 
@@ -152,6 +156,6 @@ Built by David Decker for the sites he works on at DECKERWEB. Have fun making th
 
 ## Changelog
 
-[Full English changelog](https://github.com/deckerweb/brand-admin-schemes/blob/main/docs/CHANGELOG.md) · [GitHub Releases](https://github.com/deckerweb/brand-admin-schemes/releases)
+[Full English changelog](https://github.com/deckerweb/brand-admin-schemes/wiki/Changelog-English) · [GitHub Releases](https://github.com/deckerweb/brand-admin-schemes/releases)
 
 © 2022–2026 David Decker – DECKERWEB · GPL v2 or later

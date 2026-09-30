@@ -9,7 +9,8 @@
 - [Browser tab icons](https://github.com/deckerweb/brand-admin-schemes/wiki/English#contextual-browser-tab-icons)
 - [Login design](https://github.com/deckerweb/brand-admin-schemes/wiki/English#login-design)
 - [Updates](https://github.com/deckerweb/brand-admin-schemes/wiki/English#updates)
-- [Changelog](https://github.com/deckerweb/brand-admin-schemes/blob/main/docs/CHANGELOG.md)
+- [FAQ](https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-English)
+- [Changelog](https://github.com/deckerweb/brand-admin-schemes/wiki/Changelog-English)
 
 **Deutsch**
 
@@ -18,4 +19,5 @@
 - [Browser-Tab-Favicons](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch#favicons-fuer-browser-tabs)
 - [Login-Gestaltung](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch#login-gestaltung)
 - [Updates](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch#updates)
-- [Änderungsverlauf](https://github.com/deckerweb/brand-admin-schemes/blob/main/docs/CHANGELOG-de.md)
+- [Häufige Fragen](https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-Deutsch)
+- [Änderungsverlauf](https://github.com/deckerweb/brand-admin-schemes/wiki/Changelog-Deutsch)

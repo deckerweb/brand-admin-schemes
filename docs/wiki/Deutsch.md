@@ -132,17 +132,21 @@ Version 0.16.1 bietet keine eigenen öffentlichen Plugin-Hooks oder -Filter. Wen
 
 ## Häufige Fragen
 
-**Brauche ich Core Framework, Bricks oder ACSS?** Nein. Eigene Farben funktionieren immer; Provider bieten vorhandene Farben an.
+**Brauche ich Core Framework, Bricks oder ACSS?** Nein. Eigene Farben genügen; Farbprovider sind optional.
 
-**Warum fehlt meine Palette?** Unterstützt werden lesbare HEX-Werte. Core Framework muss sein erzeugtes Stylesheet über den Helper bereitstellen. ACSS-Ausdrücke wie OKLCH/HSL, `light-dark()` und CSS-Variablen werden nicht als Rollenfarben ausgewertet.
+**Was passiert, wenn ich einen Farbprovider deaktiviere?** Gespeicherte Schemafarben bleiben verfügbar. Der Provider wird zum erneuten Einlesen der Palette benötigt, nicht zur Darstellung gespeicherter Farben.
 
-**Färbt das Plugin Gutenberg oder den Builder um?** Das Schema gestaltet den WordPress-Adminrahmen und ausgewählte Elemente. Inhalte und Builder-Arbeitsflächen werden nicht umgefärbt.
+**Verändert das Plugin mein Website- oder Builderdesign?** Es gestaltet den Adminrahmen, optional Login und Toolbar sowie Browser-Tab-Icons. Seiteninhalte und Builder-Arbeitsflächen behalten ihr Design; Gutenberg-Paletteneinträge ergänzen nur die Farbauswahl.
 
-**Was macht die Gutenberg-Option?** Sie ergänzt benannte Markenfarben im Farbwähler. Bereits vorhandene Blockfarben und die Editoroberfläche ändern sich dadurch nicht.
+**Brauche ich ein Logo und ein Hintergrundfoto?** Nein. Website-Icon, Theme-Logo und Websitename liefern Rückfalloptionen; die Farbverläufe funktionieren ohne Foto.
 
-**Wirkt ein Import sofort?** Die importierten Einstellungen werden erst beim Speichern aktiviert. Beim Agentur-ZIP werden die enthaltenen Bilder allerdings sofort zur Mediathek hinzugefügt.
+**Ersetzt es das WordPress-Website-Icon?** Nein. Es erzeugt kontextabhängige Browser-Tab-Favicons, ohne das gespeicherte Website-Icon zu ändern. Das ursprüngliche Frontend-Favicon kann erhalten bleiben.
 
-**Funktionieren private Repositorys?** Der Updater unterstützt öffentliche GitHub-Releases ohne Authentifizierung.
+**Verändert ein Import sofort die aktive Gestaltung?** Nein. Prüfe importierte Einstellungen und speichere zum Anwenden. Agentur-ZIP-Importe legen enthaltene Bilder allerdings sofort in der Mediathek an.
+
+**Wie funktionieren Updates?** Updates kommen aus dem öffentlichen DECKERWEB-Repository auf GitHub über das reguläre WordPress-Updatesystem. Ein zusätzliches Updater-Plugin ist nicht nötig.
+
+[Alle Fragen nach Themen](https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-Deutsch)
 
 <a name="die-idee-dahinter"></a>
 
@@ -156,6 +160,6 @@ Entwickelt von David Decker – DECKERWEB für die Websites seiner Kunden. Viel 
 
 ## Änderungsverlauf
 
-[Vollständiger deutscher Änderungsverlauf](https://github.com/deckerweb/brand-admin-schemes/blob/main/docs/CHANGELOG-de.md) · [GitHub-Releases](https://github.com/deckerweb/brand-admin-schemes/releases)
+[Vollständiger deutscher Änderungsverlauf](https://github.com/deckerweb/brand-admin-schemes/wiki/Changelog-Deutsch) · [GitHub-Releases](https://github.com/deckerweb/brand-admin-schemes/releases)
 
 © 2022–2026 David Decker – DECKERWEB · GPL v2 oder höher

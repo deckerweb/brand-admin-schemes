@@ -13,7 +13,8 @@ Wähle deine Sprache. Beide Anleitungen erklären Installation, Markenfarben, Lo
 | [Read the user guide](https://github.com/deckerweb/brand-admin-schemes/wiki/English) | [Anleitung öffnen](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) |
 | [Browser tab icons](https://github.com/deckerweb/brand-admin-schemes/wiki/English#contextual-browser-tab-icons) | [Favicons für Browser-Tabs](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch#favicons-fuer-browser-tabs) |
 | [Login design](https://github.com/deckerweb/brand-admin-schemes/wiki/English#login-design) | [Login-Gestaltung](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch#login-gestaltung) |
-| [Full changelog](https://github.com/deckerweb/brand-admin-schemes/blob/main/docs/CHANGELOG.md) | [Vollständiger Änderungsverlauf](https://github.com/deckerweb/brand-admin-schemes/blob/main/docs/CHANGELOG-de.md) |
+| [FAQ by topic](https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-English) | [Fragen nach Themen](https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-Deutsch) |
+| [Full changelog](https://github.com/deckerweb/brand-admin-schemes/wiki/Changelog-English) | [Vollständiger Änderungsverlauf](https://github.com/deckerweb/brand-admin-schemes/wiki/Changelog-Deutsch) |
 
 [Download / Releases](https://github.com/deckerweb/brand-admin-schemes/releases/latest) · [Questions / Fragen](https://github.com/deckerweb/brand-admin-schemes/issues)
 
