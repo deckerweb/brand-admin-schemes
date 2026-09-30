@@ -9,5 +9,7 @@
 /assets-github/alternatives export-ignore
 /assets-github/banner* export-ignore
 /NEXT-UPDATE.md export-ignore
+/docs/internal export-ignore
+/docs/wiki export-ignore
 /.gitattributes export-ignore
 /.gitignore export-ignore
