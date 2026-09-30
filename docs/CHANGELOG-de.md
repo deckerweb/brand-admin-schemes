@@ -2,6 +2,13 @@
 
 [English](CHANGELOG.md) · [Wiki](https://github.com/deckerweb/brand-admin-schemes/wiki)
 
+### 0.16.2
+
+- **Verbessert:** Überarbeitet alle vier Readmes mit verständlichen Funktionsübersichten, sieben kurzen FAQs und den letzten fünf Versionseinträgen.
+- **Verbessert:** Ergänzt ein deutsches GitHub-Banner und erweitert das zweisprachige Wiki um 49 thematisch gegliederte FAQ-Antworten je Sprache und vollständige Änderungsverläufe.
+- **Verbessert:** Ergänzt geprüfte Sprungmarken, stellt Browser-Tab-Favicons bei den Hauptfunktionen vor und erklärt GitHub-Updates über das reguläre WordPress-Updatesystem.
+- **Sonstiges:** Liefert die aktualisierte englische und deutsche Dokumentation mit diesem Release aus.
+
 ### 0.16.1
 
 - **Verbessert:** Footer-Layout von Daily Scripture übernommen, Dokumentationslink neben dem Changelog ergänzt und einen übersetzten Markenslogan eingefügt.

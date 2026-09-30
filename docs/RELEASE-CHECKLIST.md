@@ -1,6 +1,6 @@
 # Documentation checklist for the next release
 
-Applies to **0.16.2 or 0.17.0, whichever ships first**, and subsequent releases.
+Documentation changes are included in **0.16.2**. Apply this checklist to subsequent releases.
 
 - Include the current `README.md`, `README-de.md`, `readme.txt`, and `readme-de.txt` in the plugin package.
 - Update the version consistently in the plugin, readmes, user guides, and release notes.
@@ -13,4 +13,4 @@ Applies to **0.16.2 or 0.17.0, whichever ships first**, and subsequent releases.
 - Check contents links, language links, images, and the packaged documentation before publication.
 - Add real, anonymized WordPress screenshots when available; do not substitute mockups for screenshots of actual behavior.
 
-This documentation refresh does not itself change the published plugin version or replace the existing release ZIP.
+Release 0.16.2 contains the documentation refresh without functional changes.
