@@ -1,0 +1,104 @@
+[
+  {
+    "version": "0.5.0",
+    "date": "2026-10-05",
+    "changes": {
+      "New": [
+        {
+          "en": "Explicit QuickNav, Builder and Purify product-family metadata, discreet card badges and a series filter. Empty families remain hidden.",
+          "de": "Ausdrückliche Serienzuordnung für QuickNav, Builder und Purify, dezente Karten-Badges und Serienfilter. Leere Serien bleiben verborgen."
+        },
+        {
+          "en": "Purify Elementor joins the approved catalog and Purify family; Multisite Toolbar Additions belongs to QuickNav.",
+          "de": "Purify Elementor ergänzt den freigegebenen Katalog und die Purify-Serie; Multisite Toolbar Additions gehört zu QuickNav."
+        }
+      ],
+      "Improved": [
+        {
+          "en": "Combine series and search with Fits my installation; reset filters without changing catalog settings.",
+          "de": "Serien und Suche mit „Passt zu meiner Installation“ kombinieren; Filter ohne Einstellungsänderung zurücksetzen."
+        }
+      ]
+    }
+  },
+  {
+    "version": "0.4.0",
+    "date": "2026-10-05",
+    "changes": {
+      "New": [
+        {
+          "en": "Host-domain translations in English, informal German and formal German.",
+          "de": "Übersetzungen über die Host-Textdomain auf Englisch, Deutsch (Du) und Deutsch (Sie)."
+        },
+        {
+          "en": "Shared last-host cleanup with optional settings deletion and a local accessible changelog.",
+          "de": "Gemeinsame Bereinigung beim letzten Host mit optionaler Einstellungslöschung und lokalem zugänglichem Änderungsverlauf."
+        }
+      ],
+      "Improved": [
+        {
+          "en": "Compatible runtime election across old and new hosts; current approved catalog sources and local icons.",
+          "de": "Kompatible Laufzeitwahl mit alten und neuen Hosts; aktuelle freigegebene Katalogquellen und lokale Icons."
+        }
+      ],
+      "Fix": [
+        {
+          "en": "Reject oversized archive contents before reading them and normalize files using bounded streams.",
+          "de": "Übergroße Archivinhalte vor dem Lesen ablehnen und Dateien über begrenzte Streams aufbereiten."
+        },
+        {
+          "en": "Preserve host code during integration and report platform conflicts without raising minimums.",
+          "de": "Host-Code bei Integration erhalten und Plattformkonflikte ohne Erhöhung der Mindestversionen melden."
+        }
+      ],
+      "Misc": [
+        {
+          "en": "Bilingual documentation, private security reporting through host repositories and documented data ownership.",
+          "de": "Zweisprachige Dokumentation, private Sicherheitsmeldungen über Host-Repositories und dokumentierte Datenzuordnung."
+        }
+      ]
+    }
+  },
+  {
+    "version": "0.3.0",
+    "date": "2026-10-01",
+    "changes": {
+      "New": [
+        {
+          "en": "Fourteen approved plugins, twelve original local icons and dated GitHub star counts.",
+          "de": "Vierzehn freigegebene Plugins, zwölf lokale Original-Icons und datierte GitHub-Sterne."
+        }
+      ],
+      "Improved": [
+        {
+          "en": "Explicit Multisite requirements and refreshed release provenance.",
+          "de": "Explizite Multisite-Anforderungen und aktualisierte Release-Quellen."
+        }
+      ]
+    }
+  },
+  {
+    "version": "0.2.0",
+    "date": "",
+    "changes": {
+      "New": [
+        {
+          "en": "Additional catalog entries, local product icons and GitHub star snapshots.",
+          "de": "Zusätzliche Katalogeinträge, lokale Produkt-Icons und GitHub-Sterne als Zahlenstand."
+        }
+      ]
+    }
+  },
+  {
+    "version": "0.1.0",
+    "date": "",
+    "changes": {
+      "New": [
+        {
+          "en": "Embedded curated catalog, verified installation, separate activation and optional online approvals.",
+          "de": "Eingebetteter kuratierter Katalog, geprüfte Installation, separate Aktivierung und optionale Online-Freigaben."
+        }
+      ]
+    }
+  }
+]

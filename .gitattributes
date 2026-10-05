@@ -15,3 +15,10 @@
 /.gitattributes export-ignore
 /.gitignore export-ignore
 /docs/RELEASE-CHECKLIST.md export-ignore
+
+*.jpg binary
+*.svg text eol=lf
+/docs/source export-ignore
+/tools export-ignore
+/assets-github/screenshots export-ignore
+/docs/RELEASE-CHECKLIST-de.md export-ignore

@@ -1,0 +1,11 @@
+# Sicherheit
+
+[English](SECURITY.md)
+
+Melde vermutete Sicherheitslücken vertraulich über [die GitHub-Sicherheitsmeldung für Brand Admin Schemes](https://github.com/deckerweb/brand-admin-schemes/security/advisories/new). Dieses Repository ist auch der Meldeweg für die eingebettete deckerweb Plugin Library. Falls die private Meldung nicht verfügbar ist, bitte den Maintainer in einem normalen Issue um Aktivierung, ohne Einzelheiten zur Sicherheitslücke zu veröffentlichen. Dieser lokale Build bestätigt nicht, dass die Repository-Einstellung aktiviert ist.
+
+Nenne BAS- und Library-Version, WordPress-/PHP-Version, Aktivierungsbereich, eine minimale Reproduktion und mögliche Auswirkungen. Sende keine Passwörter, Tokens, personenbezogenen Datensätze oder Kundendatenbanken. Normale Fehler und Funktionswünsche gehören in öffentliche Issues. Der Maintainer bewertet die Meldung vertraulich, erstellt und prüft eine Korrektur und stimmt die Offenlegung ab. Eine feste Reaktionsfrist wird nicht zugesagt. Produktive Websites sollten den neuesten stabilen Release verwenden; Entwicklungsstände benötigen eine eigene Abnahme.
+
+Einstellungsänderungen benötigen `manage_options` und eine gültige Nonce. Medienaktionen benötigen zusätzlich `upload_files` und beachten erlaubte Dateitypen, Dateigrößen und freien Multisite-Speicher. Kontextabhängige SVG-Icons entstehen aus festen Formen und bereinigtem Text; eingefügter SVG-Code wird nicht akzeptiert. SVG-Loginbilder benötigen Safe SVG und eine ausdrückliche Bestätigung. Importierte Einstellungen werden vor der Übernahme geprüft; Agenturbilder werden sofort in der Mediathek angelegt.
+
+BAS enthält keine Telemetrie. Assets werden lokal ausgeliefert. Updater V2 fragt Release-Metadaten im öffentlichen GitHub-Repository ab und lädt ein gewähltes Update herunter; GitHub erhält übliche HTTP-Informationen wie Server-IP und User-Agent. Ergebnisse werden zwischengespeichert. Der Online-Katalog der Library ist optional und zunächst aus; die konfigurierte Quelle erhält übliche Anfragemetadaten. Installation und Aktivierung sind getrennte, ausdrückliche Aktionen. BAS überträgt weder Branding-Einstellungen noch Loginmedien an GitHub. Externe Links werden erst beim Öffnen aufgerufen. Eigene Login-Hintergründe und Zitate sind Website-Inhalte und bei Aktivierung für Loginbesucher sichtbar.

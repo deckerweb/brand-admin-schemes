@@ -1,0 +1,1954 @@
+{
+  "Accent": {
+    "de_DE": "Akzent",
+    "de_DE_formal": "Akzent"
+  },
+  "Atmosphere": {
+    "de_DE": "Atmosphäre",
+    "de_DE_formal": "Atmosphäre"
+  },
+  "Balanced": {
+    "de_DE": "Ausgewogen",
+    "de_DE_formal": "Ausgewogen"
+  },
+  "Bold": {
+    "de_DE": "Kräftig",
+    "de_DE_formal": "Kräftig"
+  },
+  "Brand strength": {
+    "de_DE": "Markennähe",
+    "de_DE_formal": "Markennähe"
+  },
+  "Bricks palette": {
+    "de_DE": "Bricks-Palette",
+    "de_DE_formal": "Bricks-Palette"
+  },
+  "Button": {
+    "de_DE": "Schaltfläche",
+    "de_DE_formal": "Schaltfläche"
+  },
+  "Calm": {
+    "de_DE": "Ruhig",
+    "de_DE_formal": "Ruhig"
+  },
+  "Color frontend admin bar": {
+    "de_DE": "Frontend-Adminbar einfärben",
+    "de_DE_formal": "Frontend-Adminbar einfärben"
+  },
+  "Color source": {
+    "de_DE": "Farbquelle",
+    "de_DE_formal": "Farbquelle"
+  },
+  "Color sources could not be loaded. Manual colors remain available.": {
+    "de_DE": "Farbquellen konnten nicht geladen werden. Eigene Farben bleiben verfügbar.",
+    "de_DE_formal": "Farbquellen konnten nicht geladen werden. Eigene Farben bleiben verfügbar."
+  },
+  "Confirm source changes before saving.": {
+    "de_DE": "Bitte bestätige die Änderungen der Quellfarben vor dem Speichern.",
+    "de_DE_formal": "Bitte bestätigen Sie die Änderungen der Quellfarben vor dem Speichern."
+  },
+  "Contrast": {
+    "de_DE": "Kontrast",
+    "de_DE_formal": "Kontrast"
+  },
+  "Core Framework, ACSS and Bricks are shown only when readable colors are available. Saved color values remain available without the source.": {
+    "de_DE": "Core Framework, ACSS und Bricks erscheinen nur, wenn auslesbare Farben vorhanden sind. Gespeicherte Farbwerte bleiben auch ohne die Quelle erhalten.",
+    "de_DE_formal": "Core Framework, ACSS und Bricks erscheinen nur, wenn auslesbare Farben vorhanden sind. Gespeicherte Farbwerte bleiben auch ohne die Quelle erhalten."
+  },
+  "Current": {
+    "de_DE": "Aktuell",
+    "de_DE_formal": "Aktuell"
+  },
+  "Dark": {
+    "de_DE": "Dunkel",
+    "de_DE_formal": "Dunkel"
+  },
+  "Default for users": {
+    "de_DE": "Standard für Benutzer",
+    "de_DE_formal": "Standard für Benutzer"
+  },
+  "Default; allow personal selection": {
+    "de_DE": "Als Standard, eigene Auswahl erlauben",
+    "de_DE_formal": "Als Standard, eigene Auswahl erlauben"
+  },
+  "Derive automatically": {
+    "de_DE": "Automatisch ableiten",
+    "de_DE_formal": "Automatisch ableiten"
+  },
+  "Export JSON": {
+    "de_DE": "JSON exportieren",
+    "de_DE_formal": "JSON exportieren"
+  },
+  "File too large.": {
+    "de_DE": "Datei zu groß.",
+    "de_DE_formal": "Datei zu groß."
+  },
+  "Force for all users": {
+    "de_DE": "Für alle erzwingen",
+    "de_DE_formal": "Für alle erzwingen"
+  },
+  "Frontend admin bar color": {
+    "de_DE": "Farbe der Frontend-Adminbar",
+    "de_DE_formal": "Farbe der Frontend-Adminbar"
+  },
+  "Bring your brand colors to the WordPress admin, login, toolbar, and browser tabs. Use Core Framework, Bricks, ACSS, or your own palette.": {
+    "de_DE": "Gestalte WordPress-Admin, Login, Toolbar und Browser-Tabs mit deinen Markenfarben – aus Core Framework, Bricks, ACSS oder einer eigenen Palette.",
+    "de_DE_formal": "Gestalten Sie WordPress-Admin, Login, Toolbar und Browser-Tabs mit Ihren Markenfarben – aus Core Framework, Bricks, ACSS oder einer eigenen Palette."
+  },
+  "Higher brand strength makes the brand colors more prominent. Text and button colors are adjusted for readability.": {
+    "de_DE": "Eine höhere Markennähe verwendet die CI-Farben deutlicher. Text- und Buttonfarben werden für Lesbarkeit angepasst.",
+    "de_DE_formal": "Eine höhere Markennähe verwendet die CI-Farben deutlicher. Text- und Buttonfarben werden für Lesbarkeit angepasst."
+  },
+  "Hover over a card or focus it with the keyboard. Escape ends the temporary preview.": {
+    "de_DE": "Bewege die Maus über eine Karte oder fokussiere sie mit der Tastatur. Escape beendet die temporäre Vorschau.",
+    "de_DE_formal": "Bewegen Sie die Maus über eine Karte oder fokussieren Sie sie mit der Tastatur. Escape beendet die temporäre Vorschau."
+  },
+  "I reviewed the source color changes": {
+    "de_DE": "Ich habe die Änderungen der Quellfarben geprüft",
+    "de_DE_formal": "Ich habe die Änderungen der Quellfarben geprüft"
+  },
+  "Import JSON": {
+    "de_DE": "JSON importieren",
+    "de_DE_formal": "JSON importieren"
+  },
+  "Last save undone. Reload the page to see the full result.": {
+    "de_DE": "Letzte Speicherung rückgängig gemacht. Lade die Seite neu, um das Ergebnis vollständig zu sehen.",
+    "de_DE_formal": "Letzte Speicherung rückgängig gemacht. Laden Sie die Seite neu, um das Ergebnis vollständig zu sehen."
+  },
+  "Manual colors": {
+    "de_DE": "Eigene Farben",
+    "de_DE_formal": "Eigene Farben"
+  },
+  "Menu": {
+    "de_DE": "Menü",
+    "de_DE_formal": "Menü"
+  },
+  "New scheme": {
+    "de_DE": "Neues Schema",
+    "de_DE_formal": "Neues Schema"
+  },
+  "No default": {
+    "de_DE": "Keine Vorgabe",
+    "de_DE_formal": "Keine Vorgabe"
+  },
+  "No saved change to undo.": {
+    "de_DE": "Keine gespeicherte Änderung zum Rückgängigmachen.",
+    "de_DE_formal": "Keine gespeicherte Änderung zum Rückgängigmachen."
+  },
+  "Preview": {
+    "de_DE": "Vorschau",
+    "de_DE_formal": "Vorschau"
+  },
+  "Preview and apply": {
+    "de_DE": "Vorschau und Übernahme",
+    "de_DE_formal": "Vorschau und Übernahme"
+  },
+  "Primary": {
+    "de_DE": "Primär",
+    "de_DE_formal": "Primär"
+  },
+  "Reload page": {
+    "de_DE": "Seite neu laden",
+    "de_DE_formal": "Seite neu laden"
+  },
+  "Review source color changes": {
+    "de_DE": "Änderungen der Quellfarben prüfen",
+    "de_DE_formal": "Änderungen der Quellfarben prüfen"
+  },
+  "Save and activate selected scheme": {
+    "de_DE": "Ausgewähltes Schema speichern und aktivieren",
+    "de_DE_formal": "Ausgewähltes Schema speichern und aktivieren"
+  },
+  "Save and assign": {
+    "de_DE": "Speichern und zuweisen",
+    "de_DE_formal": "Speichern und zuweisen"
+  },
+  "Save failed": {
+    "de_DE": "Speichern fehlgeschlagen",
+    "de_DE_formal": "Speichern fehlgeschlagen"
+  },
+  "Save scheme": {
+    "de_DE": "Schema speichern",
+    "de_DE_formal": "Schema speichern"
+  },
+  "Saved": {
+    "de_DE": "Gespeichert",
+    "de_DE_formal": "Gespeichert"
+  },
+  "Saved schemes": {
+    "de_DE": "Gespeicherte Schemata",
+    "de_DE_formal": "Gespeicherte Schemata"
+  },
+  "Scheme imported. Check the preview and save to activate it.": {
+    "de_DE": "Schema eingelesen. Prüfe die Vorschau und speichere es zur Aktivierung.",
+    "de_DE_formal": "Schema eingelesen. Prüfen Sie die Vorschau und speichern Sie es zur Aktivierung."
+  },
+  "Scheme name": {
+    "de_DE": "Schema-Name",
+    "de_DE_formal": "Schema-Name"
+  },
+  "Scheme saved and activated for your account. Reload the page to see the full result.": {
+    "de_DE": "Schema gespeichert und für dein Benutzerkonto aktiviert. Lade die Seite neu, um es vollständig zu sehen.",
+    "de_DE_formal": "Schema gespeichert und für Ihr Benutzerkonto aktiviert. Laden Sie die Seite neu, um es vollständig zu sehen."
+  },
+  "Secondary": {
+    "de_DE": "Sekundär",
+    "de_DE_formal": "Sekundär"
+  },
+  "Source": {
+    "de_DE": "Quelle",
+    "de_DE_formal": "Quelle"
+  },
+  "Tertiary": {
+    "de_DE": "Tertiär",
+    "de_DE_formal": "Tertiär"
+  },
+  "The default applies to users on the WordPress default scheme; forcing also overrides personal selections.": {
+    "de_DE": "Der Standard gilt für Nutzer mit WordPress-Standardschema; „erzwingen“ überschreibt auch individuelle Auswahlen.",
+    "de_DE_formal": "Der Standard gilt für Nutzer mit WordPress-Standardschema; „erzwingen“ überschreibt auch individuelle Auswahlen."
+  },
+  "The source palette has changed since this scheme was saved. Review the old and new colors before updating it.": {
+    "de_DE": "Die Quellpalette hat sich seit dem Speichern geändert. Prüfe die alten und neuen Farben vor der Aktualisierung.",
+    "de_DE_formal": "Die Quellpalette hat sich seit dem Speichern geändert. Prüfen Sie die alten und neuen Farben vor der Aktualisierung."
+  },
+  "Undo is no longer available because settings changed.": {
+    "de_DE": "Rückgängig ist nicht mehr möglich, da sich die Einstellungen geändert haben.",
+    "de_DE_formal": "Rückgängig ist nicht mehr möglich, da sich die Einstellungen geändert haben."
+  },
+  "Undo last save": {
+    "de_DE": "Letzte Speicherung rückgängig",
+    "de_DE_formal": "Letzte Speicherung rückgängig"
+  },
+  "optional": {
+    "de_DE": "optional",
+    "de_DE_formal": "optional"
+  },
+  "See the release on GitHub.": {
+    "de_DE": "Siehe das Release auf GitHub.",
+    "de_DE_formal": "Siehe das Release auf GitHub."
+  },
+  "GitHub release does not contain the plugin main file.": {
+    "de_DE": "Das GitHub-Release enthält die Plugin-Hauptdatei nicht.",
+    "de_DE_formal": "Das GitHub-Release enthält die Plugin-Hauptdatei nicht."
+  },
+  "Could not prepare the GitHub release package.": {
+    "de_DE": "Das GitHub-Release-Paket konnte nicht vorbereitet werden.",
+    "de_DE_formal": "Das GitHub-Release-Paket konnte nicht vorbereitet werden."
+  },
+  "Could not access the update filesystem.": {
+    "de_DE": "Auf das Dateisystem für das Update konnte nicht zugegriffen werden.",
+    "de_DE_formal": "Auf das Dateisystem für das Update konnte nicht zugegriffen werden."
+  },
+  "Installation environment": {
+    "de_DE": "Installationsumgebung",
+    "de_DE_formal": "Installationsumgebung"
+  },
+  "Environment display": {
+    "de_DE": "Umgebungsanzeige",
+    "de_DE_formal": "Umgebungsanzeige"
+  },
+  "Displayed environment": {
+    "de_DE": "Angezeigte Umgebung",
+    "de_DE_formal": "Angezeigte Umgebung"
+  },
+  "Automatic detection": {
+    "de_DE": "Automatisch erkennen",
+    "de_DE_formal": "Automatisch erkennen"
+  },
+  "Local": {
+    "de_DE": "Lokal",
+    "de_DE_formal": "Lokal"
+  },
+  "Development": {
+    "de_DE": "Entwicklung",
+    "de_DE_formal": "Entwicklung"
+  },
+  "Staging": {
+    "de_DE": "Staging",
+    "de_DE_formal": "Staging"
+  },
+  "Live": {
+    "de_DE": "Live",
+    "de_DE_formal": "Live"
+  },
+  "Detected environment": {
+    "de_DE": "Erkannte Umgebung",
+    "de_DE_formal": "Erkannte Umgebung"
+  },
+  "WordPress setting": {
+    "de_DE": "WordPress-Einstellung",
+    "de_DE_formal": "WordPress-Einstellung"
+  },
+  "Site address hint": {
+    "de_DE": "Hinweis aus Website-Adresse",
+    "de_DE_formal": "Hinweis aus Website-Adresse"
+  },
+  "WordPress default": {
+    "de_DE": "WordPress-Standard",
+    "de_DE_formal": "WordPress-Standard"
+  },
+  "Manual selection": {
+    "de_DE": "Manuelle Auswahl",
+    "de_DE_formal": "Manuelle Auswahl"
+  },
+  "Installation environment: %s": {
+    "de_DE": "Installationsumgebung: %s",
+    "de_DE_formal": "Installationsumgebung: %s"
+  },
+  "The badge appears in the admin bar on both the frontend and backend. Automatic detection uses the WordPress environment first and cautious site address hints only when no environment is configured.": {
+    "de_DE": "Die Kennzeichnung erscheint in der Adminleiste im Frontend und Backend. Die automatische Erkennung verwendet zuerst die WordPress-Umgebung und zieht nur ohne konfigurierte Umgebung vorsichtige Hinweise aus der Website-Adresse heran.",
+    "de_DE_formal": "Die Kennzeichnung erscheint in der Adminleiste im Frontend und Backend. Die automatische Erkennung verwendet zuerst die WordPress-Umgebung und zieht nur ohne konfigurierte Umgebung vorsichtige Hinweise aus der Website-Adresse heran."
+  },
+  "PHP version": {
+    "de_DE": "PHP-Version",
+    "de_DE_formal": "PHP-Version"
+  },
+  "Enabled": {
+    "de_DE": "Aktiv",
+    "de_DE_formal": "Aktiv"
+  },
+  "Disabled": {
+    "de_DE": "Inaktiv",
+    "de_DE_formal": "Inaktiv"
+  },
+  "Brand Admin Schemes": {
+    "de_DE": "Markenfarben im Admin",
+    "de_DE_formal": "Markenfarben im Admin"
+  },
+  "Brand colors create readable WordPress admin schemes.": {
+    "de_DE": "Deine Markenfarben machen den WordPress-Admin vertraut und gut lesbar.",
+    "de_DE_formal": "Ihre Markenfarben machen den WordPress-Admin vertraut und gut lesbar."
+  },
+  "Loading editor…": {
+    "de_DE": "Editor wird geladen …",
+    "de_DE_formal": "Editor wird geladen …"
+  },
+  "Status colors": {
+    "de_DE": "Statusfarben",
+    "de_DE_formal": "Statusfarben"
+  },
+  "Custom color": {
+    "de_DE": "Eigene Farbe",
+    "de_DE_formal": "Eigene Farbe"
+  },
+  "Automatic color": {
+    "de_DE": "Automatische Farbe",
+    "de_DE_formal": "Automatische Farbe"
+  },
+  "Colors adapt to the visible toolbar. Custom colors keep their hue and change brightness only when needed for contrast.": {
+    "de_DE": "Die Farben passen sich an die sichtbare Adminleiste an. Eigene Farben behalten ihren Farbton; nur bei Bedarf wird die Helligkeit für ausreichenden Kontrast angepasst.",
+    "de_DE_formal": "Die Farben passen sich an die sichtbare Adminleiste an. Eigene Farben behalten ihren Farbton; nur bei Bedarf wird die Helligkeit für ausreichenden Kontrast angepasst."
+  },
+  "Welcome back": {
+    "de_DE": "Willkommen zurück",
+    "de_DE_formal": "Willkommen zurück"
+  },
+  "Login design": {
+    "de_DE": "Login gestalten",
+    "de_DE_formal": "Login gestalten"
+  },
+  "Style the WordPress login": {
+    "de_DE": "WordPress-Login gestalten",
+    "de_DE_formal": "WordPress-Login gestalten"
+  },
+  "Layout": {
+    "de_DE": "Layout",
+    "de_DE_formal": "Layout"
+  },
+  "Image on the left": {
+    "de_DE": "Bild links",
+    "de_DE_formal": "Bild links"
+  },
+  "Image on the right": {
+    "de_DE": "Bild rechts",
+    "de_DE_formal": "Bild rechts"
+  },
+  "Centered": {
+    "de_DE": "Zentriert",
+    "de_DE_formal": "Zentriert"
+  },
+  "Customer logo": {
+    "de_DE": "Kundenlogo",
+    "de_DE_formal": "Kundenlogo"
+  },
+  "Background image": {
+    "de_DE": "Hintergrundbild",
+    "de_DE_formal": "Hintergrundbild"
+  },
+  "Choose image": {
+    "de_DE": "Bild auswählen",
+    "de_DE_formal": "Bild auswählen"
+  },
+  "Remove image": {
+    "de_DE": "Bild entfernen",
+    "de_DE_formal": "Bild entfernen"
+  },
+  "Welcome heading": {
+    "de_DE": "Begrüßungsüberschrift",
+    "de_DE_formal": "Begrüßungsüberschrift"
+  },
+  "Welcome message": {
+    "de_DE": "Begrüßungstext",
+    "de_DE_formal": "Begrüßungstext"
+  },
+  "Image position": {
+    "de_DE": "Bildausschnitt",
+    "de_DE_formal": "Bildausschnitt"
+  },
+  "Overlay strength": {
+    "de_DE": "Stärke des Farbverlaufs",
+    "de_DE_formal": "Stärke des Farbverlaufs"
+  },
+  "Login colors": {
+    "de_DE": "Login-Farben",
+    "de_DE_formal": "Login-Farben"
+  },
+  "Use scheme colors": {
+    "de_DE": "Schemafarben verwenden",
+    "de_DE_formal": "Schemafarben verwenden"
+  },
+  "Customize login colors": {
+    "de_DE": "Login-Farben anpassen",
+    "de_DE_formal": "Login-Farben anpassen"
+  },
+  "Background": {
+    "de_DE": "Hintergrund",
+    "de_DE_formal": "Hintergrund"
+  },
+  "Surface": {
+    "de_DE": "Formularfläche",
+    "de_DE_formal": "Formularfläche"
+  },
+  "Button color": {
+    "de_DE": "Buttonfarbe",
+    "de_DE_formal": "Buttonfarbe"
+  },
+  "Desktop": {
+    "de_DE": "Desktop",
+    "de_DE_formal": "Desktop"
+  },
+  "Tablet": {
+    "de_DE": "Tablet",
+    "de_DE_formal": "Tablet"
+  },
+  "Mobile": {
+    "de_DE": "Mobil",
+    "de_DE_formal": "Mobil"
+  },
+  "Login preview": {
+    "de_DE": "Login-Vorschau",
+    "de_DE_formal": "Login-Vorschau"
+  },
+  "Username or email address": {
+    "de_DE": "Benutzername oder E-Mail-Adresse",
+    "de_DE_formal": "Benutzername oder E-Mail-Adresse"
+  },
+  "Password": {
+    "de_DE": "Passwort",
+    "de_DE_formal": "Passwort"
+  },
+  "Remember Me": {
+    "de_DE": "Angemeldet bleiben",
+    "de_DE_formal": "Angemeldet bleiben"
+  },
+  "Log In": {
+    "de_DE": "Anmelden",
+    "de_DE_formal": "Anmelden"
+  },
+  "Lost your password?": {
+    "de_DE": "Passwort vergessen?",
+    "de_DE_formal": "Passwort vergessen?"
+  },
+  "Preview login in a new tab": {
+    "de_DE": "Gespeicherte Login-Seite in neuem Tab öffnen",
+    "de_DE_formal": "Gespeicherte Login-Seite in neuem Tab öffnen"
+  },
+  "Logo and background image are optional. The standard WordPress forms remain available.": {
+    "de_DE": "Logo und Hintergrundbild sind optional. Die gewohnten WordPress-Formulare bleiben erhalten.",
+    "de_DE_formal": "Logo und Hintergrundbild sind optional. Die gewohnten WordPress-Formulare bleiben erhalten."
+  },
+  "Media library unavailable.": {
+    "de_DE": "Mediathek nicht verfügbar.",
+    "de_DE_formal": "Mediathek nicht verfügbar."
+  },
+  "Show site title": {
+    "de_DE": "Website-Titel anzeigen",
+    "de_DE_formal": "Website-Titel anzeigen"
+  },
+  "Show site tagline": {
+    "de_DE": "Website-Untertitel anzeigen",
+    "de_DE_formal": "Website-Untertitel anzeigen"
+  },
+  "Uses the WordPress site title when empty; falls back to Welcome back.": {
+    "de_DE": "Ohne eigene Eingabe erscheint der WordPress-Website-Titel, sonst „Willkommen zurück“.",
+    "de_DE_formal": "Ohne eigene Eingabe erscheint der WordPress-Website-Titel, sonst „Willkommen zurück“."
+  },
+  "Uses the WordPress tagline when empty.": {
+    "de_DE": "Ohne eigene Eingabe erscheint der WordPress-Untertitel.",
+    "de_DE_formal": "Ohne eigene Eingabe erscheint der WordPress-Untertitel."
+  },
+  "Site Icon is used automatically. Choose an image to override it.": {
+    "de_DE": "Das Website-Icon wird automatisch verwendet. Ein eigenes Bild kann es ersetzen.",
+    "de_DE_formal": "Das Website-Icon wird automatisch verwendet. Ein eigenes Bild kann es ersetzen."
+  },
+  "Gradient style": {
+    "de_DE": "Farbverlauf",
+    "de_DE_formal": "Farbverlauf"
+  },
+  "Diagonal": {
+    "de_DE": "Diagonal",
+    "de_DE_formal": "Diagonal"
+  },
+  "Aurora": {
+    "de_DE": "Aurora",
+    "de_DE_formal": "Aurora"
+  },
+  "Radial": {
+    "de_DE": "Radial",
+    "de_DE_formal": "Radial"
+  },
+  "Surprise me (stable per site)": {
+    "de_DE": "Überraschung (dauerhaft pro Website)",
+    "de_DE_formal": "Überraschung (dauerhaft pro Website)"
+  },
+  "Page background": {
+    "de_DE": "Seitenhintergrund",
+    "de_DE_formal": "Seitenhintergrund"
+  },
+  "SVG logo (requires Safe SVG)": {
+    "de_DE": "SVG-Logo (benötigt Safe SVG)",
+    "de_DE_formal": "SVG-Logo (benötigt Safe SVG)"
+  },
+  "I understand: SVG files must be sanitized. Only administrators can choose one here.": {
+    "de_DE": "Mir ist bewusst: SVG-Dateien müssen bereinigt sein. Nur Administratoren können hier ein SVG wählen.",
+    "de_DE_formal": "Mir ist bewusst: SVG-Dateien müssen bereinigt sein. Nur Administratoren können hier ein SVG wählen."
+  },
+  "Install and activate Safe SVG to use sanitized SVG logos.": {
+    "de_DE": "Für bereinigte SVG-Logos installiere und aktiviere Safe SVG.",
+    "de_DE_formal": "Installieren und aktivieren Sie Safe SVG für bereinigte SVG-Logos."
+  },
+  "Confirm sanitized SVG logos first.": {
+    "de_DE": "Bestätige zuerst die Verwendung bereinigter SVG-Logos.",
+    "de_DE_formal": "Bestätigen Sie zuerst die Verwendung bereinigter SVG-Logos."
+  },
+  "Content alignment": {
+    "de_DE": "Inhalt ausrichten",
+    "de_DE_formal": "Inhalt ausrichten"
+  },
+  "Align left": {
+    "de_DE": "Linksbündig",
+    "de_DE_formal": "Linksbündig"
+  },
+  "Align center": {
+    "de_DE": "Zentriert",
+    "de_DE_formal": "Zentriert"
+  },
+  "Customer banner": {
+    "de_DE": "Kundenbanner",
+    "de_DE_formal": "Kundenbanner"
+  },
+  "Logo display": {
+    "de_DE": "Logo-Darstellung",
+    "de_DE_formal": "Logo-Darstellung"
+  },
+  "Use logo or Site Icon": {
+    "de_DE": "Logo oder Website-Icon",
+    "de_DE_formal": "Logo oder Website-Icon"
+  },
+  "Use banner": {
+    "de_DE": "Banner verwenden",
+    "de_DE_formal": "Banner verwenden"
+  },
+  "A banner replaces the logo and stays within the form width.": {
+    "de_DE": "Das Banner ersetzt das Logo und bleibt innerhalb der Formularbreite.",
+    "de_DE_formal": "Das Banner ersetzt das Logo und bleibt innerhalb der Formularbreite."
+  },
+  "A wide image works best; its full shape remains visible.": {
+    "de_DE": "Ein breites Bild eignet sich am besten; es bleibt vollständig sichtbar.",
+    "de_DE_formal": "Ein breites Bild eignet sich am besten; es bleibt vollständig sichtbar."
+  },
+  "Quote on image panel": {
+    "de_DE": "Zitat auf der Bildfläche",
+    "de_DE_formal": "Zitat auf der Bildfläche"
+  },
+  "Attribution (optional)": {
+    "de_DE": "Urheberangabe (optional)",
+    "de_DE_formal": "Urheberangabe (optional)"
+  },
+  "Optional short quote": {
+    "de_DE": "Optionales kurzes Zitat",
+    "de_DE_formal": "Optionales kurzes Zitat"
+  },
+  "A short quote appears only on the image or gradient panel.": {
+    "de_DE": "Ein kurzes Zitat erscheint nur auf der Bild- oder Verlaufsfläche.",
+    "de_DE_formal": "Ein kurzes Zitat erscheint nur auf der Bild- oder Verlaufsfläche."
+  },
+  "Gradients use the current scheme colors. A selected background image takes priority.": {
+    "de_DE": "Die Verläufe verwenden die aktuellen Schemafarben. Ein gewähltes Hintergrundbild hat Vorrang.",
+    "de_DE_formal": "Die Verläufe verwenden die aktuellen Schemafarben. Ein gewähltes Hintergrundbild hat Vorrang."
+  },
+  "Dusk": {
+    "de_DE": "Abendlicht",
+    "de_DE_formal": "Abendlicht"
+  },
+  "Mist": {
+    "de_DE": "Nebel",
+    "de_DE_formal": "Nebel"
+  },
+  "Bloom": {
+    "de_DE": "Blüte",
+    "de_DE_formal": "Blüte"
+  },
+  "Horizon": {
+    "de_DE": "Horizont",
+    "de_DE_formal": "Horizont"
+  },
+  "Satin": {
+    "de_DE": "Satin",
+    "de_DE_formal": "Satin"
+  },
+  "Tab icons": {
+    "de_DE": "Tab-Icons",
+    "de_DE_formal": "Tab-Icons"
+  },
+  "Distinguish frontend, admin and builder tabs at a glance.": {
+    "de_DE": "Frontend, Admin und Builder auf einen Blick unterscheiden.",
+    "de_DE_formal": "Frontend, Admin und Builder auf einen Blick unterscheiden."
+  },
+  "Enable contextual tab icons": {
+    "de_DE": "Kontextbezogene Tab-Icons aktivieren",
+    "de_DE_formal": "Kontextbezogene Tab-Icons aktivieren"
+  },
+  "Generate frontend icon": {
+    "de_DE": "Frontend-Icon erzeugen",
+    "de_DE_formal": "Frontend-Icon erzeugen"
+  },
+  "Keep WordPress Site Icon": {
+    "de_DE": "WordPress-Site-Icon beibehalten",
+    "de_DE_formal": "WordPress-Site-Icon beibehalten"
+  },
+  "Frontend tab": {
+    "de_DE": "Frontend-Tab",
+    "de_DE_formal": "Frontend-Tab"
+  },
+  "Admin tab": {
+    "de_DE": "Admin-Tab",
+    "de_DE_formal": "Admin-Tab"
+  },
+  "Builder tab": {
+    "de_DE": "Builder-Tab",
+    "de_DE_formal": "Builder-Tab"
+  },
+  "Letters": {
+    "de_DE": "Buchstaben",
+    "de_DE_formal": "Buchstaben"
+  },
+  "Circle outline": {
+    "de_DE": "Kreisumriss",
+    "de_DE_formal": "Kreisumriss"
+  },
+  "Diamond outline": {
+    "de_DE": "Rautenumriss",
+    "de_DE_formal": "Rautenumriss"
+  },
+  "Grid outline": {
+    "de_DE": "Rasterumriss",
+    "de_DE_formal": "Rasterumriss"
+  },
+  "Bricks outline": {
+    "de_DE": "Baustein-Umriss",
+    "de_DE_formal": "Baustein-Umriss"
+  },
+  "Oxygen outline": {
+    "de_DE": "Kreisringe",
+    "de_DE_formal": "Kreisringe"
+  },
+  "Automatic builder symbol": {
+    "de_DE": "Automatisches Builder-Symbol",
+    "de_DE_formal": "Automatisches Builder-Symbol"
+  },
+  "Abbreviation (up to 3 characters)": {
+    "de_DE": "Kürzel (bis zu 3 Zeichen)",
+    "de_DE_formal": "Kürzel (bis zu 3 Zeichen)"
+  },
+  "Background color": {
+    "de_DE": "Hintergrundfarbe",
+    "de_DE_formal": "Hintergrundfarbe"
+  },
+  "Foreground color": {
+    "de_DE": "Vordergrundfarbe",
+    "de_DE_formal": "Vordergrundfarbe"
+  },
+  "Automatic from scheme": {
+    "de_DE": "Automatisch aus dem Schema",
+    "de_DE_formal": "Automatisch aus dem Schema"
+  },
+  "Automatic contrast": {
+    "de_DE": "Automatischer Kontrast",
+    "de_DE_formal": "Automatischer Kontrast"
+  },
+  "Builder colors follow Bricks, Elementor or Oxygen when detected.": {
+    "de_DE": "Builder-Farben folgen bei Erkennung Bricks, Elementor oder Oxygen.",
+    "de_DE_formal": "Builder-Farben folgen bei Erkennung Bricks, Elementor oder Oxygen."
+  },
+  "Builder color preset": {
+    "de_DE": "Builder-Farbvorlage",
+    "de_DE_formal": "Builder-Farbvorlage"
+  },
+  "Automatically detected": {
+    "de_DE": "Automatisch erkannt",
+    "de_DE_formal": "Automatisch erkannt"
+  },
+  "Leave colors empty to follow the active scheme or builder preset.": {
+    "de_DE": "Leere Farbfelder folgen dem aktiven Schema oder der Builder-Vorlage.",
+    "de_DE_formal": "Leere Farbfelder folgen dem aktiven Schema oder der Builder-Vorlage."
+  },
+  "Symbol": {
+    "de_DE": "Symbol",
+    "de_DE_formal": "Symbol"
+  },
+  "Spark outline": {
+    "de_DE": "Sternen-Umriss",
+    "de_DE_formal": "Sternen-Umriss"
+  },
+  "Leaf outline": {
+    "de_DE": "Blattumriss",
+    "de_DE_formal": "Blattumriss"
+  },
+  "Shield outline": {
+    "de_DE": "Schildumriss",
+    "de_DE_formal": "Schildumriss"
+  },
+  "Save all changes": {
+    "de_DE": "Alle Änderungen speichern",
+    "de_DE_formal": "Alle Änderungen speichern"
+  },
+  "Jump to a section": {
+    "de_DE": "Zu einem Abschnitt springen",
+    "de_DE_formal": "Zu einem Abschnitt springen"
+  },
+  "Jump to:": {
+    "de_DE": "Direkt zu:",
+    "de_DE_formal": "Direkt zu:"
+  },
+  "Brand colors": {
+    "de_DE": "Markenfarben",
+    "de_DE_formal": "Markenfarben"
+  },
+  "Scheme & toolbar": {
+    "de_DE": "Schema und Toolbar",
+    "de_DE_formal": "Schema und Toolbar"
+  },
+  "Browser favicons": {
+    "de_DE": "Browser-Favicons",
+    "de_DE_formal": "Browser-Favicons"
+  },
+  "Import & export": {
+    "de_DE": "Import und Export",
+    "de_DE_formal": "Import und Export"
+  },
+  "Export settings as JSON": {
+    "de_DE": "Einstellungen als JSON exportieren",
+    "de_DE_formal": "Einstellungen als JSON exportieren"
+  },
+  "Import settings from JSON": {
+    "de_DE": "Einstellungen aus JSON importieren",
+    "de_DE_formal": "Einstellungen aus JSON importieren"
+  },
+  "Export your color schemes and plugin settings as JSON, or import a file to review it before saving. Images stay in the WordPress media library and are not included in the JSON file.": {
+    "de_DE": "Exportiere Farbschemata und Plugin-Einstellungen als JSON oder importiere eine Datei zur Prüfung vor dem Speichern. Bilder bleiben in der WordPress-Mediathek und sind nicht in der JSON-Datei enthalten.",
+    "de_DE_formal": "Exportieren Sie Farbschemata und Plugin-Einstellungen als JSON oder importieren Sie eine Datei zur Prüfung vor dem Speichern. Bilder bleiben in der WordPress-Mediathek und sind nicht in der JSON-Datei enthalten."
+  },
+  "Use “Save all changes” in the fixed bar above to activate the selected scheme and apply settings across this page.": {
+    "de_DE": "Mit „Alle Änderungen speichern“ in der fixierten Leiste oben aktivierst du das gewählte Schema und übernimmst alle Einstellungen dieser Seite.",
+    "de_DE_formal": "Mit „Alle Änderungen speichern“ in der fixierten Leiste oben aktivieren Sie das gewählte Schema und übernehmen alle Einstellungen dieser Seite."
+  },
+  "All settings saved. The selected admin scheme is active for your account. Reload the page to see every change.": {
+    "de_DE": "Alle Einstellungen gespeichert. Das gewählte Admin-Schema ist für dein Konto aktiv. Lade die Seite neu, um alle Änderungen zu sehen.",
+    "de_DE_formal": "Alle Einstellungen gespeichert. Das gewählte Admin-Schema ist für Ihr Konto aktiv. Laden Sie die Seite neu, um alle Änderungen zu sehen."
+  },
+  "Settings imported for review. Check the previews, then save all changes to apply them.": {
+    "de_DE": "Einstellungen zur Prüfung importiert. Kontrolliere die Vorschauen und speichere anschließend alle Änderungen.",
+    "de_DE_formal": "Einstellungen zur Prüfung importiert. Kontrollieren Sie die Vorschauen und speichern Sie anschließend alle Änderungen."
+  },
+  "Browser tab icons (favicons)": {
+    "de_DE": "Icons für Browser-Tabs (Favicons)",
+    "de_DE_formal": "Icons für Browser-Tabs (Favicons)"
+  },
+  "These small icons appear in browser tabs, helping you tell the public website, WordPress admin and builder editor apart.": {
+    "de_DE": "Diese kleinen Icons erscheinen in den Tabs deines Browsers. So erkennst du sofort, ob ein Tab die Website, den WordPress-Admin oder den Builder-Editor zeigt.",
+    "de_DE_formal": "Diese kleinen Icons erscheinen in den Tabs Ihres Browsers. So erkennen Sie sofort, ob ein Tab die Website, den WordPress-Admin oder den Builder-Editor zeigt."
+  },
+  "Use different icons in browser tabs": {
+    "de_DE": "Unterschiedliche Icons in Browser-Tabs verwenden",
+    "de_DE_formal": "Unterschiedliche Icons in Browser-Tabs verwenden"
+  },
+  "Website browser tab": {
+    "de_DE": "Browser-Tab der Website",
+    "de_DE_formal": "Browser-Tab der Website"
+  },
+  "WordPress admin browser tab": {
+    "de_DE": "Browser-Tab des WordPress-Admins",
+    "de_DE_formal": "Browser-Tab des WordPress-Admins"
+  },
+  "Builder editor browser tab": {
+    "de_DE": "Browser-Tab des Builder-Editors",
+    "de_DE_formal": "Browser-Tab des Builder-Editors"
+  },
+  "Generate a website favicon": {
+    "de_DE": "Favicon für die Website erzeugen",
+    "de_DE_formal": "Favicon für die Website erzeugen"
+  },
+  "Keep the WordPress Site Icon as favicon": {
+    "de_DE": "WordPress-Site-Icon als Favicon beibehalten",
+    "de_DE_formal": "WordPress-Site-Icon als Favicon beibehalten"
+  },
+  "In a detected builder editor tab, the favicon uses the builder color preset. Ordinary website tabs keep their website icon.": {
+    "de_DE": "Im erkannten Builder-Editor verwendet das Favicon die Farben der Builder-Vorlage. Normale Website-Tabs behalten ihr Website-Icon.",
+    "de_DE_formal": "Im erkannten Builder-Editor verwendet das Favicon die Farben der Builder-Vorlage. Normale Website-Tabs behalten ihr Website-Icon."
+  },
+  "Color scheme": {
+    "de_DE": "Farbschema",
+    "de_DE_formal": "Farbschema"
+  },
+  "Unsaved changes": {
+    "de_DE": "Ungespeicherte Änderungen",
+    "de_DE_formal": "Ungespeicherte Änderungen"
+  },
+  "All changes saved": {
+    "de_DE": "Alles gespeichert",
+    "de_DE_formal": "Alles gespeichert"
+  },
+  "Discard unsaved changes and reload the page?": {
+    "de_DE": "Ungespeicherte Änderungen verwerfen und die Seite neu laden?",
+    "de_DE_formal": "Ungespeicherte Änderungen verwerfen und die Seite neu laden?"
+  },
+  "Color contrast check": {
+    "de_DE": "Farbkontrast prüfen",
+    "de_DE_formal": "Farbkontrast prüfen"
+  },
+  "Estimated text contrast for this scheme and login palette. Other plugins can change the final appearance.": {
+    "de_DE": "Geschätzter Textkontrast für dieses Schema und die Login-Farben. Andere Plugins können die tatsächliche Darstellung verändern.",
+    "de_DE_formal": "Geschätzter Textkontrast für dieses Schema und die Login-Farben. Andere Plugins können die tatsächliche Darstellung verändern."
+  },
+  "Admin menu": {
+    "de_DE": "Admin-Menü",
+    "de_DE_formal": "Admin-Menü"
+  },
+  "Admin submenu": {
+    "de_DE": "Admin-Untermenü",
+    "de_DE_formal": "Admin-Untermenü"
+  },
+  "Admin toolbar": {
+    "de_DE": "Admin-Toolbar",
+    "de_DE_formal": "Admin-Toolbar"
+  },
+  "Admin buttons": {
+    "de_DE": "Admin-Buttons",
+    "de_DE_formal": "Admin-Buttons"
+  },
+  "Login background": {
+    "de_DE": "Login-Hintergrund",
+    "de_DE_formal": "Login-Hintergrund"
+  },
+  "Login button": {
+    "de_DE": "Login-Button",
+    "de_DE_formal": "Login-Button"
+  },
+  "Readable": {
+    "de_DE": "Gut lesbar",
+    "de_DE_formal": "Gut lesbar"
+  },
+  "Check contrast": {
+    "de_DE": "Kontrast prüfen",
+    "de_DE_formal": "Kontrast prüfen"
+  },
+  "Try text": {
+    "de_DE": "Textvorschlag:",
+    "de_DE_formal": "Textvorschlag:"
+  },
+  "Try background": {
+    "de_DE": "Hintergrundvorschlag:",
+    "de_DE_formal": "Hintergrundvorschlag:"
+  },
+  "Mark the installation environment on generated favicons": {
+    "de_DE": "Umgebung auf erzeugten Favicons markieren",
+    "de_DE_formal": "Umgebung auf erzeugten Favicons markieren"
+  },
+  "A small letter and color distinguish Local, Development, Staging and Live tabs. A retained WordPress Site Icon stays unchanged.": {
+    "de_DE": "Ein kleiner Buchstabe mit Farbe unterscheidet lokale, Entwicklungs-, Staging- und Live-Tabs. Ein beibehaltenes WordPress-Site-Icon bleibt unverändert.",
+    "de_DE_formal": "Ein kleiner Buchstabe mit Farbe unterscheidet lokale, Entwicklungs-, Staging- und Live-Tabs. Ein beibehaltenes WordPress-Site-Icon bleibt unverändert."
+  },
+  "Export agency package (.zip)": {
+    "de_DE": "Agentur-Paket exportieren (.zip)",
+    "de_DE_formal": "Agentur-Paket exportieren (.zip)"
+  },
+  "Import agency package (.zip)": {
+    "de_DE": "Agentur-Paket importieren (.zip)",
+    "de_DE_formal": "Agentur-Paket importieren (.zip)"
+  },
+  "An agency package includes settings and local PNG, JPEG, WebP or GIF images (up to 4 MB each). SVG files are excluded. On import, images are added to the Media Library immediately; review and save the settings afterward. ZIP support is required on the server.": {
+    "de_DE": "Ein Agentur-Paket enthält Einstellungen und lokale PNG-, JPEG-, WebP- oder GIF-Bilder (jeweils bis 4 MB). SVG-Dateien sind ausgeschlossen. Beim Import werden Bilder sofort in die Mediathek übernommen; prüfe und speichere anschließend die Einstellungen. Der Server muss ZIP unterstützen.",
+    "de_DE_formal": "Ein Agentur-Paket enthält Einstellungen und lokale PNG-, JPEG-, WebP- oder GIF-Bilder (jeweils bis 4 MB). SVG-Dateien sind ausgeschlossen. Beim Import werden Bilder sofort in die Mediathek übernommen; prüfen und speichern Sie anschließend die Einstellungen. Der Server muss ZIP unterstützen."
+  },
+  "Export failed": {
+    "de_DE": "Export fehlgeschlagen",
+    "de_DE_formal": "Export fehlgeschlagen"
+  },
+  "Import failed": {
+    "de_DE": "Import fehlgeschlagen",
+    "de_DE_formal": "Import fehlgeschlagen"
+  },
+  "Agency package is too large.": {
+    "de_DE": "Das Agentur-Paket ist zu groß.",
+    "de_DE_formal": "Das Agentur-Paket ist zu groß."
+  },
+  "Agency package imported for review. Images were added to the Media Library; save all changes to apply settings.": {
+    "de_DE": "Agentur-Paket zur Prüfung importiert. Bilder wurden der Mediathek hinzugefügt; speichere alle Änderungen, um die Einstellungen zu übernehmen.",
+    "de_DE_formal": "Agentur-Paket zur Prüfung importiert. Bilder wurden der Mediathek hinzugefügt; speichern Sie alle Änderungen, um die Einstellungen zu übernehmen."
+  },
+  "Offer brand colors in the Gutenberg palette": {
+    "de_DE": "Markenfarben in der Gutenberg-Palette anbieten",
+    "de_DE_formal": "Markenfarben in der Gutenberg-Palette anbieten"
+  },
+  "Adds Primary, Secondary, Tertiary and Accent as extra editor colors. Existing theme colors stay available; the saved active scheme provides the values.": {
+    "de_DE": "Ergänzt Primär, Sekundär, Tertiär und Akzent als zusätzliche Editor-Farben. Vorhandene Theme-Farben bleiben erhalten; das gespeicherte aktive Schema liefert die Werte.",
+    "de_DE_formal": "Ergänzt Primär, Sekundär, Tertiär und Akzent als zusätzliche Editor-Farben. Vorhandene Theme-Farben bleiben erhalten; das gespeicherte aktive Schema liefert die Werte."
+  },
+  "ZIP support is unavailable on this server.": {
+    "de_DE": "ZIP-Unterstützung ist auf diesem Server nicht verfügbar.",
+    "de_DE_formal": "ZIP-Unterstützung ist auf diesem Server nicht verfügbar."
+  },
+  "Could not create the agency package.": {
+    "de_DE": "Das Agentur-Paket konnte nicht erstellt werden.",
+    "de_DE_formal": "Das Agentur-Paket konnte nicht erstellt werden."
+  },
+  "Invalid or oversized agency package.": {
+    "de_DE": "Ungültiges oder zu großes Agentur-Paket.",
+    "de_DE_formal": "Ungültiges oder zu großes Agentur-Paket."
+  },
+  "Invalid agency package.": {
+    "de_DE": "Ungültiges Agentur-Paket.",
+    "de_DE_formal": "Ungültiges Agentur-Paket."
+  },
+  "Invalid image in agency package.": {
+    "de_DE": "Ungültiges Bild im Agentur-Paket.",
+    "de_DE_formal": "Ungültiges Bild im Agentur-Paket."
+  },
+  "Could not import package images.": {
+    "de_DE": "Bilder aus dem Agentur-Paket konnten nicht importiert werden.",
+    "de_DE_formal": "Bilder aus dem Agentur-Paket konnten nicht importiert werden."
+  },
+  "Brand Primary": {
+    "de_DE": "Marke: Primär",
+    "de_DE_formal": "Marke: Primär"
+  },
+  "Brand Secondary": {
+    "de_DE": "Marke: Sekundär",
+    "de_DE_formal": "Marke: Sekundär"
+  },
+  "Brand Tertiary": {
+    "de_DE": "Marke: Tertiär",
+    "de_DE_formal": "Marke: Tertiär"
+  },
+  "Brand Accent": {
+    "de_DE": "Marke: Akzent",
+    "de_DE_formal": "Marke: Akzent"
+  },
+  "Forbidden": {
+    "de_DE": "Zugriff verweigert",
+    "de_DE_formal": "Zugriff verweigert"
+  },
+  "Invalid scheme colors": {
+    "de_DE": "Ungültige Schemafarben",
+    "de_DE_formal": "Ungültige Schemafarben"
+  },
+  "Unknown file format": {
+    "de_DE": "Unbekanntes Dateiformat",
+    "de_DE_formal": "Unbekanntes Dateiformat"
+  },
+  "CI · ": {
+    "de_DE": "CI · ",
+    "de_DE_formal": "CI · "
+  },
+  "Plugin information": {
+    "de_DE": "Plugin-Informationen",
+    "de_DE_formal": "Plugin-Informationen"
+  },
+  "Version": {
+    "de_DE": "Version",
+    "de_DE_formal": "Version"
+  },
+  "Documentation": {
+    "de_DE": "Dokumentation",
+    "de_DE_formal": "Dokumentation"
+  },
+  "Changelog": {
+    "de_DE": "Änderungsprotokoll",
+    "de_DE_formal": "Änderungsprotokoll"
+  },
+  "Close": {
+    "de_DE": "Schließen",
+    "de_DE_formal": "Schließen"
+  },
+  "Your brand colors, from the admin and login to browser tabs.": {
+    "de_DE": "Deine Markenfarben – im Admin, beim Login und in den Browser-Tabs.",
+    "de_DE_formal": "Ihre Markenfarben – im Admin, beim Login und in den Browser-Tabs."
+  },
+  "Your colors. Your WordPress.": {
+    "de_DE": "Deine Farben. Dein WordPress.",
+    "de_DE_formal": "Ihre Farben. Ihr WordPress."
+  },
+  "Plugin website": {
+    "de_DE": "Plugin-Website",
+    "de_DE_formal": "Plugin-Website"
+  },
+  "The update filesystem is unavailable. Please try again.": {
+    "de_DE": "Das Dateisystem für das Update ist nicht verfügbar. Bitte versuche es erneut.",
+    "de_DE_formal": "Das Dateisystem für das Update ist nicht verfügbar. Bitte versuchen Sie es erneut."
+  },
+  "The GitHub package does not contain the Brand Admin Schemes plugin file.": {
+    "de_DE": "Das GitHub-Paket enthält nicht die Plugin-Datei von Brand Admin Schemes.",
+    "de_DE_formal": "Das GitHub-Paket enthält nicht die Plugin-Datei von Brand Admin Schemes."
+  },
+  "The GitHub package could not be prepared. The installed version has been kept.": {
+    "de_DE": "Das GitHub-Paket konnte nicht vorbereitet werden. Die installierte Version wurde beibehalten.",
+    "de_DE_formal": "Das GitHub-Paket konnte nicht vorbereitet werden. Die installierte Version wurde beibehalten."
+  },
+  "The update package could not be checked.": {
+    "de_DE": "Das Updatepaket konnte nicht geprüft werden.",
+    "de_DE_formal": "Das Updatepaket konnte nicht geprüft werden."
+  },
+  "The package identity or version does not match a newer Brand Admin Schemes release.": {
+    "de_DE": "Die Paketidentität oder Version entspricht keinem neueren Release von Brand Admin Schemes.",
+    "de_DE_formal": "Die Paketidentität oder Version entspricht keinem neueren Release von Brand Admin Schemes."
+  },
+  "The package version differs from the offered update. Please check for updates again.": {
+    "de_DE": "Die Paketversion weicht vom angebotenen Update ab. Bitte prüfe erneut auf Updates.",
+    "de_DE_formal": "Die Paketversion weicht vom angebotenen Update ab. Bitte prüfen Sie erneut auf Updates."
+  },
+  "The update package has missing or invalid WordPress/PHP requirements.": {
+    "de_DE": "Die WordPress-/PHP-Voraussetzungen des Updatepakets fehlen oder sind ungültig.",
+    "de_DE_formal": "Die WordPress-/PHP-Voraussetzungen des Updatepakets fehlen oder sind ungültig."
+  },
+  "This release requires a newer WordPress or PHP version. The installed version has been kept.": {
+    "de_DE": "Dieses Release benötigt eine neuere WordPress- oder PHP-Version. Die installierte Version wurde beibehalten.",
+    "de_DE_formal": "Dieses Release benötigt eine neuere WordPress- oder PHP-Version. Die installierte Version wurde beibehalten."
+  },
+  "Active scheme": {
+    "de_DE": "Aktives Farbschema",
+    "de_DE_formal": "Aktives Farbschema"
+  },
+  "Palette source": {
+    "de_DE": "Palettenquelle",
+    "de_DE_formal": "Palettenquelle"
+  },
+  "Frontend toolbar styling": {
+    "de_DE": "Toolbar-Gestaltung im Frontend",
+    "de_DE_formal": "Toolbar-Gestaltung im Frontend"
+  },
+  "Browser tab icons": {
+    "de_DE": "Browser-Tab-Icons",
+    "de_DE_formal": "Browser-Tab-Icons"
+  },
+  "Environment selection": {
+    "de_DE": "Umgebungsauswahl",
+    "de_DE_formal": "Umgebungsauswahl"
+  },
+  "Automatic": {
+    "de_DE": "Automatisch",
+    "de_DE_formal": "Automatisch"
+  },
+  "Unknown": {
+    "de_DE": "Unbekannt",
+    "de_DE_formal": "Unbekannt"
+  },
+  "Brand Admin Schemes colors": {
+    "de_DE": "Markenadmin-Schemen: Farben",
+    "de_DE_formal": "Markenadmin-Schemen: Farben"
+  },
+  "Brand Admin Schemes login images": {
+    "de_DE": "Markenadmin-Schemen: Login-Bilder",
+    "de_DE_formal": "Markenadmin-Schemen: Login-Bilder"
+  },
+  "Review plugin settings": {
+    "de_DE": "Plugin-Einstellungen prüfen",
+    "de_DE_formal": "Plugin-Einstellungen prüfen"
+  },
+  "Saved brand colors are valid": {
+    "de_DE": "Die gespeicherten Markenfarben sind gültig",
+    "de_DE_formal": "Die gespeicherten Markenfarben sind gültig"
+  },
+  "Saved brand colors need review": {
+    "de_DE": "Die gespeicherten Markenfarben müssen geprüft werden",
+    "de_DE_formal": "Die gespeicherten Markenfarben müssen geprüft werden"
+  },
+  "No unavailable selected login images were found": {
+    "de_DE": "Es wurden keine nicht verfügbaren ausgewählten Login-Bilder gefunden",
+    "de_DE_formal": "Es wurden keine nicht verfügbaren ausgewählten Login-Bilder gefunden"
+  },
+  "A selected login image is unavailable; review the logo, banner or background selection": {
+    "de_DE": "Ein ausgewähltes Login-Bild ist nicht verfügbar. Bitte prüfe die Auswahl für Logo, Banner oder Hintergrund.",
+    "de_DE_formal": "Ein ausgewähltes Login-Bild ist nicht verfügbar. Bitte prüfen Sie die Auswahl für Logo, Banner oder Hintergrund."
+  },
+  "None": {
+    "de_DE": "Keine",
+    "de_DE_formal": "Keine"
+  },
+  "Manual": {
+    "de_DE": "Manuell",
+    "de_DE_formal": "Manuell"
+  },
+  "Site scheme selected": {
+    "de_DE": "Website-Farbschema ausgewählt",
+    "de_DE_formal": "Website-Farbschema ausgewählt"
+  },
+  "Environment source": {
+    "de_DE": "Quelle der Umgebungserkennung",
+    "de_DE_formal": "Quelle der Umgebungserkennung"
+  },
+  "Guided setup": {
+    "de_DE": "Geführte Einrichtung",
+    "de_DE_formal": "Geführte Einrichtung"
+  },
+  "Four simple steps. Your existing settings stay available.": {
+    "de_DE": "Vier einfache Schritte. Deine bisherigen Einstellungen bleiben verfügbar.",
+    "de_DE_formal": "Vier einfache Schritte. Ihre bisherigen Einstellungen bleiben verfügbar."
+  },
+  "Choose your colors": {
+    "de_DE": "Farben auswählen",
+    "de_DE_formal": "Farben auswählen"
+  },
+  "Find your atmosphere": {
+    "de_DE": "Atmosphäre finden",
+    "de_DE_formal": "Atmosphäre finden"
+  },
+  "Optional finishing touches": {
+    "de_DE": "Optionale Gestaltung",
+    "de_DE_formal": "Optionale Gestaltung"
+  },
+  "Review and save": {
+    "de_DE": "Prüfen und speichern",
+    "de_DE_formal": "Prüfen und speichern"
+  },
+  "Your brand at a glance": {
+    "de_DE": "Deine Marke auf einen Blick",
+    "de_DE_formal": "Ihre Marke auf einen Blick"
+  },
+  "Review the scheme name and user default below, then save in the fixed bar above.": {
+    "de_DE": "Prüfe unten den Schemanamen und den Standard für Benutzer. Speichere danach in der fixierten Leiste oben.",
+    "de_DE_formal": "Prüfen Sie unten den Schemanamen und den Standard für Benutzer. Speichern Sie danach in der fixierten Leiste oben."
+  },
+  "Your Site Icon and site title are used when no custom logo or title is selected. Existing images and settings are retained.": {
+    "de_DE": "Wenn kein eigenes Logo oder kein eigener Titel gewählt ist, werden Website-Icon und Website-Titel verwendet. Vorhandene Bilder und Einstellungen bleiben erhalten.",
+    "de_DE_formal": "Wenn kein eigenes Logo oder kein eigener Titel gewählt ist, werden Website-Icon und Website-Titel verwendet. Vorhandene Bilder und Einstellungen bleiben erhalten."
+  },
+  "Existing icon settings are retained. Colors and initials provide automatic fallbacks.": {
+    "de_DE": "Vorhandene Icon-Einstellungen bleiben erhalten. Farben und Initialen dienen als automatische Ersatzwerte.",
+    "de_DE_formal": "Vorhandene Icon-Einstellungen bleiben erhalten. Farben und Initialen dienen als automatische Ersatzwerte."
+  },
+  "Previews show the optional designs, even when they are disabled.": {
+    "de_DE": "Die Vorschauen zeigen die optionalen Gestaltungen auch dann, wenn sie deaktiviert sind.",
+    "de_DE_formal": "Die Vorschauen zeigen die optionalen Gestaltungen auch dann, wenn sie deaktiviert sind."
+  },
+  "Continue in full settings": {
+    "de_DE": "In allen Einstellungen fortfahren",
+    "de_DE_formal": "In allen Einstellungen fortfahren"
+  },
+  "Changes remain a draft until you save. You can leave setup at any time and continue in the full settings.": {
+    "de_DE": "Änderungen bleiben bis zum Speichern ein Entwurf. Du kannst die Einrichtung jederzeit verlassen und in allen Einstellungen fortfahren.",
+    "de_DE_formal": "Änderungen bleiben bis zum Speichern ein Entwurf. Sie können die Einrichtung jederzeit verlassen und in allen Einstellungen fortfahren."
+  },
+  "Back": {
+    "de_DE": "Zurück",
+    "de_DE_formal": "Zurück"
+  },
+  "Next": {
+    "de_DE": "Weiter",
+    "de_DE_formal": "Weiter"
+  },
+  "Use Save all changes in the fixed bar above to apply your design.": {
+    "de_DE": "Übernimm deine Gestaltung mit „Alle Änderungen speichern“ in der fixierten Leiste oben.",
+    "de_DE_formal": "Übernehmen Sie Ihre Gestaltung mit „Alle Änderungen speichern“ in der fixierten Leiste oben."
+  },
+  "Contextual tab icons are visible only to signed-in users with the bas_view_context_icons capability. Administrators receive it by default; a role editor can grant it to other roles or users. Visitors keep the WordPress Site Icon.": {
+    "de_DE": "Kontextabhängige Tab-Icons sehen nur angemeldete Benutzer mit der Berechtigung bas_view_context_icons. Administratoren erhalten sie standardmäßig. Über einen Rollen-Editor kannst du sie anderen Rollen oder Benutzern zuweisen. Besucher behalten das WordPress-Website-Icon.",
+    "de_DE_formal": "Kontextabhängige Tab-Icons sehen nur angemeldete Benutzer mit der Berechtigung bas_view_context_icons. Administratoren erhalten sie standardmäßig. Über einen Rollen-Editor können Sie sie anderen Rollen oder Benutzern zuweisen. Besucher behalten das WordPress-Website-Icon."
+  },
+  "Contextual tab icons are available to administrators by default. Other users and visitors keep the WordPress Site Icon.": {
+    "de_DE": "Kontextabhängige Tab-Icons sind standardmäßig nur für Administratoren verfügbar. Andere Benutzer und Besucher behalten das WordPress-Website-Icon.",
+    "de_DE_formal": "Kontextabhängige Tab-Icons sind standardmäßig nur für Administratoren verfügbar. Andere Benutzer und Besucher behalten das WordPress-Website-Icon."
+  },
+  "Who can see contextual tab icons?": {
+    "de_DE": "Wer sieht die kontextabhängigen Tab-Icons?",
+    "de_DE_formal": "Wer sieht die kontextabhängigen Tab-Icons?"
+  },
+  "Administrators and users with permission": {
+    "de_DE": "Administratoren und Benutzer mit Berechtigung",
+    "de_DE_formal": "Administratoren und Benutzer mit Berechtigung"
+  },
+  "Everyone, including visitors": {
+    "de_DE": "Alle, einschließlich Besucher",
+    "de_DE_formal": "Alle, einschließlich Besucher"
+  },
+  "Restricted by default using bas_view_context_icons. Everyone also makes generated frontend icons and their optional environment marker public. Save all changes to apply this choice.": {
+    "de_DE": "Standardmäßig eingeschränkt über bas_view_context_icons. „Alle“ macht auch erzeugte Frontend-Icons und deren optionalen Umgebungsmarker öffentlich. Übernimm die Auswahl mit „Alle Änderungen speichern“.",
+    "de_DE_formal": "Standardmäßig eingeschränkt über bas_view_context_icons. „Alle“ macht auch erzeugte Frontend-Icons und deren optionalen Umgebungsmarker öffentlich. Übernehmen Sie die Auswahl mit „Alle Änderungen speichern“."
+  },
+  "Contextual tab icons are currently available to everyone, including visitors.": {
+    "de_DE": "Die kontextabhängigen Tab-Icons sind derzeit für alle verfügbar, einschließlich Besucher.",
+    "de_DE_formal": "Die kontextabhängigen Tab-Icons sind derzeit für alle verfügbar, einschließlich Besucher."
+  },
+  "Use & export": {
+    "de_DE": "Verwenden und exportieren",
+    "de_DE_formal": "Verwenden und exportieren"
+  },
+  "Download SVG": {
+    "de_DE": "SVG herunterladen",
+    "de_DE_formal": "SVG herunterladen"
+  },
+  "Download PNG": {
+    "de_DE": "PNG herunterladen",
+    "de_DE_formal": "PNG herunterladen"
+  },
+  "Save to Media Library": {
+    "de_DE": "In Mediathek speichern",
+    "de_DE_formal": "In Mediathek speichern"
+  },
+  "Use as official Site Icon": {
+    "de_DE": "Als offizielles Website-Icon verwenden",
+    "de_DE_formal": "Als offizielles Website-Icon verwenden"
+  },
+  "Exports use the generated design. PNGs are 512 × 512 pixels. Media and Site Icon actions take effect immediately; the official Site Icon omits the environment marker.": {
+    "de_DE": "Exporte verwenden die erzeugte Gestaltung. PNGs haben 512 × 512 Pixel. Mediathek- und Website-Icon-Aktionen werden sofort wirksam; beim offiziellen Website-Icon entfällt der Umgebungsmarker.",
+    "de_DE_formal": "Exporte verwenden die erzeugte Gestaltung. PNGs haben 512 × 512 Pixel. Mediathek- und Website-Icon-Aktionen werden sofort wirksam; beim offiziellen Website-Icon entfällt der Umgebungsmarker."
+  },
+  "The icon could not be rendered. Please try again.": {
+    "de_DE": "Das Icon konnte nicht erzeugt werden. Bitte versuche es erneut.",
+    "de_DE_formal": "Das Icon konnte nicht erzeugt werden. Bitte versuchen Sie es erneut."
+  },
+  "PNG export is not supported by this browser.": {
+    "de_DE": "Dieser Browser unterstützt den PNG-Export nicht.",
+    "de_DE_formal": "Dieser Browser unterstützt den PNG-Export nicht."
+  },
+  "Use this design as the official WordPress Site Icon? This immediately adds a PNG to the Media Library, replaces the Site Icon and switches the frontend to the WordPress Site Icon. Other draft settings are not saved.": {
+    "de_DE": "Diese Gestaltung als offizielles WordPress-Website-Icon verwenden? Ein PNG wird sofort zur Mediathek hinzugefügt, das Website-Icon wird ersetzt und das Frontend auf das WordPress-Website-Icon umgestellt. Andere Einstellungen im Entwurf werden nicht gespeichert.",
+    "de_DE_formal": "Diese Gestaltung als offizielles WordPress-Website-Icon verwenden? Ein PNG wird sofort zur Mediathek hinzugefügt, das Website-Icon wird ersetzt und das Frontend auf das WordPress-Website-Icon umgestellt. Andere Einstellungen im Entwurf werden nicht gespeichert."
+  },
+  "Preparing icon…": {
+    "de_DE": "Icon wird vorbereitet …",
+    "de_DE_formal": "Icon wird vorbereitet …"
+  },
+  "Icon downloaded.": {
+    "de_DE": "Icon heruntergeladen.",
+    "de_DE_formal": "Icon heruntergeladen."
+  },
+  "The icon could not be saved to the Media Library.": {
+    "de_DE": "Das Icon konnte nicht in der Mediathek gespeichert werden.",
+    "de_DE_formal": "Das Icon konnte nicht in der Mediathek gespeichert werden."
+  },
+  "Official Site Icon updated. Other draft settings have not been saved.": {
+    "de_DE": "Offizielles Website-Icon aktualisiert. Andere Einstellungen im Entwurf wurden nicht gespeichert.",
+    "de_DE_formal": "Offizielles Website-Icon aktualisiert. Andere Einstellungen im Entwurf wurden nicht gespeichert."
+  },
+  "Icon saved to the Media Library.": {
+    "de_DE": "Icon in der Mediathek gespeichert.",
+    "de_DE_formal": "Icon in der Mediathek gespeichert."
+  },
+  "Open in Media Library": {
+    "de_DE": "In der Mediathek öffnen",
+    "de_DE_formal": "In der Mediathek öffnen"
+  },
+  "A valid 512 × 512 PNG icon is required.": {
+    "de_DE": "Ein gültiges PNG-Icon mit 512 × 512 Pixeln ist erforderlich.",
+    "de_DE_formal": "Ein gültiges PNG-Icon mit 512 × 512 Pixeln ist erforderlich."
+  },
+  "Invalid icon action.": {
+    "de_DE": "Ungültige Icon-Aktion.",
+    "de_DE_formal": "Ungültige Icon-Aktion."
+  },
+  "PNG uploads are not available on this site.": {
+    "de_DE": "PNG-Uploads sind auf dieser Website nicht verfügbar.",
+    "de_DE_formal": "PNG-Uploads sind auf dieser Website nicht verfügbar."
+  },
+  "The upload quota is exhausted.": {
+    "de_DE": "Der verfügbare Speicherplatz für Uploads ist ausgeschöpft.",
+    "de_DE_formal": "Der verfügbare Speicherplatz für Uploads ist ausgeschöpft."
+  },
+  "WordPress could not process the PNG icon.": {
+    "de_DE": "WordPress konnte das PNG-Icon nicht verarbeiten.",
+    "de_DE_formal": "WordPress konnte das PNG-Icon nicht verarbeiten."
+  },
+  "Multisite: branding and media belong to this website. Network activation makes the plugin available on every site; it does not copy settings between sites.": {
+    "de_DE": "Multisite: Branding und Medien gehören zu dieser Website. Die Netzwerkaktivierung stellt das Plugin auf allen Websites bereit; Einstellungen werden nicht zwischen Websites kopiert.",
+    "de_DE_formal": "Multisite: Branding und Medien gehören zu dieser Website. Die Netzwerkaktivierung stellt das Plugin auf allen Websites bereit; Einstellungen werden nicht zwischen Websites kopiert."
+  },
+  "Release date not recorded": {
+    "de_DE": "Veröffentlichungsdatum nicht dokumentiert",
+    "de_DE_formal": "Veröffentlichungsdatum nicht dokumentiert"
+  },
+  "Unpublished test build": {
+    "de_DE": "Unveröffentlichter Teststand",
+    "de_DE_formal": "Unveröffentlichter Teststand"
+  },
+  "Complete changelog": {
+    "de_DE": "Vollständiger Änderungsverlauf",
+    "de_DE_formal": "Vollständiger Änderungsverlauf"
+  },
+  "Yes": {
+    "de_DE": "Ja",
+    "de_DE_formal": "Ja"
+  },
+  "No": {
+    "de_DE": "Nein",
+    "de_DE_formal": "Nein"
+  },
+  "You can save up to 30 schemes. Reuse an existing scheme before adding another.": {
+    "de_DE": "Du kannst bis zu 30 Schemen speichern. Verwende ein vorhandenes Schema erneut, bevor du ein weiteres anlegst.",
+    "de_DE_formal": "Sie können bis zu 30 Schemen speichern. Verwenden Sie ein vorhandenes Schema erneut, bevor Sie ein weiteres anlegen."
+  },
+  "%s is installed but inactive. Activate it first.": {
+    "de_DE": "%s ist installiert, aber inaktiv. Bitte zuerst aktivieren.",
+    "de_DE_formal": "%s ist installiert, aber inaktiv. Bitte zuerst aktivieren."
+  },
+  "%s is missing. Install and activate it first.": {
+    "de_DE": "%s fehlt. Bitte zuerst installieren und aktivieren.",
+    "de_DE_formal": "%s fehlt. Bitte zuerst installieren und aktivieren."
+  },
+  "%s must be network activated first.": {
+    "de_DE": "%s muss zuerst netzwerkweit aktiviert werden.",
+    "de_DE_formal": "%s muss zuerst netzwerkweit aktiviert werden."
+  },
+  "%s supports activation per site only.": {
+    "de_DE": "%s unterstützt nur die Aktivierung je Website.",
+    "de_DE_formal": "%s unterstützt nur die Aktivierung je Website."
+  },
+  "Activate": {
+    "de_DE": "Aktivieren",
+    "de_DE_formal": "Aktivieren"
+  },
+  "Activate Bricks QuickNav per site after selecting the Bricks parent or child theme.": {
+    "de_DE": "Bricks QuickNav bitte je Website aktivieren, nachdem das Bricks-Theme oder ein Child-Theme ausgewählt wurde.",
+    "de_DE_formal": "Bricks QuickNav bitte je Website aktivieren, nachdem das Bricks-Theme oder ein Child-Theme ausgewählt wurde."
+  },
+  "Admin": {
+    "de_DE": "Administration",
+    "de_DE_formal": "Administration"
+  },
+  "Already active": {
+    "de_DE": "Bereits aktiv",
+    "de_DE_formal": "Bereits aktiv"
+  },
+  "Archive contains too many files.": {
+    "de_DE": "Das Archiv enthält zu viele Dateien.",
+    "de_DE_formal": "Das Archiv enthält zu viele Dateien."
+  },
+  "Archive symlinks are not permitted.": {
+    "de_DE": "Symbolische Verknüpfungen sind im Archiv nicht erlaubt.",
+    "de_DE_formal": "Symbolische Verknüpfungen sind im Archiv nicht erlaubt."
+  },
+  "As of ": {
+    "de_DE": "Stand: ",
+    "de_DE_formal": "Stand: "
+  },
+  "Back to deckerweb": {
+    "de_DE": "Zurück zu deckerweb",
+    "de_DE_formal": "Zurück zu deckerweb"
+  },
+  "Builder": {
+    "de_DE": "Builder",
+    "de_DE_formal": "Builder"
+  },
+  "Cannot create temporary file.": {
+    "de_DE": "Temporäre Datei konnte nicht erstellt werden.",
+    "de_DE_formal": "Temporäre Datei konnte nicht erstellt werden."
+  },
+  "Cannot create verified archive.": {
+    "de_DE": "Geprüftes Archiv konnte nicht erstellt werden.",
+    "de_DE_formal": "Geprüftes Archiv konnte nicht erstellt werden."
+  },
+  "Cannot finalize archive.": {
+    "de_DE": "Archiv konnte nicht abgeschlossen werden.",
+    "de_DE_formal": "Archiv konnte nicht abgeschlossen werden."
+  },
+  "Cannot normalize archive.": {
+    "de_DE": "Archiv konnte nicht aufbereitet werden.",
+    "de_DE_formal": "Archiv konnte nicht aufbereitet werden."
+  },
+  "Cannot read archive entry.": {
+    "de_DE": "Archiveintrag konnte nicht gelesen werden.",
+    "de_DE_formal": "Archiveintrag konnte nicht gelesen werden."
+  },
+  "Catalog URL": {
+    "de_DE": "Katalog-URL",
+    "de_DE_formal": "Katalog-URL"
+  },
+  "Compatible additions only": {
+    "de_DE": "Nur passende Ergänzungen",
+    "de_DE_formal": "Nur passende Ergänzungen"
+  },
+  "Content": {
+    "de_DE": "Inhalte",
+    "de_DE_formal": "Inhalte"
+  },
+  "Delete Library settings when removing the last host plugin": {
+    "de_DE": "Library-Einstellungen beim Entfernen des letzten Host-Plugins ebenfalls löschen",
+    "de_DE_formal": "Library-Einstellungen beim Entfernen des letzten Host-Plugins ebenfalls löschen"
+  },
+  "Details & requirements": {
+    "de_DE": "Details & Voraussetzungen",
+    "de_DE_formal": "Details & Voraussetzungen"
+  },
+  "Discover more plugins by deckerweb": {
+    "de_DE": "Weitere Plugins von deckerweb entdecken",
+    "de_DE_formal": "Weitere Plugins von deckerweb entdecken"
+  },
+  "Dismiss permanently": {
+    "de_DE": "Dauerhaft schließen",
+    "de_DE_formal": "Dauerhaft schließen"
+  },
+  "Done. The plugin is active.": {
+    "de_DE": "Erledigt. Das Plugin ist aktiv.",
+    "de_DE_formal": "Erledigt. Das Plugin ist aktiv."
+  },
+  "Enter a catalog URL first.": {
+    "de_DE": "Bitte zuerst eine Katalog-URL eintragen.",
+    "de_DE_formal": "Bitte zuerst eine Katalog-URL eintragen."
+  },
+  "Expanded archive is too large.": {
+    "de_DE": "Das entpackte Archiv ist zu groß.",
+    "de_DE_formal": "Das entpackte Archiv ist zu groß."
+  },
+  "Filter": {
+    "de_DE": "Filtern",
+    "de_DE_formal": "Filtern"
+  },
+  "Fix": {
+    "de_DE": "Behoben",
+    "de_DE_formal": "Behoben"
+  },
+  "GitHub Stars": {
+    "de_DE": "GitHub-Sterne",
+    "de_DE_formal": "GitHub-Sterne"
+  },
+  "Hide catalog": {
+    "de_DE": "Katalog ausblenden",
+    "de_DE_formal": "Katalog ausblenden"
+  },
+  "Improved": {
+    "de_DE": "Verbessert",
+    "de_DE_formal": "Verbessert"
+  },
+  "Install and activate this plugin in the network admin.": {
+    "de_DE": "Dieses Plugin bitte im Netzwerk-Admin installieren und aktivieren.",
+    "de_DE_formal": "Dieses Plugin bitte im Netzwerk-Admin installieren und aktivieren."
+  },
+  "Install deckerweb plugin": {
+    "de_DE": "deckerweb-Plugin installieren",
+    "de_DE_formal": "deckerweb-Plugin installieren"
+  },
+  "Install now": {
+    "de_DE": "Jetzt installieren",
+    "de_DE_formal": "Jetzt installieren"
+  },
+  "Installed": {
+    "de_DE": "Installiert",
+    "de_DE_formal": "Installiert"
+  },
+  "Installed: ": {
+    "de_DE": "Installiert: ",
+    "de_DE_formal": "Installiert: "
+  },
+  "Invalid ZIP archive.": {
+    "de_DE": "Ungültiges ZIP-Archiv.",
+    "de_DE_formal": "Ungültiges ZIP-Archiv."
+  },
+  "Invalid approval flag.": {
+    "de_DE": "Ungültige Freigabeangabe.",
+    "de_DE_formal": "Ungültige Freigabeangabe."
+  },
+  "Invalid catalog field: ": {
+    "de_DE": "Ungültiges Katalogfeld: ",
+    "de_DE_formal": "Ungültiges Katalogfeld: "
+  },
+  "Invalid catalog schema.": {
+    "de_DE": "Ungültiges Katalogformat.",
+    "de_DE_formal": "Ungültiges Katalogformat."
+  },
+  "Invalid dependencies.": {
+    "de_DE": "Ungültige Abhängigkeiten.",
+    "de_DE_formal": "Ungültige Abhängigkeiten."
+  },
+  "Invalid dependency URL.": {
+    "de_DE": "Ungültige URL einer Abhängigkeit.",
+    "de_DE_formal": "Ungültige URL einer Abhängigkeit."
+  },
+  "Invalid dependency metadata.": {
+    "de_DE": "Ungültige Angaben zu Abhängigkeiten.",
+    "de_DE_formal": "Ungültige Angaben zu Abhängigkeiten."
+  },
+  "Invalid display field.": {
+    "de_DE": "Ungültiges Anzeigefeld.",
+    "de_DE_formal": "Ungültiges Anzeigefeld."
+  },
+  "Invalid icon color.": {
+    "de_DE": "Ungültige Icon-Farbe.",
+    "de_DE_formal": "Ungültige Icon-Farbe."
+  },
+  "Invalid icon label.": {
+    "de_DE": "Ungültiges Icon-Kürzel.",
+    "de_DE_formal": "Ungültiges Icon-Kürzel."
+  },
+  "Invalid identity or release metadata.": {
+    "de_DE": "Ungültige Plugin- oder Release-Angaben.",
+    "de_DE_formal": "Ungültige Plugin- oder Release-Angaben."
+  },
+  "Invalid local icon.": {
+    "de_DE": "Ungültiges lokales Icon.",
+    "de_DE_formal": "Ungültiges lokales Icon."
+  },
+  "Invalid network policy.": {
+    "de_DE": "Ungültige Netzwerkregel.",
+    "de_DE_formal": "Ungültige Netzwerkregel."
+  },
+  "Invalid network requirement.": {
+    "de_DE": "Ungültige Netzwerkanforderung.",
+    "de_DE_formal": "Ungültige Netzwerkanforderung."
+  },
+  "Invalid platform version.": {
+    "de_DE": "Ungültige Plattformversion.",
+    "de_DE_formal": "Ungültige Plattformversion."
+  },
+  "Invalid star count.": {
+    "de_DE": "Ungültige Anzahl der GitHub-Sterne.",
+    "de_DE_formal": "Ungültige Anzahl der GitHub-Sterne."
+  },
+  "Invalid stars date.": {
+    "de_DE": "Ungültiges Datum der GitHub-Sterne.",
+    "de_DE_formal": "Ungültiges Datum der GitHub-Sterne."
+  },
+  "Library": {
+    "de_DE": "Library",
+    "de_DE_formal": "Library"
+  },
+  "Library changelog": {
+    "de_DE": "Library-Änderungsverlauf",
+    "de_DE_formal": "Library-Änderungsverlauf"
+  },
+  "Library settings": {
+    "de_DE": "Library-Einstellungen",
+    "de_DE_formal": "Library-Einstellungen"
+  },
+  "Library settings saved.": {
+    "de_DE": "Library-Einstellungen gespeichert.",
+    "de_DE_formal": "Library-Einstellungen gespeichert."
+  },
+  "Manage installed plugins": {
+    "de_DE": "Installierte Plugins verwalten",
+    "de_DE_formal": "Installierte Plugins verwalten"
+  },
+  "Misc": {
+    "de_DE": "Sonstiges",
+    "de_DE_formal": "Sonstiges"
+  },
+  "Missing display text.": {
+    "de_DE": "Anzeigetext fehlt.",
+    "de_DE_formal": "Anzeigetext fehlt."
+  },
+  "Missing plugin header.": {
+    "de_DE": "Plugin-Header fehlt.",
+    "de_DE_formal": "Plugin-Header fehlt."
+  },
+  "More by deckerweb": {
+    "de_DE": "Mehr von deckerweb",
+    "de_DE_formal": "Mehr von deckerweb"
+  },
+  "Multisite": {
+    "de_DE": "Multisite",
+    "de_DE_formal": "Multisite"
+  },
+  "Network activate": {
+    "de_DE": "Netzwerkweit aktivieren",
+    "de_DE_formal": "Netzwerkweit aktivieren"
+  },
+  "Network permission denied.": {
+    "de_DE": "Keine Berechtigung für das Netzwerk.",
+    "de_DE_formal": "Keine Berechtigung für das Netzwerk."
+  },
+  "New": {
+    "de_DE": "Neu",
+    "de_DE_formal": "Neu"
+  },
+  "No approved plugins match this selection.": {
+    "de_DE": "Keine freigegebenen Plugins passen zu dieser Auswahl.",
+    "de_DE_formal": "Keine freigegebenen Plugins passen zu dieser Auswahl."
+  },
+  "Off by default. Applies only when no other host is installed, including inactive hosts. Removes Library settings, installation records and introduction status. Installed plugins, their content and other plugin settings remain unchanged. Network data is shared across sites.": {
+    "de_DE": "Standardmäßig ausgeschaltet. Gilt nur, wenn kein weiterer Host installiert ist, auch kein deaktivierter. Entfernt Library-Einstellungen, Installationszuordnung und den Status des Einführungshinweises. Installierte Plugins, deren Inhalte und Einstellungen anderer Plugins bleiben erhalten. Netzwerkdaten werden gemeinsam von den Websites genutzt.",
+    "de_DE_formal": "Standardmäßig ausgeschaltet. Gilt nur, wenn kein weiterer Host installiert ist, auch kein deaktivierter. Entfernt Library-Einstellungen, Installationszuordnung und den Status des Einführungshinweises. Installierte Plugins, deren Inhalte und Einstellungen anderer Plugins bleiben erhalten. Netzwerkdaten werden gemeinsam von den Websites genutzt."
+  },
+  "Online catalog": {
+    "de_DE": "Online-Katalog",
+    "de_DE_formal": "Online-Katalog"
+  },
+  "Only HTTPS on deckerweb.de or raw.githubusercontent.com/deckerweb. The server receives the requesting IP address. GitHub is contacted when installing a release.": {
+    "de_DE": "Nur HTTPS auf deckerweb.de oder raw.githubusercontent.com/deckerweb. Der Server sieht die anfragende IP-Adresse. Beim Installieren eines Releases wird GitHub kontaktiert.",
+    "de_DE_formal": "Nur HTTPS auf deckerweb.de oder raw.githubusercontent.com/deckerweb. Der Server sieht die anfragende IP-Adresse. Beim Installieren eines Releases wird GitHub kontaktiert."
+  },
+  "Only approved releases": {
+    "de_DE": "Nur freigegebene Releases",
+    "de_DE_formal": "Nur freigegebene Releases"
+  },
+  "Open catalog": {
+    "de_DE": "Katalog öffnen",
+    "de_DE_formal": "Katalog öffnen"
+  },
+  "Optional. The bundled catalog works immediately. Online requests are cached for 12 hours. No site URL, plugin list or usage data is sent.": {
+    "de_DE": "Optional. Der mitgelieferte Katalog funktioniert sofort. Online-Anfragen werden 12 Stunden gespeichert. Website-URL, Plugin-Liste und Nutzungsdaten werden nicht übertragen.",
+    "de_DE_formal": "Optional. Der mitgelieferte Katalog funktioniert sofort. Online-Anfragen werden 12 Stunden gespeichert. Website-URL, Plugin-Liste und Nutzungsdaten werden nicht übertragen."
+  },
+  "PHP ZIP support is required.": {
+    "de_DE": "PHP-ZIP-Unterstützung wird benötigt.",
+    "de_DE_formal": "PHP-ZIP-Unterstützung wird benötigt."
+  },
+  "POST required.": {
+    "de_DE": "Eine POST-Anfrage ist erforderlich.",
+    "de_DE_formal": "Eine POST-Anfrage ist erforderlich."
+  },
+  "Permission denied.": {
+    "de_DE": "Keine Berechtigung.",
+    "de_DE_formal": "Keine Berechtigung."
+  },
+  "Plugin identity or version does not match the catalog.": {
+    "de_DE": "Plugin oder Version stimmt nicht mit dem Katalog überein.",
+    "de_DE_formal": "Plugin oder Version stimmt nicht mit dem Katalog überein."
+  },
+  "Plugin is not installed.": {
+    "de_DE": "Das Plugin ist nicht installiert.",
+    "de_DE_formal": "Das Plugin ist nicht installiert."
+  },
+  "Product website": {
+    "de_DE": "Produktwebsite",
+    "de_DE_formal": "Produktwebsite"
+  },
+  "Refresh catalog": {
+    "de_DE": "Katalog aktualisieren",
+    "de_DE_formal": "Katalog aktualisieren"
+  },
+  "Release checksum is verified before installation. Activation is a separate step.": {
+    "de_DE": "Vor der Installation wird die Release-Prüfsumme geprüft. Die Aktivierung erfolgt separat.",
+    "de_DE_formal": "Vor der Installation wird die Release-Prüfsumme geprüft. Die Aktivierung erfolgt separat."
+  },
+  "Release must contain exactly the approved plugin directory.": {
+    "de_DE": "Das Release muss genau das freigegebene Plugin-Verzeichnis enthalten.",
+    "de_DE_formal": "Das Release muss genau das freigegebene Plugin-Verzeichnis enthalten."
+  },
+  "Repository & documentation": {
+    "de_DE": "Repository & Dokumentation",
+    "de_DE_formal": "Repository & Dokumentation"
+  },
+  "Requires PHP %s or newer.": {
+    "de_DE": "Benötigt PHP %s oder neuer.",
+    "de_DE_formal": "Benötigt PHP %s oder neuer."
+  },
+  "Requires WordPress %s or newer.": {
+    "de_DE": "Benötigt WordPress %s oder neuer.",
+    "de_DE_formal": "Benötigt WordPress %s oder neuer."
+  },
+  "Requires a WordPress Multisite network.": {
+    "de_DE": "Benötigt ein WordPress-Multisite-Netzwerk.",
+    "de_DE_formal": "Benötigt ein WordPress-Multisite-Netzwerk."
+  },
+  "Retrieve approved catalog updates online": {
+    "de_DE": "Katalogfreigaben online aktualisieren",
+    "de_DE_formal": "Katalogfreigaben online aktualisieren"
+  },
+  "Save settings": {
+    "de_DE": "Einstellungen speichern",
+    "de_DE_formal": "Einstellungen speichern"
+  },
+  "Scripts": {
+    "de_DE": "Scripte",
+    "de_DE_formal": "Scripte"
+  },
+  "Search this catalog": {
+    "de_DE": "Diesen Katalog durchsuchen",
+    "de_DE_formal": "Diesen Katalog durchsuchen"
+  },
+  "Selected by deckerweb · Installed from GitHub releases": {
+    "de_DE": "Von deckerweb ausgewählt · Installation aus GitHub-Releases",
+    "de_DE_formal": "Von deckerweb ausgewählt · Installation aus GitHub-Releases"
+  },
+  "Show deckerweb under Add Plugins": {
+    "de_DE": "deckerweb unter „Plugins hinzufügen“ anzeigen",
+    "de_DE_formal": "deckerweb unter „Plugins hinzufügen“ anzeigen"
+  },
+  "Small plugins. Practical improvements.": {
+    "de_DE": "Kleine Plugins. Konkrete Verbesserungen.",
+    "de_DE_formal": "Kleine Plugins. Konkrete Verbesserungen."
+  },
+  "Source: GitHub": {
+    "de_DE": "Quelle: GitHub",
+    "de_DE_formal": "Quelle: GitHub"
+  },
+  "The GitHub release could not be downloaded.": {
+    "de_DE": "Das GitHub-Release konnte nicht heruntergeladen werden.",
+    "de_DE_formal": "Das GitHub-Release konnte nicht heruntergeladen werden."
+  },
+  "The approved release changed. Refresh updates first.": {
+    "de_DE": "Das freigegebene Release hat sich geändert. Bitte zuerst die Updates aktualisieren.",
+    "de_DE_formal": "Das freigegebene Release hat sich geändert. Bitte zuerst die Updates aktualisieren."
+  },
+  "The catalog URL is not an allowed first-party HTTPS endpoint.": {
+    "de_DE": "Die Katalog-URL ist keine erlaubte eigene HTTPS-Quelle.",
+    "de_DE_formal": "Die Katalog-URL ist keine erlaubte eigene HTTPS-Quelle."
+  },
+  "The catalog could not be verified. Please try again later.": {
+    "de_DE": "Der Katalog konnte nicht geprüft werden. Bitte später erneut versuchen.",
+    "de_DE_formal": "Der Katalog konnte nicht geprüft werden. Bitte später erneut versuchen."
+  },
+  "The catalog is disabled.": {
+    "de_DE": "Der Katalog ist deaktiviert.",
+    "de_DE_formal": "Der Katalog ist deaktiviert."
+  },
+  "The catalog is hidden.": {
+    "de_DE": "Der Katalog ist ausgeblendet.",
+    "de_DE_formal": "Der Katalog ist ausgeblendet."
+  },
+  "The online catalog is unavailable. Showing cached or bundled entries; online approval is checked again before installation.": {
+    "de_DE": "Der Online-Katalog ist nicht erreichbar. Angezeigt wird der gespeicherte oder mitgelieferte Katalog; vor der Installation wird die Online-Freigabe erneut geprüft.",
+    "de_DE_formal": "Der Online-Katalog ist nicht erreichbar. Angezeigt wird der gespeicherte oder mitgelieferte Katalog; vor der Installation wird die Online-Freigabe erneut geprüft."
+  },
+  "The online catalog source is not trusted.": {
+    "de_DE": "Die Online-Katalogquelle ist nicht vertrauenswürdig.",
+    "de_DE_formal": "Die Online-Katalogquelle ist nicht vertrauenswürdig."
+  },
+  "The release checksum does not match. Installation stopped.": {
+    "de_DE": "Die Prüfsumme des Releases stimmt nicht überein. Installation gestoppt.",
+    "de_DE_formal": "Die Prüfsumme des Releases stimmt nicht überein. Installation gestoppt."
+  },
+  "This plugin directory already exists. Use the installed plugin; it will not be overwritten.": {
+    "de_DE": "Dieses Plugin-Verzeichnis existiert bereits. Bitte das installierte Plugin verwenden; es wird nicht überschrieben.",
+    "de_DE_formal": "Dieses Plugin-Verzeichnis existiert bereits. Bitte das installierte Plugin verwenden; es wird nicht überschrieben."
+  },
+  "This release is no longer approved.": {
+    "de_DE": "Dieses Release ist nicht mehr freigegeben.",
+    "de_DE_formal": "Dieses Release ist nicht mehr freigegeben."
+  },
+  "This release is not approved.": {
+    "de_DE": "Dieses Release ist nicht freigegeben.",
+    "de_DE_formal": "Dieses Release ist nicht freigegeben."
+  },
+  "Unsafe archive path.": {
+    "de_DE": "Unsicherer Archivpfad.",
+    "de_DE_formal": "Unsicherer Archivpfad."
+  },
+  "Untrusted release URL.": {
+    "de_DE": "Nicht vertrauenswürdige Release-URL.",
+    "de_DE_formal": "Nicht vertrauenswürdige Release-URL."
+  },
+  "Update %1$s to version %2$s or newer.": {
+    "de_DE": "%1$s bitte auf Version %2$s oder neuer aktualisieren.",
+    "de_DE_formal": "%1$s bitte auf Version %2$s oder neuer aktualisieren."
+  },
+  "View plugins": {
+    "de_DE": "Plugins ansehen",
+    "de_DE_formal": "Plugins ansehen"
+  },
+  "Visibility": {
+    "de_DE": "Sichtbarkeit",
+    "de_DE_formal": "Sichtbarkeit"
+  },
+  "WordPress": {
+    "de_DE": "WordPress",
+    "de_DE_formal": "WordPress"
+  },
+  "You already use one of my plugins. Find selected additions in the deckerweb tab.": {
+    "de_DE": "Du nutzt bereits ein Plugin von mir. Ausgewählte Ergänzungen findest du im deckerweb-Tab.",
+    "de_DE_formal": "Sie nutzen bereits ein Plugin von mir. Ausgewählte Ergänzungen finden Sie im deckerweb-Tab."
+  },
+  "January": {
+    "de_DE": "Januar",
+    "de_DE_formal": "Januar"
+  },
+  "February": {
+    "de_DE": "Februar",
+    "de_DE_formal": "Februar"
+  },
+  "March": {
+    "de_DE": "März",
+    "de_DE_formal": "März"
+  },
+  "April": {
+    "de_DE": "April",
+    "de_DE_formal": "April"
+  },
+  "May": {
+    "de_DE": "Mai",
+    "de_DE_formal": "Mai"
+  },
+  "June": {
+    "de_DE": "Juni",
+    "de_DE_formal": "Juni"
+  },
+  "July": {
+    "de_DE": "Juli",
+    "de_DE_formal": "Juli"
+  },
+  "August": {
+    "de_DE": "August",
+    "de_DE_formal": "August"
+  },
+  "September": {
+    "de_DE": "September",
+    "de_DE_formal": "September"
+  },
+  "October": {
+    "de_DE": "Oktober",
+    "de_DE_formal": "Oktober"
+  },
+  "November": {
+    "de_DE": "November",
+    "de_DE_formal": "November"
+  },
+  "December": {
+    "de_DE": "Dezember",
+    "de_DE_formal": "Dezember"
+  },
+  "Jan": {
+    "de_DE": "Jan",
+    "de_DE_formal": "Jan"
+  },
+  "Feb": {
+    "de_DE": "Feb",
+    "de_DE_formal": "Feb"
+  },
+  "Mar": {
+    "de_DE": "Mär",
+    "de_DE_formal": "Mär"
+  },
+  "Apr": {
+    "de_DE": "Apr",
+    "de_DE_formal": "Apr"
+  },
+  "Jun": {
+    "de_DE": "Jun",
+    "de_DE_formal": "Jun"
+  },
+  "Jul": {
+    "de_DE": "Jul",
+    "de_DE_formal": "Jul"
+  },
+  "Aug": {
+    "de_DE": "Aug",
+    "de_DE_formal": "Aug"
+  },
+  "Sep": {
+    "de_DE": "Sep",
+    "de_DE_formal": "Sep"
+  },
+  "Oct": {
+    "de_DE": "Okt",
+    "de_DE_formal": "Okt"
+  },
+  "Nov": {
+    "de_DE": "Nov",
+    "de_DE_formal": "Nov"
+  },
+  "Dec": {
+    "de_DE": "Dez",
+    "de_DE_formal": "Dez"
+  },
+  "Monday": {
+    "de_DE": "Montag",
+    "de_DE_formal": "Montag"
+  },
+  "Tuesday": {
+    "de_DE": "Dienstag",
+    "de_DE_formal": "Dienstag"
+  },
+  "Wednesday": {
+    "de_DE": "Mittwoch",
+    "de_DE_formal": "Mittwoch"
+  },
+  "Thursday": {
+    "de_DE": "Donnerstag",
+    "de_DE_formal": "Donnerstag"
+  },
+  "Friday": {
+    "de_DE": "Freitag",
+    "de_DE_formal": "Freitag"
+  },
+  "Saturday": {
+    "de_DE": "Samstag",
+    "de_DE_formal": "Samstag"
+  },
+  "Sunday": {
+    "de_DE": "Sonntag",
+    "de_DE_formal": "Sonntag"
+  },
+  "Mon": {
+    "de_DE": "Mo",
+    "de_DE_formal": "Mo"
+  },
+  "Tue": {
+    "de_DE": "Di",
+    "de_DE_formal": "Di"
+  },
+  "Wed": {
+    "de_DE": "Mi",
+    "de_DE_formal": "Mi"
+  },
+  "Thu": {
+    "de_DE": "Do",
+    "de_DE_formal": "Do"
+  },
+  "Fri": {
+    "de_DE": "Fr",
+    "de_DE_formal": "Fr"
+  },
+  "Sat": {
+    "de_DE": "Sa",
+    "de_DE_formal": "Sa"
+  },
+  "Sun": {
+    "de_DE": "So",
+    "de_DE_formal": "So"
+  },
+  "F j, Y": {
+    "de_DE": "j. F Y",
+    "de_DE_formal": "j. F Y"
+  },
+  "Plugin series": {
+    "de_DE": "Plugin-Serien",
+    "de_DE_formal": "Plugin-Serien"
+  },
+  "All": {
+    "de_DE": "Alle",
+    "de_DE_formal": "Alle"
+  },
+  "Fits my installation": {
+    "de_DE": "Passt zu meiner Installation",
+    "de_DE_formal": "Passt zu meiner Installation"
+  },
+  "Reset filters": {
+    "de_DE": "Filter zurücksetzen",
+    "de_DE_formal": "Filter zurücksetzen"
+  },
+  "Invalid plugin series.": {
+    "de_DE": "Ungültige Plugin-Serie.",
+    "de_DE_formal": "Ungültige Plugin-Serie."
+  },
+  "Shows plugins whose platform and dependency requirements are met in this site or network. Without this filter, plugins with missing requirements remain visible.": {
+    "de_DE": "Zeigt Plugins, deren Plattform- und Abhängigkeitsanforderungen auf dieser Website oder im Netzwerk erfüllt sind. Ohne diesen Filter bleiben Plugins mit fehlenden Voraussetzungen sichtbar.",
+    "de_DE_formal": "Zeigt Plugins, deren Plattform- und Abhängigkeitsanforderungen auf dieser Website oder im Netzwerk erfüllt sind. Ohne diesen Filter bleiben Plugins mit fehlenden Voraussetzungen sichtbar."
+  },
+  "Brand colors for your WordPress admin, login, toolbar and browser tabs. Use Core Framework, Bricks, ACSS or your own palette.": {
+    "de_DE": "Markenfarben für WordPress-Admin, Login, Toolbar und Browser-Tabs. Mit Core Framework, Bricks, ACSS oder eigener Palette.",
+    "de_DE_formal": "Markenfarben für WordPress-Admin, Login, Toolbar und Browser-Tabs. Mit Core Framework, Bricks, ACSS oder eigener Palette."
+  },
+  "Release prepared; publication pending": {
+    "de_DE": "Release vorbereitet; Veröffentlichung steht noch aus",
+    "de_DE_formal": "Release vorbereitet; Veröffentlichung steht noch aus"
+  }
+}

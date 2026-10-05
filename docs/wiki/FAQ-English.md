@@ -144,7 +144,7 @@ No. The Surprise variant is stable per site. Choose one of the nine swatches to 
 
 ### Does it replace the WordPress Site Icon?
 
-No. It generates contextual browser-tab favicons without changing the stored Site Icon. You can retain the original frontend favicon.
+Contextual favicons preserve the stored Site Icon by default. Only the separate, explicitly confirmed PNG Site Icon action replaces it. You can retain the original frontend favicon.
 
 ### Which builder contexts are recognized?
 
@@ -245,3 +245,11 @@ This version stores settings per site and has no network-wide preset manager. Re
 Plugin, WordPress, and PHP versions; relevant provider or builder version; the affected screen; and steps to reproduce. Use anonymized screenshots and remove credentials or private client information before posting a public GitHub issue.
 
 © 2022–2026 David Decker – DECKERWEB · GPL v2 or later
+
+## Setup, Multisite and data
+
+**Can I configure a whole network at once?** No. Network activation makes BAS available; branding, login media and Site Icons stay per site. The same user can choose separate site colors, while network-profile colors stay global.
+
+**Does the PNG Site Icon action save my other changes?** No. The separate confirmed action applies the Site Icon immediately and preserves the unrelated editor draft. Generated SVG downloads never enable SVG uploads.
+
+**What happens on uninstall?** Temporary Undo and BAS updater cache are removed. Branding, media, user colors and deliberate role decisions remain. The original Library contract preserves shared settings and other installed hosts. See the data guide.

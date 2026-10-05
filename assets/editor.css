@@ -44,3 +44,40 @@
 .bas-document-header h2{margin:0;font-size:20px}
 .bas-document-dialog pre{box-sizing:border-box;max-height:calc(85vh - 90px);overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;margin:0;padding:24px;font:13px/1.7 ui-monospace,SFMono-Regular,Consolas,monospace}
 @media(max-width:600px){.bas-root .bas-footer{display:block}.bas-footer>div:last-child{margin-top:12px}.bas-document-header,.bas-document-dialog pre{padding:16px}}
+
+/* Optional guided setup uses the same draft and controls as the full editor. */
+#bas-app [hidden] { display: none !important; }
+.bas-setup-entry,.bas-setup-heading,.bas-setup-navigation { display:flex;align-items:center;gap:16px;flex-wrap:wrap; }
+.bas-setup-entry { margin:18px 0;color:#50575e; }
+.bas-setup-widget { background:#fff;border:1px solid #c3c4c7;border-radius:8px;padding:24px;margin:20px 0; }
+.bas-setup-heading { justify-content:space-between; }
+.bas-setup-heading h2 { margin:0;scroll-margin-top:150px; }
+.bas-setup-progress { display:flex;gap:12px;flex-wrap:wrap;list-style:none;padding:0;margin:24px 0; }
+.bas-setup-progress li { padding:8px 12px;border-radius:5px;background:#f0f0f1; }
+.bas-setup-progress [aria-current] { background:#e7f0fb;color:#135e96;font-weight:600; }
+.bas-setup-options>label { display:block;font-weight:600;margin-top:24px; }
+.bas-setup-login-preview { max-width:720px;margin:20px 0; }
+.bas-setup-tab-previews { display:flex;gap:24px;flex-wrap:wrap;margin:20px 0; }
+.bas-setup-tab-previews>span { display:flex;gap:10px;align-items:center;max-width:220px; }
+.bas-setup-navigation { justify-content:space-between;margin:20px 0; }
+@media(max-width:600px){.bas-setup-widget{padding:16px}.bas-setup-progress{display:grid;grid-template-columns:1fr 1fr;font-size:12px}.bas-setup-heading h2{scroll-margin-top:190px}}
+.bas-icon-actions { margin-top:16px;border-top:1px solid #dcdcde;padding-top:12px; }
+.bas-icon-actions summary { cursor:pointer;font-weight:600; }
+.bas-icon-actions>div { display:flex;gap:8px;flex-wrap:wrap;margin-top:12px; }
+.bas-icon-actions .button { white-space:normal; }
+
+/* Text labels accompany subdued category colors; history remains keyboard-scrollable. */
+.bas-changelog-release{padding-bottom:12px;border-bottom:1px solid #dcdcde}
+.bas-changelog-date{color:#50575e;font-size:13px}.bas-document-content h4{margin:16px 0 6px}
+.bas-changelog-badge{display:inline-block;padding:2px 9px;border-radius:4px;font-size:12px;line-height:1.6}
+.bas-changelog-new{color:#135e45;background:#e8f5ee}.bas-changelog-improved{color:#164b74;background:#e7f0f8}
+.bas-changelog-fix{color:#7b321a;background:#fff0e8}.bas-changelog-misc{color:#4b425f;background:#f0edf5}
+.bas-document-content:focus-visible{outline:2px solid #2271b1;outline-offset:-4px}
+
+/* Keep save actions and long translated choices inside narrow admin screens. */
+@media (max-width:600px){
+ .bas-root .bas-sticky .bas-actions{flex-wrap:wrap;justify-content:flex-start}
+ .bas-root .bas-sticky .bas-actions .button{white-space:normal;max-width:100%}
+ .bas-root .bas-row>label{min-width:0;max-width:100%}
+ .bas-root select{min-width:0;max-width:100%}
+}

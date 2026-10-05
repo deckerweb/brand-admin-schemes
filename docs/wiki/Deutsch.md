@@ -2,7 +2,7 @@
 
 [English](https://github.com/deckerweb/brand-admin-schemes/wiki/English) · [Home](https://github.com/deckerweb/brand-admin-schemes/wiki)
 
-Die praktische Anleitung zu Brand Admin Schemes 0.16.3. Springe über das Inhaltsverzeichnis direkt zur gewünschten Einstellung.
+Die praktische Anleitung zu Brand Admin Schemes 0.18.0 (unveröffentlichter Teststand). Springe über das Inhaltsverzeichnis direkt zur gewünschten Einstellung.
 
 ## Inhaltsverzeichnis
 
@@ -126,7 +126,7 @@ Englische Quelltexte und deutsche `de_DE`-Dateien (`.po`/`.mo`) sind enthalten. 
 
 ## Erweiterungen
 
-Version 0.16.3 bietet keine eigenen öffentlichen Plugin-Hooks oder -Filter. Wenn eine dokumentierte Anbindung deinem Projekt helfen würde, [erstelle ein Issue](https://github.com/deckerweb/brand-admin-schemes/issues).
+Der dokumentierte Hook bas_site_settings_changed meldet Website-ID und Vorgang save, undo oder site_icon. Eine spätere Leitstand-Anbindung benötigt dessen tatsächliche Schnittstellen; BAS hat keine Leitstand-Abhängigkeit.
 
 <a name="haeufige-fragen"></a>
 
@@ -140,7 +140,7 @@ Version 0.16.3 bietet keine eigenen öffentlichen Plugin-Hooks oder -Filter. Wen
 
 **Brauche ich ein Logo und ein Hintergrundfoto?** Nein. Website-Icon, Theme-Logo und Websitename liefern Rückfalloptionen; die Farbverläufe funktionieren ohne Foto.
 
-**Ersetzt es das WordPress-Website-Icon?** Nein. Es erzeugt kontextabhängige Browser-Tab-Favicons, ohne das gespeicherte Website-Icon zu ändern. Das ursprüngliche Frontend-Favicon kann erhalten bleiben.
+**Ersetzt es das WordPress-Website-Icon?** Kontextabhängige Favicons erhalten das gespeicherte Website-Icon standardmäßig. Nur die gesonderte, ausdrücklich bestätigte PNG-Website-Icon-Aktion ersetzt es. Das ursprüngliche Frontend-Favicon kann erhalten bleiben.
 
 **Verändert ein Import sofort die aktive Gestaltung?** Nein. Prüfe importierte Einstellungen und speichere zum Anwenden. Agentur-ZIP-Importe legen enthaltene Bilder allerdings sofort in der Mediathek an.
 
@@ -165,3 +165,5 @@ Entwickelt von David Decker – DECKERWEB für die Websites seiner Kunden. Viel 
 © 2022–2026 David Decker – DECKERWEB · GPL v2 oder höher
 
 Der Footer verlinkt die deutsche beziehungsweise englische Wiki-Anleitung. Changelog öffnet die vollständige lokal mitgelieferte Historie; ohne JavaScript führt der Link zur passenden Changelog-Textdatei.
+
+[Aktueller Stand und Abnahme](../PROFILE-de.md) · [Daten](../DATA-de.md) · [Vollständige FAQ](FAQ-Deutsch.md)

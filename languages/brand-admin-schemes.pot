@@ -1,0 +1,1463 @@
+msgid "%s is installed but inactive. Activate it first."
+msgstr ""
+
+msgid "%s is missing. Install and activate it first."
+msgstr ""
+
+msgid "%s must be network activated first."
+msgstr ""
+
+msgid "%s supports activation per site only."
+msgstr ""
+
+msgid "A banner replaces the logo and stays within the form width."
+msgstr ""
+
+msgid "A selected login image is unavailable; review the logo, banner or background selection"
+msgstr ""
+
+msgid "A short quote appears only on the image or gradient panel."
+msgstr ""
+
+msgid "A small letter and color distinguish Local, Development, Staging and Live tabs. A retained WordPress Site Icon stays unchanged."
+msgstr ""
+
+msgid "A valid 512 × 512 PNG icon is required."
+msgstr ""
+
+msgid "A wide image works best; its full shape remains visible."
+msgstr ""
+
+msgid "Abbreviation (up to 3 characters)"
+msgstr ""
+
+msgid "Accent"
+msgstr ""
+
+msgid "Activate"
+msgstr ""
+
+msgid "Activate Bricks QuickNav per site after selecting the Bricks parent or child theme."
+msgstr ""
+
+msgid "Active scheme"
+msgstr ""
+
+msgid "Adds Primary, Secondary, Tertiary and Accent as extra editor colors. Existing theme colors stay available; the saved active scheme provides the values."
+msgstr ""
+
+msgid "Admin"
+msgstr ""
+
+msgid "Admin buttons"
+msgstr ""
+
+msgid "Admin menu"
+msgstr ""
+
+msgid "Admin submenu"
+msgstr ""
+
+msgid "Admin tab"
+msgstr ""
+
+msgid "Admin toolbar"
+msgstr ""
+
+msgid "Administrators and users with permission"
+msgstr ""
+
+msgid "Agency package imported for review. Images were added to the Media Library; save all changes to apply settings."
+msgstr ""
+
+msgid "Agency package is too large."
+msgstr ""
+
+msgid "Align center"
+msgstr ""
+
+msgid "Align left"
+msgstr ""
+
+msgid "All"
+msgstr ""
+
+msgid "All changes saved"
+msgstr ""
+
+msgid "All settings saved. The selected admin scheme is active for your account. Reload the page to see every change."
+msgstr ""
+
+msgid "Already active"
+msgstr ""
+
+msgid "An agency package includes settings and local PNG, JPEG, WebP or GIF images (up to 4 MB each). SVG files are excluded. On import, images are added to the Media Library immediately; review and save the settings afterward. ZIP support is required on the server."
+msgstr ""
+
+msgid "Apr"
+msgstr ""
+
+msgid "April"
+msgstr ""
+
+msgid "Archive contains too many files."
+msgstr ""
+
+msgid "Archive symlinks are not permitted."
+msgstr ""
+
+msgid "As of "
+msgstr ""
+
+msgid "Atmosphere"
+msgstr ""
+
+msgid "Attribution (optional)"
+msgstr ""
+
+msgid "Aug"
+msgstr ""
+
+msgid "August"
+msgstr ""
+
+msgid "Aurora"
+msgstr ""
+
+msgid "Automatic"
+msgstr ""
+
+msgid "Automatic builder symbol"
+msgstr ""
+
+msgid "Automatic color"
+msgstr ""
+
+msgid "Automatic contrast"
+msgstr ""
+
+msgid "Automatic detection"
+msgstr ""
+
+msgid "Automatic from scheme"
+msgstr ""
+
+msgid "Automatically detected"
+msgstr ""
+
+msgid "Back"
+msgstr ""
+
+msgid "Back to deckerweb"
+msgstr ""
+
+msgid "Background"
+msgstr ""
+
+msgid "Background color"
+msgstr ""
+
+msgid "Background image"
+msgstr ""
+
+msgid "Balanced"
+msgstr ""
+
+msgid "Bloom"
+msgstr ""
+
+msgid "Bold"
+msgstr ""
+
+msgid "Brand Accent"
+msgstr ""
+
+msgid "Brand Admin Schemes"
+msgstr ""
+
+msgid "Brand Admin Schemes colors"
+msgstr ""
+
+msgid "Brand Admin Schemes login images"
+msgstr ""
+
+msgid "Brand Primary"
+msgstr ""
+
+msgid "Brand Secondary"
+msgstr ""
+
+msgid "Brand Tertiary"
+msgstr ""
+
+msgid "Brand colors"
+msgstr ""
+
+msgid "Brand colors create readable WordPress admin schemes."
+msgstr ""
+
+msgid "Brand colors for your WordPress admin, login, toolbar and browser tabs. Use Core Framework, Bricks, ACSS or your own palette."
+msgstr ""
+
+msgid "Brand strength"
+msgstr ""
+
+msgid "Bricks outline"
+msgstr ""
+
+msgid "Bricks palette"
+msgstr ""
+
+msgid "Bring your brand colors to the WordPress admin, login, toolbar, and browser tabs. Use Core Framework, Bricks, ACSS, or your own palette."
+msgstr ""
+
+msgid "Browser favicons"
+msgstr ""
+
+msgid "Browser tab icons"
+msgstr ""
+
+msgid "Browser tab icons (favicons)"
+msgstr ""
+
+msgid "Builder"
+msgstr ""
+
+msgid "Builder color preset"
+msgstr ""
+
+msgid "Builder colors follow Bricks, Elementor or Oxygen when detected."
+msgstr ""
+
+msgid "Builder editor browser tab"
+msgstr ""
+
+msgid "Builder tab"
+msgstr ""
+
+msgid "Button"
+msgstr ""
+
+msgid "Button color"
+msgstr ""
+
+msgid "CI · "
+msgstr ""
+
+msgid "Calm"
+msgstr ""
+
+msgid "Cannot create temporary file."
+msgstr ""
+
+msgid "Cannot create verified archive."
+msgstr ""
+
+msgid "Cannot finalize archive."
+msgstr ""
+
+msgid "Cannot normalize archive."
+msgstr ""
+
+msgid "Cannot read archive entry."
+msgstr ""
+
+msgid "Catalog URL"
+msgstr ""
+
+msgid "Centered"
+msgstr ""
+
+msgid "Changelog"
+msgstr ""
+
+msgid "Changes remain a draft until you save. You can leave setup at any time and continue in the full settings."
+msgstr ""
+
+msgid "Check contrast"
+msgstr ""
+
+msgid "Choose image"
+msgstr ""
+
+msgid "Choose your colors"
+msgstr ""
+
+msgid "Circle outline"
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "Color contrast check"
+msgstr ""
+
+msgid "Color frontend admin bar"
+msgstr ""
+
+msgid "Color scheme"
+msgstr ""
+
+msgid "Color source"
+msgstr ""
+
+msgid "Color sources could not be loaded. Manual colors remain available."
+msgstr ""
+
+msgid "Colors adapt to the visible toolbar. Custom colors keep their hue and change brightness only when needed for contrast."
+msgstr ""
+
+msgid "Compatible additions only"
+msgstr ""
+
+msgid "Complete changelog"
+msgstr ""
+
+msgid "Confirm sanitized SVG logos first."
+msgstr ""
+
+msgid "Confirm source changes before saving."
+msgstr ""
+
+msgid "Content"
+msgstr ""
+
+msgid "Content alignment"
+msgstr ""
+
+msgid "Contextual tab icons are available to administrators by default. Other users and visitors keep the WordPress Site Icon."
+msgstr ""
+
+msgid "Contextual tab icons are currently available to everyone, including visitors."
+msgstr ""
+
+msgid "Contextual tab icons are visible only to signed-in users with the bas_view_context_icons capability. Administrators receive it by default; a role editor can grant it to other roles or users. Visitors keep the WordPress Site Icon."
+msgstr ""
+
+msgid "Continue in full settings"
+msgstr ""
+
+msgid "Contrast"
+msgstr ""
+
+msgid "Core Framework, ACSS and Bricks are shown only when readable colors are available. Saved color values remain available without the source."
+msgstr ""
+
+msgid "Could not access the update filesystem."
+msgstr ""
+
+msgid "Could not create the agency package."
+msgstr ""
+
+msgid "Could not import package images."
+msgstr ""
+
+msgid "Could not prepare the GitHub release package."
+msgstr ""
+
+msgid "Current"
+msgstr ""
+
+msgid "Custom color"
+msgstr ""
+
+msgid "Customer banner"
+msgstr ""
+
+msgid "Customer logo"
+msgstr ""
+
+msgid "Customize login colors"
+msgstr ""
+
+msgid "Dark"
+msgstr ""
+
+msgid "Dec"
+msgstr ""
+
+msgid "December"
+msgstr ""
+
+msgid "Default for users"
+msgstr ""
+
+msgid "Default; allow personal selection"
+msgstr ""
+
+msgid "Delete Library settings when removing the last host plugin"
+msgstr ""
+
+msgid "Derive automatically"
+msgstr ""
+
+msgid "Desktop"
+msgstr ""
+
+msgid "Details & requirements"
+msgstr ""
+
+msgid "Detected environment"
+msgstr ""
+
+msgid "Development"
+msgstr ""
+
+msgid "Diagonal"
+msgstr ""
+
+msgid "Diamond outline"
+msgstr ""
+
+msgid "Disabled"
+msgstr ""
+
+msgid "Discard unsaved changes and reload the page?"
+msgstr ""
+
+msgid "Discover more plugins by deckerweb"
+msgstr ""
+
+msgid "Dismiss permanently"
+msgstr ""
+
+msgid "Displayed environment"
+msgstr ""
+
+msgid "Distinguish frontend, admin and builder tabs at a glance."
+msgstr ""
+
+msgid "Documentation"
+msgstr ""
+
+msgid "Done. The plugin is active."
+msgstr ""
+
+msgid "Download PNG"
+msgstr ""
+
+msgid "Download SVG"
+msgstr ""
+
+msgid "Dusk"
+msgstr ""
+
+msgid "Enable contextual tab icons"
+msgstr ""
+
+msgid "Enabled"
+msgstr ""
+
+msgid "Enter a catalog URL first."
+msgstr ""
+
+msgid "Environment display"
+msgstr ""
+
+msgid "Environment selection"
+msgstr ""
+
+msgid "Environment source"
+msgstr ""
+
+msgid "Estimated text contrast for this scheme and login palette. Other plugins can change the final appearance."
+msgstr ""
+
+msgid "Everyone, including visitors"
+msgstr ""
+
+msgid "Existing icon settings are retained. Colors and initials provide automatic fallbacks."
+msgstr ""
+
+msgid "Expanded archive is too large."
+msgstr ""
+
+msgid "Export JSON"
+msgstr ""
+
+msgid "Export agency package (.zip)"
+msgstr ""
+
+msgid "Export failed"
+msgstr ""
+
+msgid "Export settings as JSON"
+msgstr ""
+
+msgid "Export your color schemes and plugin settings as JSON, or import a file to review it before saving. Images stay in the WordPress media library and are not included in the JSON file."
+msgstr ""
+
+msgid "Exports use the generated design. PNGs are 512 × 512 pixels. Media and Site Icon actions take effect immediately; the official Site Icon omits the environment marker."
+msgstr ""
+
+msgid "F j, Y"
+msgstr ""
+
+msgid "Feb"
+msgstr ""
+
+msgid "February"
+msgstr ""
+
+msgid "File too large."
+msgstr ""
+
+msgid "Filter"
+msgstr ""
+
+msgid "Find your atmosphere"
+msgstr ""
+
+msgid "Fits my installation"
+msgstr ""
+
+msgid "Fix"
+msgstr ""
+
+msgid "Forbidden"
+msgstr ""
+
+msgid "Force for all users"
+msgstr ""
+
+msgid "Foreground color"
+msgstr ""
+
+msgid "Four simple steps. Your existing settings stay available."
+msgstr ""
+
+msgid "Fri"
+msgstr ""
+
+msgid "Friday"
+msgstr ""
+
+msgid "Frontend admin bar color"
+msgstr ""
+
+msgid "Frontend tab"
+msgstr ""
+
+msgid "Frontend toolbar styling"
+msgstr ""
+
+msgid "Generate a website favicon"
+msgstr ""
+
+msgid "Generate frontend icon"
+msgstr ""
+
+msgid "GitHub Stars"
+msgstr ""
+
+msgid "GitHub release does not contain the plugin main file."
+msgstr ""
+
+msgid "Gradient style"
+msgstr ""
+
+msgid "Gradients use the current scheme colors. A selected background image takes priority."
+msgstr ""
+
+msgid "Grid outline"
+msgstr ""
+
+msgid "Guided setup"
+msgstr ""
+
+msgid "Hide catalog"
+msgstr ""
+
+msgid "Higher brand strength makes the brand colors more prominent. Text and button colors are adjusted for readability."
+msgstr ""
+
+msgid "Horizon"
+msgstr ""
+
+msgid "Hover over a card or focus it with the keyboard. Escape ends the temporary preview."
+msgstr ""
+
+msgid "I reviewed the source color changes"
+msgstr ""
+
+msgid "I understand: SVG files must be sanitized. Only administrators can choose one here."
+msgstr ""
+
+msgid "Icon downloaded."
+msgstr ""
+
+msgid "Icon saved to the Media Library."
+msgstr ""
+
+msgid "Image on the left"
+msgstr ""
+
+msgid "Image on the right"
+msgstr ""
+
+msgid "Image position"
+msgstr ""
+
+msgid "Import & export"
+msgstr ""
+
+msgid "Import JSON"
+msgstr ""
+
+msgid "Import agency package (.zip)"
+msgstr ""
+
+msgid "Import failed"
+msgstr ""
+
+msgid "Import settings from JSON"
+msgstr ""
+
+msgid "Improved"
+msgstr ""
+
+msgid "In a detected builder editor tab, the favicon uses the builder color preset. Ordinary website tabs keep their website icon."
+msgstr ""
+
+msgid "Install and activate Safe SVG to use sanitized SVG logos."
+msgstr ""
+
+msgid "Install and activate this plugin in the network admin."
+msgstr ""
+
+msgid "Install deckerweb plugin"
+msgstr ""
+
+msgid "Install now"
+msgstr ""
+
+msgid "Installation environment"
+msgstr ""
+
+msgid "Installation environment: %s"
+msgstr ""
+
+msgid "Installed"
+msgstr ""
+
+msgid "Installed: "
+msgstr ""
+
+msgid "Invalid ZIP archive."
+msgstr ""
+
+msgid "Invalid agency package."
+msgstr ""
+
+msgid "Invalid approval flag."
+msgstr ""
+
+msgid "Invalid catalog field: "
+msgstr ""
+
+msgid "Invalid catalog schema."
+msgstr ""
+
+msgid "Invalid dependencies."
+msgstr ""
+
+msgid "Invalid dependency URL."
+msgstr ""
+
+msgid "Invalid dependency metadata."
+msgstr ""
+
+msgid "Invalid display field."
+msgstr ""
+
+msgid "Invalid icon action."
+msgstr ""
+
+msgid "Invalid icon color."
+msgstr ""
+
+msgid "Invalid icon label."
+msgstr ""
+
+msgid "Invalid identity or release metadata."
+msgstr ""
+
+msgid "Invalid image in agency package."
+msgstr ""
+
+msgid "Invalid local icon."
+msgstr ""
+
+msgid "Invalid network policy."
+msgstr ""
+
+msgid "Invalid network requirement."
+msgstr ""
+
+msgid "Invalid or oversized agency package."
+msgstr ""
+
+msgid "Invalid platform version."
+msgstr ""
+
+msgid "Invalid plugin series."
+msgstr ""
+
+msgid "Invalid scheme colors"
+msgstr ""
+
+msgid "Invalid star count."
+msgstr ""
+
+msgid "Invalid stars date."
+msgstr ""
+
+msgid "Jan"
+msgstr ""
+
+msgid "January"
+msgstr ""
+
+msgid "Jul"
+msgstr ""
+
+msgid "July"
+msgstr ""
+
+msgid "Jump to a section"
+msgstr ""
+
+msgid "Jump to:"
+msgstr ""
+
+msgid "Jun"
+msgstr ""
+
+msgid "June"
+msgstr ""
+
+msgid "Keep WordPress Site Icon"
+msgstr ""
+
+msgid "Keep the WordPress Site Icon as favicon"
+msgstr ""
+
+msgid "Last save undone. Reload the page to see the full result."
+msgstr ""
+
+msgid "Layout"
+msgstr ""
+
+msgid "Leaf outline"
+msgstr ""
+
+msgid "Leave colors empty to follow the active scheme or builder preset."
+msgstr ""
+
+msgid "Letters"
+msgstr ""
+
+msgid "Library"
+msgstr ""
+
+msgid "Library changelog"
+msgstr ""
+
+msgid "Library settings"
+msgstr ""
+
+msgid "Library settings saved."
+msgstr ""
+
+msgid "Live"
+msgstr ""
+
+msgid "Loading editor…"
+msgstr ""
+
+msgid "Local"
+msgstr ""
+
+msgid "Log In"
+msgstr ""
+
+msgid "Login background"
+msgstr ""
+
+msgid "Login button"
+msgstr ""
+
+msgid "Login colors"
+msgstr ""
+
+msgid "Login design"
+msgstr ""
+
+msgid "Login preview"
+msgstr ""
+
+msgid "Logo and background image are optional. The standard WordPress forms remain available."
+msgstr ""
+
+msgid "Logo display"
+msgstr ""
+
+msgid "Lost your password?"
+msgstr ""
+
+msgid "Manage installed plugins"
+msgstr ""
+
+msgid "Manual"
+msgstr ""
+
+msgid "Manual colors"
+msgstr ""
+
+msgid "Manual selection"
+msgstr ""
+
+msgid "Mar"
+msgstr ""
+
+msgid "March"
+msgstr ""
+
+msgid "Mark the installation environment on generated favicons"
+msgstr ""
+
+msgid "May"
+msgstr ""
+
+msgid "Media library unavailable."
+msgstr ""
+
+msgid "Menu"
+msgstr ""
+
+msgid "Misc"
+msgstr ""
+
+msgid "Missing display text."
+msgstr ""
+
+msgid "Missing plugin header."
+msgstr ""
+
+msgid "Mist"
+msgstr ""
+
+msgid "Mobile"
+msgstr ""
+
+msgid "Mon"
+msgstr ""
+
+msgid "Monday"
+msgstr ""
+
+msgid "More by deckerweb"
+msgstr ""
+
+msgid "Multisite"
+msgstr ""
+
+msgid "Multisite: branding and media belong to this website. Network activation makes the plugin available on every site; it does not copy settings between sites."
+msgstr ""
+
+msgid "Network activate"
+msgstr ""
+
+msgid "Network permission denied."
+msgstr ""
+
+msgid "New"
+msgstr ""
+
+msgid "New scheme"
+msgstr ""
+
+msgid "Next"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "No approved plugins match this selection."
+msgstr ""
+
+msgid "No default"
+msgstr ""
+
+msgid "No saved change to undo."
+msgstr ""
+
+msgid "No unavailable selected login images were found"
+msgstr ""
+
+msgid "None"
+msgstr ""
+
+msgid "Nov"
+msgstr ""
+
+msgid "November"
+msgstr ""
+
+msgid "Oct"
+msgstr ""
+
+msgid "October"
+msgstr ""
+
+msgid "Off by default. Applies only when no other host is installed, including inactive hosts. Removes Library settings, installation records and introduction status. Installed plugins, their content and other plugin settings remain unchanged. Network data is shared across sites."
+msgstr ""
+
+msgid "Offer brand colors in the Gutenberg palette"
+msgstr ""
+
+msgid "Official Site Icon updated. Other draft settings have not been saved."
+msgstr ""
+
+msgid "Online catalog"
+msgstr ""
+
+msgid "Only HTTPS on deckerweb.de or raw.githubusercontent.com/deckerweb. The server receives the requesting IP address. GitHub is contacted when installing a release."
+msgstr ""
+
+msgid "Only approved releases"
+msgstr ""
+
+msgid "Open catalog"
+msgstr ""
+
+msgid "Open in Media Library"
+msgstr ""
+
+msgid "Optional finishing touches"
+msgstr ""
+
+msgid "Optional short quote"
+msgstr ""
+
+msgid "Optional. The bundled catalog works immediately. Online requests are cached for 12 hours. No site URL, plugin list or usage data is sent."
+msgstr ""
+
+msgid "Overlay strength"
+msgstr ""
+
+msgid "Oxygen outline"
+msgstr ""
+
+msgid "PHP ZIP support is required."
+msgstr ""
+
+msgid "PHP version"
+msgstr ""
+
+msgid "PNG export is not supported by this browser."
+msgstr ""
+
+msgid "PNG uploads are not available on this site."
+msgstr ""
+
+msgid "POST required."
+msgstr ""
+
+msgid "Page background"
+msgstr ""
+
+msgid "Palette source"
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "Permission denied."
+msgstr ""
+
+msgid "Plugin identity or version does not match the catalog."
+msgstr ""
+
+msgid "Plugin information"
+msgstr ""
+
+msgid "Plugin is not installed."
+msgstr ""
+
+msgid "Plugin series"
+msgstr ""
+
+msgid "Plugin website"
+msgstr ""
+
+msgid "Preparing icon…"
+msgstr ""
+
+msgid "Preview"
+msgstr ""
+
+msgid "Preview and apply"
+msgstr ""
+
+msgid "Preview login in a new tab"
+msgstr ""
+
+msgid "Previews show the optional designs, even when they are disabled."
+msgstr ""
+
+msgid "Primary"
+msgstr ""
+
+msgid "Product website"
+msgstr ""
+
+msgid "Quote on image panel"
+msgstr ""
+
+msgid "Radial"
+msgstr ""
+
+msgid "Readable"
+msgstr ""
+
+msgid "Refresh catalog"
+msgstr ""
+
+msgid "Release checksum is verified before installation. Activation is a separate step."
+msgstr ""
+
+msgid "Release date not recorded"
+msgstr ""
+
+msgid "Release must contain exactly the approved plugin directory."
+msgstr ""
+
+msgid "Release prepared; publication pending"
+msgstr ""
+
+msgid "Reload page"
+msgstr ""
+
+msgid "Remember Me"
+msgstr ""
+
+msgid "Remove image"
+msgstr ""
+
+msgid "Repository & documentation"
+msgstr ""
+
+msgid "Requires PHP %s or newer."
+msgstr ""
+
+msgid "Requires WordPress %s or newer."
+msgstr ""
+
+msgid "Requires a WordPress Multisite network."
+msgstr ""
+
+msgid "Reset filters"
+msgstr ""
+
+msgid "Restricted by default using bas_view_context_icons. Everyone also makes generated frontend icons and their optional environment marker public. Save all changes to apply this choice."
+msgstr ""
+
+msgid "Retrieve approved catalog updates online"
+msgstr ""
+
+msgid "Review and save"
+msgstr ""
+
+msgid "Review plugin settings"
+msgstr ""
+
+msgid "Review source color changes"
+msgstr ""
+
+msgid "Review the scheme name and user default below, then save in the fixed bar above."
+msgstr ""
+
+msgid "SVG logo (requires Safe SVG)"
+msgstr ""
+
+msgid "Sat"
+msgstr ""
+
+msgid "Satin"
+msgstr ""
+
+msgid "Saturday"
+msgstr ""
+
+msgid "Save all changes"
+msgstr ""
+
+msgid "Save and activate selected scheme"
+msgstr ""
+
+msgid "Save and assign"
+msgstr ""
+
+msgid "Save failed"
+msgstr ""
+
+msgid "Save scheme"
+msgstr ""
+
+msgid "Save settings"
+msgstr ""
+
+msgid "Save to Media Library"
+msgstr ""
+
+msgid "Saved"
+msgstr ""
+
+msgid "Saved brand colors are valid"
+msgstr ""
+
+msgid "Saved brand colors need review"
+msgstr ""
+
+msgid "Saved schemes"
+msgstr ""
+
+msgid "Scheme & toolbar"
+msgstr ""
+
+msgid "Scheme imported. Check the preview and save to activate it."
+msgstr ""
+
+msgid "Scheme name"
+msgstr ""
+
+msgid "Scheme saved and activated for your account. Reload the page to see the full result."
+msgstr ""
+
+msgid "Scripts"
+msgstr ""
+
+msgid "Search this catalog"
+msgstr ""
+
+msgid "Secondary"
+msgstr ""
+
+msgid "See the release on GitHub."
+msgstr ""
+
+msgid "Selected by deckerweb · Installed from GitHub releases"
+msgstr ""
+
+msgid "Sep"
+msgstr ""
+
+msgid "September"
+msgstr ""
+
+msgid "Settings imported for review. Check the previews, then save all changes to apply them."
+msgstr ""
+
+msgid "Shield outline"
+msgstr ""
+
+msgid "Show deckerweb under Add Plugins"
+msgstr ""
+
+msgid "Show site tagline"
+msgstr ""
+
+msgid "Show site title"
+msgstr ""
+
+msgid "Shows plugins whose platform and dependency requirements are met in this site or network. Without this filter, plugins with missing requirements remain visible."
+msgstr ""
+
+msgid "Site Icon is used automatically. Choose an image to override it."
+msgstr ""
+
+msgid "Site address hint"
+msgstr ""
+
+msgid "Site scheme selected"
+msgstr ""
+
+msgid "Small plugins. Practical improvements."
+msgstr ""
+
+msgid "Source"
+msgstr ""
+
+msgid "Source: GitHub"
+msgstr ""
+
+msgid "Spark outline"
+msgstr ""
+
+msgid "Staging"
+msgstr ""
+
+msgid "Status colors"
+msgstr ""
+
+msgid "Style the WordPress login"
+msgstr ""
+
+msgid "Sun"
+msgstr ""
+
+msgid "Sunday"
+msgstr ""
+
+msgid "Surface"
+msgstr ""
+
+msgid "Surprise me (stable per site)"
+msgstr ""
+
+msgid "Symbol"
+msgstr ""
+
+msgid "Tab icons"
+msgstr ""
+
+msgid "Tablet"
+msgstr ""
+
+msgid "Tertiary"
+msgstr ""
+
+msgid "The GitHub package could not be prepared. The installed version has been kept."
+msgstr ""
+
+msgid "The GitHub package does not contain the Brand Admin Schemes plugin file."
+msgstr ""
+
+msgid "The GitHub release could not be downloaded."
+msgstr ""
+
+msgid "The approved release changed. Refresh updates first."
+msgstr ""
+
+msgid "The badge appears in the admin bar on both the frontend and backend. Automatic detection uses the WordPress environment first and cautious site address hints only when no environment is configured."
+msgstr ""
+
+msgid "The catalog URL is not an allowed first-party HTTPS endpoint."
+msgstr ""
+
+msgid "The catalog could not be verified. Please try again later."
+msgstr ""
+
+msgid "The catalog is disabled."
+msgstr ""
+
+msgid "The catalog is hidden."
+msgstr ""
+
+msgid "The default applies to users on the WordPress default scheme; forcing also overrides personal selections."
+msgstr ""
+
+msgid "The icon could not be rendered. Please try again."
+msgstr ""
+
+msgid "The icon could not be saved to the Media Library."
+msgstr ""
+
+msgid "The online catalog is unavailable. Showing cached or bundled entries; online approval is checked again before installation."
+msgstr ""
+
+msgid "The online catalog source is not trusted."
+msgstr ""
+
+msgid "The package identity or version does not match a newer Brand Admin Schemes release."
+msgstr ""
+
+msgid "The package version differs from the offered update. Please check for updates again."
+msgstr ""
+
+msgid "The release checksum does not match. Installation stopped."
+msgstr ""
+
+msgid "The source palette has changed since this scheme was saved. Review the old and new colors before updating it."
+msgstr ""
+
+msgid "The update filesystem is unavailable. Please try again."
+msgstr ""
+
+msgid "The update package could not be checked."
+msgstr ""
+
+msgid "The update package has missing or invalid WordPress/PHP requirements."
+msgstr ""
+
+msgid "The upload quota is exhausted."
+msgstr ""
+
+msgid "These small icons appear in browser tabs, helping you tell the public website, WordPress admin and builder editor apart."
+msgstr ""
+
+msgid "This plugin directory already exists. Use the installed plugin; it will not be overwritten."
+msgstr ""
+
+msgid "This release is no longer approved."
+msgstr ""
+
+msgid "This release is not approved."
+msgstr ""
+
+msgid "This release requires a newer WordPress or PHP version. The installed version has been kept."
+msgstr ""
+
+msgid "Thu"
+msgstr ""
+
+msgid "Thursday"
+msgstr ""
+
+msgid "Try background"
+msgstr ""
+
+msgid "Try text"
+msgstr ""
+
+msgid "Tue"
+msgstr ""
+
+msgid "Tuesday"
+msgstr ""
+
+msgid "Undo is no longer available because settings changed."
+msgstr ""
+
+msgid "Undo last save"
+msgstr ""
+
+msgid "Unknown"
+msgstr ""
+
+msgid "Unknown file format"
+msgstr ""
+
+msgid "Unpublished test build"
+msgstr ""
+
+msgid "Unsafe archive path."
+msgstr ""
+
+msgid "Unsaved changes"
+msgstr ""
+
+msgid "Untrusted release URL."
+msgstr ""
+
+msgid "Update %1$s to version %2$s or newer."
+msgstr ""
+
+msgid "Use & export"
+msgstr ""
+
+msgid "Use Save all changes in the fixed bar above to apply your design."
+msgstr ""
+
+msgid "Use as official Site Icon"
+msgstr ""
+
+msgid "Use banner"
+msgstr ""
+
+msgid "Use different icons in browser tabs"
+msgstr ""
+
+msgid "Use logo or Site Icon"
+msgstr ""
+
+msgid "Use scheme colors"
+msgstr ""
+
+msgid "Use this design as the official WordPress Site Icon? This immediately adds a PNG to the Media Library, replaces the Site Icon and switches the frontend to the WordPress Site Icon. Other draft settings are not saved."
+msgstr ""
+
+msgid "Use “Save all changes” in the fixed bar above to activate the selected scheme and apply settings across this page."
+msgstr ""
+
+msgid "Username or email address"
+msgstr ""
+
+msgid "Uses the WordPress site title when empty; falls back to Welcome back."
+msgstr ""
+
+msgid "Uses the WordPress tagline when empty."
+msgstr ""
+
+msgid "Version"
+msgstr ""
+
+msgid "View plugins"
+msgstr ""
+
+msgid "Visibility"
+msgstr ""
+
+msgid "Website browser tab"
+msgstr ""
+
+msgid "Wed"
+msgstr ""
+
+msgid "Wednesday"
+msgstr ""
+
+msgid "Welcome back"
+msgstr ""
+
+msgid "Welcome heading"
+msgstr ""
+
+msgid "Welcome message"
+msgstr ""
+
+msgid "Who can see contextual tab icons?"
+msgstr ""
+
+msgid "WordPress"
+msgstr ""
+
+msgid "WordPress admin browser tab"
+msgstr ""
+
+msgid "WordPress could not process the PNG icon."
+msgstr ""
+
+msgid "WordPress default"
+msgstr ""
+
+msgid "WordPress setting"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "You already use one of my plugins. Find selected additions in the deckerweb tab."
+msgstr ""
+
+msgid "You can save up to 30 schemes. Reuse an existing scheme before adding another."
+msgstr ""
+
+msgid "Your Site Icon and site title are used when no custom logo or title is selected. Existing images and settings are retained."
+msgstr ""
+
+msgid "Your brand at a glance"
+msgstr ""
+
+msgid "Your brand colors, from the admin and login to browser tabs."
+msgstr ""
+
+msgid "Your colors. Your WordPress."
+msgstr ""
+
+msgid "ZIP support is unavailable on this server."
+msgstr ""
+
+msgid "optional"
+msgstr ""

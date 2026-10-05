@@ -1,16 +1,13 @@
-# Documentation checklist for the next release
+# Release checklist
 
-Documentation changes are included in **0.16.2**. Apply this checklist to subsequent releases.
+[Deutsch](RELEASE-CHECKLIST-de.md)
 
-- Include the current `README.md`, `README-de.md`, `readme.txt`, and `readme-de.txt` in the plugin package.
-- Update the version consistently in the plugin, readmes, user guides, and release notes.
-- Keep exactly the latest five version entries in each standard readme. Prepend the new release and remove the oldest displayed entry.
-- Keep the complete history in `docs/CHANGELOG.md`, `docs/CHANGELOG-de.md`, and the English and German Wiki changelog pages.
-- Order categories as **New, Improved, Fixed, Misc**; use **Neu, Verbessert, Behoben, Sonstiges** in German.
-- Keep at most seven short questions in standard readmes. Link to the full, themed Wiki FAQ and update it when behavior changes.
-- Use the localized German banner in the German GitHub readme. Repository artwork remains excluded from plugin release archives.
-- Keep the `== Changelog ==` text-readme section marker compatible with the local footer dialog.
-- Check contents links, language links, images, and the packaged documentation before publication.
-- Add real, anonymized WordPress screenshots when available; do not substitute mockups for screenshots of actual behavior.
+- Generate documentation and both German catalogs from docs/source; keep seven short FAQs and the policy-defined recent history.
+- Synchronize header, constant, four readmes, notes, guides and Wiki sources. Preserve the full history and known release dates.
+- Verify original Library 0.5.0, Updater V2, local assets, 1280x640 GitHub banners and minimum requirements.
+- Test the actual allowlisted ZIP, activation/update and settings preservation, single-site, site-only/network Multisite, profile/AJAX/Undo, new sites, roles, media limits and quota.
+- Check English, German informal/formal, console/logs, keyboard/focus/Escape/mobile. Actual licensed builders and assistive technologies need their own environment.
+- Verify private repository security reporting and current platform rules. Do not copy internal reports, handoff files, archives, source tools or alternative artwork into the runtime ZIP.
+- Stable release and Library catalog changes require explicit release authorization. Missing screenshots do not block otherwise accepted changes.
 
-Release 0.16.2 contains the documentation refresh without functional changes.
+See [release policy](RELEASE-POLICY.md), [data](DATA.md) and [testing](TESTING-0.18.0.md).

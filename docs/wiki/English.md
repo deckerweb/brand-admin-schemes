@@ -2,7 +2,7 @@
 
 [Deutsch](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) · [Home](https://github.com/deckerweb/brand-admin-schemes/wiki)
 
-A practical guide to Brand Admin Schemes 0.16.3. Use the contents below to jump to a setting.
+A practical guide to Brand Admin Schemes 0.18.0 (unpublished test build). Use the contents below to jump to a setting.
 
 ## Contents
 
@@ -61,7 +61,7 @@ Optional frontend admin-bar styling applies to logged-in users with a visible ad
 
 Enable **Tab icons** in the settings to give the public site, WordPress admin, and an active builder editor distinct generated SVG favicons. Frontend generation is optional: you may keep the existing WordPress Site Icon. The feature is initially off on existing sites. Each context offers an abbreviation of up to three characters or a simple outline symbol plus automatic palette colors or explicit foreground and background colors. The builder preset follows Bricks, Elementor, or Oxygen when its editor is recognized, or you can choose a preset manually. The shapes are original geometric outlines, not official builder logos.
 
-The plugin changes only the browser tab icon in the current context. It does not replace the Site Icon stored in WordPress or upload SVG files. Builder detection is limited to logged-in editor views using known request indicators; ordinary public pages retain their frontend icon. If another plugin rewrites favicons late in its editor shell, behavior may depend on its output order.
+Contextual display changes only the current browser tab icon. A separate confirmed PNG action can replace the stored WordPress Site Icon; generated SVG is never uploaded. Builder detection is limited to logged-in editor views using known request indicators; ordinary public pages retain their frontend icon. If another plugin rewrites favicons late in its editor shell, behavior may depend on its output order.
 
 Generated favicons may also show a tiny environment letter: **L** for Local, **D** for Development, **S** for Staging, or **P** for Production. The marker follows the detected or manually selected environment and can be turned off. The retained WordPress Site Icon is left alone.
 
@@ -122,7 +122,7 @@ English source strings and German (`de_DE`) `.po`/`.mo` files are included. Word
 
 ## Extensions
 
-Version 0.16.3 has no dedicated public plugin hooks or filters. Please [open an issue](https://github.com/deckerweb/brand-admin-schemes/issues) if a documented integration would help your project.
+The documented bas_site_settings_changed hook reports site ID and save, undo or site_icon operation. A future Leitstand adapter must use actual interfaces; BAS has no Leitstand dependency.
 
 <a name="faq"></a>
 
@@ -136,7 +136,7 @@ Version 0.16.3 has no dedicated public plugin hooks or filters. Please [open an 
 
 **Do I need a logo and a background photo?** No. The Site Icon, theme logo, and site name provide fallbacks; palette gradients work without a photo.
 
-**Does it replace the WordPress Site Icon?** No. It generates contextual browser-tab favicons without changing the stored Site Icon. You can retain the original frontend favicon.
+**Does it replace the WordPress Site Icon?** Only when you explicitly confirm the separate PNG Site Icon action. Contextual favicons leave it unchanged by default.
 
 **Does importing immediately change the live design?** No. Review the imported settings and save to apply them. Agency ZIP imports do add bundled images to the Media Library immediately.
 
@@ -161,3 +161,5 @@ Built by David Decker for the sites he works on at DECKERWEB. Have fun making th
 © 2022–2026 David Decker – DECKERWEB · GPL v2 or later
 
 The footer links to the German or English Wiki guide. Changelog opens the complete bundled local history; without JavaScript, the link opens its localized changelog text file.
+
+[Current build and acceptance](../PROFILE.md) · [Data](../DATA.md) · [Full FAQ](FAQ-English.md)

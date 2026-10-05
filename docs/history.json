@@ -1,0 +1,667 @@
+{
+  "display_count": 7,
+  "versions": [
+    {
+      "version": "0.18.0",
+      "status": "released",
+      "date": "2026-10-05",
+      "entries": [
+        {
+          "category": "New",
+          "en": "Optional four-step guided setup.",
+          "de_DE": "Optionale geführte Einrichtung mit vier Schritten.",
+          "de_DE_formal": "Optionale geführte Einrichtung mit vier Schritten."
+        },
+        {
+          "category": "New",
+          "en": "Eight-field informational report in Tools → Site Health, without extra tests or external requests.",
+          "de_DE": "Informativer Bericht mit acht Feldern unter Werkzeuge → Website-Zustand, ohne zusätzliche Tests oder externe Aufrufe.",
+          "de_DE_formal": "Informativer Bericht mit acht Feldern unter Werkzeuge → Website-Zustand, ohne zusätzliche Tests oder externe Aufrufe."
+        },
+        {
+          "category": "Improved",
+          "en": "Tab icons support audience selection, viewing permission, downloads, PNG media actions and official Site Icon adoption.",
+          "de_DE": "Tab-Icons bieten Sichtbarkeitsauswahl, Anzeige-Berechtigung, Downloads, PNG-Mediathek-Aktionen und Übernahme als offizielles Website-Icon.",
+          "de_DE_formal": "Tab-Icons bieten Sichtbarkeitsauswahl, Anzeige-Berechtigung, Downloads, PNG-Mediathek-Aktionen und Übernahme als offizielles Website-Icon."
+        },
+        {
+          "category": "Improved",
+          "en": "Adds network activation, per-site personal colors, profile/AJAX/Undo isolation and new-subsite permission provisioning.",
+          "de_DE": "Ergänzt Netzwerkaktivierung, persönliche Farbauswahl je Website, Profil-/AJAX-/Undo-Isolation und neue Unterwebsites.",
+          "de_DE_formal": "Ergänzt Netzwerkaktivierung, persönliche Farbauswahl je Website, Profil-/AJAX-/Undo-Isolation und neue Unterwebsites."
+        },
+        {
+          "category": "Improved",
+          "en": "Ships informal and formal German, shared documentation sources, a dated local changelog and localized GitHub banners.",
+          "de_DE": "Liefert Deutsch mit Du und Sie, gemeinsame Dokumentationsquellen, einen datierten lokalen Änderungsverlauf und lokalisierte GitHub-Banner.",
+          "de_DE_formal": "Liefert Deutsch mit Du und Sie, gemeinsame Dokumentationsquellen, einen datierten lokalen Änderungsverlauf und lokalisierte GitHub-Banner."
+        },
+        {
+          "category": "Fix",
+          "en": "Keeps network-profile AJAX color changes global and rejects Undo snapshots from another storage scope.",
+          "de_DE": "Speichert AJAX-Farbänderungen im Netzwerk-Profil global und weist Undo-Snapshots aus einem anderen Speicherbereich ab.",
+          "de_DE_formal": "Speichert AJAX-Farbänderungen im Netzwerk-Profil global und weist Undo-Snapshots aus einem anderen Speicherbereich ab."
+        },
+        {
+          "category": "Fix",
+          "en": "Checks upload permission and available Multisite space for agency images and PNG icons.",
+          "de_DE": "Prüft Upload-Rechte und freien Multisite-Speicher für Agenturbilder und PNG-Icons.",
+          "de_DE_formal": "Prüft Upload-Rechte und freien Multisite-Speicher für Agenturbilder und PNG-Icons."
+        },
+        {
+          "category": "Fix",
+          "en": "Keeps save actions and long translated choices within narrow admin screens.",
+          "de_DE": "Hält Speicheraktionen und lange übersetzte Auswahlfelder innerhalb schmaler Adminbildschirme.",
+          "de_DE_formal": "Hält Speicheraktionen und lange übersetzte Auswahlfelder innerhalb schmaler Adminbildschirme."
+        },
+        {
+          "category": "Fix",
+          "en": "Preserves named scheme colors during validation and protects later personal color changes from Undo.",
+          "de_DE": "Erhält benannte Schemafarben bei der Validierung und schützt spätere persönliche Farbänderungen vor Undo.",
+          "de_DE_formal": "Erhält benannte Schemafarben bei der Validierung und schützt spätere persönliche Farbänderungen vor Undo."
+        },
+        {
+          "category": "Misc",
+          "en": "Includes deckerweb Plugin Library 0.5.0; preserves Updater V2.",
+          "de_DE": "Enthält deckerweb Plugin Library 0.5.0; Updater V2 bleibt erhalten.",
+          "de_DE_formal": "Enthält deckerweb Plugin Library 0.5.0; Updater V2 bleibt erhalten."
+        },
+        {
+          "category": "Misc",
+          "en": "Documents security reporting and data ownership; uninstall clears temporary Undo and updater cache while preserving branding, media and user choices.",
+          "de_DE": "Dokumentiert Sicherheitsmeldungen und Datenhaltung; die Deinstallation bereinigt temporäres Undo und den Updater-Cache und erhält Branding, Medien und Benutzerauswahl.",
+          "de_DE_formal": "Dokumentiert Sicherheitsmeldungen und Datenhaltung; die Deinstallation bereinigt temporäres Undo und den Updater-Cache und erhält Branding, Medien und Benutzerauswahl."
+        }
+      ]
+    },
+    {
+      "version": "0.17.0",
+      "status": "development",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Compact, read-only Site Health information without status tests.",
+          "de_DE": "Kompakter, rein informativer Website-Zustand-Bericht ohne Status-Tests.",
+          "de_DE_formal": "Kompakter, rein informativer Website-Zustand-Bericht ohne Status-Tests."
+        }
+      ]
+    },
+    {
+      "version": "0.16.3",
+      "status": "historical",
+      "date": "2026-09-30",
+      "entries": [
+        {
+          "category": "Improved",
+          "en": "Shows the plugin icon in WordPress update offers and localized English/German banners in plugin details.",
+          "de_DE": "Zeigt das Plugin-Icon in WordPress-Updateangeboten und englische beziehungsweise deutsche Banner in den Plugindetails.",
+          "de_DE_formal": "Zeigt das Plugin-Icon in WordPress-Updateangeboten und englische beziehungsweise deutsche Banner in den Plugindetails."
+        },
+        {
+          "category": "Improved",
+          "en": "Links footer documentation directly to the localized Wiki and opens the complete bundled changelog in an accessible local dialog.",
+          "de_DE": "Verlinkt die Footer-Dokumentation direkt ins sprachabhängige Wiki und öffnet den vollständigen mitgelieferten Änderungsverlauf in einem zugänglichen lokalen Dialog.",
+          "de_DE_formal": "Verlinkt die Footer-Dokumentation direkt ins sprachabhängige Wiki und öffnet den vollständigen mitgelieferten Änderungsverlauf in einem zugänglichen lokalen Dialog."
+        },
+        {
+          "category": "Fix",
+          "en": "Restores missing update artwork, including already cached update offers after this version is installed.",
+          "de_DE": "Ergänzt fehlende Updategrafiken, auch bei bereits gespeicherten Updateangeboten nach Installation dieser Version.",
+          "de_DE_formal": "Ergänzt fehlende Updategrafiken, auch bei bereits gespeicherten Updateangeboten nach Installation dieser Version."
+        },
+        {
+          "category": "Misc",
+          "en": "Uses the shared DECKERWEB GitHub Updater V2 with plugin-scoped package identity and requirements checks.",
+          "de_DE": "Verwendet den gemeinsamen DECKERWEB GitHub-Updater V2 mit pluginspezifischer Prüfung von Paketidentität und Voraussetzungen.",
+          "de_DE_formal": "Verwendet den gemeinsamen DECKERWEB GitHub-Updater V2 mit pluginspezifischer Prüfung von Paketidentität und Voraussetzungen."
+        }
+      ]
+    },
+    {
+      "version": "0.16.2",
+      "status": "historical",
+      "date": "2026-09-30",
+      "entries": [
+        {
+          "category": "Improved",
+          "en": "Refreshes all four readmes with clear feature summaries, seven short FAQs, and the latest five version entries.",
+          "de_DE": "Überarbeitet alle vier Readmes mit verständlichen Funktionsübersichten, sieben kurzen FAQs und den letzten fünf Versionseinträgen.",
+          "de_DE_formal": "Überarbeitet alle vier Readmes mit verständlichen Funktionsübersichten, sieben kurzen FAQs und den letzten fünf Versionseinträgen."
+        },
+        {
+          "category": "Improved",
+          "en": "Adds a German GitHub banner and expands the bilingual Wiki with 49 themed FAQ answers per language and complete changelogs.",
+          "de_DE": "Ergänzt ein deutsches GitHub-Banner und erweitert das zweisprachige Wiki um 49 thematisch gegliederte FAQ-Antworten je Sprache und vollständige Änderungsverläufe.",
+          "de_DE_formal": "Ergänzt ein deutsches GitHub-Banner und erweitert das zweisprachige Wiki um 49 thematisch gegliederte FAQ-Antworten je Sprache und vollständige Änderungsverläufe."
+        },
+        {
+          "category": "Improved",
+          "en": "Adds checked contents links, presents browser-tab favicons alongside the main features, and explains GitHub updates through the regular WordPress update system.",
+          "de_DE": "Ergänzt geprüfte Sprungmarken, stellt Browser-Tab-Favicons bei den Hauptfunktionen vor und erklärt GitHub-Updates über das reguläre WordPress-Updatesystem.",
+          "de_DE_formal": "Ergänzt geprüfte Sprungmarken, stellt Browser-Tab-Favicons bei den Hauptfunktionen vor und erklärt GitHub-Updates über das reguläre WordPress-Updatesystem."
+        },
+        {
+          "category": "Misc",
+          "en": "Packages the updated English and German documentation with this release.",
+          "de_DE": "Liefert die aktualisierte englische und deutsche Dokumentation mit diesem Release aus.",
+          "de_DE_formal": "Liefert die aktualisierte englische und deutsche Dokumentation mit diesem Release aus."
+        }
+      ]
+    },
+    {
+      "version": "0.16.1",
+      "status": "historical",
+      "date": "2026-09-29",
+      "entries": [
+        {
+          "category": "Improved",
+          "en": "Adopts the Daily Scripture footer layout, adds a documentation link beside the changelog, and includes a translated brand slogan.",
+          "de_DE": "Footer-Layout von Daily Scripture übernommen, Dokumentationslink neben dem Changelog ergänzt und einen übersetzten Markenslogan eingefügt.",
+          "de_DE_formal": "Footer-Layout von Daily Scripture übernommen, Dokumentationslink neben dem Changelog ergänzt und einen übersetzten Markenslogan eingefügt."
+        },
+        {
+          "category": "Misc",
+          "en": "Sets the DECKERWEB copyright range to 2022–2026 throughout the plugin and documentation.",
+          "de_DE": "DECKERWEB-Copyright in Plugin und Dokumentation auf 2022–2026 gesetzt.",
+          "de_DE_formal": "DECKERWEB-Copyright in Plugin und Dokumentation auf 2022–2026 gesetzt."
+        }
+      ]
+    },
+    {
+      "version": "0.16.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Adds a compact settings footer with local documentation and changelog dialogs.",
+          "de_DE": "Kompakter Einstellungsfooter mit lokaler Dokumentation und Changelog-Dialogen.",
+          "de_DE_formal": "Kompakter Einstellungsfooter mit lokaler Dokumentation und Changelog-Dialogen."
+        },
+        {
+          "category": "Improved",
+          "en": "Includes matching English and German Markdown and WordPress-style text readmes.",
+          "de_DE": "Inhaltlich abgestimmte englische und deutsche Markdown- und Text-Readmes.",
+          "de_DE_formal": "Inhaltlich abgestimmte englische und deutsche Markdown- und Text-Readmes."
+        },
+        {
+          "category": "Improved",
+          "en": "Groups each release by New, Improved, Fixed, and Misc, in that order.",
+          "de_DE": "Einträge je Version nach Neu, Verbessert, Behoben und Sonstiges sortiert.",
+          "de_DE_formal": "Einträge je Version nach Neu, Verbessert, Behoben und Sonstiges sortiert."
+        },
+        {
+          "category": "Fix",
+          "en": "Corrects the frontend-toolbar checkbox markup, translates missing German error messages, and registers three missing JavaScript translation labels.",
+          "de_DE": "HTML der Frontend-Toolbar-Checkbox korrigiert, fehlende deutsche Fehlermeldungen ergänzt und drei fehlende JavaScript-Übersetzungskennungen registriert.",
+          "de_DE_formal": "HTML der Frontend-Toolbar-Checkbox korrigiert, fehlende deutsche Fehlermeldungen ergänzt und drei fehlende JavaScript-Übersetzungskennungen registriert."
+        },
+        {
+          "category": "Misc",
+          "en": "Adds a license file, release notes and repository packaging rules.",
+          "de_DE": "Lizenzdatei, Release-Notizen und Regeln für das Repository-Paket ergänzt.",
+          "de_DE_formal": "Lizenzdatei, Release-Notizen und Regeln für das Repository-Paket ergänzt."
+        }
+      ]
+    },
+    {
+      "version": "0.15.1",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "Improved",
+          "en": "Refreshes the short plugin description and GitHub documentation for the full feature set.",
+          "de_DE": "Kurze Pluginbeschreibung und GitHub-Dokumentation auf den gesamten Funktionsumfang aktualisiert.",
+          "de_DE_formal": "Kurze Pluginbeschreibung und GitHub-Dokumentation auf den gesamten Funktionsumfang aktualisiert."
+        },
+        {
+          "category": "Misc",
+          "en": "Adds two banner concepts and two matching icon concepts as SVG and PNG design alternatives.",
+          "de_DE": "Zwei weitere Bannerentwürfe und zwei passende Iconentwürfe als SVG und PNG ergänzt.",
+          "de_DE_formal": "Zwei weitere Bannerentwürfe und zwei passende Iconentwürfe als SVG und PNG ergänzt."
+        }
+      ]
+    },
+    {
+      "version": "0.15.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Marks unsaved editor changes and asks before a reload or navigation would discard them.",
+          "de_DE": "Anzeige ungespeicherter Änderungen und Warnung vor dem Verwerfen beim Neuladen oder Verlassen.",
+          "de_DE_formal": "Anzeige ungespeicherter Änderungen und Warnung vor dem Verwerfen beim Neuladen oder Verlassen."
+        },
+        {
+          "category": "New",
+          "en": "Adds optional environment letters to generated browser favicons for Local, Development, Staging and Live.",
+          "de_DE": "Optionale Umgebungsbuchstaben auf generierten Favicons für Lokal, Entwicklung, Staging und Live.",
+          "de_DE_formal": "Optionale Umgebungsbuchstaben auf generierten Favicons für Lokal, Entwicklung, Staging und Live."
+        },
+        {
+          "category": "New",
+          "en": "Adds a contrast audit near the scheme cards with suggested text or background colors when a sample falls below 4.5:1.",
+          "de_DE": "Kontrastprüfung neben den Schemakarten mit Farbempfehlungen bei Beispielwerten unter 4,5:1.",
+          "de_DE_formal": "Kontrastprüfung neben den Schemakarten mit Farbempfehlungen bei Beispielwerten unter 4,5:1."
+        },
+        {
+          "category": "New",
+          "en": "Exports a ZIP agency package with settings and supported local raster images, and imports it for review. Imported images are added to the Media Library immediately. SVG assets remain outside the bundle. Requires PHP ZipArchive.",
+          "de_DE": "Agentur-ZIP für Einstellungen und unterstützte lokale Rasterbilder mit Import zur Prüfung. Bilder werden sofort zur Mediathek hinzugefügt; SVG bleibt ausgeschlossen. ZipArchive erforderlich.",
+          "de_DE_formal": "Agentur-ZIP für Einstellungen und unterstützte lokale Rasterbilder mit Import zur Prüfung. Bilder werden sofort zur Mediathek hinzugefügt; SVG bleibt ausgeschlossen. ZipArchive erforderlich."
+        },
+        {
+          "category": "New",
+          "en": "Adds optional Gutenberg palette entries for the four brand roles while preserving existing theme colors.",
+          "de_DE": "Optionale Gutenberg-Palette mit vier Markenrollen neben vorhandenen Themefarben.",
+          "de_DE_formal": "Optionale Gutenberg-Palette mit vier Markenrollen neben vorhandenen Themefarben."
+        }
+      ]
+    },
+    {
+      "version": "0.14.2",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "Fix",
+          "en": "Translates the “Color scheme” settings link on the WordPress Plugins screen into German.",
+          "de_DE": "Einstellungslink „Farbschema“ auf der WordPress-Plugins-Seite ins Deutsche übersetzt.",
+          "de_DE_formal": "Einstellungslink „Farbschema“ auf der WordPress-Plugins-Seite ins Deutsche übersetzt."
+        }
+      ]
+    },
+    {
+      "version": "0.14.1",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Adds compact section jump links and moves scheme hover instructions beside the mood cards.",
+          "de_DE": "Kompakte Sprunglinks und Vorschauhilfe neben den Atmosphärenkarten ergänzt.",
+          "de_DE_formal": "Kompakte Sprunglinks und Vorschauhilfe neben den Atmosphärenkarten ergänzt."
+        },
+        {
+          "category": "Improved",
+          "en": "Clarifies that contextual icons are favicons shown in browser tabs, and names each website, admin and builder tab explicitly.",
+          "de_DE": "Texte verdeutlichen Website-, Admin- und Builder-Favicons in Browser-Tabs.",
+          "de_DE_formal": "Texte verdeutlichen Website-, Admin- und Builder-Favicons in Browser-Tabs."
+        },
+        {
+          "category": "Improved",
+          "en": "Clarifies the fixed save action and gives import/export its own section with a note that media files are not packaged in JSON.",
+          "de_DE": "Fixierten Speicherbutton erklärt und Import/Export mit Hinweis auf im JSON nicht enthaltene Bilder in einem eigenen Bereich zusammengefasst.",
+          "de_DE_formal": "Fixierten Speicherbutton erklärt und Import/Export mit Hinweis auf im JSON nicht enthaltene Bilder in einem eigenen Bereich zusammengefasst."
+        }
+      ]
+    },
+    {
+      "version": "0.14.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Introduces contextual browser tab icons for the frontend, WordPress admin and detected Bricks, Elementor or Oxygen editor shell. Existing installations keep their icons until enabled.",
+          "de_DE": "Kontextabhängige Favicons für Website, WordPress-Admin und erkannte Bricks-, Elementor- oder Oxygen-Editoransichten. Bei bestehenden Installationen zunächst ausgeschaltet.",
+          "de_DE_formal": "Kontextabhängige Favicons für Website, WordPress-Admin und erkannte Bricks-, Elementor- oder Oxygen-Editoransichten. Bei bestehenden Installationen zunächst ausgeschaltet."
+        },
+        {
+          "category": "New",
+          "en": "Adds a three-context SVG icon creator with initials, simple geometric outlines, derived colors, explicit color choices, and live previews. The frontend may retain the WordPress Site Icon.",
+          "de_DE": "SVG-Icon-Generator für drei Kontexte mit Kürzeln, Umrisssymbolen, abgeleiteten oder eigenen Farben und Live-Vorschauen. Frontend kann das WordPress-Website-Icon behalten.",
+          "de_DE_formal": "SVG-Icon-Generator für drei Kontexte mit Kürzeln, Umrisssymbolen, abgeleiteten oder eigenen Farben und Live-Vorschauen. Frontend kann das WordPress-Website-Icon behalten."
+        },
+        {
+          "category": "Misc",
+          "en": "Uses safe, generated SVG data URIs rather than accepting pasted SVG markup or changing the WordPress Site Icon attachment.",
+          "de_DE": "Sichere, generierte SVG-Daten-URIs statt eingefügtem SVG-Markup oder Änderungen am Website-Icon-Medieneintrag.",
+          "de_DE_formal": "Sichere, generierte SVG-Daten-URIs statt eingefügtem SVG-Markup oder Änderungen am Website-Icon-Medieneintrag."
+        }
+      ]
+    },
+    {
+      "version": "0.13.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Choose a wide customer banner in place of the logo or Site Icon; its displayed width stays within the login form.",
+          "de_DE": "Breites Kundenbanner als Alternative zu Logo oder Website-Icon, maximal so breit wie das Loginformular.",
+          "de_DE_formal": "Breites Kundenbanner als Alternative zu Logo oder Website-Icon, maximal so breit wie das Loginformular."
+        },
+        {
+          "category": "New",
+          "en": "Optionally add a short, readable quote and attribution to the photo or gradient panel.",
+          "de_DE": "Optionale kurze Zitatbox mit Quellenangabe auf der Bild- oder Verlaufsfläche.",
+          "de_DE_formal": "Optionale kurze Zitatbox mit Quellenangabe auf der Bild- oder Verlaufsfläche."
+        },
+        {
+          "category": "Improved",
+          "en": "Select from eight softer, palette-derived gradients or one stable per-site surprise, shown as live color swatches. Existing gradient names remain available with smoother transitions.",
+          "de_DE": "Acht weichere Schemapaletten-Verläufe und eine stabile Überraschungsvariante als Live-Farbvorschauen. Bestehende Verlaufsnamen bleiben erhalten.",
+          "de_DE_formal": "Acht weichere Schemapaletten-Verläufe und eine stabile Überraschungsvariante als Live-Farbvorschauen. Bestehende Verlaufsnamen bleiben erhalten."
+        }
+      ]
+    },
+    {
+      "version": "0.12.3",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Adds a left or centered alignment for the login content, with left alignment as the default. Form fields remain easy to scan.",
+          "de_DE": "Linksbündige oder zentrierte Ausrichtung der Login-Inhalte; Standard linksbündig. Formularfelder bleiben gut erfassbar.",
+          "de_DE_formal": "Linksbündige oder zentrierte Ausrichtung der Login-Inhalte; Standard linksbündig. Formularfelder bleiben gut erfassbar."
+        },
+        {
+          "category": "Improved",
+          "en": "Adds SVG icons to the alignment controls and desktop, tablet, and mobile preview buttons.",
+          "de_DE": "SVG-Icons für Ausrichtungsoptionen und Desktop-, Tablet- und Mobilvorschau.",
+          "de_DE_formal": "SVG-Icons für Ausrichtungsoptionen und Desktop-, Tablet- und Mobilvorschau."
+        }
+      ]
+    },
+    {
+      "version": "0.12.2",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "Fix",
+          "en": "Balances long login titles, keeps common short organization suffixes with the preceding word, and wraps unusually long words without horizontal overflow.",
+          "de_DE": "Lange Logintitel ausgewogener umgebrochen; kurze Rechtsformzusätze bleiben beim vorherigen Wort, lange Einzelwörter erzeugen keinen horizontalen Überlauf.",
+          "de_DE_formal": "Lange Logintitel ausgewogener umgebrochen; kurze Rechtsformzusätze bleiben beim vorherigen Wort, lange Einzelwörter erzeugen keinen horizontalen Überlauf."
+        },
+        {
+          "category": "Fix",
+          "en": "Applies the same title behavior to the settings preview.",
+          "de_DE": "Dasselbe Titelverhalten auf die Einstellungsvorschau angewendet.",
+          "de_DE_formal": "Dasselbe Titelverhalten auf die Einstellungsvorschau angewendet."
+        }
+      ]
+    },
+    {
+      "version": "0.12.1",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "Fix",
+          "en": "Keeps the palette-derived login background continuous below the form and privacy link on tall or scrolling screens.",
+          "de_DE": "Schemahintergrund bleibt auch unter Formular und Datenschutzlink auf hohen oder scrollbaren Bildschirmen durchgehend.",
+          "de_DE_formal": "Schemahintergrund bleibt auch unter Formular und Datenschutzlink auf hohen oder scrollbaren Bildschirmen durchgehend."
+        },
+        {
+          "category": "Fix",
+          "en": "Positions the WordPress language selector without adding a desktop grid row.",
+          "de_DE": "WordPress-Sprachauswahl positioniert, ohne eine zusätzliche Desktop-Grid-Zeile zu erzeugen.",
+          "de_DE_formal": "WordPress-Sprachauswahl positioniert, ohne eine zusätzliche Desktop-Grid-Zeile zu erzeugen."
+        }
+      ]
+    },
+    {
+      "version": "0.12.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Uses the WordPress site title, tagline, and Site Icon automatically, with independent text overrides and visibility switches; the theme logo remains a fallback.",
+          "de_DE": "Websitetitel, Slogan und Website-Icon automatisch verwendet, mit unabhängigen Textänderungen und Sichtbarkeitsschaltern; Theme-Logo als Fallback.",
+          "de_DE_formal": "Websitetitel, Slogan und Website-Icon automatisch verwendet, mit unabhängigen Textänderungen und Sichtbarkeitsschaltern; Theme-Logo als Fallback."
+        },
+        {
+          "category": "New",
+          "en": "Added three palette-generated gradients and a stable per-site surprise option for the visual panel.",
+          "de_DE": "Drei schemabasierte Verläufe und eine stabile Überraschungsvariante ergänzt.",
+          "de_DE_formal": "Drei schemabasierte Verläufe und eine stabile Überraschungsvariante ergänzt."
+        },
+        {
+          "category": "New",
+          "en": "Allows confirmed administrator selection of SVG logos only when Safe SVG is active; does not enable unsanitized SVG uploads.",
+          "de_DE": "Bestätigte SVG-Logoauswahl nur für Administratoren mit aktivem Safe SVG; keine unbearbeiteten SVG-Uploads.",
+          "de_DE_formal": "Bestätigte SVG-Logoauswahl nur für Administratoren mit aktivem Safe SVG; keine unbearbeiteten SVG-Uploads."
+        },
+        {
+          "category": "Improved",
+          "en": "Derived the form-side page color from the scheme, with a manual override, and made the Accent-colored login button full width with more space around it.",
+          "de_DE": "Hintergrund der Formularseite aus dem Schema abgeleitet und manuell überschreibbar gemacht; Akzentbutton auf volle Breite gesetzt und Abstände verbessert.",
+          "de_DE_formal": "Hintergrund der Formularseite aus dem Schema abgeleitet und manuell überschreibbar gemacht; Akzentbutton auf volle Breite gesetzt und Abstände verbessert."
+        }
+      ]
+    },
+    {
+      "version": "0.11.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Introduced responsive login design with split and centered layouts, customer logo, optional background image, focal-point and overlay controls, and a welcome message.",
+          "de_DE": "Responsive Login-Gestaltung mit geteilten und zentrierten Layouts, Kundenlogo, Hintergrundbild, Fokus- und Überlagerungsreglern sowie Willkommenstext.",
+          "de_DE_formal": "Responsive Login-Gestaltung mit geteilten und zentrierten Layouts, Kundenlogo, Hintergrundbild, Fokus- und Überlagerungsreglern sowie Willkommenstext."
+        },
+        {
+          "category": "New",
+          "en": "Added palette-based or custom login colors and live desktop/tablet/mobile previews, while retaining the WordPress login forms.",
+          "de_DE": "Schemabasierte oder eigene Loginfarben und Desktop-/Tablet-/Mobilvorschauen bei Beibehaltung der WordPress-Formulare.",
+          "de_DE_formal": "Schemabasierte oder eigene Loginfarben und Desktop-/Tablet-/Mobilvorschauen bei Beibehaltung der WordPress-Formulare."
+        },
+        {
+          "category": "Improved",
+          "en": "Included login settings in import/export; existing installations keep the current login appearance until enabled.",
+          "de_DE": "Logineinstellungen in Import/Export aufgenommen; bestehende Installationen behalten bis zur Aktivierung das bisherige Erscheinungsbild.",
+          "de_DE_formal": "Logineinstellungen in Import/Export aufgenommen; bestehende Installationen behalten bis zur Aktivierung das bisherige Erscheinungsbild."
+        }
+      ]
+    },
+    {
+      "version": "0.10.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Added four semantic environment colors that adapt to the visible toolbar and maintain an adjacent contrast target of 3:1.",
+          "de_DE": "Vier semantische Umgebungsfarben, die sich der Toolbar anpassen und einen angrenzenden Kontrast von 3:1 anstreben.",
+          "de_DE_formal": "Vier semantische Umgebungsfarben, die sich der Toolbar anpassen und einen angrenzenden Kontrast von 3:1 anstreben."
+        },
+        {
+          "category": "New",
+          "en": "Added optional per-status custom colors with immediate previews and portable JSON settings.",
+          "de_DE": "Optionale eigene Statusfarben mit sofortiger Vorschau und übertragbaren JSON-Einstellungen.",
+          "de_DE_formal": "Optionale eigene Statusfarben mit sofortiger Vorschau und übertragbaren JSON-Einstellungen."
+        },
+        {
+          "category": "Improved",
+          "en": "Adjusted badge icon and text colors for light badge backgrounds.",
+          "de_DE": "Badge-Icon und Textfarbe für helle Hintergründe angepasst.",
+          "de_DE_formal": "Badge-Icon und Textfarbe für helle Hintergründe angepasst."
+        }
+      ]
+    },
+    {
+      "version": "0.9.2",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "Fix",
+          "en": "Localized the settings page title, subtitle, editor loading text, and sticky header in German as “Markenfarben im Admin.” The English plugin and repository name stay the same.",
+          "de_DE": "Einstellungstitel, Untertitel, Ladetext und fixierter Header als „Markenfarben im Admin“ übersetzt. Englischer Plugin- und Repositoryname bleiben bestehen.",
+          "de_DE_formal": "Einstellungstitel, Untertitel, Ladetext und fixierter Header als „Markenfarben im Admin“ übersetzt. Englischer Plugin- und Repositoryname bleiben bestehen."
+        }
+      ]
+    },
+    {
+      "version": "0.9.1",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Added an administrator-only submenu showing PHP version and `WP_DEBUG` state.",
+          "de_DE": "Administrator-Untermenü mit PHP-Version und WP_DEBUG-Status ergänzt.",
+          "de_DE_formal": "Administrator-Untermenü mit PHP-Version und WP_DEBUG-Status ergänzt."
+        },
+        {
+          "category": "Fix",
+          "en": "Filled the complete toolbar slot with the environment color.",
+          "de_DE": "Umgebungsfarbe füllt jetzt den vollständigen Toolbarbereich.",
+          "de_DE_formal": "Umgebungsfarbe füllt jetzt den vollständigen Toolbarbereich."
+        }
+      ]
+    },
+    {
+      "version": "0.9.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Added a compact environment badge with four original SVG icons to the frontend and backend admin bar.",
+          "de_DE": "Kompaktes Umgebungsbadge mit vier eigenen SVG-Icons für Frontend- und Backend-Toolbar.",
+          "de_DE_formal": "Kompaktes Umgebungsbadge mit vier eigenen SVG-Icons für Frontend- und Backend-Toolbar."
+        },
+        {
+          "category": "New",
+          "en": "Added manual environment display and live status preview on the settings page, plus the plugin icon in its heading.",
+          "de_DE": "Manuelle Umgebungsanzeige und Live-Vorschau sowie Plugin-Icon in der Einstellungsüberschrift.",
+          "de_DE_formal": "Manuelle Umgebungsanzeige und Live-Vorschau sowie Plugin-Icon in der Einstellungsüberschrift."
+        },
+        {
+          "category": "New",
+          "en": "Recognizes WordPress environment types first, then local and staging/development address hints when WordPress uses its unconfigured production default; includes `.local`, 127/8 and IPv6 loopback.",
+          "de_DE": "WordPress-Umgebung zuerst geprüft; bei unkonfiguriertem Produktionsstandard lokale und Staging-/Entwicklungsadressen erkannt, einschließlich .local, 127/8 und IPv6-Loopback.",
+          "de_DE_formal": "WordPress-Umgebung zuerst geprüft; bei unkonfiguriertem Produktionsstandard lokale und Staging-/Entwicklungsadressen erkannt, einschließlich .local, 127/8 und IPv6-Loopback."
+        }
+      ]
+    },
+    {
+      "version": "0.8.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "Improved",
+          "en": "Adjusts each selectable frontend toolbar color to the saved mood and brand strength, with a live tone preview. Existing schemes gain the adjustment when saved again.",
+          "de_DE": "Frontend-Toolbarfarben an gespeicherte Atmosphäre und Markennähe angepasst, mit Farbtonvorschau; vorhandene Schemas erhalten dies beim erneuten Speichern.",
+          "de_DE_formal": "Frontend-Toolbarfarben an gespeicherte Atmosphäre und Markennähe angepasst, mit Farbtonvorschau; vorhandene Schemas erhalten dies beim erneuten Speichern."
+        },
+        {
+          "category": "Improved",
+          "en": "Shows color swatches beside selected Core Framework, Bricks, and ACSS role colors.",
+          "de_DE": "Farbvorschauen neben gewählten Core-Framework-, Bricks- und ACSS-Rollenfarben.",
+          "de_DE_formal": "Farbvorschauen neben gewählten Core-Framework-, Bricks- und ACSS-Rollenfarben."
+        },
+        {
+          "category": "Misc",
+          "en": "Renames the internal Core Framework palette reader to `coreframework_colors()` while preserving saved source identifiers.",
+          "de_DE": "Internen Core-Framework-Palettenleser in coreframework_colors() umbenannt, gespeicherte Quellenkennungen beibehalten.",
+          "de_DE_formal": "Internen Core-Framework-Palettenleser in coreframework_colors() umbenannt, gespeicherte Quellenkennungen beibehalten."
+        },
+        {
+          "category": "Misc",
+          "en": "Improves PHP layout and inline documentation.",
+          "de_DE": "PHP-Formatierung und Inline-Dokumentation verbessert.",
+          "de_DE_formal": "PHP-Formatierung und Inline-Dokumentation verbessert."
+        }
+      ]
+    },
+    {
+      "version": "0.7.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "Misc",
+          "en": "Extracted the GitHub Release updater into a reusable, versioned V1 class for DECKERWEB plugins.",
+          "de_DE": "GitHub-Release-Updater in eine wiederverwendbare, versionierte V1-Klasse für DECKERWEB-Plugins ausgelagert.",
+          "de_DE_formal": "GitHub-Release-Updater in eine wiederverwendbare, versionierte V1-Klasse für DECKERWEB-Plugins ausgelagert."
+        }
+      ]
+    },
+    {
+      "version": "0.6.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Added WordPress update integration for public GitHub Releases, including release details and source ZIP fallback.",
+          "de_DE": "WordPress-Updateintegration für öffentliche GitHub-Releases, einschließlich Releasedetails und Quellcode-ZIP-Fallback.",
+          "de_DE_formal": "WordPress-Updateintegration für öffentliche GitHub-Releases, einschließlich Releasedetails und Quellcode-ZIP-Fallback."
+        }
+      ]
+    },
+    {
+      "version": "0.5.1",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "Improved",
+          "en": "Gave the final Preview and apply section more breathing room.",
+          "de_DE": "Mehr Abstand oberhalb des letzten Vorschau- und Übernahmebereichs.",
+          "de_DE_formal": "Mehr Abstand oberhalb des letzten Vorschau- und Übernahmebereichs."
+        }
+      ]
+    },
+    {
+      "version": "0.5.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Added contrast indicators, source palette change review, and one-step Undo.",
+          "de_DE": "Kontrastindikatoren, Vergleich geänderter Quellfarben und Rücknahme des letzten Speicherns.",
+          "de_DE_formal": "Kontrastindikatoren, Vergleich geänderter Quellfarben und Rücknahme des letzten Speicherns."
+        },
+        {
+          "category": "Fix",
+          "en": "Fixed duplicate PHP methods accidentally introduced in the 0.4.0 prototype. Do not install 0.4.0.",
+          "de_DE": "Doppelte PHP-Methoden aus dem Prototyp 0.4.0 entfernt. Version 0.4.0 nicht installieren.",
+          "de_DE_formal": "Doppelte PHP-Methoden aus dem Prototyp 0.4.0 entfernt. Version 0.4.0 nicht installieren."
+        }
+      ]
+    },
+    {
+      "version": "0.4.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Added the Color scheme action on the Plugins screen and bundled German translations. This prototype build is superseded by 0.5.0 and later.",
+          "de_DE": "Einstellungslink „Farbschema“ und deutsche Übersetzungen ergänzt. Dieser Prototyp wurde durch Version 0.5.0 und spätere ersetzt.",
+          "de_DE_formal": "Einstellungslink „Farbschema“ und deutsche Übersetzungen ergänzt. Dieser Prototyp wurde durch Version 0.5.0 und spätere ersetzt."
+        }
+      ]
+    },
+    {
+      "version": "0.3.1",
+      "label": {
+        "en": "0.3.1 and earlier prototypes",
+        "de": "0.3.1 und frühere Prototypen"
+      },
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Introduced mood proposals, the brand strength slider, hover/focus preview, named schemes, JSON portability, frontend toolbar color, source palettes, and default controls.",
+          "de_DE": "Führt Stimmungsvorschläge, Markenintensitätsregler, Vorschau per Maus und Tastatur, benannte Schemen, JSON-Übertragung, Frontend-Toolbar-Farben, Quellpaletten und Standardvorgaben ein.",
+          "de_DE_formal": "Führt Stimmungsvorschläge, Markenintensitätsregler, Vorschau per Maus und Tastatur, benannte Schemen, JSON-Übertragung, Frontend-Toolbar-Farben, Quellpaletten und Standardvorgaben ein."
+        }
+      ]
+    }
+  ]
+}

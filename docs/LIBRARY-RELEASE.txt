@@ -1,0 +1,4 @@
+0.18.0
+Original deckerweb Plugin Library 0.5.0 runtime; protocol-2 registration and original lifecycle contract.
+Existing Updater V2 preserved. Host locale, documentation, profile scope and temporary-state cleanup updated.
+Unpublished acceptance build.

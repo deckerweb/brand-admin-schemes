@@ -80,6 +80,9 @@ final class BAS_Bundle {
 	/** Validate ZIP entries, then sideload bounded images for a draft import. */
 	public static function import(): void {
 		self::authorize();
+		if ( ! current_user_can( 'upload_files' ) ) {
+			wp_send_json_error( __( 'Forbidden', 'brand-admin-schemes' ), 403 );
+		}
 		$file = $_FILES['bundle'] ?? null;
 		if ( !is_array( $file ) || UPLOAD_ERR_OK !== ( $file['error'] ?? null ) || !is_uploaded_file( $file['tmp_name'] ?? '' ) || (int) ( $file['size'] ?? 0 ) > self::MAX_BUNDLE ) {
 			wp_send_json_error( __( 'Invalid or oversized agency package.', 'brand-admin-schemes' ), 400 );
@@ -116,7 +119,7 @@ final class BAS_Bundle {
 				wp_send_json_error( __( 'Invalid image in agency package.', 'brand-admin-schemes' ), 400 );
 			}
 			$stat = $zip->statName( $name );
-			if ( !$stat || $stat['size'] > self::MAX_FILE || ( $total += $stat['size'] ) > self::MAX_BUNDLE || !isset( $seen[$name] ) ) {
+			if ( !$stat || $stat['size'] > min( self::MAX_FILE, wp_max_upload_size() ) || ( $total += $stat['size'] ) > self::MAX_BUNDLE || !isset( $seen[$name] ) ) {
 				$zip->close();
 				wp_send_json_error( __( 'Invalid image in agency package.', 'brand-admin-schemes' ), 400 );
 			}
@@ -131,6 +134,9 @@ final class BAS_Bundle {
 			$entries[$type] = ['name' => basename( $name ), 'bytes' => $bytes];
 		}
 		$zip->close();
+		if ( is_multisite() && ! get_site_option( 'upload_space_check_disabled' ) && $total > get_upload_space_available() ) {
+			wp_send_json_error( __( 'The upload quota is exhausted.', 'brand-admin-schemes' ), 400 );
+		}
 		require_once ABSPATH . 'wp-admin/includes/file.php';
 		require_once ABSPATH . 'wp-admin/includes/media.php';
 		require_once ABSPATH . 'wp-admin/includes/image.php';
@@ -142,6 +148,7 @@ final class BAS_Bundle {
 			}
 			$tmp = wp_tempnam( $entries[$type]['name'] );
 			if ( !$tmp || false === file_put_contents( $tmp, $entries[$type]['bytes'] ) ) {
+				if ( $tmp ) { @unlink( $tmp ); }
 				self::rollback( $created );
 				wp_send_json_error( __( 'Could not import package images.', 'brand-admin-schemes' ), 500 );
 			}

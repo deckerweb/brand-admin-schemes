@@ -1,0 +1,762 @@
+{
+  "version": "0.18.0",
+  "history": [
+    {
+      "version": "0.18.0",
+      "status": "released",
+      "date": "2026-10-05",
+      "entries": [
+        {
+          "category": "New",
+          "en": "Optional four-step guided setup.",
+          "de_DE": "Optionale geführte Einrichtung mit vier Schritten.",
+          "de_DE_formal": "Optionale geführte Einrichtung mit vier Schritten."
+        },
+        {
+          "category": "New",
+          "en": "Eight-field informational report in Tools → Site Health, without extra tests or external requests.",
+          "de_DE": "Informativer Bericht mit acht Feldern unter Werkzeuge → Website-Zustand, ohne zusätzliche Tests oder externe Aufrufe.",
+          "de_DE_formal": "Informativer Bericht mit acht Feldern unter Werkzeuge → Website-Zustand, ohne zusätzliche Tests oder externe Aufrufe."
+        },
+        {
+          "category": "Improved",
+          "en": "Tab icons support audience selection, viewing permission, downloads, PNG media actions and official Site Icon adoption.",
+          "de_DE": "Tab-Icons bieten Sichtbarkeitsauswahl, Anzeige-Berechtigung, Downloads, PNG-Mediathek-Aktionen und Übernahme als offizielles Website-Icon.",
+          "de_DE_formal": "Tab-Icons bieten Sichtbarkeitsauswahl, Anzeige-Berechtigung, Downloads, PNG-Mediathek-Aktionen und Übernahme als offizielles Website-Icon."
+        },
+        {
+          "category": "Improved",
+          "en": "Adds network activation, per-site personal colors, profile/AJAX/Undo isolation and new-subsite permission provisioning.",
+          "de_DE": "Ergänzt Netzwerkaktivierung, persönliche Farbauswahl je Website, Profil-/AJAX-/Undo-Isolation und neue Unterwebsites.",
+          "de_DE_formal": "Ergänzt Netzwerkaktivierung, persönliche Farbauswahl je Website, Profil-/AJAX-/Undo-Isolation und neue Unterwebsites."
+        },
+        {
+          "category": "Improved",
+          "en": "Ships informal and formal German, shared documentation sources, a dated local changelog and localized GitHub banners.",
+          "de_DE": "Liefert Deutsch mit Du und Sie, gemeinsame Dokumentationsquellen, einen datierten lokalen Änderungsverlauf und lokalisierte GitHub-Banner.",
+          "de_DE_formal": "Liefert Deutsch mit Du und Sie, gemeinsame Dokumentationsquellen, einen datierten lokalen Änderungsverlauf und lokalisierte GitHub-Banner."
+        },
+        {
+          "category": "Fix",
+          "en": "Keeps network-profile AJAX color changes global and rejects Undo snapshots from another storage scope.",
+          "de_DE": "Speichert AJAX-Farbänderungen im Netzwerk-Profil global und weist Undo-Snapshots aus einem anderen Speicherbereich ab.",
+          "de_DE_formal": "Speichert AJAX-Farbänderungen im Netzwerk-Profil global und weist Undo-Snapshots aus einem anderen Speicherbereich ab."
+        },
+        {
+          "category": "Fix",
+          "en": "Checks upload permission and available Multisite space for agency images and PNG icons.",
+          "de_DE": "Prüft Upload-Rechte und freien Multisite-Speicher für Agenturbilder und PNG-Icons.",
+          "de_DE_formal": "Prüft Upload-Rechte und freien Multisite-Speicher für Agenturbilder und PNG-Icons."
+        },
+        {
+          "category": "Fix",
+          "en": "Keeps save actions and long translated choices within narrow admin screens.",
+          "de_DE": "Hält Speicheraktionen und lange übersetzte Auswahlfelder innerhalb schmaler Adminbildschirme.",
+          "de_DE_formal": "Hält Speicheraktionen und lange übersetzte Auswahlfelder innerhalb schmaler Adminbildschirme."
+        },
+        {
+          "category": "Fix",
+          "en": "Preserves named scheme colors during validation and protects later personal color changes from Undo.",
+          "de_DE": "Erhält benannte Schemafarben bei der Validierung und schützt spätere persönliche Farbänderungen vor Undo.",
+          "de_DE_formal": "Erhält benannte Schemafarben bei der Validierung und schützt spätere persönliche Farbänderungen vor Undo."
+        },
+        {
+          "category": "Misc",
+          "en": "Includes deckerweb Plugin Library 0.5.0; preserves Updater V2.",
+          "de_DE": "Enthält deckerweb Plugin Library 0.5.0; Updater V2 bleibt erhalten.",
+          "de_DE_formal": "Enthält deckerweb Plugin Library 0.5.0; Updater V2 bleibt erhalten."
+        },
+        {
+          "category": "Misc",
+          "en": "Documents security reporting and data ownership; uninstall clears temporary Undo and updater cache while preserving branding, media and user choices.",
+          "de_DE": "Dokumentiert Sicherheitsmeldungen und Datenhaltung; die Deinstallation bereinigt temporäres Undo und den Updater-Cache und erhält Branding, Medien und Benutzerauswahl.",
+          "de_DE_formal": "Dokumentiert Sicherheitsmeldungen und Datenhaltung; die Deinstallation bereinigt temporäres Undo und den Updater-Cache und erhält Branding, Medien und Benutzerauswahl."
+        }
+      ]
+    },
+    {
+      "version": "0.17.0",
+      "status": "development",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Compact, read-only Site Health information without status tests.",
+          "de_DE": "Kompakter, rein informativer Website-Zustand-Bericht ohne Status-Tests.",
+          "de_DE_formal": "Kompakter, rein informativer Website-Zustand-Bericht ohne Status-Tests."
+        }
+      ]
+    },
+    {
+      "version": "0.16.3",
+      "status": "historical",
+      "date": "2026-09-30",
+      "entries": [
+        {
+          "category": "Improved",
+          "en": "Shows the plugin icon in WordPress update offers and localized English/German banners in plugin details.",
+          "de_DE": "Zeigt das Plugin-Icon in WordPress-Updateangeboten und englische beziehungsweise deutsche Banner in den Plugindetails.",
+          "de_DE_formal": "Zeigt das Plugin-Icon in WordPress-Updateangeboten und englische beziehungsweise deutsche Banner in den Plugindetails."
+        },
+        {
+          "category": "Improved",
+          "en": "Links footer documentation directly to the localized Wiki and opens the complete bundled changelog in an accessible local dialog.",
+          "de_DE": "Verlinkt die Footer-Dokumentation direkt ins sprachabhängige Wiki und öffnet den vollständigen mitgelieferten Änderungsverlauf in einem zugänglichen lokalen Dialog.",
+          "de_DE_formal": "Verlinkt die Footer-Dokumentation direkt ins sprachabhängige Wiki und öffnet den vollständigen mitgelieferten Änderungsverlauf in einem zugänglichen lokalen Dialog."
+        },
+        {
+          "category": "Fix",
+          "en": "Restores missing update artwork, including already cached update offers after this version is installed.",
+          "de_DE": "Ergänzt fehlende Updategrafiken, auch bei bereits gespeicherten Updateangeboten nach Installation dieser Version.",
+          "de_DE_formal": "Ergänzt fehlende Updategrafiken, auch bei bereits gespeicherten Updateangeboten nach Installation dieser Version."
+        },
+        {
+          "category": "Misc",
+          "en": "Uses the shared DECKERWEB GitHub Updater V2 with plugin-scoped package identity and requirements checks.",
+          "de_DE": "Verwendet den gemeinsamen DECKERWEB GitHub-Updater V2 mit pluginspezifischer Prüfung von Paketidentität und Voraussetzungen.",
+          "de_DE_formal": "Verwendet den gemeinsamen DECKERWEB GitHub-Updater V2 mit pluginspezifischer Prüfung von Paketidentität und Voraussetzungen."
+        }
+      ]
+    },
+    {
+      "version": "0.16.2",
+      "status": "historical",
+      "date": "2026-09-30",
+      "entries": [
+        {
+          "category": "Improved",
+          "en": "Refreshes all four readmes with clear feature summaries, seven short FAQs, and the latest five version entries.",
+          "de_DE": "Überarbeitet alle vier Readmes mit verständlichen Funktionsübersichten, sieben kurzen FAQs und den letzten fünf Versionseinträgen.",
+          "de_DE_formal": "Überarbeitet alle vier Readmes mit verständlichen Funktionsübersichten, sieben kurzen FAQs und den letzten fünf Versionseinträgen."
+        },
+        {
+          "category": "Improved",
+          "en": "Adds a German GitHub banner and expands the bilingual Wiki with 49 themed FAQ answers per language and complete changelogs.",
+          "de_DE": "Ergänzt ein deutsches GitHub-Banner und erweitert das zweisprachige Wiki um 49 thematisch gegliederte FAQ-Antworten je Sprache und vollständige Änderungsverläufe.",
+          "de_DE_formal": "Ergänzt ein deutsches GitHub-Banner und erweitert das zweisprachige Wiki um 49 thematisch gegliederte FAQ-Antworten je Sprache und vollständige Änderungsverläufe."
+        },
+        {
+          "category": "Improved",
+          "en": "Adds checked contents links, presents browser-tab favicons alongside the main features, and explains GitHub updates through the regular WordPress update system.",
+          "de_DE": "Ergänzt geprüfte Sprungmarken, stellt Browser-Tab-Favicons bei den Hauptfunktionen vor und erklärt GitHub-Updates über das reguläre WordPress-Updatesystem.",
+          "de_DE_formal": "Ergänzt geprüfte Sprungmarken, stellt Browser-Tab-Favicons bei den Hauptfunktionen vor und erklärt GitHub-Updates über das reguläre WordPress-Updatesystem."
+        },
+        {
+          "category": "Misc",
+          "en": "Packages the updated English and German documentation with this release.",
+          "de_DE": "Liefert die aktualisierte englische und deutsche Dokumentation mit diesem Release aus.",
+          "de_DE_formal": "Liefert die aktualisierte englische und deutsche Dokumentation mit diesem Release aus."
+        }
+      ]
+    },
+    {
+      "version": "0.16.1",
+      "status": "historical",
+      "date": "2026-09-29",
+      "entries": [
+        {
+          "category": "Improved",
+          "en": "Adopts the Daily Scripture footer layout, adds a documentation link beside the changelog, and includes a translated brand slogan.",
+          "de_DE": "Footer-Layout von Daily Scripture übernommen, Dokumentationslink neben dem Changelog ergänzt und einen übersetzten Markenslogan eingefügt.",
+          "de_DE_formal": "Footer-Layout von Daily Scripture übernommen, Dokumentationslink neben dem Changelog ergänzt und einen übersetzten Markenslogan eingefügt."
+        },
+        {
+          "category": "Misc",
+          "en": "Sets the DECKERWEB copyright range to 2022–2026 throughout the plugin and documentation.",
+          "de_DE": "DECKERWEB-Copyright in Plugin und Dokumentation auf 2022–2026 gesetzt.",
+          "de_DE_formal": "DECKERWEB-Copyright in Plugin und Dokumentation auf 2022–2026 gesetzt."
+        }
+      ]
+    },
+    {
+      "version": "0.16.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Adds a compact settings footer with local documentation and changelog dialogs.",
+          "de_DE": "Kompakter Einstellungsfooter mit lokaler Dokumentation und Changelog-Dialogen.",
+          "de_DE_formal": "Kompakter Einstellungsfooter mit lokaler Dokumentation und Changelog-Dialogen."
+        },
+        {
+          "category": "Improved",
+          "en": "Includes matching English and German Markdown and WordPress-style text readmes.",
+          "de_DE": "Inhaltlich abgestimmte englische und deutsche Markdown- und Text-Readmes.",
+          "de_DE_formal": "Inhaltlich abgestimmte englische und deutsche Markdown- und Text-Readmes."
+        },
+        {
+          "category": "Improved",
+          "en": "Groups each release by New, Improved, Fixed, and Misc, in that order.",
+          "de_DE": "Einträge je Version nach Neu, Verbessert, Behoben und Sonstiges sortiert.",
+          "de_DE_formal": "Einträge je Version nach Neu, Verbessert, Behoben und Sonstiges sortiert."
+        },
+        {
+          "category": "Fix",
+          "en": "Corrects the frontend-toolbar checkbox markup, translates missing German error messages, and registers three missing JavaScript translation labels.",
+          "de_DE": "HTML der Frontend-Toolbar-Checkbox korrigiert, fehlende deutsche Fehlermeldungen ergänzt und drei fehlende JavaScript-Übersetzungskennungen registriert.",
+          "de_DE_formal": "HTML der Frontend-Toolbar-Checkbox korrigiert, fehlende deutsche Fehlermeldungen ergänzt und drei fehlende JavaScript-Übersetzungskennungen registriert."
+        },
+        {
+          "category": "Misc",
+          "en": "Adds a license file, release notes and repository packaging rules.",
+          "de_DE": "Lizenzdatei, Release-Notizen und Regeln für das Repository-Paket ergänzt.",
+          "de_DE_formal": "Lizenzdatei, Release-Notizen und Regeln für das Repository-Paket ergänzt."
+        }
+      ]
+    },
+    {
+      "version": "0.15.1",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "Improved",
+          "en": "Refreshes the short plugin description and GitHub documentation for the full feature set.",
+          "de_DE": "Kurze Pluginbeschreibung und GitHub-Dokumentation auf den gesamten Funktionsumfang aktualisiert.",
+          "de_DE_formal": "Kurze Pluginbeschreibung und GitHub-Dokumentation auf den gesamten Funktionsumfang aktualisiert."
+        },
+        {
+          "category": "Misc",
+          "en": "Adds two banner concepts and two matching icon concepts as SVG and PNG design alternatives.",
+          "de_DE": "Zwei weitere Bannerentwürfe und zwei passende Iconentwürfe als SVG und PNG ergänzt.",
+          "de_DE_formal": "Zwei weitere Bannerentwürfe und zwei passende Iconentwürfe als SVG und PNG ergänzt."
+        }
+      ]
+    },
+    {
+      "version": "0.15.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Marks unsaved editor changes and asks before a reload or navigation would discard them.",
+          "de_DE": "Anzeige ungespeicherter Änderungen und Warnung vor dem Verwerfen beim Neuladen oder Verlassen.",
+          "de_DE_formal": "Anzeige ungespeicherter Änderungen und Warnung vor dem Verwerfen beim Neuladen oder Verlassen."
+        },
+        {
+          "category": "New",
+          "en": "Adds optional environment letters to generated browser favicons for Local, Development, Staging and Live.",
+          "de_DE": "Optionale Umgebungsbuchstaben auf generierten Favicons für Lokal, Entwicklung, Staging und Live.",
+          "de_DE_formal": "Optionale Umgebungsbuchstaben auf generierten Favicons für Lokal, Entwicklung, Staging und Live."
+        },
+        {
+          "category": "New",
+          "en": "Adds a contrast audit near the scheme cards with suggested text or background colors when a sample falls below 4.5:1.",
+          "de_DE": "Kontrastprüfung neben den Schemakarten mit Farbempfehlungen bei Beispielwerten unter 4,5:1.",
+          "de_DE_formal": "Kontrastprüfung neben den Schemakarten mit Farbempfehlungen bei Beispielwerten unter 4,5:1."
+        },
+        {
+          "category": "New",
+          "en": "Exports a ZIP agency package with settings and supported local raster images, and imports it for review. Imported images are added to the Media Library immediately. SVG assets remain outside the bundle. Requires PHP ZipArchive.",
+          "de_DE": "Agentur-ZIP für Einstellungen und unterstützte lokale Rasterbilder mit Import zur Prüfung. Bilder werden sofort zur Mediathek hinzugefügt; SVG bleibt ausgeschlossen. ZipArchive erforderlich.",
+          "de_DE_formal": "Agentur-ZIP für Einstellungen und unterstützte lokale Rasterbilder mit Import zur Prüfung. Bilder werden sofort zur Mediathek hinzugefügt; SVG bleibt ausgeschlossen. ZipArchive erforderlich."
+        },
+        {
+          "category": "New",
+          "en": "Adds optional Gutenberg palette entries for the four brand roles while preserving existing theme colors.",
+          "de_DE": "Optionale Gutenberg-Palette mit vier Markenrollen neben vorhandenen Themefarben.",
+          "de_DE_formal": "Optionale Gutenberg-Palette mit vier Markenrollen neben vorhandenen Themefarben."
+        }
+      ]
+    },
+    {
+      "version": "0.14.2",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "Fix",
+          "en": "Translates the “Color scheme” settings link on the WordPress Plugins screen into German.",
+          "de_DE": "Einstellungslink „Farbschema“ auf der WordPress-Plugins-Seite ins Deutsche übersetzt.",
+          "de_DE_formal": "Einstellungslink „Farbschema“ auf der WordPress-Plugins-Seite ins Deutsche übersetzt."
+        }
+      ]
+    },
+    {
+      "version": "0.14.1",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Adds compact section jump links and moves scheme hover instructions beside the mood cards.",
+          "de_DE": "Kompakte Sprunglinks und Vorschauhilfe neben den Atmosphärenkarten ergänzt.",
+          "de_DE_formal": "Kompakte Sprunglinks und Vorschauhilfe neben den Atmosphärenkarten ergänzt."
+        },
+        {
+          "category": "Improved",
+          "en": "Clarifies that contextual icons are favicons shown in browser tabs, and names each website, admin and builder tab explicitly.",
+          "de_DE": "Texte verdeutlichen Website-, Admin- und Builder-Favicons in Browser-Tabs.",
+          "de_DE_formal": "Texte verdeutlichen Website-, Admin- und Builder-Favicons in Browser-Tabs."
+        },
+        {
+          "category": "Improved",
+          "en": "Clarifies the fixed save action and gives import/export its own section with a note that media files are not packaged in JSON.",
+          "de_DE": "Fixierten Speicherbutton erklärt und Import/Export mit Hinweis auf im JSON nicht enthaltene Bilder in einem eigenen Bereich zusammengefasst.",
+          "de_DE_formal": "Fixierten Speicherbutton erklärt und Import/Export mit Hinweis auf im JSON nicht enthaltene Bilder in einem eigenen Bereich zusammengefasst."
+        }
+      ]
+    },
+    {
+      "version": "0.14.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Introduces contextual browser tab icons for the frontend, WordPress admin and detected Bricks, Elementor or Oxygen editor shell. Existing installations keep their icons until enabled.",
+          "de_DE": "Kontextabhängige Favicons für Website, WordPress-Admin und erkannte Bricks-, Elementor- oder Oxygen-Editoransichten. Bei bestehenden Installationen zunächst ausgeschaltet.",
+          "de_DE_formal": "Kontextabhängige Favicons für Website, WordPress-Admin und erkannte Bricks-, Elementor- oder Oxygen-Editoransichten. Bei bestehenden Installationen zunächst ausgeschaltet."
+        },
+        {
+          "category": "New",
+          "en": "Adds a three-context SVG icon creator with initials, simple geometric outlines, derived colors, explicit color choices, and live previews. The frontend may retain the WordPress Site Icon.",
+          "de_DE": "SVG-Icon-Generator für drei Kontexte mit Kürzeln, Umrisssymbolen, abgeleiteten oder eigenen Farben und Live-Vorschauen. Frontend kann das WordPress-Website-Icon behalten.",
+          "de_DE_formal": "SVG-Icon-Generator für drei Kontexte mit Kürzeln, Umrisssymbolen, abgeleiteten oder eigenen Farben und Live-Vorschauen. Frontend kann das WordPress-Website-Icon behalten."
+        },
+        {
+          "category": "Misc",
+          "en": "Uses safe, generated SVG data URIs rather than accepting pasted SVG markup or changing the WordPress Site Icon attachment.",
+          "de_DE": "Sichere, generierte SVG-Daten-URIs statt eingefügtem SVG-Markup oder Änderungen am Website-Icon-Medieneintrag.",
+          "de_DE_formal": "Sichere, generierte SVG-Daten-URIs statt eingefügtem SVG-Markup oder Änderungen am Website-Icon-Medieneintrag."
+        }
+      ]
+    },
+    {
+      "version": "0.13.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Choose a wide customer banner in place of the logo or Site Icon; its displayed width stays within the login form.",
+          "de_DE": "Breites Kundenbanner als Alternative zu Logo oder Website-Icon, maximal so breit wie das Loginformular.",
+          "de_DE_formal": "Breites Kundenbanner als Alternative zu Logo oder Website-Icon, maximal so breit wie das Loginformular."
+        },
+        {
+          "category": "New",
+          "en": "Optionally add a short, readable quote and attribution to the photo or gradient panel.",
+          "de_DE": "Optionale kurze Zitatbox mit Quellenangabe auf der Bild- oder Verlaufsfläche.",
+          "de_DE_formal": "Optionale kurze Zitatbox mit Quellenangabe auf der Bild- oder Verlaufsfläche."
+        },
+        {
+          "category": "Improved",
+          "en": "Select from eight softer, palette-derived gradients or one stable per-site surprise, shown as live color swatches. Existing gradient names remain available with smoother transitions.",
+          "de_DE": "Acht weichere Schemapaletten-Verläufe und eine stabile Überraschungsvariante als Live-Farbvorschauen. Bestehende Verlaufsnamen bleiben erhalten.",
+          "de_DE_formal": "Acht weichere Schemapaletten-Verläufe und eine stabile Überraschungsvariante als Live-Farbvorschauen. Bestehende Verlaufsnamen bleiben erhalten."
+        }
+      ]
+    },
+    {
+      "version": "0.12.3",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Adds a left or centered alignment for the login content, with left alignment as the default. Form fields remain easy to scan.",
+          "de_DE": "Linksbündige oder zentrierte Ausrichtung der Login-Inhalte; Standard linksbündig. Formularfelder bleiben gut erfassbar.",
+          "de_DE_formal": "Linksbündige oder zentrierte Ausrichtung der Login-Inhalte; Standard linksbündig. Formularfelder bleiben gut erfassbar."
+        },
+        {
+          "category": "Improved",
+          "en": "Adds SVG icons to the alignment controls and desktop, tablet, and mobile preview buttons.",
+          "de_DE": "SVG-Icons für Ausrichtungsoptionen und Desktop-, Tablet- und Mobilvorschau.",
+          "de_DE_formal": "SVG-Icons für Ausrichtungsoptionen und Desktop-, Tablet- und Mobilvorschau."
+        }
+      ]
+    },
+    {
+      "version": "0.12.2",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "Fix",
+          "en": "Balances long login titles, keeps common short organization suffixes with the preceding word, and wraps unusually long words without horizontal overflow.",
+          "de_DE": "Lange Logintitel ausgewogener umgebrochen; kurze Rechtsformzusätze bleiben beim vorherigen Wort, lange Einzelwörter erzeugen keinen horizontalen Überlauf.",
+          "de_DE_formal": "Lange Logintitel ausgewogener umgebrochen; kurze Rechtsformzusätze bleiben beim vorherigen Wort, lange Einzelwörter erzeugen keinen horizontalen Überlauf."
+        },
+        {
+          "category": "Fix",
+          "en": "Applies the same title behavior to the settings preview.",
+          "de_DE": "Dasselbe Titelverhalten auf die Einstellungsvorschau angewendet.",
+          "de_DE_formal": "Dasselbe Titelverhalten auf die Einstellungsvorschau angewendet."
+        }
+      ]
+    },
+    {
+      "version": "0.12.1",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "Fix",
+          "en": "Keeps the palette-derived login background continuous below the form and privacy link on tall or scrolling screens.",
+          "de_DE": "Schemahintergrund bleibt auch unter Formular und Datenschutzlink auf hohen oder scrollbaren Bildschirmen durchgehend.",
+          "de_DE_formal": "Schemahintergrund bleibt auch unter Formular und Datenschutzlink auf hohen oder scrollbaren Bildschirmen durchgehend."
+        },
+        {
+          "category": "Fix",
+          "en": "Positions the WordPress language selector without adding a desktop grid row.",
+          "de_DE": "WordPress-Sprachauswahl positioniert, ohne eine zusätzliche Desktop-Grid-Zeile zu erzeugen.",
+          "de_DE_formal": "WordPress-Sprachauswahl positioniert, ohne eine zusätzliche Desktop-Grid-Zeile zu erzeugen."
+        }
+      ]
+    },
+    {
+      "version": "0.12.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Uses the WordPress site title, tagline, and Site Icon automatically, with independent text overrides and visibility switches; the theme logo remains a fallback.",
+          "de_DE": "Websitetitel, Slogan und Website-Icon automatisch verwendet, mit unabhängigen Textänderungen und Sichtbarkeitsschaltern; Theme-Logo als Fallback.",
+          "de_DE_formal": "Websitetitel, Slogan und Website-Icon automatisch verwendet, mit unabhängigen Textänderungen und Sichtbarkeitsschaltern; Theme-Logo als Fallback."
+        },
+        {
+          "category": "New",
+          "en": "Added three palette-generated gradients and a stable per-site surprise option for the visual panel.",
+          "de_DE": "Drei schemabasierte Verläufe und eine stabile Überraschungsvariante ergänzt.",
+          "de_DE_formal": "Drei schemabasierte Verläufe und eine stabile Überraschungsvariante ergänzt."
+        },
+        {
+          "category": "New",
+          "en": "Allows confirmed administrator selection of SVG logos only when Safe SVG is active; does not enable unsanitized SVG uploads.",
+          "de_DE": "Bestätigte SVG-Logoauswahl nur für Administratoren mit aktivem Safe SVG; keine unbearbeiteten SVG-Uploads.",
+          "de_DE_formal": "Bestätigte SVG-Logoauswahl nur für Administratoren mit aktivem Safe SVG; keine unbearbeiteten SVG-Uploads."
+        },
+        {
+          "category": "Improved",
+          "en": "Derived the form-side page color from the scheme, with a manual override, and made the Accent-colored login button full width with more space around it.",
+          "de_DE": "Hintergrund der Formularseite aus dem Schema abgeleitet und manuell überschreibbar gemacht; Akzentbutton auf volle Breite gesetzt und Abstände verbessert.",
+          "de_DE_formal": "Hintergrund der Formularseite aus dem Schema abgeleitet und manuell überschreibbar gemacht; Akzentbutton auf volle Breite gesetzt und Abstände verbessert."
+        }
+      ]
+    },
+    {
+      "version": "0.11.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Introduced responsive login design with split and centered layouts, customer logo, optional background image, focal-point and overlay controls, and a welcome message.",
+          "de_DE": "Responsive Login-Gestaltung mit geteilten und zentrierten Layouts, Kundenlogo, Hintergrundbild, Fokus- und Überlagerungsreglern sowie Willkommenstext.",
+          "de_DE_formal": "Responsive Login-Gestaltung mit geteilten und zentrierten Layouts, Kundenlogo, Hintergrundbild, Fokus- und Überlagerungsreglern sowie Willkommenstext."
+        },
+        {
+          "category": "New",
+          "en": "Added palette-based or custom login colors and live desktop/tablet/mobile previews, while retaining the WordPress login forms.",
+          "de_DE": "Schemabasierte oder eigene Loginfarben und Desktop-/Tablet-/Mobilvorschauen bei Beibehaltung der WordPress-Formulare.",
+          "de_DE_formal": "Schemabasierte oder eigene Loginfarben und Desktop-/Tablet-/Mobilvorschauen bei Beibehaltung der WordPress-Formulare."
+        },
+        {
+          "category": "Improved",
+          "en": "Included login settings in import/export; existing installations keep the current login appearance until enabled.",
+          "de_DE": "Logineinstellungen in Import/Export aufgenommen; bestehende Installationen behalten bis zur Aktivierung das bisherige Erscheinungsbild.",
+          "de_DE_formal": "Logineinstellungen in Import/Export aufgenommen; bestehende Installationen behalten bis zur Aktivierung das bisherige Erscheinungsbild."
+        }
+      ]
+    },
+    {
+      "version": "0.10.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Added four semantic environment colors that adapt to the visible toolbar and maintain an adjacent contrast target of 3:1.",
+          "de_DE": "Vier semantische Umgebungsfarben, die sich der Toolbar anpassen und einen angrenzenden Kontrast von 3:1 anstreben.",
+          "de_DE_formal": "Vier semantische Umgebungsfarben, die sich der Toolbar anpassen und einen angrenzenden Kontrast von 3:1 anstreben."
+        },
+        {
+          "category": "New",
+          "en": "Added optional per-status custom colors with immediate previews and portable JSON settings.",
+          "de_DE": "Optionale eigene Statusfarben mit sofortiger Vorschau und übertragbaren JSON-Einstellungen.",
+          "de_DE_formal": "Optionale eigene Statusfarben mit sofortiger Vorschau und übertragbaren JSON-Einstellungen."
+        },
+        {
+          "category": "Improved",
+          "en": "Adjusted badge icon and text colors for light badge backgrounds.",
+          "de_DE": "Badge-Icon und Textfarbe für helle Hintergründe angepasst.",
+          "de_DE_formal": "Badge-Icon und Textfarbe für helle Hintergründe angepasst."
+        }
+      ]
+    },
+    {
+      "version": "0.9.2",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "Fix",
+          "en": "Localized the settings page title, subtitle, editor loading text, and sticky header in German as “Markenfarben im Admin.” The English plugin and repository name stay the same.",
+          "de_DE": "Einstellungstitel, Untertitel, Ladetext und fixierter Header als „Markenfarben im Admin“ übersetzt. Englischer Plugin- und Repositoryname bleiben bestehen.",
+          "de_DE_formal": "Einstellungstitel, Untertitel, Ladetext und fixierter Header als „Markenfarben im Admin“ übersetzt. Englischer Plugin- und Repositoryname bleiben bestehen."
+        }
+      ]
+    },
+    {
+      "version": "0.9.1",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Added an administrator-only submenu showing PHP version and `WP_DEBUG` state.",
+          "de_DE": "Administrator-Untermenü mit PHP-Version und WP_DEBUG-Status ergänzt.",
+          "de_DE_formal": "Administrator-Untermenü mit PHP-Version und WP_DEBUG-Status ergänzt."
+        },
+        {
+          "category": "Fix",
+          "en": "Filled the complete toolbar slot with the environment color.",
+          "de_DE": "Umgebungsfarbe füllt jetzt den vollständigen Toolbarbereich.",
+          "de_DE_formal": "Umgebungsfarbe füllt jetzt den vollständigen Toolbarbereich."
+        }
+      ]
+    },
+    {
+      "version": "0.9.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Added a compact environment badge with four original SVG icons to the frontend and backend admin bar.",
+          "de_DE": "Kompaktes Umgebungsbadge mit vier eigenen SVG-Icons für Frontend- und Backend-Toolbar.",
+          "de_DE_formal": "Kompaktes Umgebungsbadge mit vier eigenen SVG-Icons für Frontend- und Backend-Toolbar."
+        },
+        {
+          "category": "New",
+          "en": "Added manual environment display and live status preview on the settings page, plus the plugin icon in its heading.",
+          "de_DE": "Manuelle Umgebungsanzeige und Live-Vorschau sowie Plugin-Icon in der Einstellungsüberschrift.",
+          "de_DE_formal": "Manuelle Umgebungsanzeige und Live-Vorschau sowie Plugin-Icon in der Einstellungsüberschrift."
+        },
+        {
+          "category": "New",
+          "en": "Recognizes WordPress environment types first, then local and staging/development address hints when WordPress uses its unconfigured production default; includes `.local`, 127/8 and IPv6 loopback.",
+          "de_DE": "WordPress-Umgebung zuerst geprüft; bei unkonfiguriertem Produktionsstandard lokale und Staging-/Entwicklungsadressen erkannt, einschließlich .local, 127/8 und IPv6-Loopback.",
+          "de_DE_formal": "WordPress-Umgebung zuerst geprüft; bei unkonfiguriertem Produktionsstandard lokale und Staging-/Entwicklungsadressen erkannt, einschließlich .local, 127/8 und IPv6-Loopback."
+        }
+      ]
+    },
+    {
+      "version": "0.8.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "Improved",
+          "en": "Adjusts each selectable frontend toolbar color to the saved mood and brand strength, with a live tone preview. Existing schemes gain the adjustment when saved again.",
+          "de_DE": "Frontend-Toolbarfarben an gespeicherte Atmosphäre und Markennähe angepasst, mit Farbtonvorschau; vorhandene Schemas erhalten dies beim erneuten Speichern.",
+          "de_DE_formal": "Frontend-Toolbarfarben an gespeicherte Atmosphäre und Markennähe angepasst, mit Farbtonvorschau; vorhandene Schemas erhalten dies beim erneuten Speichern."
+        },
+        {
+          "category": "Improved",
+          "en": "Shows color swatches beside selected Core Framework, Bricks, and ACSS role colors.",
+          "de_DE": "Farbvorschauen neben gewählten Core-Framework-, Bricks- und ACSS-Rollenfarben.",
+          "de_DE_formal": "Farbvorschauen neben gewählten Core-Framework-, Bricks- und ACSS-Rollenfarben."
+        },
+        {
+          "category": "Misc",
+          "en": "Renames the internal Core Framework palette reader to `coreframework_colors()` while preserving saved source identifiers.",
+          "de_DE": "Internen Core-Framework-Palettenleser in coreframework_colors() umbenannt, gespeicherte Quellenkennungen beibehalten.",
+          "de_DE_formal": "Internen Core-Framework-Palettenleser in coreframework_colors() umbenannt, gespeicherte Quellenkennungen beibehalten."
+        },
+        {
+          "category": "Misc",
+          "en": "Improves PHP layout and inline documentation.",
+          "de_DE": "PHP-Formatierung und Inline-Dokumentation verbessert.",
+          "de_DE_formal": "PHP-Formatierung und Inline-Dokumentation verbessert."
+        }
+      ]
+    },
+    {
+      "version": "0.7.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "Misc",
+          "en": "Extracted the GitHub Release updater into a reusable, versioned V1 class for DECKERWEB plugins.",
+          "de_DE": "GitHub-Release-Updater in eine wiederverwendbare, versionierte V1-Klasse für DECKERWEB-Plugins ausgelagert.",
+          "de_DE_formal": "GitHub-Release-Updater in eine wiederverwendbare, versionierte V1-Klasse für DECKERWEB-Plugins ausgelagert."
+        }
+      ]
+    },
+    {
+      "version": "0.6.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Added WordPress update integration for public GitHub Releases, including release details and source ZIP fallback.",
+          "de_DE": "WordPress-Updateintegration für öffentliche GitHub-Releases, einschließlich Releasedetails und Quellcode-ZIP-Fallback.",
+          "de_DE_formal": "WordPress-Updateintegration für öffentliche GitHub-Releases, einschließlich Releasedetails und Quellcode-ZIP-Fallback."
+        }
+      ]
+    },
+    {
+      "version": "0.5.1",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "Improved",
+          "en": "Gave the final Preview and apply section more breathing room.",
+          "de_DE": "Mehr Abstand oberhalb des letzten Vorschau- und Übernahmebereichs.",
+          "de_DE_formal": "Mehr Abstand oberhalb des letzten Vorschau- und Übernahmebereichs."
+        }
+      ]
+    },
+    {
+      "version": "0.5.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Added contrast indicators, source palette change review, and one-step Undo.",
+          "de_DE": "Kontrastindikatoren, Vergleich geänderter Quellfarben und Rücknahme des letzten Speicherns.",
+          "de_DE_formal": "Kontrastindikatoren, Vergleich geänderter Quellfarben und Rücknahme des letzten Speicherns."
+        },
+        {
+          "category": "Fix",
+          "en": "Fixed duplicate PHP methods accidentally introduced in the 0.4.0 prototype. Do not install 0.4.0.",
+          "de_DE": "Doppelte PHP-Methoden aus dem Prototyp 0.4.0 entfernt. Version 0.4.0 nicht installieren.",
+          "de_DE_formal": "Doppelte PHP-Methoden aus dem Prototyp 0.4.0 entfernt. Version 0.4.0 nicht installieren."
+        }
+      ]
+    },
+    {
+      "version": "0.4.0",
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Added the Color scheme action on the Plugins screen and bundled German translations. This prototype build is superseded by 0.5.0 and later.",
+          "de_DE": "Einstellungslink „Farbschema“ und deutsche Übersetzungen ergänzt. Dieser Prototyp wurde durch Version 0.5.0 und spätere ersetzt.",
+          "de_DE_formal": "Einstellungslink „Farbschema“ und deutsche Übersetzungen ergänzt. Dieser Prototyp wurde durch Version 0.5.0 und spätere ersetzt."
+        }
+      ]
+    },
+    {
+      "version": "0.3.1",
+      "label": {
+        "en": "0.3.1 and earlier prototypes",
+        "de": "0.3.1 und frühere Prototypen"
+      },
+      "status": "historical",
+      "date": null,
+      "entries": [
+        {
+          "category": "New",
+          "en": "Introduced mood proposals, the brand strength slider, hover/focus preview, named schemes, JSON portability, frontend toolbar color, source palettes, and default controls.",
+          "de_DE": "Führt Stimmungsvorschläge, Markenintensitätsregler, Vorschau per Maus und Tastatur, benannte Schemen, JSON-Übertragung, Frontend-Toolbar-Farben, Quellpaletten und Standardvorgaben ein.",
+          "de_DE_formal": "Führt Stimmungsvorschläge, Markenintensitätsregler, Vorschau per Maus und Tastatur, benannte Schemen, JSON-Übertragung, Frontend-Toolbar-Farben, Quellpaletten und Standardvorgaben ein."
+        }
+      ]
+    }
+  ],
+  "readmes": {
+    "en": {
+      "prefix": "> Release 0.18.0 is prepared; publication is pending.\n\n# Brand Admin Schemes\n\n![Brand Admin Schemes plugin banner](assets-github/banner-github-1280x640.png)\n\n**Your colors. Your WordPress.** Turn a few brand colors into a familiar WordPress admin, a welcoming login screen, and browser tabs you can tell apart. Use Core Framework, Bricks Builder, Automatic.css, or your own palette. Explore the mood and brand strength, preview, then save. No CSS homework.\n\n**Version:** 0.18.0 · **Requires:** WordPress 6.4+ / PHP 8.0+ · **License:** GPL v2 or later\n\n[Download](https://github.com/deckerweb/brand-admin-schemes/releases/latest) · [User guide](https://github.com/deckerweb/brand-admin-schemes/wiki/English) · [Deutsch](README-de.md)\n\n## Contents\n\n- [At a glance](#at-a-glance)\n- [Installation and first scheme](#installation-and-first-scheme)\n- [Brand colors and admin schemes](#brand-colors-and-admin-schemes)\n- [Contextual browser tab icons](#contextual-browser-tab-icons)\n- [Login and toolbar](#login-and-toolbar)\n- [Import, export, and Gutenberg](#import-export-and-gutenberg)\n- [Updates and documentation](#updates-and-documentation)\n- [FAQ](#faq)\n- [Multisite and Leitstand](#multisite-and-leitstand)\n- [Screenshots](#screenshots)\n- [Changelog](#changelog)\n- [About](#about)\n\n<a name=\"at-a-glance\"></a>\n\n## At a glance\n\n- **Make the admin yours:** four moods, a brand strength slider, hover and keyboard previews, and up to 30 named schemes.\n- **Use an existing palette:** optional Core Framework, Bricks, and ACSS integrations; manual colors always work.\n- **Welcome your client:** responsive login layouts, a logo or small banner, a background photo or nine smooth gradients, editable text, and an optional quote.\n- **Recognize every browser tab:** separate favicons for the website, admin, and recognized builder editor.\n- **Spot the environment:** compact Local, Development, Staging, and Live badges on the frontend and backend toolbar, with matching colors and optional favicon markers.\n- **Work across projects:** JSON settings, agency ZIP packages with supported login images, source-color comparison, Undo, and unsaved-change reminders.\n- **Keep WordPress familiar:** optional default schemes, frontend toolbar colors, Gutenberg palette entries, bundled German translations, and regular WordPress updates.\n\n<a name=\"installation-and-first-scheme\"></a>\n\n## Installation and first scheme\n\n1. Download the **plugin ZIP** from [GitHub Releases](https://github.com/deckerweb/brand-admin-schemes/releases/latest).\n2. Upload it via **Plugins → Add New → Upload Plugin** and activate it.\n3. Open **Settings → Brand Admin Schemes**, choose a palette, and adjust the mood and brand strength.\n4. Hover or focus a scheme card to preview it. Select your favorite, optionally name it, and save using the sticky toolbar.\n5. Use **Reload page** to see the saved result throughout the current admin screen.\n\nEverything is managed on one settings page. Login styling and generated tab icons are optional; enable and save them when you are ready.\n\n<a name=\"brand-colors-and-admin-schemes\"></a>\n\n## Brand colors and admin schemes\n\nMap colors to **Primary, Secondary, Tertiary, and Accent**. Three colors are enough: the plugin can derive Tertiary. The mood and slider create suitable tones for menus, the toolbar, buttons, and links. You can keep personal user choices, offer a default, or apply the active scheme to everyone.\n\nSaved colors remain available if their provider is removed. When source colors change, compare the old and new palette before saving an update. The sample contrast check helps you review readability.\n\n<a name=\"contextual-browser-tab-icons\"></a>\n\n## Contextual browser tab icons\n\nBy default, contextual favicons are restricted to signed-in users with `bas_view_context_icons`, granted once to the Administrator role. A role editor can grant viewing access to other roles or users without granting plugin-settings access. Choose **Everyone, including visitors** and save to restore unrestricted display. In restricted mode, visitors retain the official WordPress Site Icon. Under **Use & export**, each generated design can be downloaded as SVG or 512 × 512 PNG, saved as a PNG media attachment, or adopted as the official WordPress Site Icon. Media actions are immediate and separate from the settings draft. Adopting a Site Icon requires confirmation, omits its environment marker, and switches the saved frontend favicon mode to the WordPress Site Icon. Other drafts stay unsaved; existing images remain in the Media Library. SVG downloads do not enable SVG uploads.\n\nSee at a glance whether a browser tab contains the **public website**, **WordPress admin**, or **builder editor**. Create a favicon from a short abbreviation or an outline symbol, with palette colors or your own colors. Presets recognize Bricks, Elementor, and Oxygen editor contexts where supported.\n\nYou may retain the existing WordPress Site Icon on the frontend. Optional environment letters make Local, Development, Staging, and Live tabs easier to distinguish. The feature changes the browser-tab icon, not the Site Icon stored in WordPress.\n\n<a name=\"login-and-toolbar\"></a>\n\n## Login and toolbar\n\nThe login design follows your active palette. Choose a split or centered layout, then add an optional photo, logo, or small banner. The Site Icon, website title, and tagline provide useful defaults. Nine gradient choices and an optional quote complete the visual panel. Check Desktop, Tablet, and Mobile previews before saving.\n\nThe frontend toolbar can use a palette color adjusted to your chosen mood. A compact environment badge appears on frontend and backend toolbars. Detection includes WordPress environment settings, Local app `.local` sites, and localhost addresses; manual selection and custom status colors are available.\n\n<a name=\"import-export-and-gutenberg\"></a>\n\n## Import, export, and Gutenberg\n\nMove settings and saved schemes as **JSON**, or include supported local login images in an **agency ZIP**. Review imported settings and save to apply them. ZIP imports add bundled images to the Media Library immediately and require PHP ZipArchive. SVG images are excluded from these packages.\n\nOptionally add the four named brand colors to Gutenberg alongside the theme palette. Existing content keeps its colors.\n\n<a name=\"updates-and-documentation\"></a>\n\n## Updates and documentation\n\nUpdates come directly from the [DECKERWEB plugin repository on GitHub](https://github.com/deckerweb/brand-admin-schemes/releases) and appear in the **regular WordPress plugin update system**. Update from the Plugins or Updates screen as usual; no additional updater plugin is needed.\n\nThe [English wiki guide](https://github.com/deckerweb/brand-admin-schemes/wiki/English) and [German wiki guide](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) cover every setting, palette sources, login images, tab icons, and common questions. The settings footer links to the guide in your language and opens the recent local history with a link to the complete changelog. German is included and follows the WordPress site or user language.\n\n<a name=\"faq\"></a>\n\n{{FAQ}}\n\n## Guided setup\n\nOptional guided setup walks through colors, atmosphere, login and tab icons, then review and save. It shares the existing draft, can be reopened, and leaves current settings unchanged until an explicit save.\n\n## Site Health\n\nA compact, read-only section in Tools → Site Health reports the selected scheme, palette source, user default mode, optional styling and resolved environment. No status tests, file checks or external requests are performed.\n\n## Multisite and Leitstand\n\nActivate on an individual site or across the network. Each site owns its schemes, login settings, toolbar, browser-tab icons, and media. Personal color choices also stay separate per site. New subsites receive the administrator tab-icon permission automatically; existing sites receive it on their first authorized visit. Deliberately revoked permissions stay revoked. Configure branding in each site’s admin.\n\nBAS works independently of Leitstand. Leitstand can read standard WordPress site options and listen to the documented change hook. A dedicated Leitstand interface or network-wide branding distribution is not included yet. The deckerweb Plugin Library 0.5.0 is embedded; Updater V2 continues to deliver BAS updates through WordPress.\n\n<a name=\"changelog\"></a>\n\n\n[Data and uninstall](docs/DATA.md) · [Security](SECURITY.md) · [Compatibility](docs/PROFILE.md)\n\n",
+      "suffix": "## About\n\nBuilt by **David Decker – DECKERWEB** to make client sites feel familiar on both sides of the login screen. Ideas behind the plugin grew from snippets used since 2022.\n\nThe scheme styles the WordPress admin shell; third-party CSS can affect individual elements. Gutenberg content and builder canvases keep their own design. SVG login images require Safe SVG and administrator confirmation. More details are in the wiki.\n\nHave an idea or found an issue? [Let us know on GitHub](https://github.com/deckerweb/brand-admin-schemes/issues).\n\n© 2022–2026 David Decker – DECKERWEB · [GPL v2 or later](LICENSE)\n",
+      "faq": [
+        {
+          "question": "Do I need Core Framework, Bricks, or ACSS?",
+          "answer": "No. Enter your own colors; palette providers are optional."
+        },
+        {
+          "question": "What happens if I disable a palette provider?",
+          "answer": "Saved scheme colors remain available. The provider is needed to read a fresh palette, not to display saved colors."
+        },
+        {
+          "question": "Does this change my website or builder design?",
+          "answer": "It styles the admin shell, optional login and toolbar, and browser-tab icons. Page content and builder canvases keep their design; Gutenberg palette entries only add choices."
+        },
+        {
+          "question": "Does it replace the WordPress Site Icon?",
+          "answer": "Contextual favicons leave it unchanged by default. The separate, confirmed Site Icon action can explicitly adopt a generated PNG."
+        },
+        {
+          "question": "Does it work on Multisite?",
+          "answer": "Yes, with site-only or network activation. Branding, media and personal colors stay per site; the network profile uses your global color. Configure branding in each site’s admin."
+        },
+        {
+          "question": "Does importing immediately change the live design?",
+          "answer": "No. Review the imported settings and save to apply them. Agency ZIP imports do add bundled images to the Media Library immediately."
+        },
+        {
+          "question": "How do updates and uninstall work?",
+          "answer": "Updater V2 delivers GitHub updates through WordPress. Deactivation preserves data; uninstall removes temporary Undo and caches, retaining branding, media and color choices. See the data guide."
+        }
+      ],
+      "screenshots": [
+        {
+          "caption": "Manual brand colors and save controls in a real WordPress test site.",
+          "path": "assets-github/screenshots/screenshot-1.jpg"
+        },
+        {
+          "caption": "Local changelog with labeled categories, keyboard controls and complete-history link.",
+          "path": "assets-github/screenshots/screenshot-2.jpg"
+        }
+      ]
+    },
+    "de": {
+      "prefix": "> Release 0.18.0 ist vorbereitet; die Veröffentlichung steht noch aus.\n\n# Markenfarben im Admin · Brand Admin Schemes\n\n![Plugin-Banner von Brand Admin Schemes](assets-github/banner-github-de-1280x640.png)\n\n**Deine Farben. Dein WordPress.** Wenige Markenfarben genügen für einen vertrauten WordPress-Admin, einen schönen Login und Browser-Tabs, die du sofort auseinanderhalten kannst. Verwende Core Framework, Bricks Builder, Automatic.css oder deine eigene Palette. Atmosphäre und Markennähe ausprobieren, Vorschau prüfen, speichern. Kein eigenes CSS nötig.\n\n**Version:** 0.18.0 · **Voraussetzungen:** WordPress 6.4+ / PHP 8.0+ · **Lizenz:** GPL v2 oder höher\n\n[Download](https://github.com/deckerweb/brand-admin-schemes/releases/latest) · [Anleitung](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) · [English](README.md)\n\n## Inhaltsverzeichnis\n\n- [Auf einen Blick](#auf-einen-blick)\n- [Installation und erstes Schema](#installation-und-erstes-schema)\n- [Markenfarben und Adminschemas](#markenfarben-und-adminschemas)\n- [Favicons für Browser-Tabs](#favicons-fuer-browser-tabs)\n- [Login und Toolbar](#login-und-toolbar)\n- [Import, Export und Gutenberg](#import-export-und-gutenberg)\n- [Updates und Dokumentation](#updates-und-dokumentation)\n- [Häufige Fragen](#haeufige-fragen)\n- [Multisite und Leitstand](#multisite-und-leitstand)\n- [Screenshots](#screenshots)\n- [Changelog](#changelog)\n- [Über das Plugin](#ueber-das-plugin)\n\n<a name=\"auf-einen-blick\"></a>\n\n## Auf einen Blick\n\n- **Den Admin vertraut gestalten:** vier Atmosphären, ein Regler für die Markennähe, Vorschau per Hover und Tastatur sowie bis zu 30 benannte Schemas.\n- **Vorhandene Farben nutzen:** optionale Anbindungen an Core Framework, Bricks und ACSS; eigene Farben funktionieren immer.\n- **Kunden willkommen heißen:** responsive Login-Layouts, Logo oder kleines Banner, Hintergrundfoto oder neun sanfte Verläufe, eigene Texte und ein optionales Zitat.\n- **Browser-Tabs sofort erkennen:** unterschiedliche Favicons für Website, Admin und erkannten Builder-Editor.\n- **Die Umgebung im Blick behalten:** kompakte Badges für Lokal, Entwicklung, Staging und Live in der Frontend- und Backend-Toolbar, mit passenden Farben und optionalen Favicon-Markern.\n- **Projekte leichter betreuen:** JSON-Einstellungen, Agentur-ZIP mit unterstützten Login-Bildern, Vergleich geänderter Quellfarben, Rücknahme und Hinweise auf ungespeicherte Änderungen.\n- **WordPress vertraut bedienen:** optionale Standardschemas, Frontend-Toolbarfarben, Gutenberg-Palette, mitgelieferte deutsche Übersetzungen und reguläre WordPress-Updates.\n\n<a name=\"installation-und-erstes-schema\"></a>\n\n## Installation und erstes Schema\n\n1. Lade das **Plugin-ZIP** aus den [GitHub-Releases](https://github.com/deckerweb/brand-admin-schemes/releases/latest).\n2. Installiere es über **Plugins → Plugin hinzufügen → Plugin hochladen** und aktiviere es.\n3. Öffne **Einstellungen → Markenfarben im Admin**, wähle eine Palette und stelle Atmosphäre und Markennähe ein.\n4. Prüfe eine Schemakarte per Hover oder Tastaturfokus. Wähle deinen Favoriten, vergib optional einen Namen und speichere über die fixierte Leiste oben.\n5. Mit **Seite neu laden** siehst du das gespeicherte Ergebnis vollständig im aktuellen Adminbildschirm.\n\nAlles wird auf einer Einstellungsseite verwaltet. Login-Gestaltung und generierte Tab-Icons sind optional; aktiviere und speichere sie bei Bedarf.\n\n<a name=\"markenfarben-und-adminschemas\"></a>\n\n## Markenfarben und Adminschemas\n\nOrdne Farben den Rollen **Primary, Secondary, Tertiary und Akzent** zu. Drei Farben genügen: Tertiary kann das Plugin ableiten. Atmosphäre und Regler erzeugen passende Töne für Menüs, Toolbar, Buttons und Links. Persönliche Benutzerfarben lassen sich beibehalten, ein Standard anbieten oder das aktive Schema für alle festlegen.\n\nGespeicherte Farben bleiben erhalten, wenn der Provider später fehlt. Bei Änderungen an der Quelle kannst du alte und neue Farben vergleichen, bevor du ein aktualisiertes Schema speicherst. Die Kontrastprüfung der Beispiele hilft beim Einschätzen der Lesbarkeit.\n\n<a name=\"favicons-fuer-browser-tabs\"></a>\n\n## Favicons für Browser-Tabs\n\nErkenne sofort, ob ein Browser-Tab die **öffentliche Website**, den **WordPress-Admin** oder den **Builder-Editor** zeigt. Erstelle Favicons aus einem kurzen Kürzel oder einem Umrisssymbol, mit Schemafarben oder eigenen Farben. Vorgaben erkennen unterstützte Editorkontexte von Bricks, Elementor und Oxygen.\n\nIm Frontend darf das vorhandene WordPress-Website-Icon erhalten bleiben. Optionale Umgebungsbuchstaben unterscheiden Lokal, Entwicklung, Staging und Live. Die Funktion verändert das Icon im Browser-Tab; der in WordPress gespeicherte Website-Icon-Eintrag bleibt bestehen.\n\n<a name=\"login-und-toolbar\"></a>\n\n## Login und Toolbar\n\nDie Login-Gestaltung folgt deiner aktiven Palette. Wähle ein geteiltes oder zentriertes Layout und ergänze optional Foto, Logo oder kleines Banner. Website-Icon, Websitetitel und Slogan liefern sinnvolle Vorgaben. Neun Verläufe und eine optionale Zitatbox gestalten die Bildfläche. Prüfe Desktop, Tablet und Mobil vor dem Speichern.\n\nDie Frontend-Toolbar kann eine passend zur Atmosphäre berechnete Schemafarbe verwenden. Ein kompaktes Umgebungsbadge erscheint in Frontend und Backend. Die Erkennung berücksichtigt WordPress-Umgebungen, Local-App-Websites mit `.local` und localhost-Adressen; manuelle Auswahl und eigene Statusfarben sind möglich.\n\n<a name=\"import-export-und-gutenberg\"></a>\n\n## Import, Export und Gutenberg\n\nÜbertrage Einstellungen und gespeicherte Schemas als **JSON** oder unterstützte lokale Login-Bilder zusätzlich in einem **Agentur-ZIP**. Prüfe importierte Einstellungen und speichere zum Anwenden. ZIP-Importe legen enthaltene Bilder sofort in der Mediathek an und benötigen PHP ZipArchive. SVG-Dateien sind von diesen Paketen ausgeschlossen.\n\nAuf Wunsch stehen die vier benannten Markenfarben neben der Theme-Palette in Gutenberg bereit. Vorhandene Inhalte behalten ihre Farben.\n\n<a name=\"updates-und-dokumentation\"></a>\n\n## Updates und Dokumentation\n\nUpdates kommen direkt aus dem [DECKERWEB-Plugin-Repository auf GitHub](https://github.com/deckerweb/brand-admin-schemes/releases) und erscheinen im **regulären WordPress-Updatesystem**. Aktualisiere wie gewohnt über Plugins oder Aktualisierungen; ein zusätzliches Updater-Plugin ist nicht nötig.\n\nDie [deutsche Wiki-Anleitung](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) und die [englische Wiki-Anleitung](https://github.com/deckerweb/brand-admin-schemes/wiki/English) erklären alle Einstellungen, Farbquellen, Login-Bilder, Tab-Icons und häufige Fragen. Der Footer der Einstellungsseite verlinkt die Anleitung in deiner Sprache und öffnet den jüngsten lokalen Verlauf mit einem Link zur vollständigen Historie. Deutsch ist enthalten und folgt der WordPress-Website- oder Benutzersprache.\n\n<a name=\"haeufige-fragen\"></a>\n\n{{FAQ}}\n\n## Geführte Einrichtung\n\nDie optionale geführte Einrichtung führt durch Farben, Atmosphäre, Login und Tab-Icons sowie Prüfung und Speichern. Sie verwendet den vorhandenen Entwurf, lässt sich erneut öffnen und übernimmt Änderungen erst beim ausdrücklichen Speichern.\n\n## Website-Zustand\n\nEin kompakter, rein informativer Bereich unter Werkzeuge → Website-Zustand zeigt die Schema-Auswahl, Palettenquelle, den Standardmodus für Benutzer, optionale Gestaltung und die erkannte Umgebung. Es erfolgen keine Status-Tests, Dateiprüfungen oder externen Abfragen.\n\n## Multisite und Leitstand\n\nEinzeln oder netzwerkweit aktivierbar. Jede Website verwaltet ihre eigenen Schemen, Login-Einstellungen, Toolbar, Browser-Tab-Icons und Medien. Auch die persönliche Farbauswahl bleibt je Website getrennt. Neue Unterwebsites erhalten die Administrator-Berechtigung für Tab-Icons automatisch; bestehende Websites beim ersten berechtigten Aufruf. Bewusst entzogene Rechte werden nicht wieder vergeben. Einstellungen findest du im Admin der jeweiligen Website.\n\nBAS funktioniert ohne Leitstand. Leitstand kann die regulären WordPress-Site-Optionen lesen und auf den dokumentierten Änderungshook reagieren. Eine fertige Leitstand-Oberfläche oder netzwerkweite Branding-Verteilung ist noch nicht enthalten. Die deckerweb Plugin Library 0.5.0 ist eingebettet; BAS-Updates liefert weiterhin der Updater V2 über WordPress.\n\n<a name=\"changelog\"></a>\n\n\n[Daten und Deinstallation](docs/DATA-de.md) · [Sicherheit](SECURITY-de.md) · [Kompatibilität](docs/PROFILE-de.md)\n\n",
+      "suffix": "## Über das Plugin\n\nEntwickelt von **David Decker – DECKERWEB**, damit Kunden ihre Marke auf beiden Seiten des Logins wiedererkennen. Einige Ideen wurden seit 2022 in eigenen Snippets eingesetzt.\n\nDas Schema gestaltet den WordPress-Adminrahmen; fremdes CSS kann einzelne Elemente beeinflussen. Gutenberg-Inhalte und Builder-Arbeitsflächen behalten ihr eigenes Design. SVG-Loginbilder benötigen Safe SVG und eine Administratorbestätigung. Mehr dazu im Wiki.\n\nEine Idee oder einen Fehler gefunden? [Melde dich auf GitHub](https://github.com/deckerweb/brand-admin-schemes/issues).\n\n© 2022–2026 David Decker – DECKERWEB · [GPL v2 oder höher](LICENSE)\n\n## Berechtigungen für Tab-Icons\n\nStandardmäßig sehen nur angemeldete Benutzer mit `bas_view_context_icons` die kontextabhängigen Favicons; die Administratorrolle erhält diese Berechtigung einmalig. Über einen Rollen-Editor kannst du anderen Rollen oder Benutzern die Anzeige erlauben, ohne Zugriff auf Plugin-Einstellungen zu geben. Wähle **Alle, einschließlich Besucher** und speichere, um die Anzeige für alle freizugeben. Bei eingeschränkter Anzeige behalten Besucher das offizielle WordPress-Website-Icon. Unter **Verwenden und exportieren** kannst du jede erzeugte Gestaltung als SVG oder PNG mit 512 × 512 Pixeln herunterladen, als PNG in der Mediathek speichern oder als offizielles WordPress-Website-Icon übernehmen. Mediathek-Aktionen wirken sofort, unabhängig vom Einstellungsentwurf. Die Übernahme als Website-Icon erfordert eine Bestätigung, lässt den Umgebungsmarker weg und stellt den gespeicherten Frontend-Favicon-Modus auf das WordPress-Website-Icon um. Andere Entwürfe bleiben ungespeichert; bisherige Bilder bleiben in der Mediathek. SVG-Downloads erlauben keine SVG-Uploads.\n",
+      "faq": [
+        {
+          "question": "Brauche ich Core Framework, Bricks oder ACSS?",
+          "answer": "Nein. Eigene Farben genügen; Farbprovider sind optional."
+        },
+        {
+          "question": "Was passiert, wenn ich einen Farbprovider deaktiviere?",
+          "answer": "Gespeicherte Schemafarben bleiben verfügbar. Der Provider wird zum erneuten Einlesen der Palette benötigt, nicht zur Darstellung gespeicherter Farben."
+        },
+        {
+          "question": "Verändert das Plugin mein Website- oder Builderdesign?",
+          "answer": "Es gestaltet den Adminrahmen, optional Login und Toolbar sowie Browser-Tab-Icons. Seiteninhalte und Builder-Arbeitsflächen behalten ihr Design; Gutenberg-Paletteneinträge ergänzen nur die Farbauswahl."
+        },
+        {
+          "question": "Ersetzt es das WordPress-Website-Icon?",
+          "answer": "Kontextabhängige Favicons lassen es standardmäßig unverändert. Eine gesonderte, bestätigte Website-Icon-Aktion kann ausdrücklich ein erzeugtes PNG übernehmen."
+        },
+        {
+          "question": "Funktioniert das Plugin in Multisite?",
+          "answer": "Ja, bei Einzelwebsite- und Netzwerkaktivierung. Branding, Medien und persönliche Farben bleiben je Website; das Netzwerkprofil verwendet deine globale Farbe. Richte das Branding im Admin der jeweiligen Website ein."
+        },
+        {
+          "question": "Verändert ein Import sofort die aktive Gestaltung?",
+          "answer": "Nein. Prüfe importierte Einstellungen und speichere zum Anwenden. Agentur-ZIP-Importe legen enthaltene Bilder allerdings sofort in der Mediathek an."
+        },
+        {
+          "question": "Wie funktionieren Updates und Deinstallation?",
+          "answer": "Updater V2 liefert GitHub-Updates über WordPress. Deaktivierung erhält Daten; Deinstallation entfernt temporäres Undo und Caches und erhält Branding, Medien und Farbauswahl. Einzelheiten stehen in der Datendokumentation."
+        }
+      ],
+      "screenshots": [
+        {
+          "caption": "Eigene Markenfarben und Speicherleiste in einer echten WordPress-Testwebsite.",
+          "path": "assets-github/screenshots/screenshot-1-de.jpg"
+        },
+        {
+          "caption": "Lokaler Änderungsverlauf mit beschrifteten Kategorien, Tastaturbedienung und Link zur vollständigen Historie.",
+          "path": "assets-github/screenshots/screenshot-2-de.jpg"
+        }
+      ]
+    }
+  },
+  "wiki_faq": {
+    "en": "# Frequently asked questions\n\n[Anleitung / Guide](https://github.com/deckerweb/brand-admin-schemes/wiki/English) · [English](https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-English) · [Deutsch](https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-Deutsch)\n\nAnswers about the current version. Planned features are not described as available here.\n\n## Topics\n\n- [Getting started](#topic-1)\n- [Palettes and admin schemes](#topic-2)\n- [Previewing and saving](#topic-3)\n- [Login design and images](#topic-4)\n- [Browser tabs and environments](#topic-5)\n- [Import, export, and Gutenberg](#topic-6)\n- [Updates, language, and troubleshooting](#topic-7)\n\n<a name=\"topic-1\"></a>\n\n## Getting started\n\n### Do I need Core Framework, Bricks, or ACSS?\n\nNo. Enter your own colors; palette providers are optional.\n\n### What are the requirements?\n\nWordPress 6.4 or later and PHP 8.0 or later. Install the plugin ZIP from GitHub Releases.\n\n### Who can change settings?\n\nUsers with the WordPress manage_options capability, normally administrators.\n\n### Do I have to enable every feature?\n\nNo. Login design, generated favicons, and Gutenberg palette entries are optional. Enable only what you need.\n\n### Is the plugin paid software?\n\nThe plugin is free software under GPL v2 or later. Optional palette providers may have their own licenses.\n\n\n<a name=\"topic-2\"></a>\n\n## Palettes and admin schemes\n\n### How many colors do I need?\n\nPrimary, Secondary, and Accent are enough. Tertiary can be derived; four explicit colors are also supported.\n\n### Why is my provider palette missing?\n\nOnly readable hex sources appear. Core Framework must expose its generated stylesheet through its Helper. ACSS role expressions such as OKLCH, HSL, light-dark(), and CSS variables are not parsed. Try manual hex colors if needed.\n\n### Will source changes update my scheme automatically?\n\nNo. Compare the old and new source swatches and save an updated scheme when you are ready.\n\n### What happens if I disable a palette provider?\n\nSaved scheme colors remain available. The provider is needed to read a fresh palette, not to display saved colors.\n\n### What do mood and brand strength change?\n\nThey derive the tones used for menus, toolbar, buttons, and links from your source colors. Preview a proposal before selecting and saving it.\n\n### Can users keep their own admin colors?\n\nYes. Keep personal choices, offer a default, or force the active scheme for everyone. The default applies to the WordPress Modern choice; WordPress cannot tell whether that choice was made explicitly.\n\n### Can I name and save several schemes?\n\nYes, up to 30 named schemes. A short client or atmosphere name helps you find them later.\n\n### Does this change my website or builder design?\n\nIt styles the admin shell, optional login and toolbar, and browser-tab icons. Page content and builder canvases keep their design; Gutenberg palette entries only add choices.\n\n### Does the contrast check guarantee accessibility?\n\nNo. It checks representative color samples. Inspect real screens, focus states, and third-party elements as well; this is not a full accessibility audit.\n\n\n<a name=\"topic-3\"></a>\n\n## Previewing and saving\n\n### Does hovering over a scheme save it?\n\nNo. Hover or keyboard focus previews it. Select the card and use the sticky save button to apply your settings.\n\n### Why does another tab still show old colors?\n\nSave first, then reload that tab. The preview affects the settings screen; it does not synchronize every open browser tab.\n\n### Can I undo a save?\n\nThe Undo action can restore the previous save when available. It is a single-step safety net, not a version archive; export important configurations.\n\n### Can I use the previews without a mouse?\n\nScheme cards also preview on keyboard focus. Check the visible focus and use the settings controls with the keyboard.\n\n\n<a name=\"topic-4\"></a>\n\n## Login design and images\n\n### Do I need a logo and a background photo?\n\nNo. The Site Icon, theme logo, and site name provide fallbacks; palette gradients work without a photo.\n\n### Can I use a wide banner instead of a square logo?\n\nYes. Choose a login banner; its displayed width stays within the form area.\n\n### Can I change the title, tagline, and login colors?\n\nYes. Website title and tagline are defaults; override or hide each independently. Customize the page background, form surface, visual hue, and button if needed.\n\n### What helps with long website titles?\n\nTitles wrap within the form-side area. Try centered content alignment or a shorter custom title, and review Desktop, Tablet, and Mobile previews.\n\n### Why does the login opened in a new tab look different from the preview?\n\nThe new-tab link shows the saved design. Save all changes before comparing it with the editor preview.\n\n### Can I use SVG login images?\n\nOnly with the separate Safe SVG plugin, an administrator confirmation, and a sanitized attachment. Brand Admin Schemes does not enable raw SVG uploads. Agency ZIP packages exclude SVG files.\n\n### Does it replace WordPress login or password recovery?\n\nNo. It changes presentation; the WordPress forms and their actions remain. Other login plugins can affect the final appearance, so check their interaction.\n\n### Are gradients different on every reload?\n\nNo. The Surprise variant is stable per site. Choose one of the nine swatches to control the appearance.\n\n\n<a name=\"topic-5\"></a>\n\n## Browser tabs and environments\n\n### Does it replace the WordPress Site Icon?\n\nContextual favicons preserve the stored Site Icon by default. Only the separate, explicitly confirmed PNG Site Icon action replaces it. You can retain the original frontend favicon.\n\n### Which builder contexts are recognized?\n\nSupported editor indicators for Bricks, Elementor, and Oxygen are recognized for logged-in editor views. Detection is limited to those indicators; other plugins or changed editor shells can affect it.\n\n### How long can the favicon abbreviation be?\n\nUp to three characters. One or two usually remain easier to read at browser-tab size; outline symbols are also available.\n\n### Why do I still see an old favicon?\n\nSave the icon settings and reload or reopen the tab. Browsers cache favicons. Also check whether another plugin or builder replaces the icon later.\n\n### How is Local, Development, Staging, or Live detected?\n\nAn explicitly configured WordPress environment wins. Otherwise common local addresses and dev/staging host prefixes are hints. .local, localhost, 127.0.0.0/8, and IPv6 loopback are covered; unusual domains may need manual selection.\n\n### Does manually selecting Staging change WordPress configuration?\n\nNo. It changes the displayed badge and generated favicon marker, not WP_ENVIRONMENT_TYPE, debugging, or indexing settings.\n\n### Who can see PHP and WP_DEBUG details?\n\nSite administrators can open the toolbar badge submenu. These runtime details are hidden from other users.\n\n### Can I choose my own environment colors?\n\nYes. A custom hue is allowed for every status. Lightness may be adjusted for contrast with the toolbar; badge text switches between dark and light.\n\n### Why is the frontend badge missing?\n\nIt needs a visible WordPress admin bar. Check that you are logged in and that your profile, theme, or another plugin has not hidden the toolbar.\n\n\n<a name=\"topic-6\"></a>\n\n## Import, export, and Gutenberg\n\n### Does importing immediately change the live design?\n\nNo. Review the imported settings and save to apply them. Agency ZIP imports do add bundled images to the Media Library immediately.\n\n### Should I use JSON or an agency ZIP?\n\nJSON carries settings and schemes, without files. ZIP can also carry supported local login images. Use JSON for a light preset and ZIP for a portable visual setup.\n\n### Which image files and sizes are supported in agency packages?\n\nLocal PNG, JPEG, WebP, and GIF images, up to 4 MB each and 13 MB for the package. SVG files are excluded. Import/export requires PHP ZipArchive.\n\n### Why did a JSON import not restore my logo?\n\nJSON stores site-specific media references, not image files. Select the images again on the destination site, or use an agency ZIP with supported images.\n\n### Does the Gutenberg palette change existing blocks?\n\nNo. It adds up to four brand colors alongside the theme palette. Existing block colors and the editor interface stay as they are.\n\n\n<a name=\"topic-7\"></a>\n\n## Updates, language, and troubleshooting\n\n### How do updates work?\n\nUpdates come from the public DECKERWEB GitHub repository through the regular WordPress plugin update system. No extra updater plugin is required.\n\n### Why is a GitHub release not visible as an update yet?\n\nUse Check again on Dashboard → Updates. Check server access to GitHub. You can also upload the latest plugin ZIP through WordPress to replace the installed version.\n\n### Does the plugin enable automatic updates for me?\n\nNo. Choose automatic updates yourself using the available WordPress controls.\n\n### Can I use a private GitHub repository for updates?\n\nNot with the bundled updater. It reads public GitHub Releases without authentication.\n\n### How do I switch to German?\n\nGerman translations are bundled. Choose German as the WordPress site language or your user language; no language pack download is needed.\n\n### Does it need a remote service to generate colors?\n\nNo. Palette processing and icon generation happen locally. Update checks and downloads contact GitHub.\n\n### Does deactivation delete my settings?\n\nNo. Styling stops while the plugin is inactive; saved settings remain. Export a configuration before making major changes.\n\n### Is there a network-wide multisite settings screen?\n\nThis version stores settings per site and has no network-wide preset manager. Review each site separately; broad multisite compatibility is not guaranteed by this guide.\n\n### What should I include in a bug report?\n\nPlugin, WordPress, and PHP versions; relevant provider or builder version; the affected screen; and steps to reproduce. Use anonymized screenshots and remove credentials or private client information before posting a public GitHub issue.\n\n© 2022–2026 David Decker – DECKERWEB · GPL v2 or later\n\n## Setup, Multisite and data\n\n**Can I configure a whole network at once?** No. Network activation makes BAS available; branding, login media and Site Icons stay per site. The same user can choose separate site colors, while network-profile colors stay global.\n\n**Does the PNG Site Icon action save my other changes?** No. The separate confirmed action applies the Site Icon immediately and preserves the unrelated editor draft. Generated SVG downloads never enable SVG uploads.\n\n**What happens on uninstall?** Temporary Undo and BAS updater cache are removed. Branding, media, user colors and deliberate role decisions remain. The original Library contract preserves shared settings and other installed hosts. See the data guide.\n",
+    "de": "# Häufige Fragen\n\n[Anleitung / Guide](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) · [English](https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-English) · [Deutsch](https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-Deutsch)\n\nAntworten zu den Funktionen der aktuellen Version. Geplante Funktionen sind hier nicht als verfügbar beschrieben.\n\n## Themen\n\n- [Einstieg](#topic-1)\n- [Paletten und Adminschemas](#topic-2)\n- [Vorschau und Speichern](#topic-3)\n- [Login-Gestaltung und Bilder](#topic-4)\n- [Browser-Tabs und Umgebungen](#topic-5)\n- [Import, Export und Gutenberg](#topic-6)\n- [Updates, Sprache und Fehlerhilfe](#topic-7)\n\n<a name=\"topic-1\"></a>\n\n## Einstieg\n\n### Brauche ich Core Framework, Bricks oder ACSS?\n\nNein. Eigene Farben genügen; Farbprovider sind optional.\n\n### Welche Voraussetzungen gibt es?\n\nWordPress ab 6.4 und PHP ab 8.0. Installiere das Plugin-ZIP aus den GitHub-Releases.\n\n### Wer darf Einstellungen ändern?\n\nBenutzer mit der WordPress-Berechtigung manage_options, normalerweise Administratoren.\n\n### Muss ich alle Funktionen aktivieren?\n\nNein. Login-Gestaltung, generierte Favicons und Gutenberg-Farben sind optional. Aktiviere nur, was du benötigst.\n\n### Ist das Plugin kostenpflichtig?\n\nDas Plugin ist freie Software unter GPL v2 oder höher. Optionale Farbprovider können eigene Lizenzen benötigen.\n\n\n<a name=\"topic-2\"></a>\n\n## Paletten und Adminschemas\n\n### Wie viele Farben brauche ich?\n\nPrimary, Secondary und Akzent genügen. Tertiary lässt sich ableiten; vier eigene Farben sind ebenfalls möglich.\n\n### Warum fehlt meine Providerpalette?\n\nNur lesbare HEX-Quellen erscheinen. Core Framework muss sein erzeugtes Stylesheet über den Helper bereitstellen. ACSS-Rollenwerte als OKLCH, HSL, light-dark() oder CSS-Variablen werden nicht ausgewertet. Verwende bei Bedarf eigene HEX-Farben.\n\n### Ändert sich das Schema automatisch mit dem Provider?\n\nNein. Vergleiche alte und neue Quellfarben und speichere das aktualisierte Schema, wenn es passt.\n\n### Was passiert, wenn ich einen Farbprovider deaktiviere?\n\nGespeicherte Schemafarben bleiben verfügbar. Der Provider wird zum erneuten Einlesen der Palette benötigt, nicht zur Darstellung gespeicherter Farben.\n\n### Was verändern Atmosphäre und Markennähe?\n\nSie leiten aus den Quellfarben die Töne für Menüs, Toolbar, Buttons und Links ab. Prüfe einen Vorschlag, bevor du ihn auswählst und speicherst.\n\n### Können Benutzer ihre persönlichen Adminfarben behalten?\n\nJa. Behalte persönliche Farben bei, biete einen Standard an oder erzwinge das aktive Schema für alle. Der Standard gilt für die WordPress-Auswahl Modern; WordPress erkennt nicht, ob sie bewusst gewählt wurde.\n\n### Kann ich mehrere Schemas benennen und speichern?\n\nJa, bis zu 30 benannte Schemas. Ein kurzer Kunden- oder Atmosphärenname erleichtert die spätere Auswahl.\n\n### Verändert das Plugin mein Website- oder Builderdesign?\n\nEs gestaltet den Adminrahmen, optional Login und Toolbar sowie Browser-Tab-Icons. Seiteninhalte und Builder-Arbeitsflächen behalten ihr Design; Gutenberg-Paletteneinträge ergänzen nur die Farbauswahl.\n\n### Garantiert die Kontrastprüfung Barrierefreiheit?\n\nNein. Sie prüft beispielhafte Farbkombinationen. Prüfe zusätzlich echte Bildschirme, Fokuszustände und Elemente anderer Plugins; dies ersetzt keine vollständige Prüfung der Barrierefreiheit.\n\n\n<a name=\"topic-3\"></a>\n\n## Vorschau und Speichern\n\n### Speichert Hover über einem Schema bereits?\n\nNein. Hover oder Tastaturfokus zeigt die Vorschau. Wähle die Karte aus und nutze den fixierten Speichern-Button zum Übernehmen.\n\n### Warum zeigt ein anderer Tab noch alte Farben?\n\nSpeichere zuerst und lade danach den anderen Tab neu. Die Vorschau gilt für die Einstellungsseite; sie synchronisiert nicht alle offenen Browser-Tabs.\n\n### Kann ich einen Speichervorgang rückgängig machen?\n\nDie Rücknahme kann den vorherigen Speicherstand wiederherstellen, wenn verfügbar. Sie umfasst einen Schritt, kein Versionsarchiv; exportiere wichtige Konfigurationen.\n\n### Kann ich Vorschauen ohne Maus bedienen?\n\nSchemakarten zeigen auch bei Tastaturfokus eine Vorschau. Achte auf den sichtbaren Fokus und bediene die Einstellungen per Tastatur.\n\n\n<a name=\"topic-4\"></a>\n\n## Login-Gestaltung und Bilder\n\n### Brauche ich ein Logo und ein Hintergrundfoto?\n\nNein. Website-Icon, Theme-Logo und Websitename liefern Rückfalloptionen; die Farbverläufe funktionieren ohne Foto.\n\n### Kann ich ein breites Banner statt eines quadratischen Logos nutzen?\n\nJa. Wähle ein Login-Banner; seine dargestellte Breite bleibt innerhalb des Formularbereichs.\n\n### Kann ich Titel, Slogan und Login-Farben ändern?\n\nJa. Websitetitel und Slogan sind Vorgaben; überschreibe oder verstecke beide unabhängig. Bei Bedarf lassen sich Seitenhintergrund, Formularfläche, Bildfarbe und Button anpassen.\n\n### Was hilft bei langen Websitetiteln?\n\nTitel umbrechen innerhalb des Formularbereichs. Probiere zentrierte Inhalte oder einen kürzeren eigenen Titel und prüfe Desktop, Tablet und Mobil.\n\n### Warum unterscheidet sich der Login im neuen Tab von der Vorschau?\n\nDer Link zum neuen Tab zeigt die gespeicherte Gestaltung. Speichere alle Änderungen, bevor du mit der Editorvorschau vergleichst.\n\n### Kann ich SVG-Loginbilder verwenden?\n\nNur mit dem separaten Plugin Safe SVG, Administratorbestätigung und bereinigtem Mediathek-Anhang. Brand Admin Schemes erlaubt keine ungeprüften SVG-Uploads. Agentur-ZIP-Pakete schließen SVG-Dateien aus.\n\n### Ersetzt es den WordPress-Login oder die Passwortwiederherstellung?\n\nNein. Es verändert die Darstellung; WordPress-Formulare und ihre Aktionen bleiben erhalten. Andere Login-Plugins können die Darstellung beeinflussen; prüfe ihr Zusammenspiel.\n\n### Ändern sich Verläufe bei jedem Neuladen?\n\nNein. Die Überraschungsvariante bleibt je Website stabil. Wähle einen der neun Vorschauverläufe, um die Darstellung festzulegen.\n\n\n<a name=\"topic-5\"></a>\n\n## Browser-Tabs und Umgebungen\n\n### Ersetzt es das WordPress-Website-Icon?\n\nKontextabhängige Favicons erhalten das gespeicherte Website-Icon standardmäßig. Nur die gesonderte, ausdrücklich bestätigte PNG-Website-Icon-Aktion ersetzt es. Das ursprüngliche Frontend-Favicon kann erhalten bleiben.\n\n### Welche Builderkontexte werden erkannt?\n\nUnterstützte Editor-Merkmale von Bricks, Elementor und Oxygen werden in angemeldeten Editoransichten erkannt. Die Erkennung ist auf diese Merkmale begrenzt; andere Plugins oder geänderte Editoroberflächen können sie beeinflussen.\n\n### Wie lang darf das Favicon-Kürzel sein?\n\nBis zu drei Zeichen. Ein oder zwei bleiben in Browser-Tab-Größe meist besser lesbar; Umrisssymbole stehen ebenfalls bereit.\n\n### Warum sehe ich noch ein altes Favicon?\n\nSpeichere die Icon-Einstellungen und lade den Tab neu oder öffne ihn erneut. Browser speichern Favicons im Cache. Prüfe auch, ob ein anderes Plugin oder der Builder das Icon später ersetzt.\n\n### Wie werden Lokal, Entwicklung, Staging und Live erkannt?\n\nEine explizit konfigurierte WordPress-Umgebung hat Vorrang. Sonst dienen typische lokale Adressen und Dev-/Staging-Präfixe als Hinweise. .local, localhost, 127.0.0.0/8 und IPv6-Loopback werden berücksichtigt; ungewöhnliche Domains erfordern eventuell eine manuelle Auswahl.\n\n### Ändert die manuelle Auswahl Staging die WordPress-Konfiguration?\n\nNein. Sie verändert das angezeigte Badge und den generierten Favicon-Marker, nicht WP_ENVIRONMENT_TYPE, Debugging oder Indexierungseinstellungen.\n\n### Wer sieht PHP- und WP_DEBUG-Informationen?\n\nWebsite-Administratoren können das Untermenü des Toolbar-Badges öffnen. Andere Benutzer sehen diese Laufzeitinformationen nicht.\n\n### Kann ich eigene Umgebungsfarben wählen?\n\nJa. Jeder Status darf einen eigenen Farbton haben. Die Helligkeit kann für den Kontrast zur Toolbar angepasst werden; der Badgetext wechselt zwischen hell und dunkel.\n\n### Warum fehlt das Badge im Frontend?\n\nEs benötigt eine sichtbare WordPress-Adminleiste. Prüfe deine Anmeldung und ob Profil, Theme oder ein anderes Plugin die Toolbar ausblendet.\n\n\n<a name=\"topic-6\"></a>\n\n## Import, Export und Gutenberg\n\n### Verändert ein Import sofort die aktive Gestaltung?\n\nNein. Prüfe importierte Einstellungen und speichere zum Anwenden. Agentur-ZIP-Importe legen enthaltene Bilder allerdings sofort in der Mediathek an.\n\n### Sollte ich JSON oder ein Agentur-ZIP verwenden?\n\nJSON überträgt Einstellungen und Schemas ohne Dateien. ZIP kann zusätzlich unterstützte lokale Login-Bilder enthalten. Nutze JSON für leichte Vorlagen und ZIP für übertragbare Bildgestaltungen.\n\n### Welche Bilddateien und Größen unterstützt das Agenturpaket?\n\nLokale PNG-, JPEG-, WebP- und GIF-Bilder bis 4 MB je Datei und 13 MB je Paket. SVG-Dateien sind ausgeschlossen. Import und Export benötigen PHP ZipArchive.\n\n### Warum stellt der JSON-Import mein Logo nicht wieder her?\n\nJSON speichert websitespezifische Medienverweise, keine Bilddateien. Wähle Bilder auf der Zielwebsite erneut aus oder nutze ein Agentur-ZIP mit unterstützten Bildern.\n\n### Verändert die Gutenberg-Palette bestehende Blöcke?\n\nNein. Sie ergänzt bis zu vier Markenfarben neben der Theme-Palette. Vorhandene Blockfarben und die Editoroberfläche bleiben bestehen.\n\n\n<a name=\"topic-7\"></a>\n\n## Updates, Sprache und Fehlerhilfe\n\n### Wie funktionieren Updates?\n\nUpdates kommen aus dem öffentlichen DECKERWEB-Repository auf GitHub über das reguläre WordPress-Updatesystem. Ein zusätzliches Updater-Plugin ist nicht nötig.\n\n### Warum erscheint ein GitHub-Release noch nicht als Update?\n\nNutze Erneut prüfen unter Dashboard → Aktualisierungen. Prüfe den Serverzugriff auf GitHub. Alternativ kannst du das neueste Plugin-ZIP über WordPress hochladen und die installierte Version ersetzen.\n\n### Aktiviert das Plugin automatische Updates für mich?\n\nNein. Wähle automatische Updates selbst über die verfügbaren WordPress-Einstellungen.\n\n### Kann ich ein privates GitHub-Repository für Updates nutzen?\n\nNicht mit dem enthaltenen Updater. Er liest öffentliche GitHub-Releases ohne Anmeldung.\n\n### Wie wechsle ich zu Deutsch?\n\nDeutsche Übersetzungen sind enthalten. Wähle Deutsch als WordPress-Website- oder Benutzersprache; kein Sprachpaket-Download ist nötig.\n\n### Benötigt die Farberzeugung einen externen Dienst?\n\nNein. Palettenverarbeitung und Icon-Erzeugung erfolgen lokal. Updateprüfungen und Downloads kontaktieren GitHub.\n\n### Löscht die Deaktivierung meine Einstellungen?\n\nNein. Die Gestaltung endet während der Deaktivierung; gespeicherte Einstellungen bleiben erhalten. Exportiere eine Konfiguration vor größeren Änderungen.\n\n### Gibt es eine netzwerkweite Multisite-Einstellungsseite?\n\nDiese Version speichert Einstellungen pro Website und hat keinen netzwerkweiten Vorlagenmanager. Prüfe jede Website separat; diese Anleitung garantiert keine umfassende Multisite-Kompatibilität.\n\n### Was gehört in einen Fehlerbericht?\n\nPlugin-, WordPress- und PHP-Version; relevante Provider- oder Builderversion; betroffener Bildschirm und Schritte zum Nachstellen. Nutze anonymisierte Screenshots und entferne Zugangsdaten sowie private Kundeninformationen vor einem öffentlichen GitHub-Issue.\n\n© 2022–2026 David Decker – DECKERWEB · GPL v2 oder höher\n\n## Einrichtung, Multisite und Daten\n\n**Kann ich das ganze Netzwerk gleichzeitig gestalten?** Nein. Netzwerkaktivierung stellt BAS bereit; Branding, Loginmedien und Website-Icons bleiben je Website. Derselbe Benutzer kann websitebezogene Farben wählen, während die Netzwerk-Profilfarbe global bleibt.\n\n**Speichert die PNG-Website-Icon-Aktion auch andere Änderungen?** Nein. Die gesonderte bestätigte Aktion übernimmt das Website-Icon sofort und erhält den übrigen Editorentwurf. SVG-Downloads schalten keine SVG-Uploads frei.\n\n**Was passiert bei Deinstallation?** Temporäres Undo und BAS-Updater-Cache werden entfernt. Branding, Medien, Benutzerfarben und bewusste Rollenentscheidungen bleiben erhalten. Der originale Library-Vertrag schützt gemeinsame Einstellungen und andere installierte Hosts. Einzelheiten stehen in der Datendokumentation.\n"
+  },
+  "publication_state": "released"
+}

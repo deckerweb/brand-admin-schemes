@@ -1,10 +1,10 @@
 # Markenfarben im Admin · Brand Admin Schemes
 
-![Plugin-Banner von Brand Admin Schemes](assets-github/banner-de-1544x500.png)
+![Plugin-Banner von Brand Admin Schemes](assets-github/banner-github-de-1280x640.png)
 
 **Deine Farben. Dein WordPress.** Wenige Markenfarben genügen für einen vertrauten WordPress-Admin, einen schönen Login und Browser-Tabs, die du sofort auseinanderhalten kannst. Verwende Core Framework, Bricks Builder, Automatic.css oder deine eigene Palette. Atmosphäre und Markennähe ausprobieren, Vorschau prüfen, speichern. Kein eigenes CSS nötig.
 
-**Version:** 0.16.3 · **Voraussetzungen:** WordPress 6.4+ / PHP 8.0+ · **Lizenz:** GPL v2 oder höher
+**Version:** 0.18.0 · **Voraussetzungen:** WordPress 6.4+ / PHP 8.0+ · **Lizenz:** GPL v2 oder höher
 
 [Download](https://github.com/deckerweb/brand-admin-schemes/releases/latest) · [Anleitung](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) · [English](README.md)
 
@@ -18,6 +18,8 @@
 - [Import, Export und Gutenberg](#import-export-und-gutenberg)
 - [Updates und Dokumentation](#updates-und-dokumentation)
 - [Häufige Fragen](#haeufige-fragen)
+- [Multisite und Leitstand](#multisite-und-leitstand)
+- [Screenshots](#screenshots)
 - [Changelog](#changelog)
 - [Über das Plugin](#ueber-das-plugin)
 
@@ -83,7 +85,7 @@ Auf Wunsch stehen die vier benannten Markenfarben neben der Theme-Palette in Gut
 
 Updates kommen direkt aus dem [DECKERWEB-Plugin-Repository auf GitHub](https://github.com/deckerweb/brand-admin-schemes/releases) und erscheinen im **regulären WordPress-Updatesystem**. Aktualisiere wie gewohnt über Plugins oder Aktualisierungen; ein zusätzliches Updater-Plugin ist nicht nötig.
 
-Die [deutsche Wiki-Anleitung](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) und die [englische Wiki-Anleitung](https://github.com/deckerweb/brand-admin-schemes/wiki/English) erklären alle Einstellungen, Farbquellen, Login-Bilder, Tab-Icons und häufige Fragen. Der Footer der Einstellungsseite verlinkt die Anleitung in deiner Sprache und öffnet den vollständigen lokalen Änderungsverlauf. Deutsch ist enthalten und folgt der WordPress-Website- oder Benutzersprache.
+Die [deutsche Wiki-Anleitung](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) und die [englische Wiki-Anleitung](https://github.com/deckerweb/brand-admin-schemes/wiki/English) erklären alle Einstellungen, Farbquellen, Login-Bilder, Tab-Icons und häufige Fragen. Der Footer der Einstellungsseite verlinkt die Anleitung in deiner Sprache und öffnet den jüngsten lokalen Verlauf mit einem Link zur vollständigen Historie. Deutsch ist enthalten und folgt der WordPress-Website- oder Benutzersprache.
 
 <a name="haeufige-fragen"></a>
 
@@ -95,21 +97,75 @@ Die [deutsche Wiki-Anleitung](https://github.com/deckerweb/brand-admin-schemes/w
 
 **Verändert das Plugin mein Website- oder Builderdesign?** Es gestaltet den Adminrahmen, optional Login und Toolbar sowie Browser-Tab-Icons. Seiteninhalte und Builder-Arbeitsflächen behalten ihr Design; Gutenberg-Paletteneinträge ergänzen nur die Farbauswahl.
 
-**Brauche ich ein Logo und ein Hintergrundfoto?** Nein. Website-Icon, Theme-Logo und Websitename liefern Rückfalloptionen; die Farbverläufe funktionieren ohne Foto.
+**Ersetzt es das WordPress-Website-Icon?** Kontextabhängige Favicons lassen es standardmäßig unverändert. Eine gesonderte, bestätigte Website-Icon-Aktion kann ausdrücklich ein erzeugtes PNG übernehmen.
 
-**Ersetzt es das WordPress-Website-Icon?** Nein. Es erzeugt kontextabhängige Browser-Tab-Favicons, ohne das gespeicherte Website-Icon zu ändern. Das ursprüngliche Frontend-Favicon kann erhalten bleiben.
+**Funktioniert das Plugin in Multisite?** Ja, bei Einzelwebsite- und Netzwerkaktivierung. Branding, Medien und persönliche Farben bleiben je Website; das Netzwerkprofil verwendet deine globale Farbe. Richte das Branding im Admin der jeweiligen Website ein.
 
 **Verändert ein Import sofort die aktive Gestaltung?** Nein. Prüfe importierte Einstellungen und speichere zum Anwenden. Agentur-ZIP-Importe legen enthaltene Bilder allerdings sofort in der Mediathek an.
 
-**Wie funktionieren Updates?** Updates kommen aus dem öffentlichen DECKERWEB-Repository auf GitHub über das reguläre WordPress-Updatesystem. Ein zusätzliches Updater-Plugin ist nicht nötig.
+**Wie funktionieren Updates und Deinstallation?** Updater V2 liefert GitHub-Updates über WordPress. Deaktivierung erhält Daten; Deinstallation entfernt temporäres Undo und Caches und erhält Branding, Medien und Farbauswahl. Einzelheiten stehen in der Datendokumentation.
 
 [Alle Fragen nach Themen](https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-Deutsch)
 
+
+## Geführte Einrichtung
+
+Die optionale geführte Einrichtung führt durch Farben, Atmosphäre, Login und Tab-Icons sowie Prüfung und Speichern. Sie verwendet den vorhandenen Entwurf, lässt sich erneut öffnen und übernimmt Änderungen erst beim ausdrücklichen Speichern.
+
+## Website-Zustand
+
+Ein kompakter, rein informativer Bereich unter Werkzeuge → Website-Zustand zeigt die Schema-Auswahl, Palettenquelle, den Standardmodus für Benutzer, optionale Gestaltung und die erkannte Umgebung. Es erfolgen keine Status-Tests, Dateiprüfungen oder externen Abfragen.
+
+## Multisite und Leitstand
+
+Einzeln oder netzwerkweit aktivierbar. Jede Website verwaltet ihre eigenen Schemen, Login-Einstellungen, Toolbar, Browser-Tab-Icons und Medien. Auch die persönliche Farbauswahl bleibt je Website getrennt. Neue Unterwebsites erhalten die Administrator-Berechtigung für Tab-Icons automatisch; bestehende Websites beim ersten berechtigten Aufruf. Bewusst entzogene Rechte werden nicht wieder vergeben. Einstellungen findest du im Admin der jeweiligen Website.
+
+BAS funktioniert ohne Leitstand. Leitstand kann die regulären WordPress-Site-Optionen lesen und auf den dokumentierten Änderungshook reagieren. Eine fertige Leitstand-Oberfläche oder netzwerkweite Branding-Verteilung ist noch nicht enthalten. Die deckerweb Plugin Library 0.5.0 ist eingebettet; BAS-Updates liefert weiterhin der Updater V2 über WordPress.
+
 <a name="changelog"></a>
+
+
+[Daten und Deinstallation](docs/DATA-de.md) · [Sicherheit](SECURITY-de.md) · [Kompatibilität](docs/PROFILE-de.md)
+
+## Screenshots
+
+1. Eigene Markenfarben und Speicherleiste in einer echten WordPress-Testwebsite.
+
+![Eigene Markenfarben und Speicherleiste in einer echten WordPress-Testwebsite.](assets-github/screenshots/screenshot-1-de.jpg)
+
+2. Lokaler Änderungsverlauf mit beschrifteten Kategorien, Tastaturbedienung und Link zur vollständigen Historie.
+
+![Lokaler Änderungsverlauf mit beschrifteten Kategorien, Tastaturbedienung und Link zur vollständigen Historie.](assets-github/screenshots/screenshot-2-de.jpg)
 
 ## Changelog
 
+Sieben jüngste Versionen; Wiki und lokaler vollständiger Verlauf erhalten alle dokumentierten Einträge.
+
+### 0.18.0
+
+2026-10-05
+
+- **Neu:** Optionale geführte Einrichtung mit vier Schritten.
+- **Neu:** Informativer Bericht mit acht Feldern unter Werkzeuge → Website-Zustand, ohne zusätzliche Tests oder externe Aufrufe.
+- **Verbessert:** Tab-Icons bieten Sichtbarkeitsauswahl, Anzeige-Berechtigung, Downloads, PNG-Mediathek-Aktionen und Übernahme als offizielles Website-Icon.
+- **Verbessert:** Ergänzt Netzwerkaktivierung, persönliche Farbauswahl je Website, Profil-/AJAX-/Undo-Isolation und neue Unterwebsites.
+- **Verbessert:** Liefert Deutsch mit Du und Sie, gemeinsame Dokumentationsquellen, einen datierten lokalen Änderungsverlauf und lokalisierte GitHub-Banner.
+- **Behoben:** Speichert AJAX-Farbänderungen im Netzwerk-Profil global und weist Undo-Snapshots aus einem anderen Speicherbereich ab.
+- **Behoben:** Prüft Upload-Rechte und freien Multisite-Speicher für Agenturbilder und PNG-Icons.
+- **Behoben:** Hält Speicheraktionen und lange übersetzte Auswahlfelder innerhalb schmaler Adminbildschirme.
+- **Behoben:** Erhält benannte Schemafarben bei der Validierung und schützt spätere persönliche Farbänderungen vor Undo.
+- **Sonstiges:** Enthält deckerweb Plugin Library 0.5.0; Updater V2 bleibt erhalten.
+- **Sonstiges:** Dokumentiert Sicherheitsmeldungen und Datenhaltung; die Deinstallation bereinigt temporäres Undo und den Updater-Cache und erhält Branding, Medien und Benutzerauswahl.
+
+### 0.17.0 (Entwicklung)
+
+Veröffentlichungsdatum nicht dokumentiert
+
+- **Neu:** Kompakter, rein informativer Website-Zustand-Bericht ohne Status-Tests.
+
 ### 0.16.3
+
+2026-09-30
 
 - **Verbessert:** Zeigt das Plugin-Icon in WordPress-Updateangeboten und englische beziehungsweise deutsche Banner in den Plugindetails.
 - **Verbessert:** Verlinkt die Footer-Dokumentation direkt ins sprachabhängige Wiki und öffnet den vollständigen mitgelieferten Änderungsverlauf in einem zugänglichen lokalen Dialog.
@@ -118,6 +174,8 @@ Die [deutsche Wiki-Anleitung](https://github.com/deckerweb/brand-admin-schemes/w
 
 ### 0.16.2
 
+2026-09-30
+
 - **Verbessert:** Überarbeitet alle vier Readmes mit verständlichen Funktionsübersichten, sieben kurzen FAQs und den letzten fünf Versionseinträgen.
 - **Verbessert:** Ergänzt ein deutsches GitHub-Banner und erweitert das zweisprachige Wiki um 49 thematisch gegliederte FAQ-Antworten je Sprache und vollständige Änderungsverläufe.
 - **Verbessert:** Ergänzt geprüfte Sprungmarken, stellt Browser-Tab-Favicons bei den Hauptfunktionen vor und erklärt GitHub-Updates über das reguläre WordPress-Updatesystem.
@@ -125,10 +183,14 @@ Die [deutsche Wiki-Anleitung](https://github.com/deckerweb/brand-admin-schemes/w
 
 ### 0.16.1
 
+2026-09-29
+
 - **Verbessert:** Footer-Layout von Daily Scripture übernommen, Dokumentationslink neben dem Changelog ergänzt und einen übersetzten Markenslogan eingefügt.
 - **Sonstiges:** DECKERWEB-Copyright in Plugin und Dokumentation auf 2022–2026 gesetzt.
 
 ### 0.16.0
+
+Veröffentlichungsdatum nicht dokumentiert
 
 - **Neu:** Kompakter Einstellungsfooter mit lokaler Dokumentation und Changelog-Dialogen.
 - **Verbessert:** Inhaltlich abgestimmte englische und deutsche Markdown- und Text-Readmes.
@@ -138,12 +200,10 @@ Die [deutsche Wiki-Anleitung](https://github.com/deckerweb/brand-admin-schemes/w
 
 ### 0.15.1
 
+Veröffentlichungsdatum nicht dokumentiert
+
 - **Verbessert:** Kurze Pluginbeschreibung und GitHub-Dokumentation auf den gesamten Funktionsumfang aktualisiert.
 - **Sonstiges:** Zwei weitere Bannerentwürfe und zwei passende Iconentwürfe als SVG und PNG ergänzt.
-
-[Vollständiger Änderungsverlauf im Wiki](https://github.com/deckerweb/brand-admin-schemes/wiki/Changelog-Deutsch) · [Releases](https://github.com/deckerweb/brand-admin-schemes/releases)
-
-<a name="ueber-das-plugin"></a>
 
 ## Über das Plugin
 
@@ -154,3 +214,7 @@ Das Schema gestaltet den WordPress-Adminrahmen; fremdes CSS kann einzelne Elemen
 Eine Idee oder einen Fehler gefunden? [Melde dich auf GitHub](https://github.com/deckerweb/brand-admin-schemes/issues).
 
 © 2022–2026 David Decker – DECKERWEB · [GPL v2 oder höher](LICENSE)
+
+## Berechtigungen für Tab-Icons
+
+Standardmäßig sehen nur angemeldete Benutzer mit `bas_view_context_icons` die kontextabhängigen Favicons; die Administratorrolle erhält diese Berechtigung einmalig. Über einen Rollen-Editor kannst du anderen Rollen oder Benutzern die Anzeige erlauben, ohne Zugriff auf Plugin-Einstellungen zu geben. Wähle **Alle, einschließlich Besucher** und speichere, um die Anzeige für alle freizugeben. Bei eingeschränkter Anzeige behalten Besucher das offizielle WordPress-Website-Icon. Unter **Verwenden und exportieren** kannst du jede erzeugte Gestaltung als SVG oder PNG mit 512 × 512 Pixeln herunterladen, als PNG in der Mediathek speichern oder als offizielles WordPress-Website-Icon übernehmen. Mediathek-Aktionen wirken sofort, unabhängig vom Einstellungsentwurf. Die Übernahme als Website-Icon erfordert eine Bestätigung, lässt den Umgebungsmarker weg und stellt den gespeicherten Frontend-Favicon-Modus auf das WordPress-Website-Icon um. Andere Entwürfe bleiben ungespeichert; bisherige Bilder bleiben in der Mediathek. SVG-Downloads erlauben keine SVG-Uploads.

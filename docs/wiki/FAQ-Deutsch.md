@@ -144,7 +144,7 @@ Nein. Die Überraschungsvariante bleibt je Website stabil. Wähle einen der neun
 
 ### Ersetzt es das WordPress-Website-Icon?
 
-Nein. Es erzeugt kontextabhängige Browser-Tab-Favicons, ohne das gespeicherte Website-Icon zu ändern. Das ursprüngliche Frontend-Favicon kann erhalten bleiben.
+Kontextabhängige Favicons erhalten das gespeicherte Website-Icon standardmäßig. Nur die gesonderte, ausdrücklich bestätigte PNG-Website-Icon-Aktion ersetzt es. Das ursprüngliche Frontend-Favicon kann erhalten bleiben.
 
 ### Welche Builderkontexte werden erkannt?
 
@@ -245,3 +245,11 @@ Diese Version speichert Einstellungen pro Website und hat keinen netzwerkweiten 
 Plugin-, WordPress- und PHP-Version; relevante Provider- oder Builderversion; betroffener Bildschirm und Schritte zum Nachstellen. Nutze anonymisierte Screenshots und entferne Zugangsdaten sowie private Kundeninformationen vor einem öffentlichen GitHub-Issue.
 
 © 2022–2026 David Decker – DECKERWEB · GPL v2 oder höher
+
+## Einrichtung, Multisite und Daten
+
+**Kann ich das ganze Netzwerk gleichzeitig gestalten?** Nein. Netzwerkaktivierung stellt BAS bereit; Branding, Loginmedien und Website-Icons bleiben je Website. Derselbe Benutzer kann websitebezogene Farben wählen, während die Netzwerk-Profilfarbe global bleibt.
+
+**Speichert die PNG-Website-Icon-Aktion auch andere Änderungen?** Nein. Die gesonderte bestätigte Aktion übernimmt das Website-Icon sofort und erhält den übrigen Editorentwurf. SVG-Downloads schalten keine SVG-Uploads frei.
+
+**Was passiert bei Deinstallation?** Temporäres Undo und BAS-Updater-Cache werden entfernt. Branding, Medien, Benutzerfarben und bewusste Rollenentscheidungen bleiben erhalten. Der originale Library-Vertrag schützt gemeinsame Einstellungen und andere installierte Hosts. Einzelheiten stehen in der Datendokumentation.

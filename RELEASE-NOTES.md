@@ -1,10 +1,23 @@
-# Brand Admin Schemes 0.16.3
+# Brand Admin Schemes 0.18.0
 
-- **Improved:** Shows the plugin icon in WordPress update offers and localized English/German banners in plugin details.
-- **Improved:** Links footer documentation directly to the localized Wiki and opens the complete bundled changelog in an accessible local dialog.
-- **Fixed:** Restores missing update artwork, including already cached update offers after this version is installed.
-- **Misc:** Uses the shared DECKERWEB GitHub Updater V2 with plugin-scoped package identity and requirements checks.
+Published release.
 
-**Installation:** Update through WordPress or download `brand-admin-schemes-0.16.3.zip` below. The update icon becomes available after installing this version; older installed versions cannot display artwork they do not provide yet.
+### 0.18.0
 
-Requires WordPress 6.4+ and PHP 8.0+.
+2026-10-05
+
+- **New:** Optional four-step guided setup.
+- **New:** Eight-field informational report in Tools → Site Health, without extra tests or external requests.
+- **Improved:** Tab icons support audience selection, viewing permission, downloads, PNG media actions and official Site Icon adoption.
+- **Improved:** Adds network activation, per-site personal colors, profile/AJAX/Undo isolation and new-subsite permission provisioning.
+- **Improved:** Ships informal and formal German, shared documentation sources, a dated local changelog and localized GitHub banners.
+- **Fix:** Keeps network-profile AJAX color changes global and rejects Undo snapshots from another storage scope.
+- **Fix:** Checks upload permission and available Multisite space for agency images and PNG icons.
+- **Fix:** Keeps save actions and long translated choices within narrow admin screens.
+- **Fix:** Preserves named scheme colors during validation and protects later personal color changes from Undo.
+- **Misc:** Includes deckerweb Plugin Library 0.5.0; preserves Updater V2.
+- **Misc:** Documents security reporting and data ownership; uninstall clears temporary Undo and updater cache while preserving branding, media and user choices.
+
+Requires WordPress 6.4+ and PHP 8.0+. Update from the WordPress Plugins screen or upload the release ZIP via Plugins → Add New → Upload Plugin. Branding, media and personal color choices are retained.
+
+[Deutsch](RELEASE-NOTES-de.md)

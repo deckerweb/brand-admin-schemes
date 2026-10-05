@@ -2,8 +2,8 @@
 /**
  * Plugin Name: Brand Admin Schemes
  * Plugin URI: https://github.com/deckerweb/brand-admin-schemes
- * Description: Bring your brand colors to the WordPress admin, login, toolbar, and browser tabs. Use Core Framework, Bricks, ACSS, or your own palette.
- * Version: 0.16.3
+ * Description: Brand colors for your WordPress admin, login, toolbar and browser tabs. Use Core Framework, Bricks, ACSS or your own palette.
+ * Version: 0.18.0
  * Requires at least: 6.4
  * Requires PHP: 8.0
  * Author: David Decker – DECKERWEB
@@ -31,7 +31,7 @@ define( 'BAS_PLUGIN_DIR', __DIR__ . '/' );
  */
 final class BAS_Plugin {
 	/** Current package version, shared by assets and the settings footer. */
-	const VERSION = '0.16.3';
+	const VERSION = '0.18.0';
 	/**
 	 * Site option containing the editor state and saved schemes.
 	 * @var string
@@ -53,6 +53,7 @@ final class BAS_Plugin {
 			load_plugin_textdomain( 'brand-admin-schemes', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 		} );
 		add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), [__CLASS__, 'action_links'] );
+		add_filter( 'network_admin_plugin_action_links_' . plugin_basename( __FILE__ ), [__CLASS__, 'action_links'] );
 		add_action( 'admin_menu', [__CLASS__, 'menu'] );
 		add_action( 'admin_enqueue_scripts', [__CLASS__, 'assets'] );
 		add_action( 'admin_enqueue_scripts', [__CLASS__, 'environment_style'] );
@@ -105,6 +106,55 @@ final class BAS_Plugin {
 	 */
 	private static function translations(): array {
 		$strings = [
+			'Who can see contextual tab icons?',
+			'Administrators and users with permission',
+			'Everyone, including visitors',
+			'Restricted by default using bas_view_context_icons. Everyone also makes generated frontend icons and their optional environment marker public. Save all changes to apply this choice.',
+			'Contextual tab icons are currently available to everyone, including visitors.',
+			'Use & export',
+			'Download SVG',
+			'Download PNG',
+			'Save to Media Library',
+			'Use as official Site Icon',
+			'Exports use the generated design. PNGs are 512 × 512 pixels. Media and Site Icon actions take effect immediately; the official Site Icon omits the environment marker.',
+			'The icon could not be rendered. Please try again.',
+			'PNG export is not supported by this browser.',
+			'Use this design as the official WordPress Site Icon? This immediately adds a PNG to the Media Library, replaces the Site Icon and switches the frontend to the WordPress Site Icon. Other draft settings are not saved.',
+			'Preparing icon…',
+			'Icon downloaded.',
+			'The icon could not be saved to the Media Library.',
+			'Official Site Icon updated. Other draft settings have not been saved.',
+			'Icon saved to the Media Library.',
+			'Open in Media Library',
+			'A valid 512 × 512 PNG icon is required.',
+			'Invalid icon action.',
+			'PNG uploads are not available on this site.',
+			'The upload quota is exhausted.',
+			'WordPress could not process the PNG icon.',
+
+			'Contextual tab icons are visible only to signed-in users with the bas_view_context_icons capability. Administrators receive it by default; a role editor can grant it to other roles or users. Visitors keep the WordPress Site Icon.',
+			'Contextual tab icons are available to administrators by default. Other users and visitors keep the WordPress Site Icon.',
+
+			'Guided setup',
+			'Four simple steps. Your existing settings stay available.',
+			'Choose your colors',
+			'Find your atmosphere',
+			'Optional finishing touches',
+			'Review and save',
+			'Your brand at a glance',
+			'Review the scheme name and user default below, then save in the fixed bar above.',
+			'Your Site Icon and site title are used when no custom logo or title is selected. Existing images and settings are retained.',
+			'Existing icon settings are retained. Colors and initials provide automatic fallbacks.',
+			'Previews show the optional designs, even when they are disabled.',
+			'Continue in full settings',
+			'Changes remain a draft until you save. You can leave setup at any time and continue in the full settings.',
+			'Back',
+			'Next',
+			'Use Save all changes in the fixed bar above to apply your design.',
+			'Enabled',
+			'Disabled',
+			'Browser tab icons',
+
 			'Symbol',
 			'Environment display',
 			'Displayed environment',
@@ -591,7 +641,7 @@ final class BAS_Plugin {
 
 	/** Defaults keep existing installations unchanged until the feature is enabled. */
 	private static function default_icons(): array {
-		return ['enabled' => false, 'frontend_mode' => 'generated', 'builder_style' => 'auto', 'environment_marker' => true,
+		return ['enabled' => false, 'audience' => 'capability', 'frontend_mode' => 'generated', 'builder_style' => 'auto', 'environment_marker' => true,
 			'frontend' => ['label' => '', 'symbol' => 'text', 'background' => '', 'foreground' => ''],
 			'admin' => ['label' => '', 'symbol' => 'text', 'background' => '', 'foreground' => ''],
 			'builder' => ['label' => '', 'symbol' => 'auto', 'background' => '', 'foreground' => '']];
@@ -604,18 +654,27 @@ final class BAS_Plugin {
 			return $icons;
 		}
 		$icons['enabled'] = !empty( $raw['enabled'] );
+		$icons['audience'] = 'everyone' === ( $raw['audience'] ?? '' ) ? 'everyone' : 'capability';
 		$icons['environment_marker'] = !empty( $raw['environment_marker'] );
 		$icons['frontend_mode'] = 'wordpress' === ( $raw['frontend_mode'] ?? '' ) ? 'wordpress' : 'generated';
 		$icons['builder_style'] = in_array( $raw['builder_style'] ?? '', ['auto', 'bricks', 'elementor', 'oxygen'], true ) ? $raw['builder_style'] : 'auto';
 		foreach ( ['frontend', 'admin', 'builder'] as $context ) {
 			$design = isset( $raw[$context] ) && is_array( $raw[$context] ) ? $raw[$context] : [];
-			$icons[$context]['label'] = substr( sanitize_text_field( (string) ( $design['label'] ?? '' ) ), 0, 12 );
+			$icons[$context]['label'] = substr( sanitize_text_field( is_scalar( $design['label'] ?? '' ) ? (string) ( $design['label'] ?? '' ) : '' ), 0, 12 );
 			$icons[$context]['symbol'] = in_array( $design['symbol'] ?? '', ['auto', 'text', 'circle', 'diamond', 'spark', 'leaf', 'shield', 'grid', 'bricks', 'oxygen'], true ) ? $design['symbol'] : $icons[$context]['symbol'];
 			foreach ( ['background', 'foreground'] as $color ) {
 				$icons[$context][$color] = self::color( $design[$color] ?? '' );
 			}
 		}
 		return $icons;
+	}
+
+	/** Preserve all saved settings when an explicit action adopts a core Site Icon. */
+	public static function use_official_site_icon(): void {
+		$settings = self::settings();
+		$settings['icons']['frontend_mode'] = 'wordpress';
+		update_option( self::OPTION, $settings, false );
+		do_action( 'bas_site_settings_changed', get_current_blog_id(), 'site_icon' );
 	}
 
 	/** Expose sanitized settings to the icon renderer. */
@@ -631,6 +690,28 @@ final class BAS_Plugin {
 	/** Environment resolved from the same manual and automatic rules as the toolbar badge. */
 	public static function icon_environment_type(): string {
 		return self::environment_status()['type'];
+	}
+
+	/**
+	 * Expose the existing badge resolution to read-only Site Health information.
+	 *
+	 * @since 0.17.0
+	 * @return array<string,string> Resolved environment and localized labels.
+	 */
+	public static function site_health_environment(): array {
+		$environment = self::environment_status();
+		$sources = array(
+			'manual' => __( 'Manual selection', 'brand-admin-schemes' ),
+			'wordpress' => __( 'WordPress setting', 'brand-admin-schemes' ),
+			'url' => __( 'Site address hint', 'brand-admin-schemes' ),
+			'default' => __( 'WordPress default', 'brand-admin-schemes' ),
+		);
+		return array(
+			'type' => $environment['type'],
+			'label' => self::environment_labels()[ $environment['type'] ],
+			'source' => $environment['source'],
+			'source_label' => $sources[ $environment['source'] ],
+		);
 	}
 
 	/** Share the active palette with automatically generated tab icons. */
@@ -669,7 +750,7 @@ final class BAS_Plugin {
 		wp_enqueue_script( 'bas-environment-colors', plugins_url( 'assets/environment-colors.js', __FILE__ ), [], '0.12.0', true );
 		wp_enqueue_script( 'bas-editor', plugins_url( 'assets/editor.js', __FILE__ ), ['bas-environment-colors'], self::VERSION, true );
 		$settings = self::settings();
-		wp_add_inline_script( 'bas-editor', 'window.BAS_DATA=' . wp_json_encode( ['ajax' => admin_url( 'admin-ajax.php' ), 'nonce' => wp_create_nonce( 'bas_nonce' ), 'settings' => $settings, 'i18n' => self::translations(), 'canUndo' => self::can_undo(), 'environment' => self::environment_status(), 'environmentIconBase' => plugins_url( 'assets/environment-', __FILE__ ), 'loginUrl' => wp_login_url(), 'siteName' => get_bloginfo( 'name' ), 'iconPalette' => self::icon_palette(), 'detectedBuilder' => self::detected_builder(), 'siteTagline' => get_bloginfo( 'description' ), 'siteIcon' => get_site_icon_url( 192, '' ), 'themeLogo' => self::login_image_url( (int) get_theme_mod( 'custom_logo' ), 'medium' ), 'safeSvg' => class_exists( 'SafeSvg\\safe_svg' ), 'gradientVariant' => hexdec( substr( md5( home_url() ), 0, 2 ) ) % 8, 'loginMedia' => ['logo' => self::login_image_url( $settings['login_logo_id'], 'medium', $settings['login_svg_confirmed'] ), 'banner' => self::login_image_url( $settings['login_banner_id'], 'large', $settings['login_svg_confirmed'] ), 'background' => self::login_image_url( $settings['login_background_id'], 'full' )]] ) . ';', 'before' );
+		wp_add_inline_script( 'bas-editor', 'window.BAS_DATA=' . wp_json_encode( ['ajax' => admin_url( 'admin-ajax.php' ), 'nonce' => wp_create_nonce( 'bas_nonce' ), 'settings' => $settings, 'i18n' => self::translations(), 'canUndo' => self::can_undo(), 'environment' => self::environment_status(), 'environmentIconBase' => plugins_url( 'assets/environment-', __FILE__ ), 'loginUrl' => wp_login_url(), 'siteName' => get_bloginfo( 'name' ), 'iconPalette' => self::icon_palette(), 'detectedBuilder' => self::detected_builder(), 'siteTagline' => get_bloginfo( 'description' ), 'siteIcon' => get_site_icon_url( 192, '' ), 'mediaEditBase' => admin_url( 'post.php?action=edit&post=' ), 'themeLogo' => self::login_image_url( (int) get_theme_mod( 'custom_logo' ), 'medium' ), 'safeSvg' => class_exists( 'SafeSvg\\safe_svg' ), 'gradientVariant' => hexdec( substr( md5( home_url() ), 0, 2 ) ) % 8, 'loginMedia' => ['logo' => self::login_image_url( $settings['login_logo_id'], 'medium', $settings['login_svg_confirmed'] ), 'banner' => self::login_image_url( $settings['login_banner_id'], 'large', $settings['login_svg_confirmed'] ), 'background' => self::login_image_url( $settings['login_background_id'], 'full' )]] ) . ';', 'before' );
 	}
 
 	/**
@@ -680,6 +761,9 @@ final class BAS_Plugin {
 			return;
 		}
 		echo '<div class="wrap bas-root"><div class="bas-page-heading"><img src="' . esc_url( plugins_url( 'assets-github/icon.svg', __FILE__ ) ) . '" alt="" width="56" height="56"><div><h1>' . esc_html__( 'Brand Admin Schemes', 'brand-admin-schemes' ) . '</h1><p>' . esc_html__( 'Your brand colors, from the admin and login to browser tabs.', 'brand-admin-schemes' ) . '</p></div></div><div id="bas-app"><p>' . esc_html__( 'Loading editor…', 'brand-admin-schemes' ) . '</p></div>';
+		if ( is_multisite() ) {
+			echo '<p class="description">' . esc_html__( 'Multisite: branding and media belong to this website. Network activation makes the plugin available on every site; it does not copy settings between sites.', 'brand-admin-schemes' ) . '</p>';
+		}
 		self::footer();
 		echo '</div>';
 	}
@@ -701,10 +785,25 @@ final class BAS_Plugin {
 		if ( !is_array( $raw ) ) {
 			return $d;
 		}
+		foreach ( $d as $key => $default ) {
+			if ( isset( $raw[$key] ) && ( is_array( $default ) ? ! is_array( $raw[$key] ) : ! is_scalar( $raw[$key] ) ) ) {
+				return $d;
+			}
+		}
 		$d['source'] = in_array( $raw['source'] ?? '', ['manual', 'bricks', 'core', 'acss'], true ) ? $raw['source'] : 'manual';
 		$d['palette'] = sanitize_text_field( (string)( $raw['palette'] ?? '' ) );
+		if ( isset( $raw['manual'] ) ) {
+			foreach ( $raw['manual'] as $value ) {
+				if ( ! is_scalar( $value ) && null !== $value ) { return $d; }
+			}
+		}
 		foreach ( $d['manual'] as $key => $value ) {
 			$d['manual'][$key] = self::color( $raw['manual'][$key] ?? '' ) ?: $value;
+		}
+		if ( isset( $raw['mapping'] ) ) {
+			foreach ( $raw['mapping'] as $value ) {
+				if ( ! is_scalar( $value ) && null !== $value ) { return $d; }
+			}
 		}
 		foreach ( $d['mapping'] as $key => $value ) {
 			$d['mapping'][$key] = sanitize_text_field( (string)( $raw['mapping'][$key] ?? '' ) );
@@ -718,6 +817,11 @@ final class BAS_Plugin {
 		$d['frontend_bar'] = !empty( $raw['frontend_bar'] );
 		$d['bar_color'] = in_array( $raw['bar_color'] ?? '', ['primary', 'secondary', 'tertiary', 'accent'], true ) ? $raw['bar_color'] : 'primary';
 		$d['environment_mode'] = in_array( $raw['environment_mode'] ?? '', ['auto', 'local', 'development', 'staging', 'production'], true ) ? $raw['environment_mode'] : 'auto';
+		if ( isset( $raw['environment_colors'] ) ) {
+			foreach ( $raw['environment_colors'] as $value ) {
+				if ( ! is_scalar( $value ) && null !== $value ) { return $d; }
+			}
+		}
 		foreach ( $d['environment_colors'] as $type => $value ) {
 			$d['environment_colors'][$type] = self::color( $raw['environment_colors'][$type] ?? '' );
 		}
@@ -744,6 +848,11 @@ final class BAS_Plugin {
 		$d['login_show_tagline'] = !empty( $raw['login_show_tagline'] );
 		$d['login_gradient'] = in_array( $raw['login_gradient'] ?? '', ['diagonal', 'aurora', 'radial', 'dusk', 'mist', 'bloom', 'horizon', 'satin', 'surprise'], true ) ? $raw['login_gradient'] : 'diagonal';
 		$d['login_color_mode'] = 'custom' === ( $raw['login_color_mode'] ?? '' ) ? 'custom' : 'scheme';
+		if ( isset( $raw['login_colors'] ) ) {
+			foreach ( $raw['login_colors'] as $value ) {
+				if ( ! is_scalar( $value ) && null !== $value ) { return $d; }
+			}
+		}
 		foreach ( $d['login_colors'] as $key => $value ) {
 			$d['login_colors'][$key] = self::color( $raw['login_colors'][$key] ?? '' );
 		}
@@ -755,12 +864,13 @@ final class BAS_Plugin {
 				if ( !preg_match( '/^bas-[a-z0-9_-]{1,40}$/', $id ) || !is_array( $item ) ) {
 					continue;
 				}
+				$colors = isset( $item['colors'] ) && is_array( $item['colors'] ) ? $item['colors'] : $item;
 				$entry = [];
 				foreach ( ['menu', 'submenu', 'bar', 'highlight', 'button', 'link', 'text', 'brand_primary', 'brand_secondary', 'brand_tertiary', 'brand_accent', 'toolbar_primary', 'toolbar_secondary', 'toolbar_tertiary', 'toolbar_accent'] as $key ) {
-					$entry[$key] = self::color( $item[$key] ?? '' );
+					$entry[$key] = self::color( $colors[$key] ?? '' );
 				}
 				if ( self::valid_scheme( $entry ) ) {
-					$d['schemes'][$id] = ['name' => substr( sanitize_text_field( (string)( $item['name'] ?? $id ) ), 0, 80 ), 'colors' => $entry];
+					$d['schemes'][$id] = ['name' => substr( sanitize_text_field( is_scalar( $item['name'] ?? $id ) ? (string) ( $item['name'] ?? $id ) : $id ), 0, 80 ), 'colors' => $entry];
 				}
 			}
 		}
@@ -782,7 +892,8 @@ final class BAS_Plugin {
 		if ( !current_user_can( 'manage_options' ) ) {
 			wp_send_json_error( __( 'Forbidden', 'brand-admin-schemes' ), 403 );
 		}
-		$raw = json_decode( wp_unslash( $_POST['settings'] ?? '' ), true );
+		$payload = $_POST['settings'] ?? '';
+		$raw = is_string( $payload ) && strlen( $payload ) <= 300000 ? json_decode( wp_unslash( $payload ), true ) : null;
 		$o = self::validate( $raw );
 		if ( !self::valid_scheme( $o['scheme'] ) ) {
 			wp_send_json_error( __( 'Invalid scheme colors', 'brand-admin-schemes' ), 400 );
@@ -791,14 +902,18 @@ final class BAS_Plugin {
 		if ( !preg_match( '/^bas-[a-z0-9_-]{1,40}$/', $id ) ) {
 			$id = 'bas-' . substr( md5( wp_generate_uuid4() ), 0, 12 );
 		}
+		if ( ! isset( $o['schemes'][$id] ) && count( $o['schemes'] ) >= 30 ) {
+			wp_send_json_error( __( 'You can save up to 30 schemes. Reuse an existing scheme before adding another.', 'brand-admin-schemes' ), 400 );
+		}
 		$o['name'] = $o['name'] ?: __( 'CI · ', 'brand-admin-schemes' ) . ucfirst( $o['mood'] );
 		$o['active'] = $id;
 		$o['schemes'][$id] = ['name' => $o['name'], 'colors' => $o['scheme']];
 		$previous = get_option( self::OPTION, null );
-		$previous_color = get_user_meta( get_current_user_id(), 'admin_color', true );
+		$previous_color = get_user_meta( get_current_user_id(), \Deckerweb\BrandAdminSchemes\Multisite::color_key(), true );
 		update_option( self::OPTION, $o, false );
-		update_user_option( get_current_user_id(), 'admin_color', $id, true );
-		update_option( self::UNDO, ['user' => get_current_user_id(), 'before' => $previous, 'before_color' => $previous_color, 'after_hash' => md5( wp_json_encode( $o ) )], false );
+		\Deckerweb\BrandAdminSchemes\Multisite::set_color( get_current_user_id(), $id );
+		update_option( self::UNDO, ['color_key' => \Deckerweb\BrandAdminSchemes\Multisite::color_key(), 'user' => get_current_user_id(), 'before' => $previous, 'before_color' => $previous_color, 'after_color' => $id, 'after_hash' => md5( wp_json_encode( $o ) )], false );
+		do_action( 'bas_site_settings_changed', get_current_blog_id(), 'save' );
 		wp_send_json_success( ['settings' => $o, 'canUndo' => true] );
 	}
 
@@ -808,7 +923,7 @@ final class BAS_Plugin {
 	 */
 	private static function can_undo(): bool {
 		$undo = get_option( self::UNDO, [] );
-		return is_array( $undo ) && ( $undo['user'] ?? 0 ) === get_current_user_id() && isset( $undo['after_hash'] ) && md5( wp_json_encode( get_option( self::OPTION, [] ) ) ) === $undo['after_hash'];
+		return is_array( $undo ) && ( ( $undo['color_key'] ?? '' ) === \Deckerweb\BrandAdminSchemes\Multisite::color_key() || ( ! is_multisite() && ! isset( $undo['color_key'] ) ) ) && ( $undo['user'] ?? 0 ) === get_current_user_id() && ( ! isset( $undo['after_color'] ) || get_user_meta( get_current_user_id(), \Deckerweb\BrandAdminSchemes\Multisite::color_key(), true ) === $undo['after_color'] ) && isset( $undo['after_hash'] ) && md5( wp_json_encode( get_option( self::OPTION, [] ) ) ) === $undo['after_hash'];
 	}
 
 	/**
@@ -828,10 +943,11 @@ final class BAS_Plugin {
 		}
 		else update_option( self::OPTION, $undo['before'], false );
 		if ( $undo['before_color'] === '' ) {
-			delete_user_meta( get_current_user_id(), 'admin_color' );
+			delete_user_meta( get_current_user_id(), \Deckerweb\BrandAdminSchemes\Multisite::color_key() );
 		}
-		else update_user_option( get_current_user_id(), 'admin_color', $undo['before_color'], true );
+		else \Deckerweb\BrandAdminSchemes\Multisite::set_color( get_current_user_id(), $undo['before_color'] );
 		delete_option( self::UNDO );
+		do_action( 'bas_site_settings_changed', get_current_blog_id(), 'undo' );
 		wp_send_json_success( ['settings' => self::settings(), 'canUndo' => false] );
 	}
 
@@ -843,7 +959,8 @@ final class BAS_Plugin {
 		if ( !current_user_can( 'manage_options' ) ) {
 			wp_send_json_error( __( 'Forbidden', 'brand-admin-schemes' ), 403 );
 		}
-		$raw = json_decode( wp_unslash( $_POST['settings'] ?? '' ), true );
+		$payload = $_POST['settings'] ?? '';
+		$raw = is_string( $payload ) && strlen( $payload ) <= 300000 ? json_decode( wp_unslash( $payload ), true ) : null;
 		if ( !is_array( $raw ) || ( $raw['format'] ?? '' ) !== 'bas/v1' ) {
 			wp_send_json_error( __( 'Unknown file format', 'brand-admin-schemes' ), 400 );
 		}
@@ -897,6 +1014,17 @@ final class BAS_Plugin {
 	 */
 	public static function admin_color_option( $result, $option, $user ) {
 		$o = self::settings();
+		// Core's reader prefers site metadata even in network admin; keep its
+		// network profile display consistent with the global picker save.
+		if ( is_multisite() && is_network_admin() ) {
+			$user_id = is_object( $user ) ? (int) $user->ID : get_current_user_id();
+			$global = get_user_meta( $user_id, 'admin_color', true );
+			return is_string( $global ) && $global !== '' && ( ! str_starts_with( $global, 'bas-' ) || isset( $o['schemes'][$global] ) ) ? $global : 'fresh';
+		}
+		// A legacy global BAS selection may belong to another site in the network.
+		if ( is_multisite() && is_string( $result ) && str_starts_with( $result, 'bas-' ) && ! isset( $o['schemes'][$result] ) ) {
+			$result = 'modern';
+		}
 		if ( !$o['schemes'] || $o['default_mode'] === 'off' || !isset( $o['schemes'][$o['active']] ) ) {
 			return $result;
 		}
@@ -910,7 +1038,7 @@ final class BAS_Plugin {
 	 * Hide the profile color picker only when the scheme is forced.
 	 */
 	public static function hide_picker(): void {
-		if ( self::settings()['default_mode'] === 'force' ) {
+		if ( ! is_network_admin() && self::settings()['default_mode'] === 'force' ) {
 			remove_action( 'admin_color_scheme_picker', 'admin_color_scheme_picker' );
 		}
 	}
@@ -1188,10 +1316,20 @@ final class BAS_Plugin {
 		}, 100 );
 	}
 }
+require_once __DIR__ . '/includes/class-bas-multisite.php';
+\Deckerweb\BrandAdminSchemes\Multisite::register();
 require_once __DIR__ . '/includes/class-bas-context-icons.php';
 require_once __DIR__ . '/includes/class-bas-bundle.php';
 require_once __DIR__ . '/includes/class-bas-gutenberg-palette.php';
 require_once __DIR__ . '/includes/class-bas-changelog.php';
 require_once __DIR__ . '/includes/class-bas-github-updates.php';
+require_once __DIR__ . '/includes/class-bas-site-health.php';
+require_once __DIR__ . '/includes/class-bas-icon-library.php';
 BAS_Plugin::boot();
+( new \Deckerweb\BrandAdminSchemes\IconLibrary() )->register();
+( new \Deckerweb\BrandAdminSchemes\SiteHealth() )->register();
 ( new \Deckerweb\BrandAdminSchemes\GitHubUpdates() )->register();
+
+// Shared embedded catalog; elect one runtime after all active plugins have loaded.
+require_once __DIR__ . '/includes/deckerweb-plugin-library/bootstrap.php';
+deckerweb_library_register_v2( __FILE__, [], __DIR__ . '/includes/deckerweb-plugin-library' );

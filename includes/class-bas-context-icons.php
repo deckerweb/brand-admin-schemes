@@ -5,8 +5,75 @@ if ( !defined( 'ABSPATH' ) ) {
 }
 
 final class BAS_Context_Icons {
+	/** Capability to view contextual favicons; does not grant settings access. */
+	const VIEW_CAPABILITY = 'bas_view_context_icons';
+
+	/** Per-site migration marker; role assignments are not part of scheme exports. */
+	private const CAPABILITY_OPTION = 'bas_context_icons_capability_version';
+
+	/**
+	 * Assign the default viewing capability once on activation or upgrade.
+	 *
+	 * Never restore a capability deliberately removed by a role administrator.
+	 * Each site provisions its own role when its admin is first visited.
+	 *
+	 * @since 0.18.0
+	 */
+	public static function provision_capability(): void {
+		if ( '1' === get_option( self::CAPABILITY_OPTION, '' ) ) {
+			return;
+		}
+		$role = get_role( 'administrator' );
+		if ( ! $role ) {
+			return;
+		}
+		$role->add_cap( self::VIEW_CAPABILITY );
+		update_option( self::CAPABILITY_OPTION, '1', false );
+	}
+
+	/** Upgrade existing installations without requiring plugin reactivation. */
+	public static function maybe_provision_capability(): void {
+		if ( current_user_can( 'manage_options' ) ) {
+			self::provision_capability();
+		}
+	}
+
+	/**
+	 * Provision only the requested site, including frontend visits by its admin.
+	 * Avoid expensive network-wide loops when activating on large networks.
+	 */
+	public static function provision_on_request(): void {
+		if ( is_user_logged_in() && current_user_can( 'manage_options' ) ) {
+			self::provision_capability();
+		}
+	}
+
+	/** Initialize new sites after Core has created their tables and roles. */
+	public static function initialize_site( $site ): void {
+		if ( ! is_multisite() || ! wp_is_site_initialized( $site ) ) {
+			return;
+		}
+		// A site-active host must not grant capabilities on unrelated new sites.
+		if ( ! function_exists( 'is_plugin_active_for_network' ) ) {
+			require_once ABSPATH . 'wp-admin/includes/plugin.php';
+		}
+		if ( ! is_plugin_active_for_network( plugin_basename( BAS_PLUGIN_FILE ) ) ) {
+			return;
+		}
+		switch_to_blog( (int) $site->blog_id );
+		try {
+			self::provision_capability();
+		} finally {
+			restore_current_blog();
+		}
+	}
+
 	/** Attach icon output after WordPress writes its standard Site Icon. */
 	public static function boot(): void {
+		register_activation_hook( BAS_PLUGIN_FILE, [__CLASS__, 'provision_capability'] );
+		add_action( 'admin_init', [__CLASS__, 'maybe_provision_capability'], 1 );
+		add_action( 'init', [__CLASS__, 'provision_on_request'], 1 );
+		add_action( 'wp_initialize_site', [__CLASS__, 'initialize_site'], 200 );
 		add_filter( 'site_icon_meta_tags', [__CLASS__, 'filter_site_icon'], 100 );
 		add_action( 'wp_head', [__CLASS__, 'render'], 101 );
 		add_action( 'admin_head', [__CLASS__, 'render'], 101 );
@@ -69,6 +136,10 @@ final class BAS_Context_Icons {
 	/** Return a generated favicon only for a configured top-level tab. */
 	private static function current_icon(): string {
 		$settings = BAS_Plugin::icon_settings();
+		// Only an explicit saved choice opens contextual favicons to everyone.
+		if ( 'everyone' !== ( $settings['audience'] ?? 'capability' ) && ( ! is_user_logged_in() || ! current_user_can( self::VIEW_CAPABILITY ) ) ) {
+			return '';
+		}
 		if ( !$settings['enabled'] ) {
 			return '';
 		}
