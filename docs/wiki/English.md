@@ -2,7 +2,7 @@
 
 [Deutsch](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) · [Home](https://github.com/deckerweb/brand-admin-schemes/wiki)
 
-A practical guide to Brand Admin Schemes 0.18.0 (unpublished test build). Use the contents below to jump to a setting.
+A practical guide to Brand Admin Schemes 1.0.0 (unpublished test build). Use the contents below to jump to a setting.
 
 ## Contents
 
@@ -163,3 +163,6 @@ Built by David Decker for the sites he works on at DECKERWEB. Have fun making th
 The footer links to the German or English Wiki guide. Changelog opens the complete bundled local history; without JavaScript, the link opens its localized changelog text file.
 
 [Current build and acceptance](../PROFILE.md) · [Data](../DATA.md) · [Full FAQ](FAQ-English.md)
+
+
+[Branding workflows](https://github.com/deckerweb/brand-admin-schemes/wiki/Workflows-English)

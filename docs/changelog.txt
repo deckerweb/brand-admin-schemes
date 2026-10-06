@@ -1,5 +1,22 @@
 == Changelog ==
 
+= 1.0.0 =
+
+2026-10-06
+
+* Improved: Name portable exports independently of schemes and preview network starter templates on individual websites before saving. Network templates remain managed by network administrators.
+* Fixed: Display the saved Multisite starter template with its name and status, show save confirmation, and offer confirmed removal without changing existing website branding.
+* New: Choose every editable color in a shared dialog with HEX input, swatches and keyboard support.
+* New: Lock brand colors, review contrast adjustments and compare saved branding with your draft.
+* New: Save portable branding templates and restore up to ten recent settings snapshots.
+* New: Optionally seed new Multisite websites from a network starter template; existing branding stays independent.
+* New: Access website branding through the optional Leitstand integration.
+* Improved: Duplicate, rename or remove schemes, reset individual sections and review imported changes before applying them.
+* Fixed: Reject stale editor saves and validate update packages during both individual and bulk updates.
+* Improved: Batch live previews and reuse provider reads within a request.
+* Misc: Retains the embedded plugin catalog and GitHub updates.
+* Misc: Includes deckerweb Plugin Library 0.6.0 and deckerweb Updater 2.1.0.
+
 = 0.18.0 =
 
 2026-10-05
@@ -9,10 +26,10 @@
 * Improved: Tab icons support audience selection, viewing permission, downloads, PNG media actions and official Site Icon adoption.
 * Improved: Adds network activation, per-site personal colors, profile/AJAX/Undo isolation and new-subsite permission provisioning.
 * Improved: Ships informal and formal German, shared documentation sources, a dated local changelog and localized GitHub banners.
-* Fix: Keeps network-profile AJAX color changes global and rejects Undo snapshots from another storage scope.
-* Fix: Checks upload permission and available Multisite space for agency images and PNG icons.
-* Fix: Keeps save actions and long translated choices within narrow admin screens.
-* Fix: Preserves named scheme colors during validation and protects later personal color changes from Undo.
+* Fixed: Keeps network-profile AJAX color changes global and rejects Undo snapshots from another storage scope.
+* Fixed: Checks upload permission and available Multisite space for agency images and PNG icons.
+* Fixed: Keeps save actions and long translated choices within narrow admin screens.
+* Fixed: Preserves named scheme colors during validation and protects later personal color changes from Undo.
 * Misc: Includes deckerweb Plugin Library 0.5.0; preserves Updater V2.
 * Misc: Documents security reporting and data ownership; uninstall clears temporary Undo and updater cache while preserving branding, media and user choices.
 
@@ -28,7 +45,7 @@ Release date not recorded
 
 * Improved: Shows the plugin icon in WordPress update offers and localized English/German banners in plugin details.
 * Improved: Links footer documentation directly to the localized Wiki and opens the complete bundled changelog in an accessible local dialog.
-* Fix: Restores missing update artwork, including already cached update offers after this version is installed.
+* Fixed: Restores missing update artwork, including already cached update offers after this version is installed.
 * Misc: Uses the shared DECKERWEB GitHub Updater V2 with plugin-scoped package identity and requirements checks.
 
 = 0.16.2 =
@@ -54,7 +71,7 @@ Release date not recorded
 * New: Adds a compact settings footer with local documentation and changelog dialogs.
 * Improved: Includes matching English and German Markdown and WordPress-style text readmes.
 * Improved: Groups each release by New, Improved, Fixed, and Misc, in that order.
-* Fix: Corrects the frontend-toolbar checkbox markup, translates missing German error messages, and registers three missing JavaScript translation labels.
+* Fixed: Corrects the frontend-toolbar checkbox markup, translates missing German error messages, and registers three missing JavaScript translation labels.
 * Misc: Adds a license file, release notes and repository packaging rules.
 
 = 0.15.1 =
@@ -78,7 +95,7 @@ Release date not recorded
 
 Release date not recorded
 
-* Fix: Translates the “Color scheme” settings link on the WordPress Plugins screen into German.
+* Fixed: Translates the “Color scheme” settings link on the WordPress Plugins screen into German.
 
 = 0.14.1 =
 
@@ -115,15 +132,15 @@ Release date not recorded
 
 Release date not recorded
 
-* Fix: Balances long login titles, keeps common short organization suffixes with the preceding word, and wraps unusually long words without horizontal overflow.
-* Fix: Applies the same title behavior to the settings preview.
+* Fixed: Balances long login titles, keeps common short organization suffixes with the preceding word, and wraps unusually long words without horizontal overflow.
+* Fixed: Applies the same title behavior to the settings preview.
 
 = 0.12.1 =
 
 Release date not recorded
 
-* Fix: Keeps the palette-derived login background continuous below the form and privacy link on tall or scrolling screens.
-* Fix: Positions the WordPress language selector without adding a desktop grid row.
+* Fixed: Keeps the palette-derived login background continuous below the form and privacy link on tall or scrolling screens.
+* Fixed: Positions the WordPress language selector without adding a desktop grid row.
 
 = 0.12.0 =
 
@@ -154,14 +171,14 @@ Release date not recorded
 
 Release date not recorded
 
-* Fix: Localized the settings page title, subtitle, editor loading text, and sticky header in German as “Markenfarben im Admin.” The English plugin and repository name stay the same.
+* Fixed: Localized the settings page title, subtitle, editor loading text, and sticky header in German as “Markenfarben im Admin.” The English plugin and repository name stay the same.
 
 = 0.9.1 =
 
 Release date not recorded
 
 * New: Added an administrator-only submenu showing PHP version and `WP_DEBUG` state.
-* Fix: Filled the complete toolbar slot with the environment color.
+* Fixed: Filled the complete toolbar slot with the environment color.
 
 = 0.9.0 =
 
@@ -203,7 +220,7 @@ Release date not recorded
 Release date not recorded
 
 * New: Added contrast indicators, source palette change review, and one-step Undo.
-* Fix: Fixed duplicate PHP methods accidentally introduced in the 0.4.0 prototype. Do not install 0.4.0.
+* Fixed: Fixed duplicate PHP methods accidentally introduced in the 0.4.0 prototype. Do not install 0.4.0.
 
 = 0.4.0 =
 

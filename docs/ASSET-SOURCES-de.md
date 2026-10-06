@@ -7,3 +7,6 @@ Die vorhandenen BAS-SVG-Icons und EN-/DE-Bannerquellen wurden von David Decker m
 SVG-Texte verwenden lokale Arial-/Sans-Serif-Systemschriften; Schriftdateien und entfernte Fonts werden nicht ausgeliefert. PNGs werden lokal aus den geprüften SVGs erzeugt. Library-Icons sind bytegleich zum Originalpaket 0.5.0; ihre Herkunftsbelege liegen im Original-Komponenten-Kit. Neue Drittgrafiken benötigen vor der Übernahme eine Rechteprüfung mit dem Maintainer.
 
 Die EN-/DE-Screenshots in assets-github/screenshots stammen aus einer entbehrlichen lokalen WordPress-6.7-Demo mit offiziellen Core-Übersetzungen und vorbereitetem Stand 0.18.0. Die Demo verwendet eigene Farben und erzeugte Testmedien; sie zeigt weder Kundenscreenshots noch private Profile, lizenzierte Builder-Oberflächen oder Mockups. Der Hinweis zum vorbereiteten Release im Verlaufsscreenshot wird bei Veröffentlichungsfreigabe aktualisiert. Screenshots bleiben im Repository und außerhalb des installierbaren ZIPs.
+
+
+Der gemeinsame Farbdialog folgt dem GPL-2.0-or-later-Farbsteuerungsmuster aus Terminstand 0.0.159 von David Decker – DECKERWEB. WordPress liefert ColorPicker/element lokal; kein externer Farbdienst und keine entfernt geladene Laufzeit werden eingebunden.

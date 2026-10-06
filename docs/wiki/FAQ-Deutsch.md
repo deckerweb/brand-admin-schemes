@@ -1,4 +1,4 @@
-# Häufige Fragen
+# Fragen nach Themen
 
 [Anleitung / Guide](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) · [English](https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-English) · [Deutsch](https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-Deutsch)
 
@@ -253,3 +253,34 @@ Plugin-, WordPress- und PHP-Version; relevante Provider- oder Builderversion; be
 **Speichert die PNG-Website-Icon-Aktion auch andere Änderungen?** Nein. Die gesonderte bestätigte Aktion übernimmt das Website-Icon sofort und erhält den übrigen Editorentwurf. SVG-Downloads schalten keine SVG-Uploads frei.
 
 **Was passiert bei Deinstallation?** Temporäres Undo und BAS-Updater-Cache werden entfernt. Branding, Medien, Benutzerfarben und bewusste Rollenentscheidungen bleiben erhalten. Der originale Library-Vertrag schützt gemeinsame Einstellungen und andere installierte Hosts. Einzelheiten stehen in der Datendokumentation.
+
+
+## Branding-Verlauf und Vorlagen
+
+### Wie funktioniert der neue Farbdialog?
+
+Neben einem bearbeitbaren HEX-Feld auf Farbe auswählen klicken. Eine Farbe visuell prüfen oder ihren HEX-Wert eingeben. Fertig schließt den Dialog; mit Alle Änderungen speichern das Branding übernehmen. Gesperrte Rollen vor dem Bearbeiten entsperren.
+
+### Kann ich Branding auf einer anderen Website verwenden?
+
+Eine portable Vorlage oder ein Agentur-ZIP exportieren. Portable Vorlagen schließen Bilder, Website-Texte, Kürzel und erzwungene Benutzervorgaben aus. Bilder auf der Zielwebsite auswählen. Beim Agenturimport werden Bilder sofort hinzugefügt; Einstellungen anschließend prüfen und speichern.
+
+### Was passiert, wenn ein anderer Editor zuerst speichert?
+
+Die veraltete Speicherung wird abgewiesen. Deinen Entwurf vor dem Neuladen exportieren und mit dem aktuellen Stand vergleichen.
+
+### Wie funktioniert der Verlauf?
+
+Auf dieser Website bleiben bis zu zehn frühere Einstellungsstände erhalten. Du kannst Einträge deines Kontos und Speicherbereichs wiederherstellen. Dabei wird auch deine vorherige persönliche Farbe übernommen und ein ungespeicherter Entwurf ersetzt; der aktuelle Stand wird zum neuen Verlaufseintrag.
+
+### Kann das Netzwerk Branding automatisch verteilen?
+
+Eine optionale Netzwerk-Startvorlage wird einmalig auf neu angelegte Websites angewendet. Vorhandenes Branding wird nie überschrieben. Es gibt keine laufende Vererbung oder Synchronisierung. Leitstand ist optional.
+
+### Ersetzt BAS das WordPress-Website-Icon?
+
+Im Frontend bleibt es standardmäßig erhalten. Nur die separate, ausdrücklich bestätigte Aktion Als offizielles Website-Icon verwenden ersetzt es. Medienaktionen wirken sofort und sind vom Speichern des Editorentwurfs unabhängig.
+
+### Was passiert bei der Deinstallation?
+
+Branding, Bilder und persönliche Farben bleiben erhalten. Temporäres Undo und Schreibsperren werden entfernt. Die optionale Bereinigung entfernt nur gespeicherte Vorlagen und Verlauf dieser Website; sie ist standardmäßig aus. Netzwerk-Startvorlagen bleiben erhalten.

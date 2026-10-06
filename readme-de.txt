@@ -4,7 +4,7 @@ Tags: admin colors, branding, login, favicon, gutenberg
 Requires at least: 6.4
 Requires PHP: 8.0
 Tested up to: 7.1.2
-Stable tag: 0.18.0
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -76,26 +76,26 @@ Die [deutsche Wiki-Anleitung](https://github.com/deckerweb/brand-admin-schemes/w
 
 == Frequently Asked Questions ==
 
-= Brauche ich Core Framework, Bricks oder ACSS? =
-Nein. Eigene Farben genügen; Farbprovider sind optional.
+= Wie funktioniert der neue Farbdialog? =
+Neben einem bearbeitbaren HEX-Feld auf Farbe auswählen klicken. Eine Farbe visuell prüfen oder ihren HEX-Wert eingeben. Fertig schließt den Dialog; mit Alle Änderungen speichern das Branding übernehmen. Gesperrte Rollen vor dem Bearbeiten entsperren.
 
-= Was passiert, wenn ich einen Farbprovider deaktiviere? =
-Gespeicherte Schemafarben bleiben verfügbar. Der Provider wird zum erneuten Einlesen der Palette benötigt, nicht zur Darstellung gespeicherter Farben.
+= Kann ich Branding auf einer anderen Website verwenden? =
+Eine portable Vorlage oder ein Agentur-ZIP exportieren. Portable Vorlagen schließen Bilder, Website-Texte, Kürzel und erzwungene Benutzervorgaben aus. Bilder auf der Zielwebsite auswählen. Beim Agenturimport werden Bilder sofort hinzugefügt; Einstellungen anschließend prüfen und speichern.
 
-= Verändert das Plugin mein Website- oder Builderdesign? =
-Es gestaltet den Adminrahmen, optional Login und Toolbar sowie Browser-Tab-Icons. Seiteninhalte und Builder-Arbeitsflächen behalten ihr Design; Gutenberg-Paletteneinträge ergänzen nur die Farbauswahl.
+= Was passiert, wenn ein anderer Editor zuerst speichert? =
+Die veraltete Speicherung wird abgewiesen. Deinen Entwurf vor dem Neuladen exportieren und mit dem aktuellen Stand vergleichen.
 
-= Ersetzt es das WordPress-Website-Icon? =
-Kontextabhängige Favicons lassen es standardmäßig unverändert. Eine gesonderte, bestätigte Website-Icon-Aktion kann ausdrücklich ein erzeugtes PNG übernehmen.
+= Wie funktioniert der Verlauf? =
+Auf dieser Website bleiben bis zu zehn frühere Einstellungsstände erhalten. Du kannst Einträge deines Kontos und Speicherbereichs wiederherstellen. Dabei wird auch deine vorherige persönliche Farbe übernommen und ein ungespeicherter Entwurf ersetzt; der aktuelle Stand wird zum neuen Verlaufseintrag.
 
-= Funktioniert das Plugin in Multisite? =
-Ja, bei Einzelwebsite- und Netzwerkaktivierung. Branding, Medien und persönliche Farben bleiben je Website; das Netzwerkprofil verwendet deine globale Farbe. Richte das Branding im Admin der jeweiligen Website ein.
+= Kann das Netzwerk Branding automatisch verteilen? =
+Eine optionale Netzwerk-Startvorlage wird einmalig auf neu angelegte Websites angewendet. Vorhandenes Branding wird nie überschrieben. Es gibt keine laufende Vererbung oder Synchronisierung. Leitstand ist optional.
 
-= Verändert ein Import sofort die aktive Gestaltung? =
-Nein. Prüfe importierte Einstellungen und speichere zum Anwenden. Agentur-ZIP-Importe legen enthaltene Bilder allerdings sofort in der Mediathek an.
+= Ersetzt BAS das WordPress-Website-Icon? =
+Im Frontend bleibt es standardmäßig erhalten. Nur die separate, ausdrücklich bestätigte Aktion Als offizielles Website-Icon verwenden ersetzt es. Medienaktionen wirken sofort und sind vom Speichern des Editorentwurfs unabhängig.
 
-= Wie funktionieren Updates und Deinstallation? =
-Updater V2 liefert GitHub-Updates über WordPress. Deaktivierung erhält Daten; Deinstallation entfernt temporäres Undo und Caches und erhält Branding, Medien und Farbauswahl. Einzelheiten stehen in der Datendokumentation.
+= Was passiert bei der Deinstallation? =
+Branding, Bilder und persönliche Farben bleiben erhalten. Temporäres Undo und Schreibsperren werden entfernt. Die optionale Bereinigung entfernt nur gespeicherte Vorlagen und Verlauf dieser Website; sie ist standardmäßig aus. Netzwerk-Startvorlagen bleiben erhalten.
 
 [Alle Fragen nach Themen](https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-Deutsch)
 
@@ -112,21 +112,41 @@ Ein kompakter, rein informativer Bereich unter Werkzeuge → Website-Zustand zei
 
 Einzeln oder netzwerkweit aktivierbar. Jede Website verwaltet ihre eigenen Schemen, Login-Einstellungen, Toolbar, Browser-Tab-Icons und Medien. Auch die persönliche Farbauswahl bleibt je Website getrennt. Neue Unterwebsites erhalten die Administrator-Berechtigung für Tab-Icons automatisch; bestehende Websites beim ersten berechtigten Aufruf. Bewusst entzogene Rechte werden nicht wieder vergeben. Einstellungen findest du im Admin der jeweiligen Website.
 
-BAS funktioniert ohne Leitstand. Leitstand kann die regulären WordPress-Site-Optionen lesen und auf den dokumentierten Änderungshook reagieren. Eine fertige Leitstand-Oberfläche oder netzwerkweite Branding-Verteilung ist noch nicht enthalten. Die deckerweb Plugin Library 0.5.0 ist eingebettet; BAS-Updates liefert weiterhin der Updater V2 über WordPress.
+BAS funktioniert ohne Leitstand. Leitstand kann die regulären WordPress-Site-Optionen lesen und auf den dokumentierten Änderungshook reagieren. Ein optionales Leitstand-Modul verlinkt die Website-Einstellungen. Netzwerk-Startvorlagen lassen sich auf jeder Website prüfen und ausdrücklich übernehmen. Die deckerweb Plugin Library 0.6.0 ist eingebettet; BAS-Updates liefert weiterhin der Updater V2 über WordPress.
 
 
 
 [Daten und Deinstallation](docs/DATA-de.md) · [Sicherheit](SECURITY-de.md) · [Kompatibilität](docs/PROFILE-de.md)
 
+
+
+== Branding-Abläufe ==
+
+Den Farbdialog für Marken-, Login-, Umgebungs- und Favicon-Farben verwenden. Gesperrte Rollen behalten exakte Markenfarben. Schemas duplizieren oder umbenennen, einen Abschnitt zurücksetzen, gespeicherten Stand und Entwurf vergleichen und Importe vor dem Speichern prüfen. Portable Vorlagen schließen lokale Bilder und Website-Texte aus. Der Verlauf behält bis zu zehn Einstellungsstände; Wiederherstellen ersetzt den Entwurf und betrifft die persönliche Farbe auf dieser Website.
 == Screenshots ==
 
 1. Eigene Markenfarben und Speicherleiste in einer echten WordPress-Testwebsite.
 
-2. Lokaler Änderungsverlauf mit beschrifteten Kategorien, Tastaturbedienung und Link zur vollständigen Historie.
-
 == Changelog ==
 
 Sieben jüngste Versionen; Wiki und lokaler vollständiger Verlauf erhalten alle dokumentierten Einträge.
+
+= 1.0.0 =
+
+2026-10-06
+
+* Verbessert: Portable Exporte unabhängig vom Schema benennen und Netzwerk-Startvorlagen auf einzelnen Websites vor dem Speichern prüfen. Netzwerkvorlagen bleiben durch Netzwerkadministratoren verwaltet.
+* Behoben: Gespeicherte Multisite-Startvorlage mit Name und Status anzeigen, Speicherung bestätigen und bestätigtes Entfernen ohne Änderung bestehenden Website-Brandings anbieten.
+* Neu: Alle bearbeitbaren Farben im gemeinsamen Dialog mit HEX-Eingabe, Farbvorschau und Tastaturbedienung auswählen.
+* Neu: Markenfarben sperren, Kontrastanpassungen prüfen und gespeichertes Branding mit dem Entwurf vergleichen.
+* Neu: Portable Branding-Vorlagen speichern und bis zu zehn jüngste Einstellungsstände wiederherstellen.
+* Neu: Neue Multisite-Websites optional mit einer Netzwerk-Startvorlage einrichten; vorhandenes Branding bleibt unabhängig.
+* Neu: Website-Branding über die optionale Leitstand-Anbindung öffnen.
+* Verbessert: Schemas duplizieren, umbenennen oder entfernen, einzelne Abschnitte zurücksetzen und Importänderungen vor der Übernahme prüfen.
+* Behoben: Veraltete Editor-Speicherungen abweisen und Updatepakete bei Einzel- und Sammelupdates prüfen.
+* Verbessert: Live-Vorschauen bündeln und Provider-Daten innerhalb eines Seitenaufrufs wiederverwenden.
+* Sonstiges: Behält den eingebetteten Plugin-Katalog und GitHub-Updates bei.
+* Sonstiges: Enthält deckerweb Plugin Library 0.6.0 und deckerweb Updater 2.1.0.
 
 = 0.18.0 =
 
@@ -184,13 +204,6 @@ Veröffentlichungsdatum nicht dokumentiert
 * Verbessert: Einträge je Version nach Neu, Verbessert, Behoben und Sonstiges sortiert.
 * Behoben: HTML der Frontend-Toolbar-Checkbox korrigiert, fehlende deutsche Fehlermeldungen ergänzt und drei fehlende JavaScript-Übersetzungskennungen registriert.
 * Sonstiges: Lizenzdatei, Release-Notizen und Regeln für das Repository-Paket ergänzt.
-
-= 0.15.1 =
-
-Veröffentlichungsdatum nicht dokumentiert
-
-* Verbessert: Kurze Pluginbeschreibung und GitHub-Dokumentation auf den gesamten Funktionsumfang aktualisiert.
-* Sonstiges: Zwei weitere Bannerentwürfe und zwei passende Iconentwürfe als SVG und PNG ergänzt.
 
 == Über das Plugin ==
 

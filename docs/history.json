@@ -2,6 +2,85 @@
   "display_count": 7,
   "versions": [
     {
+      "version": "1.0.0",
+      "status": "released",
+      "date": "2026-10-06",
+      "entries": [
+        {
+          "category": "Improved",
+          "en": "Name portable exports independently of schemes and preview network starter templates on individual websites before saving. Network templates remain managed by network administrators.",
+          "de_DE": "Portable Exporte unabhängig vom Schema benennen und Netzwerk-Startvorlagen auf einzelnen Websites vor dem Speichern prüfen. Netzwerkvorlagen bleiben durch Netzwerkadministratoren verwaltet.",
+          "de_DE_formal": "Portable Exporte unabhängig vom Schema benennen und Netzwerk-Startvorlagen auf einzelnen Websites vor dem Speichern prüfen. Netzwerkvorlagen bleiben durch Netzwerkadministratoren verwaltet."
+        },
+        {
+          "category": "Fixed",
+          "en": "Display the saved Multisite starter template with its name and status, show save confirmation, and offer confirmed removal without changing existing website branding.",
+          "de_DE": "Gespeicherte Multisite-Startvorlage mit Name und Status anzeigen, Speicherung bestätigen und bestätigtes Entfernen ohne Änderung bestehenden Website-Brandings anbieten.",
+          "de_DE_formal": "Gespeicherte Multisite-Startvorlage mit Name und Status anzeigen, Speicherung bestätigen und bestätigtes Entfernen ohne Änderung bestehenden Website-Brandings anbieten."
+        },
+        {
+          "category": "New",
+          "en": "Choose every editable color in a shared dialog with HEX input, swatches and keyboard support.",
+          "de_DE": "Alle bearbeitbaren Farben im gemeinsamen Dialog mit HEX-Eingabe, Farbvorschau und Tastaturbedienung auswählen.",
+          "de_DE_formal": "Alle bearbeitbaren Farben im gemeinsamen Dialog mit HEX-Eingabe, Farbvorschau und Tastaturbedienung auswählen."
+        },
+        {
+          "category": "New",
+          "en": "Lock brand colors, review contrast adjustments and compare saved branding with your draft.",
+          "de_DE": "Markenfarben sperren, Kontrastanpassungen prüfen und gespeichertes Branding mit dem Entwurf vergleichen.",
+          "de_DE_formal": "Markenfarben sperren, Kontrastanpassungen prüfen und gespeichertes Branding mit dem Entwurf vergleichen."
+        },
+        {
+          "category": "New",
+          "en": "Save portable branding templates and restore up to ten recent settings snapshots.",
+          "de_DE": "Portable Branding-Vorlagen speichern und bis zu zehn jüngste Einstellungsstände wiederherstellen.",
+          "de_DE_formal": "Portable Branding-Vorlagen speichern und bis zu zehn jüngste Einstellungsstände wiederherstellen."
+        },
+        {
+          "category": "New",
+          "en": "Optionally seed new Multisite websites from a network starter template; existing branding stays independent.",
+          "de_DE": "Neue Multisite-Websites optional mit einer Netzwerk-Startvorlage einrichten; vorhandenes Branding bleibt unabhängig.",
+          "de_DE_formal": "Neue Multisite-Websites optional mit einer Netzwerk-Startvorlage einrichten; vorhandenes Branding bleibt unabhängig."
+        },
+        {
+          "category": "New",
+          "en": "Access website branding through the optional Leitstand integration.",
+          "de_DE": "Website-Branding über die optionale Leitstand-Anbindung öffnen.",
+          "de_DE_formal": "Website-Branding über die optionale Leitstand-Anbindung öffnen."
+        },
+        {
+          "category": "Improved",
+          "en": "Duplicate, rename or remove schemes, reset individual sections and review imported changes before applying them.",
+          "de_DE": "Schemas duplizieren, umbenennen oder entfernen, einzelne Abschnitte zurücksetzen und Importänderungen vor der Übernahme prüfen.",
+          "de_DE_formal": "Schemas duplizieren, umbenennen oder entfernen, einzelne Abschnitte zurücksetzen und Importänderungen vor der Übernahme prüfen."
+        },
+        {
+          "category": "Fixed",
+          "en": "Reject stale editor saves and validate update packages during both individual and bulk updates.",
+          "de_DE": "Veraltete Editor-Speicherungen abweisen und Updatepakete bei Einzel- und Sammelupdates prüfen.",
+          "de_DE_formal": "Veraltete Editor-Speicherungen abweisen und Updatepakete bei Einzel- und Sammelupdates prüfen."
+        },
+        {
+          "category": "Improved",
+          "en": "Batch live previews and reuse provider reads within a request.",
+          "de_DE": "Live-Vorschauen bündeln und Provider-Daten innerhalb eines Seitenaufrufs wiederverwenden.",
+          "de_DE_formal": "Live-Vorschauen bündeln und Provider-Daten innerhalb eines Seitenaufrufs wiederverwenden."
+        },
+        {
+          "category": "Misc",
+          "en": "Retains the embedded plugin catalog and GitHub updates.",
+          "de_DE": "Behält den eingebetteten Plugin-Katalog und GitHub-Updates bei.",
+          "de_DE_formal": "Behält den eingebetteten Plugin-Katalog und GitHub-Updates bei."
+        },
+        {
+          "category": "Misc",
+          "en": "Includes deckerweb Plugin Library 0.6.0 and deckerweb Updater 2.1.0.",
+          "de_DE": "Enthält deckerweb Plugin Library 0.6.0 und deckerweb Updater 2.1.0.",
+          "de_DE_formal": "Enthält deckerweb Plugin Library 0.6.0 und deckerweb Updater 2.1.0."
+        }
+      ]
+    },
+    {
       "version": "0.18.0",
       "status": "released",
       "date": "2026-10-05",
@@ -37,25 +116,25 @@
           "de_DE_formal": "Liefert Deutsch mit Du und Sie, gemeinsame Dokumentationsquellen, einen datierten lokalen Änderungsverlauf und lokalisierte GitHub-Banner."
         },
         {
-          "category": "Fix",
+          "category": "Fixed",
           "en": "Keeps network-profile AJAX color changes global and rejects Undo snapshots from another storage scope.",
           "de_DE": "Speichert AJAX-Farbänderungen im Netzwerk-Profil global und weist Undo-Snapshots aus einem anderen Speicherbereich ab.",
           "de_DE_formal": "Speichert AJAX-Farbänderungen im Netzwerk-Profil global und weist Undo-Snapshots aus einem anderen Speicherbereich ab."
         },
         {
-          "category": "Fix",
+          "category": "Fixed",
           "en": "Checks upload permission and available Multisite space for agency images and PNG icons.",
           "de_DE": "Prüft Upload-Rechte und freien Multisite-Speicher für Agenturbilder und PNG-Icons.",
           "de_DE_formal": "Prüft Upload-Rechte und freien Multisite-Speicher für Agenturbilder und PNG-Icons."
         },
         {
-          "category": "Fix",
+          "category": "Fixed",
           "en": "Keeps save actions and long translated choices within narrow admin screens.",
           "de_DE": "Hält Speicheraktionen und lange übersetzte Auswahlfelder innerhalb schmaler Adminbildschirme.",
           "de_DE_formal": "Hält Speicheraktionen und lange übersetzte Auswahlfelder innerhalb schmaler Adminbildschirme."
         },
         {
-          "category": "Fix",
+          "category": "Fixed",
           "en": "Preserves named scheme colors during validation and protects later personal color changes from Undo.",
           "de_DE": "Erhält benannte Schemafarben bei der Validierung und schützt spätere persönliche Farbänderungen vor Undo.",
           "de_DE_formal": "Erhält benannte Schemafarben bei der Validierung und schützt spätere persönliche Farbänderungen vor Undo."
@@ -105,7 +184,7 @@
           "de_DE_formal": "Verlinkt die Footer-Dokumentation direkt ins sprachabhängige Wiki und öffnet den vollständigen mitgelieferten Änderungsverlauf in einem zugänglichen lokalen Dialog."
         },
         {
-          "category": "Fix",
+          "category": "Fixed",
           "en": "Restores missing update artwork, including already cached update offers after this version is installed.",
           "de_DE": "Ergänzt fehlende Updategrafiken, auch bei bereits gespeicherten Updateangeboten nach Installation dieser Version.",
           "de_DE_formal": "Ergänzt fehlende Updategrafiken, auch bei bereits gespeicherten Updateangeboten nach Installation dieser Version."
@@ -192,7 +271,7 @@
           "de_DE_formal": "Einträge je Version nach Neu, Verbessert, Behoben und Sonstiges sortiert."
         },
         {
-          "category": "Fix",
+          "category": "Fixed",
           "en": "Corrects the frontend-toolbar checkbox markup, translates missing German error messages, and registers three missing JavaScript translation labels.",
           "de_DE": "HTML der Frontend-Toolbar-Checkbox korrigiert, fehlende deutsche Fehlermeldungen ergänzt und drei fehlende JavaScript-Übersetzungskennungen registriert.",
           "de_DE_formal": "HTML der Frontend-Toolbar-Checkbox korrigiert, fehlende deutsche Fehlermeldungen ergänzt und drei fehlende JavaScript-Übersetzungskennungen registriert."
@@ -267,7 +346,7 @@
       "date": null,
       "entries": [
         {
-          "category": "Fix",
+          "category": "Fixed",
           "en": "Translates the “Color scheme” settings link on the WordPress Plugins screen into German.",
           "de_DE": "Einstellungslink „Farbschema“ auf der WordPress-Plugins-Seite ins Deutsche übersetzt.",
           "de_DE_formal": "Einstellungslink „Farbschema“ auf der WordPress-Plugins-Seite ins Deutsche übersetzt."
@@ -374,13 +453,13 @@
       "date": null,
       "entries": [
         {
-          "category": "Fix",
+          "category": "Fixed",
           "en": "Balances long login titles, keeps common short organization suffixes with the preceding word, and wraps unusually long words without horizontal overflow.",
           "de_DE": "Lange Logintitel ausgewogener umgebrochen; kurze Rechtsformzusätze bleiben beim vorherigen Wort, lange Einzelwörter erzeugen keinen horizontalen Überlauf.",
           "de_DE_formal": "Lange Logintitel ausgewogener umgebrochen; kurze Rechtsformzusätze bleiben beim vorherigen Wort, lange Einzelwörter erzeugen keinen horizontalen Überlauf."
         },
         {
-          "category": "Fix",
+          "category": "Fixed",
           "en": "Applies the same title behavior to the settings preview.",
           "de_DE": "Dasselbe Titelverhalten auf die Einstellungsvorschau angewendet.",
           "de_DE_formal": "Dasselbe Titelverhalten auf die Einstellungsvorschau angewendet."
@@ -393,13 +472,13 @@
       "date": null,
       "entries": [
         {
-          "category": "Fix",
+          "category": "Fixed",
           "en": "Keeps the palette-derived login background continuous below the form and privacy link on tall or scrolling screens.",
           "de_DE": "Schemahintergrund bleibt auch unter Formular und Datenschutzlink auf hohen oder scrollbaren Bildschirmen durchgehend.",
           "de_DE_formal": "Schemahintergrund bleibt auch unter Formular und Datenschutzlink auf hohen oder scrollbaren Bildschirmen durchgehend."
         },
         {
-          "category": "Fix",
+          "category": "Fixed",
           "en": "Positions the WordPress language selector without adding a desktop grid row.",
           "de_DE": "WordPress-Sprachauswahl positioniert, ohne eine zusätzliche Desktop-Grid-Zeile zu erzeugen.",
           "de_DE_formal": "WordPress-Sprachauswahl positioniert, ohne eine zusätzliche Desktop-Grid-Zeile zu erzeugen."
@@ -493,7 +572,7 @@
       "date": null,
       "entries": [
         {
-          "category": "Fix",
+          "category": "Fixed",
           "en": "Localized the settings page title, subtitle, editor loading text, and sticky header in German as “Markenfarben im Admin.” The English plugin and repository name stay the same.",
           "de_DE": "Einstellungstitel, Untertitel, Ladetext und fixierter Header als „Markenfarben im Admin“ übersetzt. Englischer Plugin- und Repositoryname bleiben bestehen.",
           "de_DE_formal": "Einstellungstitel, Untertitel, Ladetext und fixierter Header als „Markenfarben im Admin“ übersetzt. Englischer Plugin- und Repositoryname bleiben bestehen."
@@ -512,7 +591,7 @@
           "de_DE_formal": "Administrator-Untermenü mit PHP-Version und WP_DEBUG-Status ergänzt."
         },
         {
-          "category": "Fix",
+          "category": "Fixed",
           "en": "Filled the complete toolbar slot with the environment color.",
           "de_DE": "Umgebungsfarbe füllt jetzt den vollständigen Toolbarbereich.",
           "de_DE_formal": "Umgebungsfarbe füllt jetzt den vollständigen Toolbarbereich."
@@ -626,7 +705,7 @@
           "de_DE_formal": "Kontrastindikatoren, Vergleich geänderter Quellfarben und Rücknahme des letzten Speicherns."
         },
         {
-          "category": "Fix",
+          "category": "Fixed",
           "en": "Fixed duplicate PHP methods accidentally introduced in the 0.4.0 prototype. Do not install 0.4.0.",
           "de_DE": "Doppelte PHP-Methoden aus dem Prototyp 0.4.0 entfernt. Version 0.4.0 nicht installieren.",
           "de_DE_formal": "Doppelte PHP-Methoden aus dem Prototyp 0.4.0 entfernt. Version 0.4.0 nicht installieren."

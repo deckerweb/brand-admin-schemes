@@ -224,12 +224,12 @@
     "de_DE_formal": "optional"
   },
   "See the release on GitHub.": {
-    "de_DE": "Siehe das Release auf GitHub.",
-    "de_DE_formal": "Siehe das Release auf GitHub."
+    "de_DE": "Sieh dir den Release auf GitHub an.",
+    "de_DE_formal": "Sehen Sie sich den Release auf GitHub an."
   },
   "GitHub release does not contain the plugin main file.": {
-    "de_DE": "Das GitHub-Release enthält die Plugin-Hauptdatei nicht.",
-    "de_DE_formal": "Das GitHub-Release enthält die Plugin-Hauptdatei nicht."
+    "de_DE": "Der GitHub-Release enthält nicht die Hauptdatei des Plugins.",
+    "de_DE_formal": "Der GitHub-Release enthält nicht die Hauptdatei des Plugins."
   },
   "Could not prepare the GitHub release package.": {
     "de_DE": "Das GitHub-Release-Paket konnte nicht vorbereitet werden.",
@@ -984,8 +984,8 @@
     "de_DE_formal": "Dokumentation"
   },
   "Changelog": {
-    "de_DE": "Änderungsprotokoll",
-    "de_DE_formal": "Änderungsprotokoll"
+    "de_DE": "Änderungsverlauf",
+    "de_DE_formal": "Änderungsverlauf"
   },
   "Close": {
     "de_DE": "Schließen",
@@ -1950,5 +1950,481 @@
   "Release prepared; publication pending": {
     "de_DE": "Release vorbereitet; Veröffentlichung steht noch aus",
     "de_DE_formal": "Release vorbereitet; Veröffentlichung steht noch aus"
+  },
+  "Choose color": {
+    "de_DE": "Farbe auswählen",
+    "de_DE_formal": "Farbe auswählen"
+  },
+  "Done": {
+    "de_DE": "Fertig",
+    "de_DE_formal": "Fertig"
+  },
+  "Color": {
+    "de_DE": "Farbe",
+    "de_DE_formal": "Farbe"
+  },
+  "Enter a six-digit hex color, for example #245A91.": {
+    "de_DE": "Eine sechsstellige HEX-Farbe eingeben, zum Beispiel #245A91.",
+    "de_DE_formal": "Eine sechsstellige HEX-Farbe eingeben, zum Beispiel #245A91."
+  },
+  "Apply to draft": {
+    "de_DE": "In den Entwurf übernehmen",
+    "de_DE_formal": "In den Entwurf übernehmen"
+  },
+  "Another save is in progress. Try again shortly.": {
+    "de_DE": "Eine andere Speicherung läuft gerade. Bitte gleich erneut versuchen.",
+    "de_DE_formal": "Eine andere Speicherung läuft gerade. Bitte gleich erneut versuchen."
+  },
+  "Settings changed in another editor. Export your draft before reloading.": {
+    "de_DE": "Die Einstellungen wurden in einem anderen Editor geändert. Exportiere deinen Entwurf vor dem Neuladen.",
+    "de_DE_formal": "Die Einstellungen wurden in einem anderen Editor geändert. Exportieren Sie Ihren Entwurf vor dem Neuladen."
+  },
+  "Enter a template name. Up to ten templates can be stored.": {
+    "de_DE": "Einen Vorlagennamen eingeben. Bis zu zehn Vorlagen sind möglich.",
+    "de_DE_formal": "Einen Vorlagennamen eingeben. Bis zu zehn Vorlagen sind möglich."
+  },
+  "This history entry cannot be restored in your current context.": {
+    "de_DE": "Dieser Verlaufseintrag kann im aktuellen Kontext nicht wiederhergestellt werden.",
+    "de_DE_formal": "Dieser Verlaufseintrag kann im aktuellen Kontext nicht wiederhergestellt werden."
+  },
+  "Unknown action.": {
+    "de_DE": "Unbekannte Aktion.",
+    "de_DE_formal": "Unbekannte Aktion."
+  },
+  "Initial settings": {
+    "de_DE": "Anfangseinstellungen",
+    "de_DE_formal": "Anfangseinstellungen"
+  },
+  "Branding starter template": {
+    "de_DE": "Branding-Startvorlage",
+    "de_DE_formal": "Branding-Startvorlage"
+  },
+  "Import a portable branding JSON. Apply it once to new websites or an explicitly selected empty website. Existing branding and personal colors are retained.": {
+    "de_DE": "Eine portable Branding-JSON importieren. Die Vorlage wird einmalig auf neue oder ausdrücklich ausgewählte leere Websites angewendet. Vorhandenes Branding und persönliche Farben bleiben erhalten.",
+    "de_DE_formal": "Eine portable Branding-JSON importieren. Die Vorlage wird einmalig auf neue oder ausdrücklich ausgewählte leere Websites angewendet. Vorhandenes Branding und persönliche Farben bleiben erhalten."
+  },
+  "Branding JSON file": {
+    "de_DE": "Branding-JSON-Datei",
+    "de_DE_formal": "Branding-JSON-Datei"
+  },
+  "Use this starter template for new websites": {
+    "de_DE": "Diese Startvorlage für neue Websites verwenden",
+    "de_DE_formal": "Diese Startvorlage für neue Websites verwenden"
+  },
+  "Optional destination website ID": {
+    "de_DE": "Optionale ID der Zielwebsite",
+    "de_DE_formal": "Optionale ID der Zielwebsite"
+  },
+  "Images and website-specific text are excluded. Select images separately on each destination website.": {
+    "de_DE": "Bilder und websitespezifische Texte sind ausgeschlossen. Bilder auf jeder Zielwebsite separat auswählen.",
+    "de_DE_formal": "Bilder und websitespezifische Texte sind ausgeschlossen. Bilder auf jeder Zielwebsite separat auswählen."
+  },
+  "Invalid template file.": {
+    "de_DE": "Ungültige Vorlagendatei.",
+    "de_DE_formal": "Ungültige Vorlagendatei."
+  },
+  "The destination has existing branding or belongs to another network. Nothing was overwritten.": {
+    "de_DE": "Die Zielwebsite hat bereits Branding oder gehört zu einem anderen Netzwerk. Nichts wurde überschrieben.",
+    "de_DE_formal": "Die Zielwebsite hat bereits Branding oder gehört zu einem anderen Netzwerk. Nichts wurde überschrieben."
+  },
+  "Branding templates": {
+    "de_DE": "Branding-Vorlagen",
+    "de_DE_formal": "Branding-Vorlagen"
+  },
+  "Choose a template": {
+    "de_DE": "Vorlage auswählen",
+    "de_DE_formal": "Vorlage auswählen"
+  },
+  "Preview template": {
+    "de_DE": "Vorlage prüfen",
+    "de_DE_formal": "Vorlage prüfen"
+  },
+  "Template loaded for review.": {
+    "de_DE": "Vorlage zur Prüfung geladen.",
+    "de_DE_formal": "Vorlage zur Prüfung geladen."
+  },
+  "Delete template": {
+    "de_DE": "Vorlage löschen",
+    "de_DE_formal": "Vorlage löschen"
+  },
+  "Delete this template? Website branding is retained.": {
+    "de_DE": "Diese Vorlage löschen? Das Website-Branding bleibt erhalten.",
+    "de_DE_formal": "Diese Vorlage löschen? Das Website-Branding bleibt erhalten."
+  },
+  "Restore saved branding": {
+    "de_DE": "Gespeichertes Branding wiederherstellen",
+    "de_DE_formal": "Gespeichertes Branding wiederherstellen"
+  },
+  "This restores website settings and your prior personal color. Current settings are retained in history. Unsaved drafts will be replaced.": {
+    "de_DE": "Stellt Website-Einstellungen und deine vorherige persönliche Farbe wieder her. Der aktuelle Stand bleibt im Verlauf erhalten. Ungespeicherte Entwürfe werden ersetzt.",
+    "de_DE_formal": "Stellt Website-Einstellungen und Ihre vorherige persönliche Farbe wieder her. Der aktuelle Stand bleibt im Verlauf erhalten. Ungespeicherte Entwürfe werden ersetzt."
+  },
+  "Branding restored.": {
+    "de_DE": "Branding wiederhergestellt.",
+    "de_DE_formal": "Branding wiederhergestellt."
+  },
+  "Recent changes": {
+    "de_DE": "Letzte Änderungen",
+    "de_DE_formal": "Letzte Änderungen"
+  },
+  "History begins with your next save. Up to ten entries are retained.": {
+    "de_DE": "Der Verlauf beginnt mit der nächsten Speicherung. Bis zu zehn Einträge bleiben erhalten.",
+    "de_DE_formal": "Der Verlauf beginnt mit der nächsten Speicherung. Bis zu zehn Einträge bleiben erhalten."
+  },
+  "Color collection": {
+    "de_DE": "Farbsammlung",
+    "de_DE_formal": "Farbsammlung"
+  },
+  "Setting": {
+    "de_DE": "Einstellung",
+    "de_DE_formal": "Einstellung"
+  },
+  "Imported": {
+    "de_DE": "Importiert",
+    "de_DE_formal": "Importiert"
+  },
+  "Review imported changes": {
+    "de_DE": "Importierte Änderungen prüfen",
+    "de_DE_formal": "Importierte Änderungen prüfen"
+  },
+  "Nothing is applied to website branding until you save all changes.": {
+    "de_DE": "Erst mit „Alle Änderungen speichern“ wird das Website-Branding geändert.",
+    "de_DE_formal": "Erst mit „Alle Änderungen speichern“ wird das Website-Branding geändert."
+  },
+  "Duplicate scheme": {
+    "de_DE": "Schema duplizieren",
+    "de_DE_formal": "Schema duplizieren"
+  },
+  "Rename scheme": {
+    "de_DE": "Schema umbenennen",
+    "de_DE_formal": "Schema umbenennen"
+  },
+  "Delete scheme": {
+    "de_DE": "Schema löschen",
+    "de_DE_formal": "Schema löschen"
+  },
+  "Copy": {
+    "de_DE": "Kopie",
+    "de_DE_formal": "Kopie"
+  },
+  "Delete the active scheme from this draft? Saving creates a new active scheme; other users may need to choose another scheme.": {
+    "de_DE": "Das aktive Schema aus diesem Entwurf löschen? Beim Speichern entsteht ein neues aktives Schema; andere Benutzer müssen gegebenenfalls ein anderes Schema auswählen.",
+    "de_DE_formal": "Das aktive Schema aus diesem Entwurf löschen? Beim Speichern entsteht ein neues aktives Schema; andere Benutzer müssen gegebenenfalls ein anderes Schema auswählen."
+  },
+  "Reset this section": {
+    "de_DE": "Diesen Abschnitt zurücksetzen",
+    "de_DE_formal": "Diesen Abschnitt zurücksetzen"
+  },
+  "Reset this section in the draft? Save all changes to apply it.": {
+    "de_DE": "Diesen Abschnitt im Entwurf zurücksetzen? Mit „Alle Änderungen speichern“ übernehmen.",
+    "de_DE_formal": "Diesen Abschnitt im Entwurf zurücksetzen? Mit „Alle Änderungen speichern“ übernehmen."
+  },
+  "Portable templates exclude images, site text, initials and forced user defaults.": {
+    "de_DE": "Portable Vorlagen enthalten keine Bilder, Website-Texte, Kürzel oder erzwungenen Benutzervorgaben.",
+    "de_DE_formal": "Portable Vorlagen enthalten keine Bilder, Website-Texte, Kürzel oder erzwungenen Benutzervorgaben."
+  },
+  "Export portable template": {
+    "de_DE": "Portable Vorlage exportieren",
+    "de_DE_formal": "Portable Vorlage exportieren"
+  },
+  "Save branding template": {
+    "de_DE": "Branding-Vorlage speichern",
+    "de_DE_formal": "Branding-Vorlage speichern"
+  },
+  "Compare saved and draft": {
+    "de_DE": "Gespeicherten Stand und Entwurf vergleichen",
+    "de_DE_formal": "Gespeicherten Stand und Entwurf vergleichen"
+  },
+  "Template name": {
+    "de_DE": "Vorlagenname",
+    "de_DE_formal": "Vorlagenname"
+  },
+  "Template saved. Website branding is unchanged.": {
+    "de_DE": "Vorlage gespeichert. Das Website-Branding bleibt unverändert.",
+    "de_DE_formal": "Vorlage gespeichert. Das Website-Branding bleibt unverändert."
+  },
+  "Lock color": {
+    "de_DE": "Farbe sperren",
+    "de_DE_formal": "Farbe sperren"
+  },
+  "Color origin": {
+    "de_DE": "Farbherkunft",
+    "de_DE_formal": "Farbherkunft"
+  },
+  "Locked roles retain their exact brand color.": {
+    "de_DE": "Gesperrte Rollen behalten ihre exakte Markenfarbe.",
+    "de_DE_formal": "Gesperrte Rollen behalten ihre exakte Markenfarbe."
+  },
+  "An image is unavailable. Choose a local replacement or remove the selection.": {
+    "de_DE": "Ein Bild ist nicht verfügbar. Ein lokales Ersatzbild wählen oder die Auswahl entfernen.",
+    "de_DE_formal": "Ein Bild ist nicht verfügbar. Ein lokales Ersatzbild wählen oder die Auswahl entfernen."
+  },
+  "Admin preview": {
+    "de_DE": "Admin-Vorschau",
+    "de_DE_formal": "Admin-Vorschau"
+  },
+  "Draft": {
+    "de_DE": "Entwurf",
+    "de_DE_formal": "Entwurf"
+  },
+  "Review contrast adjustment": {
+    "de_DE": "Kontrastanpassung prüfen",
+    "de_DE_formal": "Kontrastanpassung prüfen"
+  },
+  "Suggested": {
+    "de_DE": "Vorgeschlagen",
+    "de_DE_formal": "Vorgeschlagen"
+  },
+  "Only this draft changes. Review the previews before saving.": {
+    "de_DE": "Nur dieser Entwurf wird geändert. Vorschauen vor dem Speichern prüfen.",
+    "de_DE_formal": "Nur dieser Entwurf wird geändert. Vorschauen vor dem Speichern prüfen."
+  },
+  "Review adjustment": {
+    "de_DE": "Anpassung prüfen",
+    "de_DE_formal": "Anpassung prüfen"
+  },
+  "Color mapping": {
+    "de_DE": "Farbzuordnung",
+    "de_DE_formal": "Farbzuordnung"
+  },
+  "Locked colors": {
+    "de_DE": "Gesperrte Farben",
+    "de_DE_formal": "Gesperrte Farben"
+  },
+  "Contrast adjustments": {
+    "de_DE": "Kontrastanpassungen",
+    "de_DE_formal": "Kontrastanpassungen"
+  },
+  "Website branding": {
+    "de_DE": "Website-Branding",
+    "de_DE_formal": "Website-Branding"
+  },
+  "Each website keeps independent branding. Open its editor to review or change settings.": {
+    "de_DE": "Jede Website behält ihr eigenes Branding. Einstellungen im jeweiligen Editor prüfen oder ändern.",
+    "de_DE_formal": "Jede Website behält ihr eigenes Branding. Einstellungen im jeweiligen Editor prüfen oder ändern."
+  },
+  "Previous websites": {
+    "de_DE": "Vorherige Websites",
+    "de_DE_formal": "Vorherige Websites"
+  },
+  "More websites": {
+    "de_DE": "Weitere Websites",
+    "de_DE_formal": "Weitere Websites"
+  },
+  "Image selected": {
+    "de_DE": "Bild ausgewählt",
+    "de_DE_formal": "Bild ausgewählt"
+  },
+  "Missing color source. Saved colors remain available.": {
+    "de_DE": "Farbquelle fehlt. Gespeicherte Farben bleiben verfügbar.",
+    "de_DE_formal": "Farbquelle fehlt. Gespeicherte Farben bleiben verfügbar."
+  },
+  "Private mode must be boolean.": {
+    "de_DE": "Der Private-Modus muss ein boolescher Wert sein.",
+    "de_DE_formal": "Der Private-Modus muss ein boolescher Wert sein."
+  },
+  "Invalid authentication provider.": {
+    "de_DE": "Ungültiger Authentifizierungsanbieter.",
+    "de_DE_formal": "Ungültiger Authentifizierungsanbieter."
+  },
+  "The plugin must be installed in a stable slug directory.": {
+    "de_DE": "Das Plugin muss in einem Verzeichnis mit einem festen Slug installiert sein.",
+    "de_DE_formal": "Das Plugin muss in einem Verzeichnis mit einem festen Slug installiert sein."
+  },
+  "Invalid GitHub repository URL.": {
+    "de_DE": "Ungültige GitHub-Repository-URL.",
+    "de_DE_formal": "Ungültige GitHub-Repository-URL."
+  },
+  "The private update could not be authorized. Check the repository credentials and refresh updates.": {
+    "de_DE": "Das private Update konnte nicht autorisiert werden. Prüfe die Repository-Zugangsdaten und suche erneut nach Updates.",
+    "de_DE_formal": "Das private Update konnte nicht autorisiert werden. Prüfen Sie die Repository-Zugangsdaten und suchen Sie erneut nach Updates."
+  },
+  "Could not create the update download file.": {
+    "de_DE": "Die Datei für den Update-Download konnte nicht erstellt werden.",
+    "de_DE_formal": "Die Datei für den Update-Download konnte nicht erstellt werden."
+  },
+  "The private update download failed. Check credentials and try again.": {
+    "de_DE": "Der Download des privaten Updates ist fehlgeschlagen. Prüfe die Zugangsdaten und versuche es erneut.",
+    "de_DE_formal": "Der Download des privaten Updates ist fehlgeschlagen. Prüfen Sie die Zugangsdaten und versuchen Sie es erneut."
+  },
+  "Choose a branding JSON before enabling the starter template.": {
+    "de_DE": "Vor dem Aktivieren der Startvorlage eine Branding-JSON auswählen.",
+    "de_DE_formal": "Vor dem Aktivieren der Startvorlage eine Branding-JSON auswählen."
+  },
+  "Branding display": {
+    "de_DE": "Logo-Darstellung",
+    "de_DE_formal": "Logo-Darstellung"
+  },
+  "Image focal point X": {
+    "de_DE": "Bildausschnitt X",
+    "de_DE_formal": "Bildausschnitt X"
+  },
+  "Image focal point Y": {
+    "de_DE": "Bildausschnitt Y",
+    "de_DE_formal": "Bildausschnitt Y"
+  },
+  "Gradient overlay strength": {
+    "de_DE": "Stärke des Farbverlaufs",
+    "de_DE_formal": "Stärke des Farbverlaufs"
+  },
+  "Website tagline": {
+    "de_DE": "Website-Untertitel",
+    "de_DE_formal": "Website-Untertitel"
+  },
+  "Safe SVG logos": {
+    "de_DE": "Bereinigte SVG-Logos",
+    "de_DE_formal": "Bereinigte SVG-Logos"
+  },
+  "Confirm change": {
+    "de_DE": "Änderung bestätigen",
+    "de_DE_formal": "Änderung bestätigen"
+  },
+  "Link color": {
+    "de_DE": "Linkfarbe",
+    "de_DE_formal": "Linkfarbe"
+  },
+  "Text color": {
+    "de_DE": "Textfarbe",
+    "de_DE_formal": "Textfarbe"
+  },
+  "Highlight color": {
+    "de_DE": "Hervorhebungsfarbe",
+    "de_DE_formal": "Hervorhebungsfarbe"
+  },
+  "Remove saved templates and history when uninstalling BAS. Branding, images and personal colors are retained.": {
+    "de_DE": "Gespeicherte Vorlagen und Verlauf bei Deinstallation von BAS entfernen. Branding, Bilder und persönliche Farben bleiben erhalten.",
+    "de_DE_formal": "Gespeicherte Vorlagen und Verlauf bei Deinstallation von BAS entfernen. Branding, Bilder und persönliche Farben bleiben erhalten."
+  },
+  "Workflow cleanup": {
+    "de_DE": "Vorlagen und Verlauf bereinigen",
+    "de_DE_formal": "Vorlagen und Verlauf bereinigen"
+  },
+  "Update the other active deckerweb plugins to use the current shared update component and translated update messages.": {
+    "de_DE": "Die anderen aktiven deckerweb-Plugins aktualisieren, damit die aktuelle gemeinsame Update-Komponente und übersetzte Update-Meldungen verwendet werden.",
+    "de_DE_formal": "Die anderen aktiven deckerweb-Plugins aktualisieren, damit die aktuelle gemeinsame Update-Komponente und übersetzte Update-Meldungen verwendet werden."
+  },
+  "Hue": {
+    "de_DE": "Farbton",
+    "de_DE_formal": "Farbton"
+  },
+  "Copy color value": {
+    "de_DE": "Farbwert kopieren",
+    "de_DE_formal": "Farbwert kopieren"
+  },
+  "Saved starter template": {
+    "de_DE": "Gespeicherte Startvorlage",
+    "de_DE_formal": "Gespeicherte Startvorlage"
+  },
+  "Enabled for new websites": {
+    "de_DE": "Für neue Websites aktiviert",
+    "de_DE_formal": "Für neue Websites aktiviert"
+  },
+  "Saved; automatic use is disabled": {
+    "de_DE": "Gespeichert; automatische Anwendung deaktiviert",
+    "de_DE_formal": "Gespeichert; automatische Anwendung deaktiviert"
+  },
+  "Last uploaded": {
+    "de_DE": "Zuletzt hochgeladen",
+    "de_DE_formal": "Zuletzt hochgeladen"
+  },
+  "Source file": {
+    "de_DE": "Quelldatei",
+    "de_DE_formal": "Quelldatei"
+  },
+  "Uploading another JSON replaces this starter template. Existing website branding stays unchanged.": {
+    "de_DE": "Eine weitere JSON-Datei ersetzt diese Startvorlage. Bestehendes Website-Branding bleibt unverändert.",
+    "de_DE_formal": "Eine weitere JSON-Datei ersetzt diese Startvorlage. Bestehendes Website-Branding bleibt unverändert."
+  },
+  "No starter template saved yet.": {
+    "de_DE": "Noch keine Startvorlage gespeichert.",
+    "de_DE_formal": "Noch keine Startvorlage gespeichert."
+  },
+  "Starter template removed. Existing website branding stays unchanged.": {
+    "de_DE": "Startvorlage entfernt. Bestehendes Website-Branding bleibt unverändert.",
+    "de_DE_formal": "Startvorlage entfernt. Bestehendes Website-Branding bleibt unverändert."
+  },
+  "Starter template saved.": {
+    "de_DE": "Startvorlage gespeichert.",
+    "de_DE_formal": "Startvorlage gespeichert."
+  },
+  "Remove the saved starter template and disable automatic use. Existing website branding stays unchanged.": {
+    "de_DE": "Gespeicherte Startvorlage entfernen und automatische Anwendung deaktivieren. Bestehendes Website-Branding bleibt unverändert.",
+    "de_DE_formal": "Gespeicherte Startvorlage entfernen und automatische Anwendung deaktivieren. Bestehendes Website-Branding bleibt unverändert."
+  },
+  "Delete starter template": {
+    "de_DE": "Startvorlage löschen",
+    "de_DE_formal": "Startvorlage löschen"
+  },
+  "Confirm deletion of the starter template.": {
+    "de_DE": "Das Löschen der Startvorlage bestätigen.",
+    "de_DE_formal": "Das Löschen der Startvorlage bestätigen."
+  },
+  "Status": {
+    "de_DE": "Status",
+    "de_DE_formal": "Status"
+  },
+  "Name": {
+    "de_DE": "Name",
+    "de_DE_formal": "Name"
+  },
+  "Network": {
+    "de_DE": "Netzwerk",
+    "de_DE_formal": "Netzwerk"
+  },
+  "Manage this template in network settings.": {
+    "de_DE": "Diese Vorlage in den Netzwerkeinstellungen verwalten.",
+    "de_DE_formal": "Diese Vorlage in den Netzwerkeinstellungen verwalten."
+  },
+  "Commerce": {
+    "de_DE": "Commerce",
+    "de_DE_formal": "Commerce"
+  },
+  "Fixed": {
+    "de_DE": "Behoben",
+    "de_DE_formal": "Behoben"
+  },
+  "Invalid catalog revision.": {
+    "de_DE": "Ungültiger Katalogstand.",
+    "de_DE_formal": "Ungültiger Katalogstand."
+  },
+  "Invalid catalog timestamp.": {
+    "de_DE": "Ungültiger Katalogzeitpunkt.",
+    "de_DE_formal": "Ungültiger Katalogzeitpunkt."
+  },
+  "Manage Content": {
+    "de_DE": "Inhalte verwalten",
+    "de_DE_formal": "Inhalte verwalten"
+  },
+  "Only HTTPS on raw.githubusercontent.com/deckerweb. The server receives the requesting IP address. GitHub is contacted when installing a release.": {
+    "de_DE": "Nur HTTPS auf raw.githubusercontent.com/deckerweb. Der Server sieht die anfragende IP-Adresse. Beim Installieren eines Releases wird GitHub kontaktiert.",
+    "de_DE_formal": "Nur HTTPS auf raw.githubusercontent.com/deckerweb. Der Server sieht die anfragende IP-Adresse. Beim Installieren eines Releases wird GitHub kontaktiert."
+  },
+  "Optional. The bundled catalog works immediately. Catalog requests are cached for 24 hours. No site URL, plugin list or usage data is sent.": {
+    "de_DE": "Optional. Der mitgelieferte Katalog funktioniert sofort. Katalogabfragen werden 24 Stunden zwischengespeichert. Keine Website-URL, Plugin-Liste oder Nutzungsdaten werden übertragen.",
+    "de_DE_formal": "Optional. Der mitgelieferte Katalog funktioniert sofort. Katalogabfragen werden 24 Stunden zwischengespeichert. Keine Website-URL, Plugin-Liste oder Nutzungsdaten werden übertragen."
+  },
+  "Planned: ": {
+    "de_DE": "Geplant: ",
+    "de_DE_formal": "Geplant: "
+  },
+  "Release 1.0.0 is being prepared. Installation will be available after package verification.": {
+    "de_DE": "Release 1.0.0 wird vorbereitet. Die Installation ist nach Prüfung des Pakets verfügbar.",
+    "de_DE_formal": "Release 1.0.0 wird vorbereitet. Die Installation ist nach Prüfung des Pakets verfügbar."
+  },
+  "Release in preparation": {
+    "de_DE": "Release in Vorbereitung",
+    "de_DE_formal": "Release in Vorbereitung"
+  },
+  "Requirements shown are preliminary until the stable release is verified.": {
+    "de_DE": "Die gezeigten Voraussetzungen sind bis zur Prüfung des stabilen Releases vorläufig.",
+    "de_DE_formal": "Die gezeigten Voraussetzungen sind bis zur Prüfung des stabilen Releases vorläufig."
+  },
+  "The approved release could not be verified.": {
+    "de_DE": "Der freigegebene Release konnte nicht geprüft werden.",
+    "de_DE_formal": "Der freigegebene Release konnte nicht geprüft werden."
+  },
+  "This catalog requires a newer Library.": {
+    "de_DE": "Dieser Katalog benötigt eine neuere Library.",
+    "de_DE_formal": "Dieser Katalog benötigt eine neuere Library."
   }
 }

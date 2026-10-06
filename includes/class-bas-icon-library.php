@@ -10,13 +10,18 @@ namespace Deckerweb\BrandAdminSchemes;
 
 /** Store only bounded PNGs; SVG downloads never enter the Media Library. */
 final class IconLibrary {
-	/** Register an authenticated endpoint; no public upload action exists. */
-	public function register(): void {
+	/** Register an authenticated endpoint; no public upload action exists.
+	 * @return void
+	 */
+		public function register(): void {
 		add_action( 'wp_ajax_bas_icon_media', array( $this, 'save' ) );
 	}
 
-	/** Validate the browser-rendered image before any filesystem write. */
-	public static function decode_png( $value ) {
+	/** Validate the browser-rendered image before any filesystem write.
+	 * @param mixed $value Candidate value to validate.
+	 * @return mixed
+	 */
+		public static function decode_png( $value ) {
 		if ( ! is_string( $value ) || strlen( $value ) > 2800000 || ! str_starts_with( $value, 'data:image/png;base64,' ) ) {
 			return new \WP_Error( 'bas_icon_png', __( 'A valid 512 × 512 PNG icon is required.', 'brand-admin-schemes' ) );
 		}

@@ -2,7 +2,7 @@
 
 [English](https://github.com/deckerweb/brand-admin-schemes/wiki/English) · [Home](https://github.com/deckerweb/brand-admin-schemes/wiki)
 
-Die praktische Anleitung zu Brand Admin Schemes 0.18.0 (unveröffentlichter Teststand). Springe über das Inhaltsverzeichnis direkt zur gewünschten Einstellung.
+Die praktische Anleitung zu Brand Admin Schemes 1.0.0 (unveröffentlichter Teststand). Springe über das Inhaltsverzeichnis direkt zur gewünschten Einstellung.
 
 ## Inhaltsverzeichnis
 
@@ -167,3 +167,6 @@ Entwickelt von David Decker – DECKERWEB für die Websites seiner Kunden. Viel 
 Der Footer verlinkt die deutsche beziehungsweise englische Wiki-Anleitung. Changelog öffnet die vollständige lokal mitgelieferte Historie; ohne JavaScript führt der Link zur passenden Changelog-Textdatei.
 
 [Aktueller Stand und Abnahme](../PROFILE-de.md) · [Daten](../DATA-de.md) · [Vollständige FAQ](FAQ-Deutsch.md)
+
+
+[Branding-Abläufe](https://github.com/deckerweb/brand-admin-schemes/wiki/Workflows-Deutsch)

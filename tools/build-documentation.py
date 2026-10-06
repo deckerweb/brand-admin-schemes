@@ -7,7 +7,7 @@ D=json.loads((P/'docs/source/content.json').read_text());H=D['history']
 # Seven latest versions, expanded through two documented feature versions.
 count=7
 while count<len(H) and sum(1 for h in H[:count] if h['status']!='development' and h['version'].endswith('.0'))<2:count+=1
-short=H[:count];categories={'en':{'New':'New','Improved':'Improved','Fix':'Fix','Misc':'Misc'},'de':{'New':'Neu','Improved':'Verbessert','Fix':'Behoben','Misc':'Sonstiges'}}
+short=H[:count];categories={'en':{'New':'New','Improved':'Improved','Fixed':'Fixed','Misc':'Misc'},'de':{'New':'Neu','Improved':'Verbessert','Fixed':'Behoben','Misc':'Sonstiges'}}
 def label(h,lang):
  suffix=(' (development)' if lang=='en' else ' (Entwicklung)')
  return h.get('label',{}).get(lang,h['version'])+(suffix if h['status']=='development' else '')
@@ -57,6 +57,11 @@ for lang in ['en','de']:
  wiki='# Changelog\n\n[English](https://github.com/deckerweb/brand-admin-schemes/wiki/Changelog-English) · [Deutsch](https://github.com/deckerweb/brand-admin-schemes/wiki/Changelog-Deutsch)\n\n'+history(H,lang)
  (P/('docs/wiki/Changelog-English.md'if lang=='en'else'docs/wiki/Changelog-Deutsch.md')).write_text(wiki)
  (P/('docs/wiki/FAQ-English.md'if lang=='en'else'docs/wiki/FAQ-Deutsch.md')).write_text(D['wiki_faq'][lang])
+ for prefix in ['docs/WORKFLOWS', 'docs/wiki/Workflows']:
+  filename=prefix+('-de.md' if prefix.endswith('WORKFLOWS') and lang=='de' else '.md' if prefix.endswith('WORKFLOWS') else '-Deutsch.md' if lang=='de' else '-English.md')
+  other=filename.replace('-de.md','.md') if filename.endswith('-de.md') else filename.replace('.md','-de.md') if prefix.endswith('WORKFLOWS') else filename.replace('-Deutsch','-English') if lang=='de' else filename.replace('-English','-Deutsch')
+  text=('# Branding workflows' if lang=='en' else '# Branding-Abläufe')+'\n\n['+('Deutsch' if lang=='en' else 'English')+']('+other.split('/')[-1]+')\n\n'+'\n\n'.join('## '+q['question']+'\n\n'+q['answer'] for q in D.get('workflow_faq',{}).get(lang,[]))+'\n'
+  (P/filename).write_text(text)
  state=D.get('publication_state','development')
  notice=('Release prepared; publication is pending.' if lang=='en' else 'Release vorbereitet; Veröffentlichung steht noch aus.') if state=='prepared' else (('Published release.' if lang=='en' else 'Veröffentlichter Release.') if state=='released' else ('Unpublished test build; not a production release.' if lang=='en' else 'Unveröffentlichter Teststand; keine Produktionsfreigabe.'))
  notes='# Brand Admin Schemes '+D['version']+'\n\n'+notice+'\n\n'+history(H[:1],lang)

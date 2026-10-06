@@ -9,8 +9,11 @@ final class BAS_Gutenberg_Palette {
 		add_filter( 'wp_theme_json_data_theme', [__CLASS__, 'add_colors'], 30 );
 	}
 
-	/** Preserve the theme's palette entries and append namespaced brand roles. */
-	public static function add_colors( $theme_json ) {
+	/** Preserve the theme's palette entries and append namespaced brand roles.
+	 * @param mixed $theme_json Theme json.
+	 * @return mixed
+	 */
+		public static function add_colors( $theme_json ) {
 		$settings = BAS_Plugin::palette_settings();
 		if ( !$settings['gutenberg_palette'] || !is_object( $theme_json ) || !method_exists( $theme_json, 'get_data' ) || !method_exists( $theme_json, 'update_with' ) ) {
 			return $theme_json;

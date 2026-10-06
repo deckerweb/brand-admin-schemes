@@ -12,12 +12,16 @@ final class Changelog {
 	public static function is_german(): bool {
 		return 1 === preg_match( '/^de(?:_|$)/i', determine_locale() );
 	}
-	/** Full plain-text history remains available without JavaScript. */
-	public static function url(): string {
+	/** Full plain-text history remains available without JavaScript.
+	 * @return string
+	 */
+		public static function url(): string {
 		return plugins_url( self::is_german() ? 'docs/changelog-de.txt' : 'docs/changelog.txt', BAS_PLUGIN_FILE );
 	}
-	/** Display recent versions; the complete history stays in the text fallback. */
-	public static function content(): string {
+	/** Display recent versions; the complete history stays in the text fallback.
+	 * @return string
+	 */
+		public static function content(): string {
 		$file = BAS_PLUGIN_DIR . 'docs/history.json';
 		if ( ! is_readable( $file ) || filesize( $file ) > 262144 ) {
 			return '';
@@ -28,7 +32,7 @@ final class Changelog {
 		}
 		$locale = determine_locale();
 		$lang = 'de_DE_formal' === $locale ? 'de_DE_formal' : ( self::is_german() ? 'de_DE' : 'en' );
-		$categories = self::is_german() ? [ 'New' => 'Neu', 'Improved' => 'Verbessert', 'Fix' => 'Behoben', 'Misc' => 'Sonstiges' ] : [ 'New' => 'New', 'Improved' => 'Improved', 'Fix' => 'Fix', 'Misc' => 'Misc' ];
+		$categories = self::is_german() ? [ 'New' => 'Neu', 'Improved' => 'Verbessert', 'Fixed' => 'Behoben', 'Misc' => 'Sonstiges' ] : [ 'New' => 'New', 'Improved' => 'Improved', 'Fixed' => 'Fixed', 'Misc' => 'Misc' ];
 		$html = '';
 		foreach ( array_slice( $data['versions'], 0, max( 7, min( 100, (int) ( $data['display_count'] ?? 7 ) ) ) ) as $release ) {
 			if ( ! is_array( $release ) || ! is_string( $release['version'] ?? null ) || ! is_array( $release['entries'] ?? null ) ) {

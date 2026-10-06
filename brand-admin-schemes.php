@@ -3,7 +3,7 @@
  * Plugin Name: Brand Admin Schemes
  * Plugin URI: https://github.com/deckerweb/brand-admin-schemes
  * Description: Brand colors for your WordPress admin, login, toolbar and browser tabs. Use Core Framework, Bricks, ACSS or your own palette.
- * Version: 0.18.0
+ * Version: 1.0.0
  * Requires at least: 6.4
  * Requires PHP: 8.0
  * Author: David Decker – DECKERWEB
@@ -31,7 +31,7 @@ define( 'BAS_PLUGIN_DIR', __DIR__ . '/' );
  */
 final class BAS_Plugin {
 	/** Current package version, shared by assets and the settings footer. */
-	const VERSION = '0.18.0';
+	const VERSION = '1.0.0';
 	/**
 	 * Site option containing the editor state and saved schemes.
 	 * @var string
@@ -44,8 +44,9 @@ final class BAS_Plugin {
 	const UNDO = 'bas_last_undo';
 	/**
 	 * Register WordPress hooks for settings, colors, localization and AJAX.
+	 * @return void
 	 */
-	public static function boot(): void {
+		public static function boot(): void {
 		BAS_Context_Icons::boot();
 		BAS_Bundle::boot();
 		BAS_Gutenberg_Palette::boot();
@@ -106,6 +107,98 @@ final class BAS_Plugin {
 	 */
 	private static function translations(): array {
 		$strings = [
+			'Close',
+			'Network',
+			'Manage this template in network settings.',
+			'Copy color value',
+			'Hue',
+			"Remove saved templates and history when uninstalling BAS. Branding, images and personal colors are retained.",
+			"Workflow cleanup",
+
+			'Highlight color',
+			"Link color",
+			"Text color",
+
+			'Confirm change',
+			"Choose a branding JSON before enabling the starter template.",
+			"Active scheme",
+			"Content alignment",
+			"Branding display",
+			"Image focal point X",
+			"Image focal point Y",
+			"Gradient overlay strength",
+			"Website tagline",
+			"Safe SVG logos",
+
+			"Choose color",
+			"Done",
+			"Color",
+			"Enter a six-digit hex color, for example #245A91.",
+			"Apply to draft",
+			"Another save is in progress. Try again shortly.",
+			"Settings changed in another editor. Export your draft before reloading.",
+			"Enter a template name. Up to ten templates can be stored.",
+			"This history entry cannot be restored in your current context.",
+			"Unknown action.",
+			"Initial settings",
+			"Branding starter template",
+			"Import a portable branding JSON. Apply it once to new websites or an explicitly selected empty website. Existing branding and personal colors are retained.",
+			"Branding JSON file",
+			"Use this starter template for new websites",
+			"Optional destination website ID",
+			"Images and website-specific text are excluded. Select images separately on each destination website.",
+			"Invalid template file.",
+			"The destination has existing branding or belongs to another network. Nothing was overwritten.",
+			"Branding templates",
+			"Choose a template",
+			"Preview template",
+			"Template loaded for review.",
+			"Delete template",
+			"Delete this template? Website branding is retained.",
+			"Restore saved branding",
+			"This restores website settings and your prior personal color. Current settings are retained in history. Unsaved drafts will be replaced.",
+			"Branding restored.",
+			"Recent changes",
+			"History begins with your next save. Up to ten entries are retained.",
+			"Color collection",
+			"None",
+			"Setting",
+			"Imported",
+			"Review imported changes",
+			"Nothing is applied to website branding until you save all changes.",
+			"Duplicate scheme",
+			"Rename scheme",
+			"Delete scheme",
+			"Copy",
+			"Delete the active scheme from this draft? Saving creates a new active scheme; other users may need to choose another scheme.",
+			"Reset this section",
+			"Reset this section in the draft? Save all changes to apply it.",
+			"Portable templates exclude images, site text, initials and forced user defaults.",
+			"Export portable template",
+			"Save branding template",
+			"Compare saved and draft",
+			"Template name",
+			"Template saved. Website branding is unchanged.",
+			"Lock color",
+			"Color origin",
+			"Locked roles retain their exact brand color.",
+			"An image is unavailable. Choose a local replacement or remove the selection.",
+			"Admin preview",
+			"Draft",
+			"Review contrast adjustment",
+			"Suggested",
+			"Only this draft changes. Review the previews before saving.",
+			"Review adjustment",
+			"Color mapping",
+			"Locked colors",
+			"Contrast adjustments",
+			"Website branding",
+			"Each website keeps independent branding. Open its editor to review or change settings.",
+			"Previous websites",
+			"More websites",
+			"Image selected",
+			"Missing color source. Saved colors remain available.",
+
 			'Who can see contextual tab icons?',
 			'Administrators and users with permission',
 			'Everyone, including visitors',
@@ -405,6 +498,8 @@ final class BAS_Plugin {
 			'manual' => ['primary' => '#3858e9', 'secondary' => '#23282d', 'tertiary' => '#64748b', 'accent' => '#d54e21'],
 			'mood' => 'balanced',
 			'strength' => 50,
+			'locked_roles' => ['primary' => '', 'secondary' => '', 'tertiary' => '', 'accent' => ''],
+			'scheme_overrides' => [],
 			'scheme' => [],
 			'name' => '',
 			'schemes' => [],
@@ -417,6 +512,7 @@ final class BAS_Plugin {
 			'login_enabled' => false,
 			'icons' => self::default_icons(),
 			'gutenberg_palette' => false,
+			'delete_workflows' => false,
 			'login_layout' => 'left',
 			'login_alignment' => 'left',
 			'login_logo_id' => 0,
@@ -447,6 +543,16 @@ final class BAS_Plugin {
 		$o = get_option( self::OPTION, [] );
 		return array_replace_recursive( self::defaults(), is_array( $o ) ? $o : [] );
 	}
+
+	/**
+	 * Validate a branding template without terminating Core site creation.
+	 * @param mixed $raw Untrusted candidate settings.
+	 * @return array|null Sanitized settings or null when required colors are missing.
+	 */
+	public static function template_settings( $raw ): ?array { $o = self::validate( $raw ); return self::valid_scheme( $o['scheme'] ) ? $o : null; }
+
+	/** Return the merged editor settings for authenticated workflows. @return array */
+	public static function editor_settings(): array { return self::settings(); }
 
 	/**
 	 * Resolves the visual environment badge without modifying WordPress behavior.
@@ -512,6 +618,8 @@ final class BAS_Plugin {
 	 * @return array<int,array{id:string,name:string,colors:array<int,array{id:string,name:string,hex:string}>}>
 	 */
 	private static function palettes(): array {
+		static $memo = []; $site = get_current_blog_id();
+		if ( isset( $memo[$site] ) ) { return $memo[$site]; }
 		$out = [];
 		if ( function_exists( 'bricks_is_builder' ) || defined( 'BRICKS_VERSION' ) || class_exists( '\\Bricks\\Database' ) ) {
 			$data = get_option( 'bricks_color_palette', [] );
@@ -536,7 +644,7 @@ final class BAS_Plugin {
 				}
 			}
 		}
-		return $out;
+		return $memo[$site] = $out;
 	}
 
 	/**
@@ -544,21 +652,23 @@ final class BAS_Plugin {
 	 * @return array<int,array{id:string,name:string,hex:string}>
 	 */
 	private static function coreframework_colors(): array {
+		static $memo = []; $site = get_current_blog_id();
+		if ( isset( $memo[$site] ) ) { return $memo[$site]; }
 		if ( !class_exists( '\\CoreFramework\\Helper' ) ) {
-			return [];
+			return $memo[$site] = [];
 		}
 		try {
 			$helper = new \CoreFramework\Helper();
 			if ( !method_exists( $helper, 'getStylesheetPath' ) ) {
-				return [];
+				return $memo[$site] = [];
 			}
 			$path = $helper->getStylesheetPath();
 			if ( !is_string( $path ) || !is_file( $path ) || !is_readable( $path ) ) {
-				return [];
+				return $memo[$site] = [];
 			}
 			$css = file_get_contents( $path, false, null, 0, 1024 * 1024 );
 			if ( !is_string( $css ) ) {
-				return [];
+				return $memo[$site] = [];
 			}
 			preg_match_all( '/--([a-zA-Z][\w-]*)\s*:\s*(#[0-9a-fA-F]{6})\s*[;}]/', $css, $matches, PREG_SET_ORDER );
 			$out = [];
@@ -567,7 +677,7 @@ final class BAS_Plugin {
 			}
 			return array_slice( $out, 0, 300 );
 		} catch ( Throwable $e ) {
-			return [];
+			return $memo[$site] = [];
 		}
 	}
 
@@ -576,22 +686,24 @@ final class BAS_Plugin {
 	 * @return array<int,array{id:string,name:string,hex:string}>
 	 */
 	private static function acss_colors(): array {
+		static $memo = []; $site = get_current_blog_id();
+		if ( isset( $memo[$site] ) ) { return $memo[$site]; }
 		// Compatibility adapter: only offer ACSS when its installed version exposes readable colors.
 		if ( !class_exists( '\\Automatic_CSS\\Model\\Database_Settings' ) ) {
-			return [];
+			return $memo[$site] = [];
 		}
 		try {
 			$class = '\\Automatic_CSS\\Model\\Database_Settings';
 			if ( !is_callable( [$class, 'get_instance'] ) ) {
-				return [];
+				return $memo[$site] = [];
 			}
 			$database = $class::get_instance();
 			if ( !is_object( $database ) || !is_callable( [$database, 'get_vars'] ) ) {
-				return [];
+				return $memo[$site] = [];
 			}
 			$vars = $database->get_vars();
 			if ( !is_array( $vars ) ) {
-				return [];
+				return $memo[$site] = [];
 			}
 			$out = [];
 			foreach ( ['primary', 'secondary', 'tertiary', 'accent', 'base', 'neutral'] as $role ) {
@@ -612,9 +724,9 @@ final class BAS_Plugin {
 					$out[] = ['id' => $role, 'name' => ucfirst( $role ), 'hex' => $hex];
 				}
 			}
-			return $out;
+			return $memo[$site] = $out;
 		} catch ( Throwable $e ) {
-			return [];
+			return $memo[$site] = [];
 		}
 	}
 
@@ -674,6 +786,24 @@ final class BAS_Plugin {
 		$settings = self::settings();
 		$settings['icons']['frontend_mode'] = 'wordpress';
 		update_option( self::OPTION, $settings, false );
+		/**
+		 * Announce the explicit adoption of a local media item as the Site Icon.
+		 * @since 0.18.0
+		 * @param int $site_id Website whose icon changed.
+		 * @param string $reason Change reason: site_icon.
+		 */
+		/**
+		 * Announce the explicit adoption of a local media item as the Site Icon.
+		 * @since 0.18.0
+		 * @param int $site_id Website whose icon changed.
+		 * @param string $reason Change reason: site_icon.
+		 */
+		/**
+		 * Announce the explicit adoption of a local media item as the Site Icon.
+		 * @since 0.18.0
+		 * @param int $site_id Website whose icon changed.
+		 * @param string $reason Change reason: site_icon.
+		 */
 		do_action( 'bas_site_settings_changed', get_current_blog_id(), 'site_icon' );
 	}
 
@@ -744,13 +874,15 @@ final class BAS_Plugin {
 		if ( $hook !== 'settings_page_brand-admin-schemes' ) {
 			return;
 		}
+		wp_enqueue_style( 'wp-components' );
 		wp_enqueue_style( 'bas-editor', plugins_url( 'assets/editor.css', __FILE__ ), [], self::VERSION );
 		wp_enqueue_script( 'bas-documentation', plugins_url( 'assets/documentation.js', __FILE__ ), [], self::VERSION, true );
 		wp_enqueue_media();
 		wp_enqueue_script( 'bas-environment-colors', plugins_url( 'assets/environment-colors.js', __FILE__ ), [], '0.12.0', true );
-		wp_enqueue_script( 'bas-editor', plugins_url( 'assets/editor.js', __FILE__ ), ['bas-environment-colors'], self::VERSION, true );
-		$settings = self::settings();
-		wp_add_inline_script( 'bas-editor', 'window.BAS_DATA=' . wp_json_encode( ['ajax' => admin_url( 'admin-ajax.php' ), 'nonce' => wp_create_nonce( 'bas_nonce' ), 'settings' => $settings, 'i18n' => self::translations(), 'canUndo' => self::can_undo(), 'environment' => self::environment_status(), 'environmentIconBase' => plugins_url( 'assets/environment-', __FILE__ ), 'loginUrl' => wp_login_url(), 'siteName' => get_bloginfo( 'name' ), 'iconPalette' => self::icon_palette(), 'detectedBuilder' => self::detected_builder(), 'siteTagline' => get_bloginfo( 'description' ), 'siteIcon' => get_site_icon_url( 192, '' ), 'mediaEditBase' => admin_url( 'post.php?action=edit&post=' ), 'themeLogo' => self::login_image_url( (int) get_theme_mod( 'custom_logo' ), 'medium' ), 'safeSvg' => class_exists( 'SafeSvg\\safe_svg' ), 'gradientVariant' => hexdec( substr( md5( home_url() ), 0, 2 ) ) % 8, 'loginMedia' => ['logo' => self::login_image_url( $settings['login_logo_id'], 'medium', $settings['login_svg_confirmed'] ), 'banner' => self::login_image_url( $settings['login_banner_id'], 'large', $settings['login_svg_confirmed'] ), 'background' => self::login_image_url( $settings['login_background_id'], 'full' )]] ) . ';', 'before' );
+		wp_enqueue_script( 'bas-editor', plugins_url( 'assets/editor.js', __FILE__ ), ['bas-environment-colors', 'wp-components', 'wp-element'], self::VERSION, true );
+		$baseline = \Deckerweb\BrandAdminSchemes\Workflow::snapshot();
+		$settings = array_replace_recursive( self::defaults(), is_array( $baseline['settings'] ) ? $baseline['settings'] : [] );
+		wp_add_inline_script( 'bas-editor', 'window.BAS_DATA=' . wp_json_encode( ['ajax' => admin_url( 'admin-ajax.php' ), 'nonce' => wp_create_nonce( 'bas_nonce' ), 'settings' => $settings, 'revision' => $baseline['revision'], 'defaults' => self::defaults(), 'i18n' => self::translations(), 'canUndo' => self::can_undo(), 'environment' => self::environment_status(), 'environmentIconBase' => plugins_url( 'assets/environment-', __FILE__ ), 'loginUrl' => wp_login_url(), 'siteName' => get_bloginfo( 'name' ), 'iconPalette' => self::icon_palette(), 'detectedBuilder' => self::detected_builder(), 'siteTagline' => get_bloginfo( 'description' ), 'siteIcon' => get_site_icon_url( 192, '' ), 'mediaEditBase' => admin_url( 'post.php?action=edit&post=' ), 'themeLogo' => self::login_image_url( (int) get_theme_mod( 'custom_logo' ), 'medium' ), 'safeSvg' => class_exists( 'SafeSvg\\safe_svg' ), 'gradientVariant' => hexdec( substr( md5( home_url() ), 0, 2 ) ) % 8, 'loginMedia' => ['logo' => self::login_image_url( $settings['login_logo_id'], 'medium', $settings['login_svg_confirmed'] ), 'banner' => self::login_image_url( $settings['login_banner_id'], 'large', $settings['login_svg_confirmed'] ), 'background' => self::login_image_url( $settings['login_background_id'], 'full' )]] ) . ';', 'before' );
 	}
 
 	/**
@@ -767,6 +899,18 @@ final class BAS_Plugin {
 		self::footer();
 		echo '</div>';
 	}
+
+	/**
+	 * Resolve the current website’s local branding image URLs.
+	 * @param array $settings Validated branding settings.
+	 * @return array<string,string> Logo, banner and background URLs.
+	 */
+	public static function editor_media( array $settings ): array {
+		return ['logo' => self::login_image_url( $settings['login_logo_id'], 'medium', $settings['login_svg_confirmed'] ), 'banner' => self::login_image_url( $settings['login_banner_id'], 'large', $settings['login_svg_confirmed'] ), 'background' => self::login_image_url( $settings['login_background_id'], 'full' )];
+	}
+
+	/** Render the common plugin footer for an additional BAS page. @return void */
+	public static function editor_footer(): void { self::footer(); }
 
 	/** Render the local changelog link and localized Wiki documentation link. */
 	private static function footer(): void {
@@ -808,6 +952,13 @@ final class BAS_Plugin {
 		foreach ( $d['mapping'] as $key => $value ) {
 			$d['mapping'][$key] = sanitize_text_field( (string)( $raw['mapping'][$key] ?? '' ) );
 		}
+		foreach ( $d['locked_roles'] as $role => $value ) {
+			$d['locked_roles'][$role] = self::color( $raw['locked_roles'][$role] ?? '' );
+		}
+		foreach ( ['menu', 'submenu', 'bar', 'highlight', 'button', 'link', 'text'] as $key ) {
+			$value = self::color( $raw['scheme_overrides'][$key] ?? '' );
+			if ( $value ) { $d['scheme_overrides'][$key] = $value; }
+		}
 		$d['mood'] = in_array( $raw['mood'] ?? '', ['balanced', 'calm', 'bold', 'dark'], true ) ? $raw['mood'] : 'balanced';
 		$d['strength'] = max( 0, min( 100, (int)( $raw['strength'] ?? 50 ) ) );
 		$d['name'] = sanitize_text_field( (string)( $raw['name'] ?? '' ) );
@@ -826,6 +977,7 @@ final class BAS_Plugin {
 			$d['environment_colors'][$type] = self::color( $raw['environment_colors'][$type] ?? '' );
 		}
 		$d['icons'] = self::sanitize_icons( $raw['icons'] ?? [] );
+		$d['delete_workflows'] = ! empty( $raw['delete_workflows'] );
 		$d['gutenberg_palette'] = !empty( $raw['gutenberg_palette'] );
 		$d['login_enabled'] = !empty( $raw['login_enabled'] );
 		$d['login_layout'] = in_array( $raw['login_layout'] ?? '', ['left', 'right', 'center'], true ) ? $raw['login_layout'] : 'left';
@@ -871,6 +1023,12 @@ final class BAS_Plugin {
 				}
 				if ( self::valid_scheme( $entry ) ) {
 					$d['schemes'][$id] = ['name' => substr( sanitize_text_field( is_scalar( $item['name'] ?? $id ) ? (string) ( $item['name'] ?? $id ) : $id ), 0, 80 ), 'colors' => $entry];
+					if ( isset( $item['editor'] ) && is_array( $item['editor'] ) ) {
+						$editor = $item['editor']; unset( $editor['schemes'] );
+						$validated = self::validate( $editor );
+						$d['schemes'][$id]['editor'] = array_intersect_key( $validated, array_flip( ['source', 'palette', 'mapping', 'manual', 'mood', 'strength', 'locked_roles', 'scheme_overrides'] ) );
+					}
+
 				}
 			}
 		}
@@ -907,14 +1065,23 @@ final class BAS_Plugin {
 		}
 		$o['name'] = $o['name'] ?: __( 'CI · ', 'brand-admin-schemes' ) . ucfirst( $o['mood'] );
 		$o['active'] = $id;
-		$o['schemes'][$id] = ['name' => $o['name'], 'colors' => $o['scheme']];
+		$o['schemes'][$id] = ['name' => $o['name'], 'colors' => $o['scheme'], 'editor' => array_intersect_key( $o, array_flip( ['source', 'palette', 'mapping', 'manual', 'mood', 'strength', 'locked_roles', 'scheme_overrides'] ) )];
+		\Deckerweb\BrandAdminSchemes\Workflow::begin();
 		$previous = get_option( self::OPTION, null );
 		$previous_color = get_user_meta( get_current_user_id(), \Deckerweb\BrandAdminSchemes\Multisite::color_key(), true );
+		\Deckerweb\BrandAdminSchemes\Workflow::remember( $previous, (string) $previous_color );
 		update_option( self::OPTION, $o, false );
 		\Deckerweb\BrandAdminSchemes\Multisite::set_color( get_current_user_id(), $id );
 		update_option( self::UNDO, ['color_key' => \Deckerweb\BrandAdminSchemes\Multisite::color_key(), 'user' => get_current_user_id(), 'before' => $previous, 'before_color' => $previous_color, 'after_color' => $id, 'after_hash' => md5( wp_json_encode( $o ) )], false );
+		/**
+		 * Announce a completed website branding change.
+		 * @since 0.18.0
+		 * @param int $site_id Website whose branding changed.
+		 * @param string $reason Change reason: save, undo or restore.
+		 */
 		do_action( 'bas_site_settings_changed', get_current_blog_id(), 'save' );
-		wp_send_json_success( ['settings' => $o, 'canUndo' => true] );
+		\Deckerweb\BrandAdminSchemes\Workflow::unlock();
+		wp_send_json_success( ['settings' => $o, 'loginMedia' => self::editor_media( $o ), 'canUndo' => true, 'revision' => \Deckerweb\BrandAdminSchemes\Workflow::revision()] );
 	}
 
 	/**
@@ -937,7 +1104,10 @@ final class BAS_Plugin {
 		if ( !self::can_undo() ) {
 			wp_send_json_error( __( 'Undo is no longer available because settings changed.', 'brand-admin-schemes' ), 409 );
 		}
+		\Deckerweb\BrandAdminSchemes\Workflow::begin();
+		if ( ! self::can_undo() ) { \Deckerweb\BrandAdminSchemes\Workflow::unlock(); wp_send_json_error( __( 'Undo is no longer available because settings changed.', 'brand-admin-schemes' ), 409 ); }
 		$undo = get_option( self::UNDO );
+		\Deckerweb\BrandAdminSchemes\Workflow::remember( get_option( self::OPTION, null ), (string) get_user_meta( get_current_user_id(), \Deckerweb\BrandAdminSchemes\Multisite::color_key(), true ) );
 		if ( $undo['before'] === null ) {
 			delete_option( self::OPTION );
 		}
@@ -947,8 +1117,15 @@ final class BAS_Plugin {
 		}
 		else \Deckerweb\BrandAdminSchemes\Multisite::set_color( get_current_user_id(), $undo['before_color'] );
 		delete_option( self::UNDO );
+		/**
+		 * Announce a completed website branding change.
+		 * @since 0.18.0
+		 * @param int $site_id Website whose branding changed.
+		 * @param string $reason Change reason: save, undo or restore.
+		 */
 		do_action( 'bas_site_settings_changed', get_current_blog_id(), 'undo' );
-		wp_send_json_success( ['settings' => self::settings(), 'canUndo' => false] );
+		\Deckerweb\BrandAdminSchemes\Workflow::unlock();
+		wp_send_json_success( ['settings' => self::settings(), 'loginMedia' => self::editor_media( self::settings() ), 'canUndo' => false, 'revision' => \Deckerweb\BrandAdminSchemes\Workflow::revision()] );
 	}
 
 	/**
@@ -1129,8 +1306,12 @@ final class BAS_Plugin {
 		wp_add_inline_style( 'admin-bar', $css );
 	}
 
-	/** Resolve an image attachment without accepting an arbitrary external URL. */
-	private static function login_image_url( $id, string $size, bool $allow_svg = false ): string {
+	/** Resolve an image attachment without accepting an arbitrary external URL.
+	 * @param mixed $id Local media attachment ID.
+	 * @param string $size Requested WordPress image size.
+	 * @param bool $allow_svg Whether sanitized SVG images may be used.
+	 */
+		private static function login_image_url( $id, string $size, bool $allow_svg = false ): string {
 		$svg = $id && 'image/svg+xml' === get_post_mime_type( (int) $id );
 		if ( !$id || ( $svg ? !( $allow_svg && class_exists( 'SafeSvg\\safe_svg' ) ) : !wp_attachment_is_image( (int) $id ) ) ) {
 			return '';
@@ -1141,15 +1322,22 @@ final class BAS_Plugin {
 		return (string) wp_get_attachment_image_url( (int) $id, $size );
 	}
 
-	/** Blend validated hex colors for a subtle brand-tinted page background. */
-	private static function login_mix( string $from, string $to, float $amount ): string {
+	/** Blend validated hex colors for a subtle brand-tinted page background.
+	 * @param string $from Starting HEX color.
+	 * @param string $to Target HEX color.
+	 * @param float $amount Blend amount from zero to one.
+	 */
+		private static function login_mix( string $from, string $to, float $amount ): string {
 		$a = sscanf( substr( $from, 1 ), '%02x%02x%02x' );
 		$b = sscanf( substr( $to, 1 ), '%02x%02x%02x' );
 		return sprintf( '#%02x%02x%02x', (int) round( $a[0] * ( 1 - $amount ) + $b[0] * $amount ), (int) round( $a[1] * ( 1 - $amount ) + $b[1] * $amount ), (int) round( $a[2] * ( 1 - $amount ) + $b[2] * $amount ) );
 	}
 
-	/** Build calm layered gradients with palette-derived intermediate colors. */
-	private static function login_gradient( array $palette, string $style ): string {
+	/** Build calm layered gradients with palette-derived intermediate colors.
+	 * @param array $palette Validated brand colors.
+	 * @param string $style Selected gradient style.
+	 */
+		private static function login_gradient( array $palette, string $style ): string {
 		$styles = ['diagonal', 'aurora', 'radial', 'dusk', 'mist', 'bloom', 'horizon', 'satin'];
 		if ( 'surprise' === $style ) {
 			$style = $styles[hexdec( substr( md5( home_url() ), 0, 2 ) ) % count( $styles )];
@@ -1171,8 +1359,10 @@ final class BAS_Plugin {
 		}
 	}
 
-	/** Return the active site scheme used as the starting point for login colors. */
-	private static function login_palette( array $settings ): array {
+	/** Return the active site scheme used as the starting point for login colors.
+	 * @param array $settings Validated website branding settings.
+	 */
+		private static function login_palette( array $settings ): array {
 		$scheme = $settings['schemes'][$settings['active']]['colors'] ?? [];
 		$brand = self::color( $scheme['brand_primary'] ?? '' ) ?: '#3858e9';
 		$background = self::color( $scheme['menu'] ?? '' ) ?: '#1d2327';
@@ -1187,8 +1377,10 @@ final class BAS_Plugin {
 		return ['brand' => $brand, 'deep' => $background, 'accent' => $accent, 'button' => $button, 'surface' => $surface, 'page' => $page, 'page_text' => self::login_text_color( $page ), 'button_text' => self::login_text_color( $button ), 'surface_text' => self::login_text_color( $surface )];
 	}
 
-	/** Choose readable light or dark text for an administrator-selected color. */
-	private static function login_text_color( string $hex ): string {
+	/** Choose readable light or dark text for an administrator-selected color.
+	 * @param string $hex Hex.
+	 */
+		private static function login_text_color( string $hex ): string {
 		$channels = sscanf( substr( $hex, 1 ), '%02x%02x%02x' );
 		$linear = array_map( static function( $value ) {
 			$value /= 255;
@@ -1260,8 +1452,10 @@ final class BAS_Plugin {
 		}
 	}
 
-	/** Add optional customer greeting above the original login form. */
-	public static function login_welcome( $message ): string {
+	/** Add optional customer greeting above the original login form.
+	 * @param mixed $message Original login message.
+	 */
+		public static function login_welcome( $message ): string {
 		$settings = self::settings();
 		if ( !$settings['login_enabled'] ) {
 			return $message;
@@ -1278,19 +1472,25 @@ final class BAS_Plugin {
 		return ( $settings['login_show_title'] || ( $settings['login_show_tagline'] && $tagline ) ? $welcome . '</div>' : '' ) . $message;
 	}
 
-	/** Keep a short organization suffix with its preceding word when wrapping. */
-	private static function group_login_title_suffix( string $title ): string {
+	/** Keep a short organization suffix with its preceding word when wrapping.
+	 * @param string $title Title to format.
+	 */
+		private static function group_login_title_suffix( string $title ): string {
 		$grouped = preg_replace( '/\s+(e\.\s?V\.|eG|GmbH|UG|Ltd\.|Inc\.)$/iu', "\xC2\xA0" . '$1', $title );
 		return $grouped ?? $title;
 	}
 
-	/** Link a customer logo to the site, with its name as accessible text. */
-	public static function login_logo_url( $url ): string {
+	/** Link a customer logo to the site, with its name as accessible text.
+	 * @param mixed $url Original URL supplied by WordPress.
+	 */
+		public static function login_logo_url( $url ): string {
 		return self::settings()['login_enabled'] ? home_url( '/' ) : $url;
 	}
 
-	/** Return the site name for the login logo link. */
-	public static function login_logo_text( $text ): string {
+	/** Return the site name for the login logo link.
+	 * @param mixed $text Original display text.
+	 */
+		public static function login_logo_text( $text ): string {
 		return self::settings()['login_enabled'] ? get_bloginfo( 'name' ) : $text;
 	}
 
@@ -1324,6 +1524,8 @@ require_once __DIR__ . '/includes/class-bas-gutenberg-palette.php';
 require_once __DIR__ . '/includes/class-bas-changelog.php';
 require_once __DIR__ . '/includes/class-bas-github-updates.php';
 require_once __DIR__ . '/includes/class-bas-site-health.php';
+require_once __DIR__ . '/includes/class-bas-workflow.php';
+\Deckerweb\BrandAdminSchemes\Workflow::register();
 require_once __DIR__ . '/includes/class-bas-icon-library.php';
 BAS_Plugin::boot();
 ( new \Deckerweb\BrandAdminSchemes\IconLibrary() )->register();

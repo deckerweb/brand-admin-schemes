@@ -20,7 +20,7 @@ BAS has no Leitstand dependency. A future Leitstand adapter can discover activat
 
 ## Shared components
 
-The original deckerweb Plugin Library **0.5.0** is embedded unchanged. It elects one newest shared runtime across hosts and already supports the network catalog/settings context. Its catalog is independent of site branding. BAS's own **Updater V2** remains unchanged and responsible for release updates. No new private-repository authentication is included in this test build.
+The original deckerweb Plugin Library **0.6.0** is embedded unchanged. It elects one newest shared runtime across hosts and already supports the network catalog/settings context. Its catalog is independent of site branding. BAS's own **Updater V2** remains unchanged and responsible for release updates. No new private-repository authentication is included in this test build.
 
 ## Verification
 
@@ -29,3 +29,6 @@ The original deckerweb Plugin Library **0.5.0** is embedded unchanged. It elects
 Before stable release, test in a real Multisite: two sites with different branding, the same user choosing different schemes, Core profile selection and BAS Undo, site-only and network activation, a new subsite, revoked permissions, official Site Icon/media actions, site admin versus network admin, and mixed Library hosts. A concrete Leitstand integration requires testing its actual adapter when available.
 
 Network-profile AJAX carries a user-bound context nonce from the network picker; Core continues to validate its own nonce and write the global preference. Site profiles and BAS Save/Undo remain local. Undo also refuses a subsequent personal color change. See [data lifecycle](DATA.md).
+
+
+Optional network starter: Network Admin → Settings → Branding starter template. Upload portable bas/v1 JSON, opt into one-time provisioning of new websites, or enter one empty destination site ID. Existing branding and personal color settings are never overwritten. Network activation is required for automatic new-site provisioning. Portable templates do not transfer media IDs. The optional Leitstand module exposes links; no Leitstand installation is required.

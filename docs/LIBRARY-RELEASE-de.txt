@@ -1,4 +1,1 @@
-0.18.0
-Originale deckerweb Plugin Library 0.5.0; Registrierung über Protokoll 2 und originaler Lebenszyklus-Vertrag.
-Bestehender Updater V2 erhalten. Host-Sprache, Dokumentation, Profil-Speicherbereich und Bereinigung temporärer Daten aktualisiert.
-Unveröffentlichter Abnahmestand.
+BAS 1.0.0 enthält die originale deckerweb Plugin Library 0.6.0 und den deckerweb Updater 2.1.0. Eine gemeinsame Library-Laufzeit und die bestehende Updater-Anbindung bleiben erhalten. Der Online-Katalog ist optional und standardmäßig deaktiviert; BAS verwendet weiterhin seinen eigenen GitHub-Updateadapter.

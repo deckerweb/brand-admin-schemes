@@ -4,7 +4,7 @@
 
 **Your colors. Your WordPress.** Turn a few brand colors into a familiar WordPress admin, a welcoming login screen, and browser tabs you can tell apart. Use Core Framework, Bricks Builder, Automatic.css, or your own palette. Explore the mood and brand strength, preview, then save. No CSS homework.
 
-**Version:** 0.18.0 · **Requires:** WordPress 6.4+ / PHP 8.0+ · **License:** GPL v2 or later
+**Version:** 1.0.0 · **Requires:** WordPress 6.4+ / PHP 8.0+ · **License:** GPL v2 or later
 
 [Download](https://github.com/deckerweb/brand-admin-schemes/releases/latest) · [User guide](https://github.com/deckerweb/brand-admin-schemes/wiki/English) · [Deutsch](README-de.md)
 
@@ -20,6 +20,7 @@
 - [FAQ](#faq)
 - [Multisite and Leitstand](#multisite-and-leitstand)
 - [Screenshots](#screenshots)
+- [Branding workflows](#branding-workflows)
 - [Changelog](#changelog)
 - [About](#about)
 
@@ -93,19 +94,19 @@ The [English wiki guide](https://github.com/deckerweb/brand-admin-schemes/wiki/E
 
 ## FAQ
 
-**Do I need Core Framework, Bricks, or ACSS?** No. Enter your own colors; palette providers are optional.
+**How does the new color dialog work?** Click Choose color beside an editable HEX field. Preview a color visually or enter its HEX value. Done closes the dialog; save all changes to apply branding. Locked roles must be unlocked before editing.
 
-**What happens if I disable a palette provider?** Saved scheme colors remain available. The provider is needed to read a fresh palette, not to display saved colors.
+**Can I reuse branding on another website?** Export a portable template or an agency ZIP. Portable templates omit images, website text, initials and forced user defaults. Choose local images on the destination. An agency import adds images immediately; its settings still require review and saving.
 
-**Does this change my website or builder design?** It styles the admin shell, optional login and toolbar, and browser-tab icons. Page content and builder canvases keep their design; Gutenberg palette entries only add choices.
+**What happens if another editor saves first?** Your stale save is rejected. Export your draft before reloading and compare it with the latest settings.
 
-**Does it replace the WordPress Site Icon?** Contextual favicons leave it unchanged by default. The separate, confirmed Site Icon action can explicitly adopt a generated PNG.
+**How does the history work?** Up to ten previous settings snapshots are stored on this website. You can restore entries from your own account and storage scope. Restoration also restores your prior personal color and replaces an unsaved draft; the current state becomes a new history entry.
 
-**Does it work on Multisite?** Yes, with site-only or network activation. Branding, media and personal colors stay per site; the network profile uses your global color. Configure branding in each site’s admin.
+**Can the network distribute branding automatically?** Optionally use a network starter template once for newly created websites. Existing branding is never overwritten. There is no continuing inheritance or synchronization. Leitstand is optional.
 
-**Does importing immediately change the live design?** No. Review the imported settings and save to apply them. Agency ZIP imports do add bundled images to the Media Library immediately.
+**Does BAS replace the WordPress Site Icon?** The frontend keeps it by default. Only the separate, explicitly confirmed Use as official Site Icon action replaces it. Media actions take effect immediately and are independent of saving the editor draft.
 
-**How do updates and uninstall work?** Updater V2 delivers GitHub updates through WordPress. Deactivation preserves data; uninstall removes temporary Undo and caches, retaining branding, media and color choices. See the data guide.
+**What happens when I uninstall BAS?** Branding, images and personal colors are retained. Temporary Undo and write locks are removed. The optional workflow cleanup setting removes only this website’s stored templates and history; it is off by default. Network starter templates are retained.
 
 [More answers by topic](https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-English)
 
@@ -122,26 +123,45 @@ A compact, read-only section in Tools → Site Health reports the selected schem
 
 Activate on an individual site or across the network. Each site owns its schemes, login settings, toolbar, browser-tab icons, and media. Personal color choices also stay separate per site. New subsites receive the administrator tab-icon permission automatically; existing sites receive it on their first authorized visit. Deliberately revoked permissions stay revoked. Configure branding in each site’s admin.
 
-BAS works independently of Leitstand. Leitstand can read standard WordPress site options and listen to the documented change hook. A dedicated Leitstand interface or network-wide branding distribution is not included yet. The deckerweb Plugin Library 0.5.0 is embedded; Updater V2 continues to deliver BAS updates through WordPress.
+BAS works independently of Leitstand. Leitstand can read standard WordPress site options and listen to the documented change hook. An optional Leitstand module links to website branding. Network starter templates can be previewed on individual websites and explicitly saved. The deckerweb Plugin Library 0.6.0 is embedded; Updater V2 continues to deliver BAS updates through WordPress.
 
 <a name="changelog"></a>
 
 
 [Data and uninstall](docs/DATA.md) · [Security](SECURITY.md) · [Compatibility](docs/PROFILE.md)
 
+
+<a name="branding-workflows"></a>
+
+## Branding workflows
+
+Use the color dialog for brand, login, environment and favicon colors. Locked roles retain exact brand colors. Duplicate or rename schemes, reset one section, compare saved/draft previews and review imports before saving. Portable templates exclude local images and site-specific text. Recent changes retain up to ten snapshots; restoring replaces the draft and affects your personal color on this website.
 ## Screenshots
 
 1. Manual brand colors and save controls in a real WordPress test site.
 
 ![Manual brand colors and save controls in a real WordPress test site.](assets-github/screenshots/screenshot-1.jpg)
 
-2. Local changelog with labeled categories, keyboard controls and complete-history link.
-
-![Local changelog with labeled categories, keyboard controls and complete-history link.](assets-github/screenshots/screenshot-2.jpg)
-
 ## Changelog
 
 Seven recent versions; the Wiki and local full history retain all documented entries.
+
+### 1.0.0
+
+2026-10-06
+
+- **Improved:** Name portable exports independently of schemes and preview network starter templates on individual websites before saving. Network templates remain managed by network administrators.
+- **Fixed:** Display the saved Multisite starter template with its name and status, show save confirmation, and offer confirmed removal without changing existing website branding.
+- **New:** Choose every editable color in a shared dialog with HEX input, swatches and keyboard support.
+- **New:** Lock brand colors, review contrast adjustments and compare saved branding with your draft.
+- **New:** Save portable branding templates and restore up to ten recent settings snapshots.
+- **New:** Optionally seed new Multisite websites from a network starter template; existing branding stays independent.
+- **New:** Access website branding through the optional Leitstand integration.
+- **Improved:** Duplicate, rename or remove schemes, reset individual sections and review imported changes before applying them.
+- **Fixed:** Reject stale editor saves and validate update packages during both individual and bulk updates.
+- **Improved:** Batch live previews and reuse provider reads within a request.
+- **Misc:** Retains the embedded plugin catalog and GitHub updates.
+- **Misc:** Includes deckerweb Plugin Library 0.6.0 and deckerweb Updater 2.1.0.
 
 ### 0.18.0
 
@@ -152,10 +172,10 @@ Seven recent versions; the Wiki and local full history retain all documented ent
 - **Improved:** Tab icons support audience selection, viewing permission, downloads, PNG media actions and official Site Icon adoption.
 - **Improved:** Adds network activation, per-site personal colors, profile/AJAX/Undo isolation and new-subsite permission provisioning.
 - **Improved:** Ships informal and formal German, shared documentation sources, a dated local changelog and localized GitHub banners.
-- **Fix:** Keeps network-profile AJAX color changes global and rejects Undo snapshots from another storage scope.
-- **Fix:** Checks upload permission and available Multisite space for agency images and PNG icons.
-- **Fix:** Keeps save actions and long translated choices within narrow admin screens.
-- **Fix:** Preserves named scheme colors during validation and protects later personal color changes from Undo.
+- **Fixed:** Keeps network-profile AJAX color changes global and rejects Undo snapshots from another storage scope.
+- **Fixed:** Checks upload permission and available Multisite space for agency images and PNG icons.
+- **Fixed:** Keeps save actions and long translated choices within narrow admin screens.
+- **Fixed:** Preserves named scheme colors during validation and protects later personal color changes from Undo.
 - **Misc:** Includes deckerweb Plugin Library 0.5.0; preserves Updater V2.
 - **Misc:** Documents security reporting and data ownership; uninstall clears temporary Undo and updater cache while preserving branding, media and user choices.
 
@@ -171,7 +191,7 @@ Release date not recorded
 
 - **Improved:** Shows the plugin icon in WordPress update offers and localized English/German banners in plugin details.
 - **Improved:** Links footer documentation directly to the localized Wiki and opens the complete bundled changelog in an accessible local dialog.
-- **Fix:** Restores missing update artwork, including already cached update offers after this version is installed.
+- **Fixed:** Restores missing update artwork, including already cached update offers after this version is installed.
 - **Misc:** Uses the shared DECKERWEB GitHub Updater V2 with plugin-scoped package identity and requirements checks.
 
 ### 0.16.2
@@ -197,15 +217,8 @@ Release date not recorded
 - **New:** Adds a compact settings footer with local documentation and changelog dialogs.
 - **Improved:** Includes matching English and German Markdown and WordPress-style text readmes.
 - **Improved:** Groups each release by New, Improved, Fixed, and Misc, in that order.
-- **Fix:** Corrects the frontend-toolbar checkbox markup, translates missing German error messages, and registers three missing JavaScript translation labels.
+- **Fixed:** Corrects the frontend-toolbar checkbox markup, translates missing German error messages, and registers three missing JavaScript translation labels.
 - **Misc:** Adds a license file, release notes and repository packaging rules.
-
-### 0.15.1
-
-Release date not recorded
-
-- **Improved:** Refreshes the short plugin description and GitHub documentation for the full feature set.
-- **Misc:** Adds two banner concepts and two matching icon concepts as SVG and PNG design alternatives.
 
 ## About
 

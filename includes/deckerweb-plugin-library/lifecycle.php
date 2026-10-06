@@ -4,7 +4,13 @@
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 if ( ! function_exists( 'deckerweb_library_uninstall_v2' ) ) {
- /** Called by the host's uninstall.php with the absolute host main-file path. */
+ /**
+  * Clean component-owned temporary data only after the final installed host is removed.
+  *
+  * @param string $host_file Absolute host main-file path matching WP_UNINSTALL_PLUGIN.
+  * @return bool Result of the operation; errors are returned or rejected as documented by the caller.
+  * May read or change component-owned shared storage; foreign plugin data is preserved.
+  */
  function deckerweb_library_uninstall_v2( string $host_file ): bool {
   if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) || plugin_basename( $host_file ) !== WP_UNINSTALL_PLUGIN ) { return false; }
   require_once ABSPATH . 'wp-admin/includes/plugin.php';
@@ -35,7 +41,7 @@ if ( ! function_exists( 'deckerweb_library_uninstall_v2' ) ) {
     $names = $wpdb->get_col( $wpdb->prepare( "SELECT option_name FROM {$wpdb->options} WHERE option_name LIKE %s OR option_name LIKE %s", $wpdb->esc_like( '_site_transient_dwl_catalog_' ) . '%', $wpdb->esc_like( '_site_transient_timeout_dwl_catalog_' ) . '%' ) );
    }
    foreach ( $names as $name ) {
-    if ( ! preg_match( '/^_site_transient_(?:timeout_)?dwl_catalog_[a-f0-9]{32}(?:_last|_retry)?$/D', $name ) ) { continue; }
+    if ( ! preg_match( '/^_site_transient_(?:timeout_)?dwl_catalog_[a-f0-9]{32}(?:_updates)?(?:_last|_retry)?$/D', $name ) ) { continue; }
     if ( is_multisite() ) { delete_network_option( $network_id, $name ); } else { delete_option( $name ); }
    }
    // Remove known keys from persistent object caches as well as database storage.
@@ -44,7 +50,7 @@ if ( ! function_exists( 'deckerweb_library_uninstall_v2' ) ) {
    if ( ! empty( $settings['catalog_url'] ) && is_string( $settings['catalog_url'] ) ) { $urls[] = 'dwl_catalog_' . md5( $settings['catalog_url'] ); }
    foreach ( $urls as $key ) {
     if ( ! is_string( $key ) || ! preg_match( '/^dwl_catalog_[a-f0-9]{32}$/D', $key ) ) { continue; }
-    foreach ( [ '', '_last', '_retry' ] as $suffix ) { wp_cache_delete( $key . $suffix, 'site-transient' ); }
+    foreach ( [ '', '_last', '_retry', '_updates', '_updates_last', '_updates_retry' ] as $suffix ) { wp_cache_delete( $key . $suffix, 'site-transient' ); }
    }
    if ( is_multisite() ) { delete_network_option( $network_id, 'deckerweb_library_cache_keys_v2' ); }
    else { delete_option( 'deckerweb_library_cache_keys_v2' ); }

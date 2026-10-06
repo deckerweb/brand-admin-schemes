@@ -1,12 +1,19 @@
 <?php
 /** Copyright 2026 David Decker – DECKERWEB. SPDX-License-Identifier: GPL-2.0-or-later */
-namespace Deckerweb\PluginLibrary\V0_5_0;
+namespace Deckerweb\PluginLibrary\V0_6_0;
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 /** Verify the original release, then normalize a bounded, single-plugin archive. */
 final class Package {
 	const MAX_DOWNLOAD = 20971520;
 	const MAX_EXPANDED = 83886080;
+	/**
+	 * Download a bounded approved ZIP and return its verified normalized archive.
+	 *
+	 * @param array $entry Validated approved catalog entry and dependency metadata.
+	 * @return string|\WP_Error Result of the operation; errors are returned or rejected as documented by the caller.
+	 * Successful temporary archives must be removed by the caller after use.
+	 */
 	public static function download( array $entry ) {
 		if ( ! class_exists( '\ZipArchive' ) ) { return new \WP_Error( 'dwl_zip', Library::t( 'PHP ZIP support is required.' ) ); }
 		require_once ABSPATH . 'wp-admin/includes/file.php';
@@ -15,6 +22,7 @@ final class Package {
 		if ( ! $file ) { return new \WP_Error( 'dwl_temp', Library::t( 'Cannot create temporary file.' ) ); }
 		self::track( $file );
   $response = wp_safe_remote_get( $entry['download_url'], [
+			'user-agent' => 'deckerweb-plugin-library/' . Library::VERSION,
 			'timeout' => 45, 'redirection' => 5, 'stream' => true, 'filename' => $file,
 			'limit_response_size' => self::MAX_DOWNLOAD + 1,
 			'headers' => [ 'Accept' => 'application/octet-stream' ],
@@ -28,7 +36,14 @@ final class Package {
 		return $result;
 	}
 
-	/** Return a new safe archive path; callers must delete it after use. */
+	/**
+	 * Check the original checksum and ZIP safety, then stream a normalized temporary package.
+	 *
+	 * @param string $file Plugin basename or temporary archive path as required by this operation.
+	 * @param array $entry Validated approved catalog entry and dependency metadata.
+	 * @return string|\WP_Error Result of the operation; errors are returned or rejected as documented by the caller.
+	 * Successful temporary archives must be removed by the caller after use.
+	 */
 	public static function verify( string $file, array $entry ) {
 		require_once ABSPATH . 'wp-admin/includes/file.php';
 		if ( ! class_exists( '\ZipArchive' ) ) { return new \WP_Error( 'dwl_zip', Library::t( 'PHP ZIP support is required.' ) ); }
@@ -85,16 +100,35 @@ final class Package {
 		if ( $error !== '' || ! $closed ) { self::remove( $safe_file ); return new \WP_Error( 'dwl_zip', Library::t( $error ?: 'Cannot finalize archive.' ) ); }
 		return $safe_file;
 	}
- /** Track only Library-owned temp paths, including staging directories after a crash. */
+ /**
+  * Register a component-owned temporary path for crash cleanup.
+  *
+  * @param string $path Component-owned temporary file or staging directory path.
+  * @return void No return value.
+  * May read or change component-owned shared storage; foreign plugin data is preserved.
+  */
  private static function track( string $path ): void {
   $paths = get_site_option( 'deckerweb_library_temp_v2', [] );
   $paths = array_values( array_filter( is_array( $paths ) ? $paths : [], static fn( $p ): bool => is_string( $p ) && file_exists( $p ) ) );
   if ( ! in_array( $path, $paths, true ) ) { $paths[] = $path; update_site_option( 'deckerweb_library_temp_v2', $paths ); }
  }
+ /**
+  * Remove a temporary path from the shared cleanup registry.
+  *
+  * @param string $path Component-owned temporary file or staging directory path.
+  * @return void No return value.
+  * May read or change component-owned shared storage; foreign plugin data is preserved.
+  */
  private static function untrack( string $path ): void {
   $paths = get_site_option( 'deckerweb_library_temp_v2', [] );
   if ( is_array( $paths ) ) { update_site_option( 'deckerweb_library_temp_v2', array_values( array_diff( $paths, [ $path ] ) ) ); }
  }
+ /**
+  * Delete a component temporary archive and unregister its cleanup path.
+  *
+  * @param string $path Component-owned temporary file or staging directory path.
+  * @return void No return value.
+  */
  public static function remove( string $path ): void { wp_delete_file( $path ); self::untrack( $path ); }
 
 }

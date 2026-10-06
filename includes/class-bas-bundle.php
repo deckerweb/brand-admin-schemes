@@ -25,8 +25,10 @@ final class BAS_Bundle {
 		}
 	}
 
-	/** Export the current editor draft and local raster attachments. */
-	public static function export(): void {
+	/** Export the current editor draft and local raster attachments.
+	 * @return void
+	 */
+		public static function export(): void {
 		self::authorize();
 		$payload = $_POST['settings'] ?? '';
 		if ( !is_string( $payload ) ) {
@@ -77,8 +79,10 @@ final class BAS_Bundle {
 		exit;
 	}
 
-	/** Validate ZIP entries, then sideload bounded images for a draft import. */
-	public static function import(): void {
+	/** Validate ZIP entries, then sideload bounded images for a draft import.
+	 * @return void
+	 */
+		public static function import(): void {
 		self::authorize();
 		if ( ! current_user_can( 'upload_files' ) ) {
 			wp_send_json_error( __( 'Forbidden', 'brand-admin-schemes' ), 403 );
@@ -164,6 +168,10 @@ final class BAS_Bundle {
 		$settings['active'] = '';
 		wp_send_json_success( ['settings' => $settings, 'importedImages' => count( $created )] );
 	}
+/** Rollback.
+	 * @param array $ids Ids.
+	 * @return void
+	 */
 
 	private static function rollback( array $ids ): void {
 		foreach ( $ids as $id ) {

@@ -20,3 +20,8 @@ Library 0.4.0 retains shared data while another Library host is physically insta
 No BAS-wide delete-all switch is introduced: media and official Site Icons are website content; `admin_color` is shared WordPress state; capability migration markers preserve deliberate role decisions. Automatic deletion would affect continuing site behavior. For a deliberate reset, export a backup, restore the desired WordPress color and Site Icon, delete selected attachments through the Media Library, and remove only confirmed BAS options using normal WordPress administration tools. Removing the capability migration marker may grant the default viewing capability again when BAS is reactivated.
 
 JSON imports are drafts until saved. Agency imports create bounded raster attachments immediately, check rights and quota, and roll back images created by a failed import. Existing attachments are never deleted by that rollback. Role assignments are excluded from exports. Undo is limited to its author, website/storage scope and unchanged saved settings; it is not a cross-site history.
+
+
+## Branding workflow data
+
+Per website: bas_templates stores at most ten portable templates; bas_history stores at most ten prior branding snapshots with timestamp, actor ID and personal color scope. Both are non-autoloaded and retained by default. bas_write_lock is a temporary write mutex, cleared after the write and at uninstall, with a 120-second stale-lock recovery. Network bas_network_template stores a portable starter and its enabled flag; it is retained on uninstall. The optional delete_workflows setting removes website templates/history on uninstall, never branding, images or user preferences. Neither deactivation nor ordinary network requests enumerate all websites.

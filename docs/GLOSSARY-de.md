@@ -8,7 +8,7 @@ US-Englisch ist die Quelle. Deutsch mit Du und Deutsch mit Sie werden vollständ
 |---|---|---|
 | Color scheme | Farbschema | Farbschema |
 | Brand strength | Markennähe | Markennähe |
-| Changelog | Änderungsprotokoll | Änderungsprotokoll |
+| Changelog | Änderungsverlauf | Änderungsverlauf |
 | Save all changes | Alle Änderungen speichern | Alle Änderungen speichern |
 | Website browser tab | Browser-Tab der Website | Browser-Tab der Website |
 | WordPress admin browser tab | Browser-Tab des WordPress-Admins | Browser-Tab des WordPress-Admins |

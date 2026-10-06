@@ -18,8 +18,9 @@ final class BAS_Context_Icons {
 	 * Each site provisions its own role when its admin is first visited.
 	 *
 	 * @since 0.18.0
+	 * @return void
 	 */
-	public static function provision_capability(): void {
+		public static function provision_capability(): void {
 		if ( '1' === get_option( self::CAPABILITY_OPTION, '' ) ) {
 			return;
 		}
@@ -31,8 +32,10 @@ final class BAS_Context_Icons {
 		update_option( self::CAPABILITY_OPTION, '1', false );
 	}
 
-	/** Upgrade existing installations without requiring plugin reactivation. */
-	public static function maybe_provision_capability(): void {
+	/** Upgrade existing installations without requiring plugin reactivation.
+	 * @return void
+	 */
+		public static function maybe_provision_capability(): void {
 		if ( current_user_can( 'manage_options' ) ) {
 			self::provision_capability();
 		}
@@ -41,15 +44,19 @@ final class BAS_Context_Icons {
 	/**
 	 * Provision only the requested site, including frontend visits by its admin.
 	 * Avoid expensive network-wide loops when activating on large networks.
+	 * @return void
 	 */
-	public static function provision_on_request(): void {
+		public static function provision_on_request(): void {
 		if ( is_user_logged_in() && current_user_can( 'manage_options' ) ) {
 			self::provision_capability();
 		}
 	}
 
-	/** Initialize new sites after Core has created their tables and roles. */
-	public static function initialize_site( $site ): void {
+	/** Initialize new sites after Core has created their tables and roles.
+	 * @param mixed $site Site.
+	 * @return void
+	 */
+		public static function initialize_site( $site ): void {
 		if ( ! is_multisite() || ! wp_is_site_initialized( $site ) ) {
 			return;
 		}
@@ -80,13 +87,22 @@ final class BAS_Context_Icons {
 		add_action( 'login_head', [__CLASS__, 'render'], 101 );
 	}
 
-	/** Keep WordPress's Site Icon when the feature or context is not configured. */
-	public static function filter_site_icon( array $tags ): array {
+	/** Keep WordPress's Site Icon when the feature or context is not configured.
+	 * @param array $tags Tags.
+	 * @return array
+	 */
+		public static function filter_site_icon( array $tags ): array {
 		return self::current_icon() ? array_values( array_filter( $tags, static fn( $tag ) => false === stripos( $tag, 'rel="icon"' ) ) ) : $tags;
 	}
 
-	/** Generate a constrained SVG data URI, with no user-supplied markup or files. */
-	public static function uri( array $design, string $context = 'frontend', string $builder = '', string $environment = '' ): string {
+	/** Generate a constrained SVG data URI, with no user-supplied markup or files.
+	 * @param array $design Design.
+	 * @param string $context Context.
+	 * @param string $builder Builder.
+	 * @param string $environment Environment.
+	 * @return string
+	 */
+		public static function uri( array $design, string $context = 'frontend', string $builder = '', string $environment = '' ): string {
 		$colors = self::colors( $context, $builder );
 		$background = self::hex( $design['background'] ?? '' ) ?: $colors[0];
 		$foreground = self::hex( $design['foreground'] ?? '' ) ?: self::contrast( $background );
@@ -110,8 +126,11 @@ final class BAS_Context_Icons {
 		return 'data:image/svg+xml,' . rawurlencode( $svg );
 	}
 
-	/** Small color-and-letter marker also identifies the installation at tab size. */
-	private static function marker( string $type ): string {
+	/** Small color-and-letter marker also identifies the installation at tab size.
+	 * @param string $type Type.
+	 * @return string
+	 */
+		private static function marker( string $type ): string {
 		$marks = ['local' => ['#087e70', 'L'], 'development' => ['#b45f09', 'D'], 'staging' => ['#7654c5', 'S'], 'production' => ['#25804a', 'P']];
 		if ( !isset( $marks[$type] ) ) {
 			return '';
@@ -174,8 +193,12 @@ final class BAS_Context_Icons {
 		return '';
 	}
 
-	/** Derive three related contexts from the active brand palette. */
-	private static function colors( string $context, string $builder ): array {
+	/** Derive three related contexts from the active brand palette.
+	 * @param string $context Context.
+	 * @param string $builder Builder.
+	 * @return array
+	 */
+		private static function colors( string $context, string $builder ): array {
 		if ( 'builder' === $context ) {
 			return match ( $builder ) {
 				'bricks' => ['#ffd54a', '#111111'],
@@ -187,10 +210,18 @@ final class BAS_Context_Icons {
 		$settings = BAS_Plugin::icon_palette();
 		return 'admin' === $context ? [$settings['admin'], self::contrast( $settings['admin'] )] : [$settings['frontend'], self::contrast( $settings['frontend'] )];
 	}
+/** Hex.
+	 * @param mixed $value Candidate value to validate.
+	 * @return string
+	 */
 
 	private static function hex( $value ): string {
 		return is_string( $value ) && preg_match( '/^#[a-f0-9]{6}$/i', $value ) ? strtolower( $value ) : '';
 	}
+/** Contrast.
+	 * @param string $hex Hex.
+	 * @return string
+	 */
 
 	private static function contrast( string $hex ): string {
 		$red = hexdec( substr( $hex, 1, 2 ) );
@@ -198,6 +229,10 @@ final class BAS_Context_Icons {
 		$blue = hexdec( substr( $hex, 5, 2 ) );
 		return ( .2126 * $red + .7152 * $green + .0722 * $blue ) > 145 ? '#17202b' : '#ffffff';
 	}
+/** Label.
+	 * @param mixed $value Candidate value to validate.
+	 * @return string
+	 */
 
 	private static function label( $value ): string {
 		$value = preg_replace( '/[^\\p{L}\\p{N}]/u', '', (string) $value );

@@ -1,10 +1,18 @@
 <?php
 /** Copyright 2026 David Decker – DECKERWEB. SPDX-License-Identifier: GPL-2.0-or-later */
-namespace Deckerweb\PluginLibrary\V0_5_0;
+namespace Deckerweb\PluginLibrary\V0_6_0;
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 /** Used both when rendering cards and immediately before install/activation. */
 final class Requirements {
+	/**
+	 * Report platform, active dependency and network-scope requirements without installing prerequisites.
+	 *
+	 * @param array $entry Validated approved catalog entry and dependency metadata.
+	 * @param array|null $plugins Installed plugin metadata; null reads the current installation.
+	 * @param bool|null $network Network activation context; null derives it from the current admin scope.
+	 * @return array Result of the operation; errors are returned or rejected as documented by the caller.
+	 */
 	public static function check( array $entry, ?array $plugins = null, ?bool $network = null ): array {
 		require_once ABSPATH . 'wp-admin/includes/plugin.php';
 		$plugins = $plugins ?? get_plugins();

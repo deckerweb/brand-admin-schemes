@@ -1,8 +1,8 @@
-# Tests für 0.18.0
+# Tests für 1.0.0
 
-[English](TESTING-0.18.0.md)
+[English](TESTING-1.0.0.md)
 
-Vorbereiteter Release; Veröffentlichung steht noch aus. Originale Library 0.5.0 und Updater V2. Verwende eine entbehrliche WordPress-Testinstallation. Modellierte Tests ersetzen keine echten Laufzeit- und Browserprüfungen.
+Vorbereiteter Release; Veröffentlichung steht noch aus. Originale Library 0.6.0 und Updater V2.1. Verwende eine entbehrliche WordPress-Testinstallation. Modellierte Tests ersetzen keine echten Laufzeit- und Browserprüfungen.
 
 1. Von der vorherigen Version aktualisieren. Schemen, Loginmedien und Favicons müssen erhalten bleiben. Eigene Farben und verfügbare Provider-Paletten, Original-Swatches, Atmosphäre, Markennähe, Tastatur-/Hover-Vorschau und gespeichertes CSS prüfen.
 2. Die optionale Einrichtung mit vier Schritten öffnen, Login und Tab-Icons ändern, zurückgehen und zum vollständigen Editor wechseln. Der Entwurf bleibt bis „Alle Änderungen speichern“ ungespeichert. JSON-/Agenturimport, Export, Undo und Schutz vor dem Verwerfen prüfen.

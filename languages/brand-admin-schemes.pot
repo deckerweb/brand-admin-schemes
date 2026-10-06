@@ -55,6 +55,9 @@ msgstr ""
 msgid "Admin menu"
 msgstr ""
 
+msgid "Admin preview"
+msgstr ""
+
 msgid "Admin submenu"
 msgstr ""
 
@@ -92,6 +95,15 @@ msgid "Already active"
 msgstr ""
 
 msgid "An agency package includes settings and local PNG, JPEG, WebP or GIF images (up to 4 MB each). SVG files are excluded. On import, images are added to the Media Library immediately; review and save the settings afterward. ZIP support is required on the server."
+msgstr ""
+
+msgid "An image is unavailable. Choose a local replacement or remove the selection."
+msgstr ""
+
+msgid "Another save is in progress. Try again shortly."
+msgstr ""
+
+msgid "Apply to draft"
 msgstr ""
 
 msgid "Apr"
@@ -202,6 +214,21 @@ msgstr ""
 msgid "Brand strength"
 msgstr ""
 
+msgid "Branding JSON file"
+msgstr ""
+
+msgid "Branding display"
+msgstr ""
+
+msgid "Branding restored."
+msgstr ""
+
+msgid "Branding starter template"
+msgstr ""
+
+msgid "Branding templates"
+msgstr ""
+
 msgid "Bricks outline"
 msgstr ""
 
@@ -277,6 +304,15 @@ msgstr ""
 msgid "Check contrast"
 msgstr ""
 
+msgid "Choose a branding JSON before enabling the starter template."
+msgstr ""
+
+msgid "Choose a template"
+msgstr ""
+
+msgid "Choose color"
+msgstr ""
+
 msgid "Choose image"
 msgstr ""
 
@@ -289,10 +325,22 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
+msgid "Color"
+msgstr ""
+
+msgid "Color collection"
+msgstr ""
+
 msgid "Color contrast check"
 msgstr ""
 
 msgid "Color frontend admin bar"
+msgstr ""
+
+msgid "Color mapping"
+msgstr ""
+
+msgid "Color origin"
 msgstr ""
 
 msgid "Color scheme"
@@ -307,10 +355,22 @@ msgstr ""
 msgid "Colors adapt to the visible toolbar. Custom colors keep their hue and change brightness only when needed for contrast."
 msgstr ""
 
+msgid "Commerce"
+msgstr ""
+
+msgid "Compare saved and draft"
+msgstr ""
+
 msgid "Compatible additions only"
 msgstr ""
 
 msgid "Complete changelog"
+msgstr ""
+
+msgid "Confirm change"
+msgstr ""
+
+msgid "Confirm deletion of the starter template."
 msgstr ""
 
 msgid "Confirm sanitized SVG logos first."
@@ -340,6 +400,15 @@ msgstr ""
 msgid "Contrast"
 msgstr ""
 
+msgid "Contrast adjustments"
+msgstr ""
+
+msgid "Copy"
+msgstr ""
+
+msgid "Copy color value"
+msgstr ""
+
 msgid "Core Framework, ACSS and Bricks are shown only when readable colors are available. Saved color values remain available without the source."
 msgstr ""
 
@@ -347,6 +416,9 @@ msgid "Could not access the update filesystem."
 msgstr ""
 
 msgid "Could not create the agency package."
+msgstr ""
+
+msgid "Could not create the update download file."
 msgstr ""
 
 msgid "Could not import package images."
@@ -386,6 +458,21 @@ msgid "Default; allow personal selection"
 msgstr ""
 
 msgid "Delete Library settings when removing the last host plugin"
+msgstr ""
+
+msgid "Delete scheme"
+msgstr ""
+
+msgid "Delete starter template"
+msgstr ""
+
+msgid "Delete template"
+msgstr ""
+
+msgid "Delete the active scheme from this draft? Saving creates a new active scheme; other users may need to choose another scheme."
+msgstr ""
+
+msgid "Delete this template? Website branding is retained."
 msgstr ""
 
 msgid "Derive automatically"
@@ -430,6 +517,9 @@ msgstr ""
 msgid "Documentation"
 msgstr ""
 
+msgid "Done"
+msgstr ""
+
 msgid "Done. The plugin is active."
 msgstr ""
 
@@ -439,7 +529,16 @@ msgstr ""
 msgid "Download SVG"
 msgstr ""
 
+msgid "Draft"
+msgstr ""
+
+msgid "Duplicate scheme"
+msgstr ""
+
 msgid "Dusk"
+msgstr ""
+
+msgid "Each website keeps independent branding. Open its editor to review or change settings."
 msgstr ""
 
 msgid "Enable contextual tab icons"
@@ -448,7 +547,16 @@ msgstr ""
 msgid "Enabled"
 msgstr ""
 
+msgid "Enabled for new websites"
+msgstr ""
+
 msgid "Enter a catalog URL first."
+msgstr ""
+
+msgid "Enter a six-digit hex color, for example #245A91."
+msgstr ""
+
+msgid "Enter a template name. Up to ten templates can be stored."
 msgstr ""
 
 msgid "Environment display"
@@ -479,6 +587,9 @@ msgid "Export agency package (.zip)"
 msgstr ""
 
 msgid "Export failed"
+msgstr ""
+
+msgid "Export portable template"
 msgstr ""
 
 msgid "Export settings as JSON"
@@ -512,6 +623,9 @@ msgid "Fits my installation"
 msgstr ""
 
 msgid "Fix"
+msgstr ""
+
+msgid "Fixed"
 msgstr ""
 
 msgid "Forbidden"
@@ -553,6 +667,9 @@ msgstr ""
 msgid "GitHub release does not contain the plugin main file."
 msgstr ""
 
+msgid "Gradient overlay strength"
+msgstr ""
+
 msgid "Gradient style"
 msgstr ""
 
@@ -571,10 +688,19 @@ msgstr ""
 msgid "Higher brand strength makes the brand colors more prominent. Text and button colors are adjusted for readability."
 msgstr ""
 
+msgid "Highlight color"
+msgstr ""
+
+msgid "History begins with your next save. Up to ten entries are retained."
+msgstr ""
+
 msgid "Horizon"
 msgstr ""
 
 msgid "Hover over a card or focus it with the keyboard. Escape ends the temporary preview."
+msgstr ""
+
+msgid "Hue"
 msgstr ""
 
 msgid "I reviewed the source color changes"
@@ -589,6 +715,12 @@ msgstr ""
 msgid "Icon saved to the Media Library."
 msgstr ""
 
+msgid "Image focal point X"
+msgstr ""
+
+msgid "Image focal point Y"
+msgstr ""
+
 msgid "Image on the left"
 msgstr ""
 
@@ -598,10 +730,19 @@ msgstr ""
 msgid "Image position"
 msgstr ""
 
+msgid "Image selected"
+msgstr ""
+
+msgid "Images and website-specific text are excluded. Select images separately on each destination website."
+msgstr ""
+
 msgid "Import & export"
 msgstr ""
 
 msgid "Import JSON"
+msgstr ""
+
+msgid "Import a portable branding JSON. Apply it once to new websites or an explicitly selected empty website. Existing branding and personal colors are retained."
 msgstr ""
 
 msgid "Import agency package (.zip)"
@@ -613,10 +754,16 @@ msgstr ""
 msgid "Import settings from JSON"
 msgstr ""
 
+msgid "Imported"
+msgstr ""
+
 msgid "Improved"
 msgstr ""
 
 msgid "In a detected builder editor tab, the favicon uses the builder color preset. Ordinary website tabs keep their website icon."
+msgstr ""
+
+msgid "Initial settings"
 msgstr ""
 
 msgid "Install and activate Safe SVG to use sanitized SVG logos."
@@ -643,6 +790,9 @@ msgstr ""
 msgid "Installed: "
 msgstr ""
 
+msgid "Invalid GitHub repository URL."
+msgstr ""
+
 msgid "Invalid ZIP archive."
 msgstr ""
 
@@ -652,10 +802,19 @@ msgstr ""
 msgid "Invalid approval flag."
 msgstr ""
 
+msgid "Invalid authentication provider."
+msgstr ""
+
 msgid "Invalid catalog field: "
 msgstr ""
 
+msgid "Invalid catalog revision."
+msgstr ""
+
 msgid "Invalid catalog schema."
+msgstr ""
+
+msgid "Invalid catalog timestamp."
 msgstr ""
 
 msgid "Invalid dependencies."
@@ -712,6 +871,9 @@ msgstr ""
 msgid "Invalid stars date."
 msgstr ""
 
+msgid "Invalid template file."
+msgstr ""
+
 msgid "Jan"
 msgstr ""
 
@@ -745,6 +907,9 @@ msgstr ""
 msgid "Last save undone. Reload the page to see the full result."
 msgstr ""
 
+msgid "Last uploaded"
+msgstr ""
+
 msgid "Layout"
 msgstr ""
 
@@ -769,6 +934,9 @@ msgstr ""
 msgid "Library settings saved."
 msgstr ""
 
+msgid "Link color"
+msgstr ""
+
 msgid "Live"
 msgstr ""
 
@@ -776,6 +944,15 @@ msgid "Loading editor…"
 msgstr ""
 
 msgid "Local"
+msgstr ""
+
+msgid "Lock color"
+msgstr ""
+
+msgid "Locked colors"
+msgstr ""
+
+msgid "Locked roles retain their exact brand color."
 msgstr ""
 
 msgid "Log In"
@@ -805,7 +982,13 @@ msgstr ""
 msgid "Lost your password?"
 msgstr ""
 
+msgid "Manage Content"
+msgstr ""
+
 msgid "Manage installed plugins"
+msgstr ""
+
+msgid "Manage this template in network settings."
 msgstr ""
 
 msgid "Manual"
@@ -838,6 +1021,9 @@ msgstr ""
 msgid "Misc"
 msgstr ""
 
+msgid "Missing color source. Saved colors remain available."
+msgstr ""
+
 msgid "Missing display text."
 msgstr ""
 
@@ -859,10 +1045,19 @@ msgstr ""
 msgid "More by deckerweb"
 msgstr ""
 
+msgid "More websites"
+msgstr ""
+
 msgid "Multisite"
 msgstr ""
 
 msgid "Multisite: branding and media belong to this website. Network activation makes the plugin available on every site; it does not copy settings between sites."
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Network"
 msgstr ""
 
 msgid "Network activate"
@@ -892,10 +1087,16 @@ msgstr ""
 msgid "No saved change to undo."
 msgstr ""
 
+msgid "No starter template saved yet."
+msgstr ""
+
 msgid "No unavailable selected login images were found"
 msgstr ""
 
 msgid "None"
+msgstr ""
+
+msgid "Nothing is applied to website branding until you save all changes."
 msgstr ""
 
 msgid "Nov"
@@ -925,7 +1126,13 @@ msgstr ""
 msgid "Only HTTPS on deckerweb.de or raw.githubusercontent.com/deckerweb. The server receives the requesting IP address. GitHub is contacted when installing a release."
 msgstr ""
 
+msgid "Only HTTPS on raw.githubusercontent.com/deckerweb. The server receives the requesting IP address. GitHub is contacted when installing a release."
+msgstr ""
+
 msgid "Only approved releases"
+msgstr ""
+
+msgid "Only this draft changes. Review the previews before saving."
 msgstr ""
 
 msgid "Open catalog"
@@ -934,10 +1141,16 @@ msgstr ""
 msgid "Open in Media Library"
 msgstr ""
 
+msgid "Optional destination website ID"
+msgstr ""
+
 msgid "Optional finishing touches"
 msgstr ""
 
 msgid "Optional short quote"
+msgstr ""
+
+msgid "Optional. The bundled catalog works immediately. Catalog requests are cached for 24 hours. No site URL, plugin list or usage data is sent."
 msgstr ""
 
 msgid "Optional. The bundled catalog works immediately. Online requests are cached for 12 hours. No site URL, plugin list or usage data is sent."
@@ -976,6 +1189,9 @@ msgstr ""
 msgid "Permission denied."
 msgstr ""
 
+msgid "Planned: "
+msgstr ""
+
 msgid "Plugin identity or version does not match the catalog."
 msgstr ""
 
@@ -991,6 +1207,9 @@ msgstr ""
 msgid "Plugin website"
 msgstr ""
 
+msgid "Portable templates exclude images, site text, initials and forced user defaults."
+msgstr ""
+
 msgid "Preparing icon…"
 msgstr ""
 
@@ -1003,10 +1222,19 @@ msgstr ""
 msgid "Preview login in a new tab"
 msgstr ""
 
+msgid "Preview template"
+msgstr ""
+
 msgid "Previews show the optional designs, even when they are disabled."
 msgstr ""
 
+msgid "Previous websites"
+msgstr ""
+
 msgid "Primary"
+msgstr ""
+
+msgid "Private mode must be boolean."
 msgstr ""
 
 msgid "Product website"
@@ -1021,13 +1249,22 @@ msgstr ""
 msgid "Readable"
 msgstr ""
 
+msgid "Recent changes"
+msgstr ""
+
 msgid "Refresh catalog"
+msgstr ""
+
+msgid "Release 1.0.0 is being prepared. Installation will be available after package verification."
 msgstr ""
 
 msgid "Release checksum is verified before installation. Activation is a separate step."
 msgstr ""
 
 msgid "Release date not recorded"
+msgstr ""
+
+msgid "Release in preparation"
 msgstr ""
 
 msgid "Release must contain exactly the approved plugin directory."
@@ -1045,7 +1282,19 @@ msgstr ""
 msgid "Remove image"
 msgstr ""
 
+msgid "Remove saved templates and history when uninstalling BAS. Branding, images and personal colors are retained."
+msgstr ""
+
+msgid "Remove the saved starter template and disable automatic use. Existing website branding stays unchanged."
+msgstr ""
+
+msgid "Rename scheme"
+msgstr ""
+
 msgid "Repository & documentation"
+msgstr ""
+
+msgid "Requirements shown are preliminary until the stable release is verified."
 msgstr ""
 
 msgid "Requires PHP %s or newer."
@@ -1060,13 +1309,31 @@ msgstr ""
 msgid "Reset filters"
 msgstr ""
 
+msgid "Reset this section"
+msgstr ""
+
+msgid "Reset this section in the draft? Save all changes to apply it."
+msgstr ""
+
+msgid "Restore saved branding"
+msgstr ""
+
 msgid "Restricted by default using bas_view_context_icons. Everyone also makes generated frontend icons and their optional environment marker public. Save all changes to apply this choice."
 msgstr ""
 
 msgid "Retrieve approved catalog updates online"
 msgstr ""
 
+msgid "Review adjustment"
+msgstr ""
+
 msgid "Review and save"
+msgstr ""
+
+msgid "Review contrast adjustment"
+msgstr ""
+
+msgid "Review imported changes"
 msgstr ""
 
 msgid "Review plugin settings"
@@ -1079,6 +1346,9 @@ msgid "Review the scheme name and user default below, then save in the fixed bar
 msgstr ""
 
 msgid "SVG logo (requires Safe SVG)"
+msgstr ""
+
+msgid "Safe SVG logos"
 msgstr ""
 
 msgid "Sat"
@@ -1097,6 +1367,9 @@ msgid "Save and activate selected scheme"
 msgstr ""
 
 msgid "Save and assign"
+msgstr ""
+
+msgid "Save branding template"
 msgstr ""
 
 msgid "Save failed"
@@ -1121,6 +1394,12 @@ msgid "Saved brand colors need review"
 msgstr ""
 
 msgid "Saved schemes"
+msgstr ""
+
+msgid "Saved starter template"
+msgstr ""
+
+msgid "Saved; automatic use is disabled"
 msgstr ""
 
 msgid "Scheme & toolbar"
@@ -1156,6 +1435,12 @@ msgstr ""
 msgid "September"
 msgstr ""
 
+msgid "Setting"
+msgstr ""
+
+msgid "Settings changed in another editor. Export your draft before reloading."
+msgstr ""
+
 msgid "Settings imported for review. Check the previews, then save all changes to apply them."
 msgstr ""
 
@@ -1189,6 +1474,9 @@ msgstr ""
 msgid "Source"
 msgstr ""
 
+msgid "Source file"
+msgstr ""
+
 msgid "Source: GitHub"
 msgstr ""
 
@@ -1198,10 +1486,22 @@ msgstr ""
 msgid "Staging"
 msgstr ""
 
+msgid "Starter template removed. Existing website branding stays unchanged."
+msgstr ""
+
+msgid "Starter template saved."
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
 msgid "Status colors"
 msgstr ""
 
 msgid "Style the WordPress login"
+msgstr ""
+
+msgid "Suggested"
 msgstr ""
 
 msgid "Sun"
@@ -1225,7 +1525,19 @@ msgstr ""
 msgid "Tablet"
 msgstr ""
 
+msgid "Template loaded for review."
+msgstr ""
+
+msgid "Template name"
+msgstr ""
+
+msgid "Template saved. Website branding is unchanged."
+msgstr ""
+
 msgid "Tertiary"
+msgstr ""
+
+msgid "Text color"
 msgstr ""
 
 msgid "The GitHub package could not be prepared. The installed version has been kept."
@@ -1238,6 +1550,9 @@ msgid "The GitHub release could not be downloaded."
 msgstr ""
 
 msgid "The approved release changed. Refresh updates first."
+msgstr ""
+
+msgid "The approved release could not be verified."
 msgstr ""
 
 msgid "The badge appears in the admin bar on both the frontend and backend. Automatic detection uses the WordPress environment first and cautious site address hints only when no environment is configured."
@@ -1258,6 +1573,9 @@ msgstr ""
 msgid "The default applies to users on the WordPress default scheme; forcing also overrides personal selections."
 msgstr ""
 
+msgid "The destination has existing branding or belongs to another network. Nothing was overwritten."
+msgstr ""
+
 msgid "The icon could not be rendered. Please try again."
 msgstr ""
 
@@ -1274,6 +1592,15 @@ msgid "The package identity or version does not match a newer Brand Admin Scheme
 msgstr ""
 
 msgid "The package version differs from the offered update. Please check for updates again."
+msgstr ""
+
+msgid "The plugin must be installed in a stable slug directory."
+msgstr ""
+
+msgid "The private update could not be authorized. Check the repository credentials and refresh updates."
+msgstr ""
+
+msgid "The private update download failed. Check credentials and try again."
 msgstr ""
 
 msgid "The release checksum does not match. Installation stopped."
@@ -1297,6 +1624,12 @@ msgstr ""
 msgid "These small icons appear in browser tabs, helping you tell the public website, WordPress admin and builder editor apart."
 msgstr ""
 
+msgid "This catalog requires a newer Library."
+msgstr ""
+
+msgid "This history entry cannot be restored in your current context."
+msgstr ""
+
 msgid "This plugin directory already exists. Use the installed plugin; it will not be overwritten."
 msgstr ""
 
@@ -1307,6 +1640,9 @@ msgid "This release is not approved."
 msgstr ""
 
 msgid "This release requires a newer WordPress or PHP version. The installed version has been kept."
+msgstr ""
+
+msgid "This restores website settings and your prior personal color. Current settings are retained in history. Unsaved drafts will be replaced."
 msgstr ""
 
 msgid "Thu"
@@ -1336,6 +1672,9 @@ msgstr ""
 msgid "Unknown"
 msgstr ""
 
+msgid "Unknown action."
+msgstr ""
+
 msgid "Unknown file format"
 msgstr ""
 
@@ -1352,6 +1691,12 @@ msgid "Untrusted release URL."
 msgstr ""
 
 msgid "Update %1$s to version %2$s or newer."
+msgstr ""
+
+msgid "Update the other active deckerweb plugins to use the current shared update component and translated update messages."
+msgstr ""
+
+msgid "Uploading another JSON replaces this starter template. Existing website branding stays unchanged."
 msgstr ""
 
 msgid "Use & export"
@@ -1378,6 +1723,9 @@ msgstr ""
 msgid "Use this design as the official WordPress Site Icon? This immediately adds a PNG to the Media Library, replaces the Site Icon and switches the frontend to the WordPress Site Icon. Other draft settings are not saved."
 msgstr ""
 
+msgid "Use this starter template for new websites"
+msgstr ""
+
 msgid "Use “Save all changes” in the fixed bar above to activate the selected scheme and apply settings across this page."
 msgstr ""
 
@@ -1399,7 +1747,13 @@ msgstr ""
 msgid "Visibility"
 msgstr ""
 
+msgid "Website branding"
+msgstr ""
+
 msgid "Website browser tab"
+msgstr ""
+
+msgid "Website tagline"
 msgstr ""
 
 msgid "Wed"
@@ -1433,6 +1787,9 @@ msgid "WordPress default"
 msgstr ""
 
 msgid "WordPress setting"
+msgstr ""
+
+msgid "Workflow cleanup"
 msgstr ""
 
 msgid "Yes"

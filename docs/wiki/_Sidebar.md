@@ -21,3 +21,6 @@
 - [Updates](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch#updates)
 - [Häufige Fragen](https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-Deutsch)
 - [Änderungsverlauf](https://github.com/deckerweb/brand-admin-schemes/wiki/Changelog-Deutsch)
+
+- [Branding workflows](Workflows-English)
+- [Branding-Abläufe](Workflows-Deutsch)

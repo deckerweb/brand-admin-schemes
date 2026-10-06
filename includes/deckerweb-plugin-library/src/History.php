@@ -1,9 +1,16 @@
 <?php
 /** Copyright 2026 David Decker – DECKERWEB. SPDX-License-Identifier: GPL-2.0-or-later */
-namespace Deckerweb\PluginLibrary\V0_5_0;
+namespace Deckerweb\PluginLibrary\V0_6_0;
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 /** Structured, escaped local history. One dialog per Library page, no shared host-footer replacement. */
 final class History {
+ /**
+  * Output escaped local release history with keyboard-accessible dialog controls.
+  *
+  * @param string $dir Absolute embedded Library directory.
+  * @return void No return value.
+  * Outputs escaped administration markup.
+  */
  public static function render( string $dir ): void {
   $data = json_decode( (string) file_get_contents( $dir . '/history.json' ), true );
   if ( ! is_array( $data ) ) { return; }
@@ -13,7 +20,7 @@ final class History {
   foreach ( array_slice( $data, 0, 7 ) as $release ) {
    echo '<section><h3>' . esc_html( $release['version'] ) . '</h3>';
    if ( ! empty( $release['date'] ) ) { echo '<p>' . esc_html( I18n::date( $release['date'] ) ) . '</p>'; }
-   foreach ( [ 'New', 'Improved', 'Fix', 'Misc' ] as $category ) {
+   foreach ( [ 'New', 'Improved', 'Fixed', 'Misc' ] as $category ) {
     $entries = $release['changes'][$category] ?? [];
     if ( ! $entries ) { continue; }
     echo '<h4 class="dwl-badge dwl-' . esc_attr( strtolower( $category ) ) . '">' . esc_html( Library::t( $category ) ) . '</h4><ul>';

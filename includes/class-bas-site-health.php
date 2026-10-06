@@ -11,8 +11,10 @@ namespace Deckerweb\BrandAdminSchemes;
 
 /** Reports configuration without status tests, provider reads or remote requests. */
 final class SiteHealth {
-	/** Register only the native WordPress information section. */
-	public function register(): void {
+	/** Register only the native WordPress information section.
+	 * @return void
+	 */
+		public function register(): void {
 		add_filter( 'debug_information', array( $this, 'information' ) );
 	}
 

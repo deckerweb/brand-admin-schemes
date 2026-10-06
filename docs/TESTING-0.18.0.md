@@ -1,8 +1,8 @@
-# Testing 0.18.0
+# Testing 1.0.0
 
-[Deutsch](TESTING-0.18.0-de.md)
+[Deutsch](TESTING-1.0.0-de.md)
 
-Prepared release; publication pending. Acceptance build with original Library 0.5.0 and Updater V2. Use a disposable WordPress installation. Historical isolated tests do not establish browser, provider or image-editor acceptance.
+Prepared release; publication pending. Acceptance build with original Library 0.6.0 and Updater V2.1. Use a disposable WordPress installation. Historical isolated tests do not establish browser, provider or image-editor acceptance.
 
 1. Update from the previous test build; retain schemes, login media and favicon choices. Choose manual or a readable provider palette; check original swatches, atmosphere, brand strength, keyboard/hover preview and saved CSS.
 2. Open the optional four-step setup, change login and tab-icon choices, navigate backward and exit to the full editor. The draft remains unsaved until Save all changes. Import/export drafts, supported agency images, undo and the unsaved-change guard must retain their behavior.

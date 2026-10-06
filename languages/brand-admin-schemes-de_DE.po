@@ -1,5 +1,5 @@
 msgid ""
-msgstr "Project-Id-Version: Brand Admin Schemes 0.18.0\nPO-Revision-Date: 2026-10-05 16:00+0200\nLast-Translator: David Decker – DECKERWEB\nLanguage: de_DE\nContent-Type: text/plain; charset=UTF-8\nPlural-Forms: nplurals=2; plural=(n != 1);\n"
+msgstr "Project-Id-Version: Brand Admin Schemes 1.0.0\nPO-Revision-Date: 2026-10-05 16:00+0200\nLast-Translator: David Decker – DECKERWEB\nLanguage: de_DE\nContent-Type: text/plain; charset=UTF-8\nPlural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "%s is installed but inactive. Activate it first."
 msgstr "%s ist installiert, aber inaktiv. Bitte zuerst aktivieren."
@@ -58,6 +58,9 @@ msgstr "Admin-Buttons"
 msgid "Admin menu"
 msgstr "Admin-Menü"
 
+msgid "Admin preview"
+msgstr "Admin-Vorschau"
+
 msgid "Admin submenu"
 msgstr "Admin-Untermenü"
 
@@ -96,6 +99,15 @@ msgstr "Bereits aktiv"
 
 msgid "An agency package includes settings and local PNG, JPEG, WebP or GIF images (up to 4 MB each). SVG files are excluded. On import, images are added to the Media Library immediately; review and save the settings afterward. ZIP support is required on the server."
 msgstr "Ein Agentur-Paket enthält Einstellungen und lokale PNG-, JPEG-, WebP- oder GIF-Bilder (jeweils bis 4 MB). SVG-Dateien sind ausgeschlossen. Beim Import werden Bilder sofort in die Mediathek übernommen; prüfe und speichere anschließend die Einstellungen. Der Server muss ZIP unterstützen."
+
+msgid "An image is unavailable. Choose a local replacement or remove the selection."
+msgstr "Ein Bild ist nicht verfügbar. Ein lokales Ersatzbild wählen oder die Auswahl entfernen."
+
+msgid "Another save is in progress. Try again shortly."
+msgstr "Eine andere Speicherung läuft gerade. Bitte gleich erneut versuchen."
+
+msgid "Apply to draft"
+msgstr "In den Entwurf übernehmen"
 
 msgid "Apr"
 msgstr "Apr"
@@ -205,6 +217,21 @@ msgstr "Markenfarben für WordPress-Admin, Login, Toolbar und Browser-Tabs. Mit 
 msgid "Brand strength"
 msgstr "Markennähe"
 
+msgid "Branding JSON file"
+msgstr "Branding-JSON-Datei"
+
+msgid "Branding display"
+msgstr "Logo-Darstellung"
+
+msgid "Branding restored."
+msgstr "Branding wiederhergestellt."
+
+msgid "Branding starter template"
+msgstr "Branding-Startvorlage"
+
+msgid "Branding templates"
+msgstr "Branding-Vorlagen"
+
 msgid "Bricks outline"
 msgstr "Baustein-Umriss"
 
@@ -272,13 +299,22 @@ msgid "Centered"
 msgstr "Zentriert"
 
 msgid "Changelog"
-msgstr "Änderungsprotokoll"
+msgstr "Änderungsverlauf"
 
 msgid "Changes remain a draft until you save. You can leave setup at any time and continue in the full settings."
 msgstr "Änderungen bleiben bis zum Speichern ein Entwurf. Du kannst die Einrichtung jederzeit verlassen und in allen Einstellungen fortfahren."
 
 msgid "Check contrast"
 msgstr "Kontrast prüfen"
+
+msgid "Choose a branding JSON before enabling the starter template."
+msgstr "Vor dem Aktivieren der Startvorlage eine Branding-JSON auswählen."
+
+msgid "Choose a template"
+msgstr "Vorlage auswählen"
+
+msgid "Choose color"
+msgstr "Farbe auswählen"
 
 msgid "Choose image"
 msgstr "Bild auswählen"
@@ -292,11 +328,23 @@ msgstr "Kreisumriss"
 msgid "Close"
 msgstr "Schließen"
 
+msgid "Color"
+msgstr "Farbe"
+
+msgid "Color collection"
+msgstr "Farbsammlung"
+
 msgid "Color contrast check"
 msgstr "Farbkontrast prüfen"
 
 msgid "Color frontend admin bar"
 msgstr "Frontend-Adminbar einfärben"
+
+msgid "Color mapping"
+msgstr "Farbzuordnung"
+
+msgid "Color origin"
+msgstr "Farbherkunft"
 
 msgid "Color scheme"
 msgstr "Farbschema"
@@ -310,11 +358,23 @@ msgstr "Farbquellen konnten nicht geladen werden. Eigene Farben bleiben verfügb
 msgid "Colors adapt to the visible toolbar. Custom colors keep their hue and change brightness only when needed for contrast."
 msgstr "Die Farben passen sich an die sichtbare Adminleiste an. Eigene Farben behalten ihren Farbton; nur bei Bedarf wird die Helligkeit für ausreichenden Kontrast angepasst."
 
+msgid "Commerce"
+msgstr "Commerce"
+
+msgid "Compare saved and draft"
+msgstr "Gespeicherten Stand und Entwurf vergleichen"
+
 msgid "Compatible additions only"
 msgstr "Nur passende Ergänzungen"
 
 msgid "Complete changelog"
 msgstr "Vollständiger Änderungsverlauf"
+
+msgid "Confirm change"
+msgstr "Änderung bestätigen"
+
+msgid "Confirm deletion of the starter template."
+msgstr "Das Löschen der Startvorlage bestätigen."
 
 msgid "Confirm sanitized SVG logos first."
 msgstr "Bestätige zuerst die Verwendung bereinigter SVG-Logos."
@@ -343,6 +403,15 @@ msgstr "In allen Einstellungen fortfahren"
 msgid "Contrast"
 msgstr "Kontrast"
 
+msgid "Contrast adjustments"
+msgstr "Kontrastanpassungen"
+
+msgid "Copy"
+msgstr "Kopie"
+
+msgid "Copy color value"
+msgstr "Farbwert kopieren"
+
 msgid "Core Framework, ACSS and Bricks are shown only when readable colors are available. Saved color values remain available without the source."
 msgstr "Core Framework, ACSS und Bricks erscheinen nur, wenn auslesbare Farben vorhanden sind. Gespeicherte Farbwerte bleiben auch ohne die Quelle erhalten."
 
@@ -351,6 +420,9 @@ msgstr "Auf das Dateisystem für das Update konnte nicht zugegriffen werden."
 
 msgid "Could not create the agency package."
 msgstr "Das Agentur-Paket konnte nicht erstellt werden."
+
+msgid "Could not create the update download file."
+msgstr "Die Datei für den Update-Download konnte nicht erstellt werden."
 
 msgid "Could not import package images."
 msgstr "Bilder aus dem Agentur-Paket konnten nicht importiert werden."
@@ -390,6 +462,21 @@ msgstr "Als Standard, eigene Auswahl erlauben"
 
 msgid "Delete Library settings when removing the last host plugin"
 msgstr "Library-Einstellungen beim Entfernen des letzten Host-Plugins ebenfalls löschen"
+
+msgid "Delete scheme"
+msgstr "Schema löschen"
+
+msgid "Delete starter template"
+msgstr "Startvorlage löschen"
+
+msgid "Delete template"
+msgstr "Vorlage löschen"
+
+msgid "Delete the active scheme from this draft? Saving creates a new active scheme; other users may need to choose another scheme."
+msgstr "Das aktive Schema aus diesem Entwurf löschen? Beim Speichern entsteht ein neues aktives Schema; andere Benutzer müssen gegebenenfalls ein anderes Schema auswählen."
+
+msgid "Delete this template? Website branding is retained."
+msgstr "Diese Vorlage löschen? Das Website-Branding bleibt erhalten."
 
 msgid "Derive automatically"
 msgstr "Automatisch ableiten"
@@ -433,6 +520,9 @@ msgstr "Frontend, Admin und Builder auf einen Blick unterscheiden."
 msgid "Documentation"
 msgstr "Dokumentation"
 
+msgid "Done"
+msgstr "Fertig"
+
 msgid "Done. The plugin is active."
 msgstr "Erledigt. Das Plugin ist aktiv."
 
@@ -442,8 +532,17 @@ msgstr "PNG herunterladen"
 msgid "Download SVG"
 msgstr "SVG herunterladen"
 
+msgid "Draft"
+msgstr "Entwurf"
+
+msgid "Duplicate scheme"
+msgstr "Schema duplizieren"
+
 msgid "Dusk"
 msgstr "Abendlicht"
+
+msgid "Each website keeps independent branding. Open its editor to review or change settings."
+msgstr "Jede Website behält ihr eigenes Branding. Einstellungen im jeweiligen Editor prüfen oder ändern."
 
 msgid "Enable contextual tab icons"
 msgstr "Kontextbezogene Tab-Icons aktivieren"
@@ -451,8 +550,17 @@ msgstr "Kontextbezogene Tab-Icons aktivieren"
 msgid "Enabled"
 msgstr "Aktiv"
 
+msgid "Enabled for new websites"
+msgstr "Für neue Websites aktiviert"
+
 msgid "Enter a catalog URL first."
 msgstr "Bitte zuerst eine Katalog-URL eintragen."
+
+msgid "Enter a six-digit hex color, for example #245A91."
+msgstr "Eine sechsstellige HEX-Farbe eingeben, zum Beispiel #245A91."
+
+msgid "Enter a template name. Up to ten templates can be stored."
+msgstr "Einen Vorlagennamen eingeben. Bis zu zehn Vorlagen sind möglich."
 
 msgid "Environment display"
 msgstr "Umgebungsanzeige"
@@ -483,6 +591,9 @@ msgstr "Agentur-Paket exportieren (.zip)"
 
 msgid "Export failed"
 msgstr "Export fehlgeschlagen"
+
+msgid "Export portable template"
+msgstr "Portable Vorlage exportieren"
 
 msgid "Export settings as JSON"
 msgstr "Einstellungen als JSON exportieren"
@@ -515,6 +626,9 @@ msgid "Fits my installation"
 msgstr "Passt zu meiner Installation"
 
 msgid "Fix"
+msgstr "Behoben"
+
+msgid "Fixed"
 msgstr "Behoben"
 
 msgid "Forbidden"
@@ -554,7 +668,10 @@ msgid "GitHub Stars"
 msgstr "GitHub-Sterne"
 
 msgid "GitHub release does not contain the plugin main file."
-msgstr "Das GitHub-Release enthält die Plugin-Hauptdatei nicht."
+msgstr "Der GitHub-Release enthält nicht die Hauptdatei des Plugins."
+
+msgid "Gradient overlay strength"
+msgstr "Stärke des Farbverlaufs"
 
 msgid "Gradient style"
 msgstr "Farbverlauf"
@@ -574,11 +691,20 @@ msgstr "Katalog ausblenden"
 msgid "Higher brand strength makes the brand colors more prominent. Text and button colors are adjusted for readability."
 msgstr "Eine höhere Markennähe verwendet die CI-Farben deutlicher. Text- und Buttonfarben werden für Lesbarkeit angepasst."
 
+msgid "Highlight color"
+msgstr "Hervorhebungsfarbe"
+
+msgid "History begins with your next save. Up to ten entries are retained."
+msgstr "Der Verlauf beginnt mit der nächsten Speicherung. Bis zu zehn Einträge bleiben erhalten."
+
 msgid "Horizon"
 msgstr "Horizont"
 
 msgid "Hover over a card or focus it with the keyboard. Escape ends the temporary preview."
 msgstr "Bewege die Maus über eine Karte oder fokussiere sie mit der Tastatur. Escape beendet die temporäre Vorschau."
+
+msgid "Hue"
+msgstr "Farbton"
 
 msgid "I reviewed the source color changes"
 msgstr "Ich habe die Änderungen der Quellfarben geprüft"
@@ -592,6 +718,12 @@ msgstr "Icon heruntergeladen."
 msgid "Icon saved to the Media Library."
 msgstr "Icon in der Mediathek gespeichert."
 
+msgid "Image focal point X"
+msgstr "Bildausschnitt X"
+
+msgid "Image focal point Y"
+msgstr "Bildausschnitt Y"
+
 msgid "Image on the left"
 msgstr "Bild links"
 
@@ -601,11 +733,20 @@ msgstr "Bild rechts"
 msgid "Image position"
 msgstr "Bildausschnitt"
 
+msgid "Image selected"
+msgstr "Bild ausgewählt"
+
+msgid "Images and website-specific text are excluded. Select images separately on each destination website."
+msgstr "Bilder und websitespezifische Texte sind ausgeschlossen. Bilder auf jeder Zielwebsite separat auswählen."
+
 msgid "Import & export"
 msgstr "Import und Export"
 
 msgid "Import JSON"
 msgstr "JSON importieren"
+
+msgid "Import a portable branding JSON. Apply it once to new websites or an explicitly selected empty website. Existing branding and personal colors are retained."
+msgstr "Eine portable Branding-JSON importieren. Die Vorlage wird einmalig auf neue oder ausdrücklich ausgewählte leere Websites angewendet. Vorhandenes Branding und persönliche Farben bleiben erhalten."
 
 msgid "Import agency package (.zip)"
 msgstr "Agentur-Paket importieren (.zip)"
@@ -616,11 +757,17 @@ msgstr "Import fehlgeschlagen"
 msgid "Import settings from JSON"
 msgstr "Einstellungen aus JSON importieren"
 
+msgid "Imported"
+msgstr "Importiert"
+
 msgid "Improved"
 msgstr "Verbessert"
 
 msgid "In a detected builder editor tab, the favicon uses the builder color preset. Ordinary website tabs keep their website icon."
 msgstr "Im erkannten Builder-Editor verwendet das Favicon die Farben der Builder-Vorlage. Normale Website-Tabs behalten ihr Website-Icon."
+
+msgid "Initial settings"
+msgstr "Anfangseinstellungen"
 
 msgid "Install and activate Safe SVG to use sanitized SVG logos."
 msgstr "Für bereinigte SVG-Logos installiere und aktiviere Safe SVG."
@@ -646,6 +793,9 @@ msgstr "Installiert"
 msgid "Installed: "
 msgstr "Installiert: "
 
+msgid "Invalid GitHub repository URL."
+msgstr "Ungültige GitHub-Repository-URL."
+
 msgid "Invalid ZIP archive."
 msgstr "Ungültiges ZIP-Archiv."
 
@@ -655,11 +805,20 @@ msgstr "Ungültiges Agentur-Paket."
 msgid "Invalid approval flag."
 msgstr "Ungültige Freigabeangabe."
 
+msgid "Invalid authentication provider."
+msgstr "Ungültiger Authentifizierungsanbieter."
+
 msgid "Invalid catalog field: "
 msgstr "Ungültiges Katalogfeld: "
 
+msgid "Invalid catalog revision."
+msgstr "Ungültiger Katalogstand."
+
 msgid "Invalid catalog schema."
 msgstr "Ungültiges Katalogformat."
+
+msgid "Invalid catalog timestamp."
+msgstr "Ungültiger Katalogzeitpunkt."
 
 msgid "Invalid dependencies."
 msgstr "Ungültige Abhängigkeiten."
@@ -715,6 +874,9 @@ msgstr "Ungültige Anzahl der GitHub-Sterne."
 msgid "Invalid stars date."
 msgstr "Ungültiges Datum der GitHub-Sterne."
 
+msgid "Invalid template file."
+msgstr "Ungültige Vorlagendatei."
+
 msgid "Jan"
 msgstr "Jan"
 
@@ -748,6 +910,9 @@ msgstr "WordPress-Site-Icon als Favicon beibehalten"
 msgid "Last save undone. Reload the page to see the full result."
 msgstr "Letzte Speicherung rückgängig gemacht. Lade die Seite neu, um das Ergebnis vollständig zu sehen."
 
+msgid "Last uploaded"
+msgstr "Zuletzt hochgeladen"
+
 msgid "Layout"
 msgstr "Layout"
 
@@ -772,6 +937,9 @@ msgstr "Library-Einstellungen"
 msgid "Library settings saved."
 msgstr "Library-Einstellungen gespeichert."
 
+msgid "Link color"
+msgstr "Linkfarbe"
+
 msgid "Live"
 msgstr "Live"
 
@@ -780,6 +948,15 @@ msgstr "Editor wird geladen …"
 
 msgid "Local"
 msgstr "Lokal"
+
+msgid "Lock color"
+msgstr "Farbe sperren"
+
+msgid "Locked colors"
+msgstr "Gesperrte Farben"
+
+msgid "Locked roles retain their exact brand color."
+msgstr "Gesperrte Rollen behalten ihre exakte Markenfarbe."
 
 msgid "Log In"
 msgstr "Anmelden"
@@ -808,8 +985,14 @@ msgstr "Logo-Darstellung"
 msgid "Lost your password?"
 msgstr "Passwort vergessen?"
 
+msgid "Manage Content"
+msgstr "Inhalte verwalten"
+
 msgid "Manage installed plugins"
 msgstr "Installierte Plugins verwalten"
+
+msgid "Manage this template in network settings."
+msgstr "Diese Vorlage in den Netzwerkeinstellungen verwalten."
 
 msgid "Manual"
 msgstr "Manuell"
@@ -841,6 +1024,9 @@ msgstr "Menü"
 msgid "Misc"
 msgstr "Sonstiges"
 
+msgid "Missing color source. Saved colors remain available."
+msgstr "Farbquelle fehlt. Gespeicherte Farben bleiben verfügbar."
+
 msgid "Missing display text."
 msgstr "Anzeigetext fehlt."
 
@@ -862,11 +1048,20 @@ msgstr "Montag"
 msgid "More by deckerweb"
 msgstr "Mehr von deckerweb"
 
+msgid "More websites"
+msgstr "Weitere Websites"
+
 msgid "Multisite"
 msgstr "Multisite"
 
 msgid "Multisite: branding and media belong to this website. Network activation makes the plugin available on every site; it does not copy settings between sites."
 msgstr "Multisite: Branding und Medien gehören zu dieser Website. Die Netzwerkaktivierung stellt das Plugin auf allen Websites bereit; Einstellungen werden nicht zwischen Websites kopiert."
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Network"
+msgstr "Netzwerk"
 
 msgid "Network activate"
 msgstr "Netzwerkweit aktivieren"
@@ -895,11 +1090,17 @@ msgstr "Keine Vorgabe"
 msgid "No saved change to undo."
 msgstr "Keine gespeicherte Änderung zum Rückgängigmachen."
 
+msgid "No starter template saved yet."
+msgstr "Noch keine Startvorlage gespeichert."
+
 msgid "No unavailable selected login images were found"
 msgstr "Es wurden keine nicht verfügbaren ausgewählten Login-Bilder gefunden"
 
 msgid "None"
 msgstr "Keine"
+
+msgid "Nothing is applied to website branding until you save all changes."
+msgstr "Erst mit „Alle Änderungen speichern“ wird das Website-Branding geändert."
 
 msgid "Nov"
 msgstr "Nov"
@@ -928,8 +1129,14 @@ msgstr "Online-Katalog"
 msgid "Only HTTPS on deckerweb.de or raw.githubusercontent.com/deckerweb. The server receives the requesting IP address. GitHub is contacted when installing a release."
 msgstr "Nur HTTPS auf deckerweb.de oder raw.githubusercontent.com/deckerweb. Der Server sieht die anfragende IP-Adresse. Beim Installieren eines Releases wird GitHub kontaktiert."
 
+msgid "Only HTTPS on raw.githubusercontent.com/deckerweb. The server receives the requesting IP address. GitHub is contacted when installing a release."
+msgstr "Nur HTTPS auf raw.githubusercontent.com/deckerweb. Der Server sieht die anfragende IP-Adresse. Beim Installieren eines Releases wird GitHub kontaktiert."
+
 msgid "Only approved releases"
 msgstr "Nur freigegebene Releases"
+
+msgid "Only this draft changes. Review the previews before saving."
+msgstr "Nur dieser Entwurf wird geändert. Vorschauen vor dem Speichern prüfen."
 
 msgid "Open catalog"
 msgstr "Katalog öffnen"
@@ -937,11 +1144,17 @@ msgstr "Katalog öffnen"
 msgid "Open in Media Library"
 msgstr "In der Mediathek öffnen"
 
+msgid "Optional destination website ID"
+msgstr "Optionale ID der Zielwebsite"
+
 msgid "Optional finishing touches"
 msgstr "Optionale Gestaltung"
 
 msgid "Optional short quote"
 msgstr "Optionales kurzes Zitat"
+
+msgid "Optional. The bundled catalog works immediately. Catalog requests are cached for 24 hours. No site URL, plugin list or usage data is sent."
+msgstr "Optional. Der mitgelieferte Katalog funktioniert sofort. Katalogabfragen werden 24 Stunden zwischengespeichert. Keine Website-URL, Plugin-Liste oder Nutzungsdaten werden übertragen."
 
 msgid "Optional. The bundled catalog works immediately. Online requests are cached for 12 hours. No site URL, plugin list or usage data is sent."
 msgstr "Optional. Der mitgelieferte Katalog funktioniert sofort. Online-Anfragen werden 12 Stunden gespeichert. Website-URL, Plugin-Liste und Nutzungsdaten werden nicht übertragen."
@@ -979,6 +1192,9 @@ msgstr "Passwort"
 msgid "Permission denied."
 msgstr "Keine Berechtigung."
 
+msgid "Planned: "
+msgstr "Geplant: "
+
 msgid "Plugin identity or version does not match the catalog."
 msgstr "Plugin oder Version stimmt nicht mit dem Katalog überein."
 
@@ -994,6 +1210,9 @@ msgstr "Plugin-Serien"
 msgid "Plugin website"
 msgstr "Plugin-Website"
 
+msgid "Portable templates exclude images, site text, initials and forced user defaults."
+msgstr "Portable Vorlagen enthalten keine Bilder, Website-Texte, Kürzel oder erzwungenen Benutzervorgaben."
+
 msgid "Preparing icon…"
 msgstr "Icon wird vorbereitet …"
 
@@ -1006,11 +1225,20 @@ msgstr "Vorschau und Übernahme"
 msgid "Preview login in a new tab"
 msgstr "Gespeicherte Login-Seite in neuem Tab öffnen"
 
+msgid "Preview template"
+msgstr "Vorlage prüfen"
+
 msgid "Previews show the optional designs, even when they are disabled."
 msgstr "Die Vorschauen zeigen die optionalen Gestaltungen auch dann, wenn sie deaktiviert sind."
 
+msgid "Previous websites"
+msgstr "Vorherige Websites"
+
 msgid "Primary"
 msgstr "Primär"
+
+msgid "Private mode must be boolean."
+msgstr "Der Private-Modus muss ein boolescher Wert sein."
 
 msgid "Product website"
 msgstr "Produktwebsite"
@@ -1024,14 +1252,23 @@ msgstr "Radial"
 msgid "Readable"
 msgstr "Gut lesbar"
 
+msgid "Recent changes"
+msgstr "Letzte Änderungen"
+
 msgid "Refresh catalog"
 msgstr "Katalog aktualisieren"
+
+msgid "Release 1.0.0 is being prepared. Installation will be available after package verification."
+msgstr "Release 1.0.0 wird vorbereitet. Die Installation ist nach Prüfung des Pakets verfügbar."
 
 msgid "Release checksum is verified before installation. Activation is a separate step."
 msgstr "Vor der Installation wird die Release-Prüfsumme geprüft. Die Aktivierung erfolgt separat."
 
 msgid "Release date not recorded"
 msgstr "Veröffentlichungsdatum nicht dokumentiert"
+
+msgid "Release in preparation"
+msgstr "Release in Vorbereitung"
 
 msgid "Release must contain exactly the approved plugin directory."
 msgstr "Das Release muss genau das freigegebene Plugin-Verzeichnis enthalten."
@@ -1048,8 +1285,20 @@ msgstr "Angemeldet bleiben"
 msgid "Remove image"
 msgstr "Bild entfernen"
 
+msgid "Remove saved templates and history when uninstalling BAS. Branding, images and personal colors are retained."
+msgstr "Gespeicherte Vorlagen und Verlauf bei Deinstallation von BAS entfernen. Branding, Bilder und persönliche Farben bleiben erhalten."
+
+msgid "Remove the saved starter template and disable automatic use. Existing website branding stays unchanged."
+msgstr "Gespeicherte Startvorlage entfernen und automatische Anwendung deaktivieren. Bestehendes Website-Branding bleibt unverändert."
+
+msgid "Rename scheme"
+msgstr "Schema umbenennen"
+
 msgid "Repository & documentation"
 msgstr "Repository & Dokumentation"
+
+msgid "Requirements shown are preliminary until the stable release is verified."
+msgstr "Die gezeigten Voraussetzungen sind bis zur Prüfung des stabilen Releases vorläufig."
 
 msgid "Requires PHP %s or newer."
 msgstr "Benötigt PHP %s oder neuer."
@@ -1063,14 +1312,32 @@ msgstr "Benötigt ein WordPress-Multisite-Netzwerk."
 msgid "Reset filters"
 msgstr "Filter zurücksetzen"
 
+msgid "Reset this section"
+msgstr "Diesen Abschnitt zurücksetzen"
+
+msgid "Reset this section in the draft? Save all changes to apply it."
+msgstr "Diesen Abschnitt im Entwurf zurücksetzen? Mit „Alle Änderungen speichern“ übernehmen."
+
+msgid "Restore saved branding"
+msgstr "Gespeichertes Branding wiederherstellen"
+
 msgid "Restricted by default using bas_view_context_icons. Everyone also makes generated frontend icons and their optional environment marker public. Save all changes to apply this choice."
 msgstr "Standardmäßig eingeschränkt über bas_view_context_icons. „Alle“ macht auch erzeugte Frontend-Icons und deren optionalen Umgebungsmarker öffentlich. Übernimm die Auswahl mit „Alle Änderungen speichern“."
 
 msgid "Retrieve approved catalog updates online"
 msgstr "Katalogfreigaben online aktualisieren"
 
+msgid "Review adjustment"
+msgstr "Anpassung prüfen"
+
 msgid "Review and save"
 msgstr "Prüfen und speichern"
+
+msgid "Review contrast adjustment"
+msgstr "Kontrastanpassung prüfen"
+
+msgid "Review imported changes"
+msgstr "Importierte Änderungen prüfen"
 
 msgid "Review plugin settings"
 msgstr "Plugin-Einstellungen prüfen"
@@ -1083,6 +1350,9 @@ msgstr "Prüfe unten den Schemanamen und den Standard für Benutzer. Speichere d
 
 msgid "SVG logo (requires Safe SVG)"
 msgstr "SVG-Logo (benötigt Safe SVG)"
+
+msgid "Safe SVG logos"
+msgstr "Bereinigte SVG-Logos"
 
 msgid "Sat"
 msgstr "Sa"
@@ -1101,6 +1371,9 @@ msgstr "Ausgewähltes Schema speichern und aktivieren"
 
 msgid "Save and assign"
 msgstr "Speichern und zuweisen"
+
+msgid "Save branding template"
+msgstr "Branding-Vorlage speichern"
 
 msgid "Save failed"
 msgstr "Speichern fehlgeschlagen"
@@ -1126,6 +1399,12 @@ msgstr "Die gespeicherten Markenfarben müssen geprüft werden"
 msgid "Saved schemes"
 msgstr "Gespeicherte Schemata"
 
+msgid "Saved starter template"
+msgstr "Gespeicherte Startvorlage"
+
+msgid "Saved; automatic use is disabled"
+msgstr "Gespeichert; automatische Anwendung deaktiviert"
+
 msgid "Scheme & toolbar"
 msgstr "Schema und Toolbar"
 
@@ -1148,7 +1427,7 @@ msgid "Secondary"
 msgstr "Sekundär"
 
 msgid "See the release on GitHub."
-msgstr "Siehe das Release auf GitHub."
+msgstr "Sieh dir den Release auf GitHub an."
 
 msgid "Selected by deckerweb · Installed from GitHub releases"
 msgstr "Von deckerweb ausgewählt · Installation aus GitHub-Releases"
@@ -1158,6 +1437,12 @@ msgstr "Sep"
 
 msgid "September"
 msgstr "September"
+
+msgid "Setting"
+msgstr "Einstellung"
+
+msgid "Settings changed in another editor. Export your draft before reloading."
+msgstr "Die Einstellungen wurden in einem anderen Editor geändert. Exportiere deinen Entwurf vor dem Neuladen."
 
 msgid "Settings imported for review. Check the previews, then save all changes to apply them."
 msgstr "Einstellungen zur Prüfung importiert. Kontrolliere die Vorschauen und speichere anschließend alle Änderungen."
@@ -1192,6 +1477,9 @@ msgstr "Kleine Plugins. Konkrete Verbesserungen."
 msgid "Source"
 msgstr "Quelle"
 
+msgid "Source file"
+msgstr "Quelldatei"
+
 msgid "Source: GitHub"
 msgstr "Quelle: GitHub"
 
@@ -1201,11 +1489,23 @@ msgstr "Sternen-Umriss"
 msgid "Staging"
 msgstr "Staging"
 
+msgid "Starter template removed. Existing website branding stays unchanged."
+msgstr "Startvorlage entfernt. Bestehendes Website-Branding bleibt unverändert."
+
+msgid "Starter template saved."
+msgstr "Startvorlage gespeichert."
+
+msgid "Status"
+msgstr "Status"
+
 msgid "Status colors"
 msgstr "Statusfarben"
 
 msgid "Style the WordPress login"
 msgstr "WordPress-Login gestalten"
+
+msgid "Suggested"
+msgstr "Vorgeschlagen"
 
 msgid "Sun"
 msgstr "So"
@@ -1228,8 +1528,20 @@ msgstr "Tab-Icons"
 msgid "Tablet"
 msgstr "Tablet"
 
+msgid "Template loaded for review."
+msgstr "Vorlage zur Prüfung geladen."
+
+msgid "Template name"
+msgstr "Vorlagenname"
+
+msgid "Template saved. Website branding is unchanged."
+msgstr "Vorlage gespeichert. Das Website-Branding bleibt unverändert."
+
 msgid "Tertiary"
 msgstr "Tertiär"
+
+msgid "Text color"
+msgstr "Textfarbe"
 
 msgid "The GitHub package could not be prepared. The installed version has been kept."
 msgstr "Das GitHub-Paket konnte nicht vorbereitet werden. Die installierte Version wurde beibehalten."
@@ -1242,6 +1554,9 @@ msgstr "Das GitHub-Release konnte nicht heruntergeladen werden."
 
 msgid "The approved release changed. Refresh updates first."
 msgstr "Das freigegebene Release hat sich geändert. Bitte zuerst die Updates aktualisieren."
+
+msgid "The approved release could not be verified."
+msgstr "Der freigegebene Release konnte nicht geprüft werden."
 
 msgid "The badge appears in the admin bar on both the frontend and backend. Automatic detection uses the WordPress environment first and cautious site address hints only when no environment is configured."
 msgstr "Die Kennzeichnung erscheint in der Adminleiste im Frontend und Backend. Die automatische Erkennung verwendet zuerst die WordPress-Umgebung und zieht nur ohne konfigurierte Umgebung vorsichtige Hinweise aus der Website-Adresse heran."
@@ -1261,6 +1576,9 @@ msgstr "Der Katalog ist ausgeblendet."
 msgid "The default applies to users on the WordPress default scheme; forcing also overrides personal selections."
 msgstr "Der Standard gilt für Nutzer mit WordPress-Standardschema; „erzwingen“ überschreibt auch individuelle Auswahlen."
 
+msgid "The destination has existing branding or belongs to another network. Nothing was overwritten."
+msgstr "Die Zielwebsite hat bereits Branding oder gehört zu einem anderen Netzwerk. Nichts wurde überschrieben."
+
 msgid "The icon could not be rendered. Please try again."
 msgstr "Das Icon konnte nicht erzeugt werden. Bitte versuche es erneut."
 
@@ -1278,6 +1596,15 @@ msgstr "Die Paketidentität oder Version entspricht keinem neueren Release von B
 
 msgid "The package version differs from the offered update. Please check for updates again."
 msgstr "Die Paketversion weicht vom angebotenen Update ab. Bitte prüfe erneut auf Updates."
+
+msgid "The plugin must be installed in a stable slug directory."
+msgstr "Das Plugin muss in einem Verzeichnis mit einem festen Slug installiert sein."
+
+msgid "The private update could not be authorized. Check the repository credentials and refresh updates."
+msgstr "Das private Update konnte nicht autorisiert werden. Prüfe die Repository-Zugangsdaten und suche erneut nach Updates."
+
+msgid "The private update download failed. Check credentials and try again."
+msgstr "Der Download des privaten Updates ist fehlgeschlagen. Prüfe die Zugangsdaten und versuche es erneut."
 
 msgid "The release checksum does not match. Installation stopped."
 msgstr "Die Prüfsumme des Releases stimmt nicht überein. Installation gestoppt."
@@ -1300,6 +1627,12 @@ msgstr "Der verfügbare Speicherplatz für Uploads ist ausgeschöpft."
 msgid "These small icons appear in browser tabs, helping you tell the public website, WordPress admin and builder editor apart."
 msgstr "Diese kleinen Icons erscheinen in den Tabs deines Browsers. So erkennst du sofort, ob ein Tab die Website, den WordPress-Admin oder den Builder-Editor zeigt."
 
+msgid "This catalog requires a newer Library."
+msgstr "Dieser Katalog benötigt eine neuere Library."
+
+msgid "This history entry cannot be restored in your current context."
+msgstr "Dieser Verlaufseintrag kann im aktuellen Kontext nicht wiederhergestellt werden."
+
 msgid "This plugin directory already exists. Use the installed plugin; it will not be overwritten."
 msgstr "Dieses Plugin-Verzeichnis existiert bereits. Bitte das installierte Plugin verwenden; es wird nicht überschrieben."
 
@@ -1311,6 +1644,9 @@ msgstr "Dieses Release ist nicht freigegeben."
 
 msgid "This release requires a newer WordPress or PHP version. The installed version has been kept."
 msgstr "Dieses Release benötigt eine neuere WordPress- oder PHP-Version. Die installierte Version wurde beibehalten."
+
+msgid "This restores website settings and your prior personal color. Current settings are retained in history. Unsaved drafts will be replaced."
+msgstr "Stellt Website-Einstellungen und deine vorherige persönliche Farbe wieder her. Der aktuelle Stand bleibt im Verlauf erhalten. Ungespeicherte Entwürfe werden ersetzt."
 
 msgid "Thu"
 msgstr "Do"
@@ -1339,6 +1675,9 @@ msgstr "Letzte Speicherung rückgängig"
 msgid "Unknown"
 msgstr "Unbekannt"
 
+msgid "Unknown action."
+msgstr "Unbekannte Aktion."
+
 msgid "Unknown file format"
 msgstr "Unbekanntes Dateiformat"
 
@@ -1356,6 +1695,12 @@ msgstr "Nicht vertrauenswürdige Release-URL."
 
 msgid "Update %1$s to version %2$s or newer."
 msgstr "%1$s bitte auf Version %2$s oder neuer aktualisieren."
+
+msgid "Update the other active deckerweb plugins to use the current shared update component and translated update messages."
+msgstr "Die anderen aktiven deckerweb-Plugins aktualisieren, damit die aktuelle gemeinsame Update-Komponente und übersetzte Update-Meldungen verwendet werden."
+
+msgid "Uploading another JSON replaces this starter template. Existing website branding stays unchanged."
+msgstr "Eine weitere JSON-Datei ersetzt diese Startvorlage. Bestehendes Website-Branding bleibt unverändert."
 
 msgid "Use & export"
 msgstr "Verwenden und exportieren"
@@ -1381,6 +1726,9 @@ msgstr "Schemafarben verwenden"
 msgid "Use this design as the official WordPress Site Icon? This immediately adds a PNG to the Media Library, replaces the Site Icon and switches the frontend to the WordPress Site Icon. Other draft settings are not saved."
 msgstr "Diese Gestaltung als offizielles WordPress-Website-Icon verwenden? Ein PNG wird sofort zur Mediathek hinzugefügt, das Website-Icon wird ersetzt und das Frontend auf das WordPress-Website-Icon umgestellt. Andere Einstellungen im Entwurf werden nicht gespeichert."
 
+msgid "Use this starter template for new websites"
+msgstr "Diese Startvorlage für neue Websites verwenden"
+
 msgid "Use “Save all changes” in the fixed bar above to activate the selected scheme and apply settings across this page."
 msgstr "Mit „Alle Änderungen speichern“ in der fixierten Leiste oben aktivierst du das gewählte Schema und übernimmst alle Einstellungen dieser Seite."
 
@@ -1402,8 +1750,14 @@ msgstr "Plugins ansehen"
 msgid "Visibility"
 msgstr "Sichtbarkeit"
 
+msgid "Website branding"
+msgstr "Website-Branding"
+
 msgid "Website browser tab"
 msgstr "Browser-Tab der Website"
+
+msgid "Website tagline"
+msgstr "Website-Untertitel"
 
 msgid "Wed"
 msgstr "Mi"
@@ -1437,6 +1791,9 @@ msgstr "WordPress-Standard"
 
 msgid "WordPress setting"
 msgstr "WordPress-Einstellung"
+
+msgid "Workflow cleanup"
+msgstr "Vorlagen und Verlauf bereinigen"
 
 msgid "Yes"
 msgstr "Ja"

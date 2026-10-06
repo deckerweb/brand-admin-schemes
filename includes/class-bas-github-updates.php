@@ -25,12 +25,23 @@ final class GitHubUpdates {
 			require_once BAS_PLUGIN_DIR . 'includes/deckerweb-github-release-updater-v2.php';
 		}
 		try {
+			$supports_translation = defined( '\\Deckerweb\\GitHubReleaseUpdater\\V2\\Updater::SUPPORTS_HOST_TRANSLATIONS' );
+			$translator = require BAS_PLUGIN_DIR . 'includes/updater-translations.php';
+			if ( ! $supports_translation ) {
+				add_action( 'admin_notices', static function(): void {
+					$screen = get_current_screen();
+					if ( current_user_can( 'update_plugins' ) && $screen && 'settings_page_brand-admin-schemes' === $screen->id ) {
+						echo '<div class="notice notice-info"><p>' . esc_html__( 'Update the other active deckerweb plugins to use the current shared update component and translated update messages.', 'brand-admin-schemes' ) . '</p></div>';
+					}
+				} );
+			}
 			$updater = new \Deckerweb\GitHubReleaseUpdater\V2\Updater(
 				BAS_PLUGIN_FILE,
 				self::REPOSITORY,
 				'Brand Admin Schemes',
 				__( 'Bring your brand colors to the WordPress admin, login, toolbar, and browser tabs. Use Core Framework, Bricks, ACSS, or your own palette.', 'brand-admin-schemes' ),
-				$this->artwork()
+				$this->artwork(),
+				$supports_translation ? [ 'translate' => $translator ] : []
 			);
 		} catch ( \InvalidArgumentException $error ) {
 			// An unsupported directory must not break the admin or login design.
@@ -90,7 +101,7 @@ final class GitHubUpdates {
 	 * @return mixed Original source or localized WP_Error.
 	 */
 	public function validate_source( $source, $remote_source, $upgrader, array $hook_extra ) {
-		if ( ( $hook_extra['plugin'] ?? '' ) !== plugin_basename( BAS_PLUGIN_FILE ) || ( $hook_extra['type'] ?? '' ) !== 'plugin' || ( $hook_extra['action'] ?? '' ) !== 'update' ) {
+		if ( ( $hook_extra['plugin'] ?? '' ) !== plugin_basename( BAS_PLUGIN_FILE ) || ( isset( $hook_extra['type'] ) && 'plugin' !== $hook_extra['type'] ) || ( isset( $hook_extra['action'] ) && 'update' !== $hook_extra['action'] ) || ( ! isset( $hook_extra['type'], $hook_extra['action'] ) && ! ( $upgrader instanceof \Plugin_Upgrader && true === $upgrader->bulk ) ) ) {
 			return $source;
 		}
 		if ( is_wp_error( $source ) ) {
@@ -118,7 +129,7 @@ final class GitHubUpdates {
 		foreach ( array( 'Plugin Name', 'Version', 'Update URI', 'Requires PHP', 'Requires at least' ) as $header ) {
 			$headers[ $header ] = preg_match( '/^[ \t\/*#@]*' . preg_quote( $header, '/' ) . ':(.*)$/mi', str_replace( "\r", "\n", substr( $text, 0, 8192 ) ), $match ) ? trim( $match[1] ) : '';
 		}
-		if ( 'Brand Admin Schemes' !== $headers['Plugin Name'] || self::REPOSITORY !== $headers['Update URI'] || ! preg_match( '/^\d+\.\d+\.\d+$/D', $headers['Version'] ) || version_compare( $headers['Version'], \BAS_Plugin::VERSION, '<=' ) ) {
+		if ( 'Brand Admin Schemes' !== $headers['Plugin Name'] || self::REPOSITORY !== $headers['Update URI'] || ! preg_match( '/^\d+\.\d+\.\d+(?:-rc[0-9]+)?$/D', $headers['Version'] ) || version_compare( $headers['Version'], \BAS_Plugin::VERSION, '<=' ) ) {
 			return new \WP_Error( 'bas_update_identity', __( 'The package identity or version does not match a newer Brand Admin Schemes release.', 'brand-admin-schemes' ) );
 		}
 		$current  = get_site_transient( 'update_plugins' );

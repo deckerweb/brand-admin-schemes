@@ -81,3 +81,8 @@
  .bas-root .bas-row>label{min-width:0;max-width:100%}
  .bas-root select{min-width:0;max-width:100%}
 }
+
+/* Shared color controls and bounded branding workflows. */
+.bas-color-dialog,.bas-workflow-dialog{border:1px solid #c3c4c7;border-radius:12px;padding:20px;max-width:calc(100vw - 32px);max-height:calc(100vh - 32px);overflow:auto;color:#1d2327;background:#fff;box-sizing:border-box}.bas-color-dialog{width:330px}.bas-workflow-dialog{width:960px}.bas-color-dialog::backdrop,.bas-workflow-dialog::backdrop{background:rgba(0,0,0,.4)}.bas-color-hex{width:100px!important;min-width:0!important;font-family:monospace}.bas-color-open{display:inline-flex!important;align-items:center;gap:6px;margin:4px 0!important;max-width:100%}.bas-color-open span{width:18px;height:18px;border:1px solid #777;border-radius:3px}.bas-section-reset{margin-top:16px!important}.bas-role-locks,.bas-gallery-icons{display:flex;gap:12px;flex-wrap:wrap}.bas-preview-gallery{display:grid;grid-template-columns:1fr 1fr;gap:20px}.bas-preview-gallery section{min-width:0}.bas-preview-gallery .bas-card{pointer-events:none}.bas-workflow-dialog table{overflow-wrap:anywhere;table-layout:fixed}.bas-workflow-dialog th,.bas-workflow-dialog td{padding:8px}.bas-color-dialog h2{margin-top:0}.bas-icon-colors label>span{flex-wrap:wrap}.bas-workflow-dialog .bas-login-device{height:320px!important;min-width:0!important}@media(max-width:640px){.bas-preview-gallery{grid-template-columns:1fr}.bas-workflow-dialog{padding:12px}}
+
+.bas-changelog-fixed{background:#fce8e6;color:#8a2424}

@@ -5,7 +5,14 @@
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 if ( ! function_exists( 'deckerweb_library_register_v2' ) ) {
- /** Register without executing the version file; safe even if an older function was defined first. */
+ /**
+  * Register a runtime candidate without executing its version file.
+  *
+  * @param string $plugin_file Absolute host main-file path.
+  * @param array $config Optional host integration configuration.
+  * @param string|null $library_dir Absolute embedded directory, or null for this bootstrap directory.
+  * @return void No return value.
+  */
  function deckerweb_library_register_v2( string $plugin_file, array $config = [], ?string $library_dir = null ): void {
   $library_dir = $library_dir ?: __DIR__;
   $manifest = $library_dir . '/compatibility.json';
@@ -22,13 +29,24 @@ if ( ! function_exists( 'deckerweb_library_register_v2' ) ) {
  }
 }
 if ( ! function_exists( 'deckerweb_library_register' ) ) {
- /** Protocol-1 callers remain supported. New hosts call the explicit protocol-2 entry point. */
+ /**
+  * Delegate legacy registration to protocol two when no older function owns it.
+  *
+  * @param string $plugin_file Absolute host main-file path.
+  * @param array $config Optional host integration configuration.
+  * @param string|null $library_dir Absolute embedded directory, or null for this bootstrap directory.
+  * @return void No return value.
+  */
  function deckerweb_library_register( string $plugin_file, array $config = [], ?string $library_dir = null ): void {
   deckerweb_library_register_v2( $plugin_file, $config, $library_dir );
  }
 }
 if ( ! function_exists( 'deckerweb_library_elect_v2' ) ) {
- /** Upgrade the protocol even when an older host defined the registration function first. */
+ /**
+  * Elect the highest compatible complete runtime before legacy election executes.
+  *
+  * @return void No return value.
+  */
  function deckerweb_library_elect_v2(): void {
   remove_action( 'plugins_loaded', 'deckerweb_library_elect_v1', PHP_INT_MAX );
   if ( ! empty( $GLOBALS['deckerweb_library_runtime_v1'] ) ) { return; }
@@ -76,3 +94,28 @@ if ( ! function_exists( 'deckerweb_library_elect_v2' ) ) {
 }
 // Earlier priority prevents a legacy callback from selecting an incompatible copy.
 add_action( 'plugins_loaded', 'deckerweb_library_elect_v2', PHP_INT_MAX - 1 );
+
+if ( ! function_exists( 'deckerweb_library_updater_options_v1' ) ) {
+ /**
+  * Provide lazy public catalog callbacks without changing host updater ownership.
+  *
+  * @param string $plugin_file Absolute host main-file path.
+  * @param string $repository Exact public GitHub repository URL.
+  * @return array Result of the operation; errors are returned or rejected as documented by the caller.
+  */
+ function deckerweb_library_updater_options_v1( string $plugin_file, string $repository ): array {
+  $file = plugin_basename( $plugin_file );
+  return [
+   'release_provider' => static function( string $repo, string $basename, bool $fresh = false ) use ( $repository, $file ) {
+    $runtime = $GLOBALS['deckerweb_library_runtime_v1'] ?? null;
+    if ( $repo !== $repository || $basename !== $file ) { return null; }
+    return is_object( $runtime ) && method_exists( $runtime, 'updater_release' ) ? $runtime->updater_release( $repo, $basename, $fresh ) : false;
+   },
+   'package_provider' => static function( string $repo, string $basename, string $package ) use ( $repository, $file ) {
+    $runtime = $GLOBALS['deckerweb_library_runtime_v1'] ?? null;
+    if ( $repo !== $repository || $basename !== $file || ! is_object( $runtime ) || ! method_exists( $runtime, 'updater_package' ) ) { return new \WP_Error( 'dwl_offline', strpos( determine_locale(), 'de' ) === 0 ? 'Das freigegebene Paket konnte nicht geprüft werden.' : 'The approved package could not be verified.' ); }
+    return $runtime->updater_package( $repo, $basename, $package );
+   },
+  ];
+ }
+}

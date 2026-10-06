@@ -1,22 +1,23 @@
-# Brand Admin Schemes 0.18.0
+# Brand Admin Schemes 1.0.0
 
 Published release.
 
-### 0.18.0
+### 1.0.0
 
-2026-10-05
+2026-10-06
 
-- **New:** Optional four-step guided setup.
-- **New:** Eight-field informational report in Tools → Site Health, without extra tests or external requests.
-- **Improved:** Tab icons support audience selection, viewing permission, downloads, PNG media actions and official Site Icon adoption.
-- **Improved:** Adds network activation, per-site personal colors, profile/AJAX/Undo isolation and new-subsite permission provisioning.
-- **Improved:** Ships informal and formal German, shared documentation sources, a dated local changelog and localized GitHub banners.
-- **Fix:** Keeps network-profile AJAX color changes global and rejects Undo snapshots from another storage scope.
-- **Fix:** Checks upload permission and available Multisite space for agency images and PNG icons.
-- **Fix:** Keeps save actions and long translated choices within narrow admin screens.
-- **Fix:** Preserves named scheme colors during validation and protects later personal color changes from Undo.
-- **Misc:** Includes deckerweb Plugin Library 0.5.0; preserves Updater V2.
-- **Misc:** Documents security reporting and data ownership; uninstall clears temporary Undo and updater cache while preserving branding, media and user choices.
+- **Improved:** Name portable exports independently of schemes and preview network starter templates on individual websites before saving. Network templates remain managed by network administrators.
+- **Fixed:** Display the saved Multisite starter template with its name and status, show save confirmation, and offer confirmed removal without changing existing website branding.
+- **New:** Choose every editable color in a shared dialog with HEX input, swatches and keyboard support.
+- **New:** Lock brand colors, review contrast adjustments and compare saved branding with your draft.
+- **New:** Save portable branding templates and restore up to ten recent settings snapshots.
+- **New:** Optionally seed new Multisite websites from a network starter template; existing branding stays independent.
+- **New:** Access website branding through the optional Leitstand integration.
+- **Improved:** Duplicate, rename or remove schemes, reset individual sections and review imported changes before applying them.
+- **Fixed:** Reject stale editor saves and validate update packages during both individual and bulk updates.
+- **Improved:** Batch live previews and reuse provider reads within a request.
+- **Misc:** Retains the embedded plugin catalog and GitHub updates.
+- **Misc:** Includes deckerweb Plugin Library 0.6.0 and deckerweb Updater 2.1.0.
 
 Requires WordPress 6.4+ and PHP 8.0+. Update from the WordPress Plugins screen or upload the release ZIP via Plugins → Add New → Upload Plugin. Branding, media and personal color choices are retained.
 

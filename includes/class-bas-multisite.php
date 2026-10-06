@@ -13,26 +13,36 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 final class Multisite {
-	/** Register adapters; no network-wide settings or site iteration required. */
-	public static function register(): void {
+	/** Register adapters; no network-wide settings or site iteration required.
+	 * @return void
+	 */
+		public static function register(): void {
 		add_filter( 'update_user_metadata', [ __CLASS__, 'profile_color' ], 10, 4 );
 		add_action( 'wp_ajax_save-user-color-scheme', [ __CLASS__, 'save_profile_color' ], 1 );
 		add_action( 'admin_enqueue_scripts', [ __CLASS__, 'profile_assets' ] );
 	}
 
-	/** Resolve the actual storage key without applying default/forced colors. */
-	public static function color_key(): string {
+	/** Resolve the actual storage key without applying default/forced colors.
+	 * @return string
+	 */
+		public static function color_key(): string {
 		global $wpdb;
 		return self::site_scope() ? $wpdb->get_blog_prefix() . 'admin_color' : 'admin_color';
 	}
 
-	/** Network admin retains WordPress's global preference. */
-	public static function site_scope(): bool {
+	/** Network admin retains WordPress's global preference.
+	 * @return bool
+	 */
+		public static function site_scope(): bool {
 		return is_multisite() && ! is_network_admin();
 	}
 
-	/** Save in the same scope used by WordPress's user-option reader. */
-	public static function set_color( int $user_id, string $color ): void {
+	/** Save in the same scope used by WordPress's user-option reader.
+	 * @param int $user_id Affected WordPress user ID.
+	 * @param string $color Color.
+	 * @return void
+	 */
+		public static function set_color( int $user_id, string $color ): void {
 		update_user_option( $user_id, 'admin_color', $color, ! self::site_scope() );
 	}
 
@@ -64,8 +74,10 @@ final class Multisite {
 		return true;
 	}
 
-	/** Carry the network-profile context across Core's site-admin AJAX endpoint. */
-	public static function profile_assets( string $hook ): void {
+	/** Carry the network-profile context across Core's site-admin AJAX endpoint.
+	 * @param string $hook Current WordPress admin page hook.
+	 */
+		public static function profile_assets( string $hook ): void {
 		if ( ! is_multisite() || ! is_network_admin() || ! in_array( $hook, [ 'profile.php', 'user-edit.php' ], true ) ) {
 			return;
 		}

@@ -16,12 +16,19 @@ if ( is_multisite() ) {
 	do {
 		$sites = get_sites( [ 'fields' => 'ids', 'number' => 100, 'offset' => $offset ] );
 		foreach ( $sites as $site_id ) {
+			if ( ! empty( get_blog_option( (int) $site_id, 'bas_settings', [] )['delete_workflows'] ) ) {
+				delete_blog_option( (int) $site_id, 'bas_templates' );
+				delete_blog_option( (int) $site_id, 'bas_history' );
+			}
 			delete_blog_option( (int) $site_id, 'bas_last_undo' );
+			delete_blog_option( (int) $site_id, 'bas_write_lock' );
 		}
 		$offset += count( $sites );
 	} while ( count( $sites ) === 100 );
 } else {
+	if ( ! empty( get_option( 'bas_settings', [] )['delete_workflows'] ) ) { delete_option( 'bas_templates' ); delete_option( 'bas_history' ); }
 	delete_option( 'bas_last_undo' );
+	delete_option( 'bas_write_lock' );
 }
 
 // This repository-specific Updater V2 cache is temporary, not the shared

@@ -1,6 +1,6 @@
 <?php
 /** Copyright 2026 David Decker – DECKERWEB. SPDX-License-Identifier: GPL-2.0-or-later */
-namespace Deckerweb\PluginLibrary\V0_5_0;
+namespace Deckerweb\PluginLibrary\V0_6_0;
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 /** Load component messages into the elected host's existing domain, never an extra domain. */
 final class I18n {
@@ -8,6 +8,12 @@ final class I18n {
  private static string $dir = '';
  private static string $host_languages = '';
  private static string $locale = ''; 
+ /**
+  * Select the elected host domain and component language resource paths.
+  *
+  * @param array $host Elected host metadata with absolute main-file path.
+  * @return void No return value.
+  */
  public static function configure( array $host ): void {
   $headers = get_file_data( $host['host'], [ 'domain' => 'Text Domain', 'path' => 'Domain Path' ] );
   $domain = $headers['domain'] ?: basename( dirname( $host['host'] ) );
@@ -17,6 +23,12 @@ final class I18n {
   self::$host_languages = strpos( $path, '..' ) === false ? dirname( plugin_basename( $host['host'] ) ) . '/' . trim( $path, '/' ) : '';
   self::$locale = ''; 
  }
+ /**
+  * Load the current locale into the host domain and translate one source message.
+  *
+  * @param string $message English source message.
+  * @return string Result of the operation; errors are returned or rejected as documented by the caller.
+  */
  public static function text( string $message ): string {
   $locale = determine_locale();
   if ( self::$domain === '' ) { return $message; }
@@ -33,7 +45,12 @@ final class I18n {
   }
   return translate( $message, self::$domain );
  }
- /** Format component-only dates even when a site has no German core language pack installed. */
+ /**
+  * Format a component date using site preferences and localized day or month names.
+  *
+  * @param string $iso ISO date from the local release history.
+  * @return string Result of the operation; errors are returned or rejected as documented by the caller.
+  */
  public static function date( string $iso ): string {
   $format = get_option( 'date_format' );
   if ( $format === 'F j, Y' ) { $format = self::text( $format ); }
