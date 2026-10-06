@@ -7,18 +7,6 @@
       "date": "2026-10-06",
       "entries": [
         {
-          "category": "Improved",
-          "en": "Name portable exports independently of schemes and preview network starter templates on individual websites before saving. Network templates remain managed by network administrators.",
-          "de_DE": "Portable Exporte unabhängig vom Schema benennen und Netzwerk-Startvorlagen auf einzelnen Websites vor dem Speichern prüfen. Netzwerkvorlagen bleiben durch Netzwerkadministratoren verwaltet.",
-          "de_DE_formal": "Portable Exporte unabhängig vom Schema benennen und Netzwerk-Startvorlagen auf einzelnen Websites vor dem Speichern prüfen. Netzwerkvorlagen bleiben durch Netzwerkadministratoren verwaltet."
-        },
-        {
-          "category": "Fixed",
-          "en": "Display the saved Multisite starter template with its name and status, show save confirmation, and offer confirmed removal without changing existing website branding.",
-          "de_DE": "Gespeicherte Multisite-Startvorlage mit Name und Status anzeigen, Speicherung bestätigen und bestätigtes Entfernen ohne Änderung bestehenden Website-Brandings anbieten.",
-          "de_DE_formal": "Gespeicherte Multisite-Startvorlage mit Name und Status anzeigen, Speicherung bestätigen und bestätigtes Entfernen ohne Änderung bestehenden Website-Brandings anbieten."
-        },
-        {
           "category": "New",
           "en": "Choose every editable color in a shared dialog with HEX input, swatches and keyboard support.",
           "de_DE": "Alle bearbeitbaren Farben im gemeinsamen Dialog mit HEX-Eingabe, Farbvorschau und Tastaturbedienung auswählen.",
@@ -50,21 +38,33 @@
         },
         {
           "category": "Improved",
+          "en": "Name portable exports independently of schemes and preview network starter templates on individual websites before saving. Network templates remain managed by network administrators.",
+          "de_DE": "Portable Exporte unabhängig vom Schema benennen und Netzwerk-Startvorlagen auf einzelnen Websites vor dem Speichern prüfen. Netzwerkvorlagen bleiben durch Netzwerkadministratoren verwaltet.",
+          "de_DE_formal": "Portable Exporte unabhängig vom Schema benennen und Netzwerk-Startvorlagen auf einzelnen Websites vor dem Speichern prüfen. Netzwerkvorlagen bleiben durch Netzwerkadministratoren verwaltet."
+        },
+        {
+          "category": "Improved",
           "en": "Duplicate, rename or remove schemes, reset individual sections and review imported changes before applying them.",
           "de_DE": "Schemas duplizieren, umbenennen oder entfernen, einzelne Abschnitte zurücksetzen und Importänderungen vor der Übernahme prüfen.",
           "de_DE_formal": "Schemas duplizieren, umbenennen oder entfernen, einzelne Abschnitte zurücksetzen und Importänderungen vor der Übernahme prüfen."
-        },
-        {
-          "category": "Fixed",
-          "en": "Reject stale editor saves and validate update packages during both individual and bulk updates.",
-          "de_DE": "Veraltete Editor-Speicherungen abweisen und Updatepakete bei Einzel- und Sammelupdates prüfen.",
-          "de_DE_formal": "Veraltete Editor-Speicherungen abweisen und Updatepakete bei Einzel- und Sammelupdates prüfen."
         },
         {
           "category": "Improved",
           "en": "Batch live previews and reuse provider reads within a request.",
           "de_DE": "Live-Vorschauen bündeln und Provider-Daten innerhalb eines Seitenaufrufs wiederverwenden.",
           "de_DE_formal": "Live-Vorschauen bündeln und Provider-Daten innerhalb eines Seitenaufrufs wiederverwenden."
+        },
+        {
+          "category": "Fixed",
+          "en": "Display the saved Multisite starter template with its name and status, show save confirmation, and offer confirmed removal without changing existing website branding.",
+          "de_DE": "Gespeicherte Multisite-Startvorlage mit Name und Status anzeigen, Speicherung bestätigen und bestätigtes Entfernen ohne Änderung bestehenden Website-Brandings anbieten.",
+          "de_DE_formal": "Gespeicherte Multisite-Startvorlage mit Name und Status anzeigen, Speicherung bestätigen und bestätigtes Entfernen ohne Änderung bestehenden Website-Brandings anbieten."
+        },
+        {
+          "category": "Fixed",
+          "en": "Reject stale editor saves and validate update packages during both individual and bulk updates.",
+          "de_DE": "Veraltete Editor-Speicherungen abweisen und Updatepakete bei Einzel- und Sammelupdates prüfen.",
+          "de_DE_formal": "Veraltete Editor-Speicherungen abweisen und Updatepakete bei Einzel- und Sammelupdates prüfen."
         },
         {
           "category": "Misc",
