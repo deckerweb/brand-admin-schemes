@@ -24,7 +24,7 @@ Nein. Eigene Farben genügen; Farbprovider sind optional.
 
 ### Welche Voraussetzungen gibt es?
 
-WordPress ab 6.4 und PHP ab 8.0. Installiere das Plugin-ZIP aus den GitHub-Releases.
+WordPress ab 6.4 und PHP ab 8.1. Installiere das Plugin-ZIP aus den GitHub-Releases.
 
 ### Wer darf Einstellungen ändern?
 
