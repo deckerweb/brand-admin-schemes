@@ -2,7 +2,7 @@
 
 [Anleitung / Guide](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) · [English](https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-English) · [Deutsch](https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-Deutsch)
 
-Antworten zu den Funktionen der aktuellen Version. Geplante Funktionen sind hier nicht als verfügbar beschrieben.
+Antworten zu den Funktionen der aktuellen Version.
 
 ## Themen
 
@@ -238,7 +238,7 @@ Nein. Die Gestaltung endet während der Deaktivierung; gespeicherte Einstellunge
 
 ### Gibt es eine netzwerkweite Multisite-Einstellungsseite?
 
-Diese Version speichert Einstellungen pro Website und hat keinen netzwerkweiten Vorlagenmanager. Prüfe jede Website separat; diese Anleitung garantiert keine umfassende Multisite-Kompatibilität.
+Ja. Netzwerkadministratoren können unter Netzwerk-Admin → Einstellungen → Branding-Startvorlage eine benannte Startvorlage hochladen, prüfen und löschen. Optional wird sie einmalig auf neue Websites oder eine ausdrücklich ausgewählte leere Website angewendet. Websiteadministratoren können die gemeinsame Vorlage in ihrer Vorlagenauswahl prüfen und bewusst speichern. Bestehendes Branding wird nicht stillschweigend überschrieben; eine laufende Synchronisierung findet nicht statt.
 
 ### Was gehört in einen Fehlerbericht?
 

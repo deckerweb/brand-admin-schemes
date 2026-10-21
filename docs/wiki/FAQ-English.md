@@ -2,7 +2,7 @@
 
 [Anleitung / Guide](https://github.com/deckerweb/brand-admin-schemes/wiki/English) · [English](https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-English) · [Deutsch](https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-Deutsch)
 
-Answers about the current version. Planned features are not described as available here.
+Answers about the current version.
 
 ## Topics
 
@@ -238,7 +238,7 @@ No. Styling stops while the plugin is inactive; saved settings remain. Export a 
 
 ### Is there a network-wide multisite settings screen?
 
-This version stores settings per site and has no network-wide preset manager. Review each site separately; broad multisite compatibility is not guaranteed by this guide.
+Yes. Network administrators can upload, inspect and delete a named branding starter under Network Admin → Settings → Branding starter template. Optionally apply it once to new websites or an explicitly selected empty website. Website administrators can preview the shared starter in their own template selector and save it deliberately. Existing branding is not silently overwritten; there is no continuing synchronization.
 
 ### What should I include in a bug report?
 
