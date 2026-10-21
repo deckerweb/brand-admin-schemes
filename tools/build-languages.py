@@ -25,3 +25,14 @@ for lang in ['en','de']:
  title='# Language glossary\n\n[Deutsch](GLOSSARY-de.md)\n\nUS English is the source. Informal German uses Du; formal German uses Sie and Ihr. Neutral labels remain identical. Technical identifiers and product names are never translated.\n\n'if lang=='en'else'# Sprachglossar\n\n[English](GLOSSARY.md)\n\nUS-Englisch ist die Quelle. Deutsch mit Du und Deutsch mit Sie werden vollständig ausgeliefert. Neutrale Beschriftungen bleiben identisch; technische Kennungen und Produktnamen bleiben unverändert.\n\n'
  (P/('docs/GLOSSARY.md'if lang=='en'else'docs/GLOSSARY-de.md')).write_text(title+rows)
 print(len(data),'host messages compiled in informal/formal German; glossary generated.')
+
+# Literal host-domain messages for the editor, generated from the same catalog.
+def php_literal(value):
+ return "'"+value.replace('\\','\\\\').replace("'","\\'")+"'"
+lines=['<?php','/** Return translated editor messages from literal host-domain strings. @return array<string,string> */',"defined( 'ABSPATH' ) || exit;",'return [']
+for key in json.loads((P/'docs/source/editor-strings.json').read_text()):
+ literal=php_literal(key)
+ if '%' in key: lines.append('    /* translators: Placeholders preserve the runtime values described in the message. */')
+ lines.append('    '+literal+' => __( '+literal+", 'brand-admin-schemes' ),")
+lines.append('];')
+(P/'includes/editor-translations.php').write_text('\n'.join(lines)+'\n')

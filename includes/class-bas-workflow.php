@@ -85,7 +85,7 @@ final class Workflow {
 		wp_cache_delete( \BAS_Plugin::OPTION, 'options' );
 		wp_cache_delete( 'bas_templates', 'options' );
 		wp_cache_delete( 'alloptions', 'options' );
-		$revision = $_POST['revision'] ?? '';
+		$revision = sanitize_text_field( wp_unslash( $_POST['revision'] ?? '' ) );
 		if ( ! is_string( $revision ) || ! hash_equals( self::revision(), $revision ) ) {
 			self::unlock();
 			wp_send_json_error( __( 'Settings changed in another editor. Export your draft before reloading.', 'brand-admin-schemes' ), 409 );
@@ -147,8 +147,8 @@ final class Workflow {
 		check_ajax_referer( 'bas_nonce' );
 		if ( ! current_user_can( 'manage_options' ) || is_network_admin() ) { wp_send_json_error( __( 'Forbidden', 'brand-admin-schemes' ), 403 ); }
 		$operation = sanitize_key( is_string( $_POST['operation'] ?? null ) ? $_POST['operation'] : '' );
-		$payload = $_POST['settings'] ?? '';
-		$raw = is_string( $payload ) && strlen( $payload ) <= 300000 ? json_decode( wp_unslash( $payload ), true ) : null;
+		$payload = wp_unslash( $_POST['settings'] ?? '' );
+		$raw = is_string( $payload ) && strlen( $payload ) <= 300000 ? json_decode( $payload, true ) : null;
 		$history = get_option( 'bas_history', [] );
 		$history = is_array( $history ) ? $history : [];
 		$templates = get_option( 'bas_templates', [] );
@@ -250,7 +250,7 @@ final class Workflow {
 		if ( ! is_multisite() || ! current_user_can( 'manage_network_options' ) ) { wp_die( esc_html__( 'Forbidden', 'brand-admin-schemes' ) ); }
 		check_admin_referer( 'bas_network_template' );
 		$network = get_current_network_id(); $value = get_network_option( $network, 'bas_network_template', [] );
-		if ( 'delete' === ( $_POST['operation'] ?? '' ) ) {
+		if ( 'delete' === sanitize_key( wp_unslash( is_string( $_POST['operation'] ?? null ) ? $_POST['operation'] : '' ) ) ) {
 			if ( empty( $_POST['confirm_delete'] ) ) { wp_die( esc_html__( 'Confirm deletion of the starter template.', 'brand-admin-schemes' ) ); }
 			delete_network_option( $network, 'bas_network_template' );
 			wp_safe_redirect( network_admin_url( 'settings.php?page=bas-network-template&bas_template_notice=deleted' ) ); exit;

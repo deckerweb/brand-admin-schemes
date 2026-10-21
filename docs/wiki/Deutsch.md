@@ -2,7 +2,9 @@
 
 [English](https://github.com/deckerweb/brand-admin-schemes/wiki/English) · [Home](https://github.com/deckerweb/brand-admin-schemes/wiki)
 
-Die praktische Anleitung zu Brand Admin Schemes 1.0.0 (unveröffentlichter Teststand). Springe über das Inhaltsverzeichnis direkt zur gewünschten Einstellung.
+Die praktische Anleitung zu Brand Admin Schemes 1.1.0. Springe über das Inhaltsverzeichnis direkt zur gewünschten Einstellung.
+
+Benötigt WordPress 6.4+ und PHP 8.1+. Enthält Library 1.1.0 und Updater 2.2.0.
 
 ## Inhaltsverzeichnis
 
@@ -126,7 +128,7 @@ Englische Quelltexte und deutsche `de_DE`-Dateien (`.po`/`.mo`) sind enthalten. 
 
 ## Erweiterungen
 
-Der dokumentierte Hook bas_site_settings_changed meldet Website-ID und Vorgang save, undo oder site_icon. Eine spätere Leitstand-Anbindung benötigt dessen tatsächliche Schnittstellen; BAS hat keine Leitstand-Abhängigkeit.
+Der dokumentierte Hook bas_site_settings_changed meldet Website-ID und Vorgang save, undo oder site_icon. BAS funktioniert eigenständig. Optionale Verwaltungsanbindungen nutzen die dokumentierten Schnittstellen.
 
 <a name="haeufige-fragen"></a>
 
@@ -166,7 +168,17 @@ Entwickelt von David Decker – DECKERWEB für die Websites seiner Kunden. Viel 
 
 Der Footer verlinkt die deutsche beziehungsweise englische Wiki-Anleitung. Changelog öffnet die vollständige lokal mitgelieferte Historie; ohne JavaScript führt der Link zur passenden Changelog-Textdatei.
 
-[Aktueller Stand und Abnahme](../PROFILE-de.md) · [Daten](../DATA-de.md) · [Vollständige FAQ](FAQ-Deutsch.md)
+[Daten und Deinstallation](https://github.com/deckerweb/brand-admin-schemes/blob/main/docs/DATA-de.md) · [Vollständige FAQ](https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-Deutsch)
 
 
 [Branding-Abläufe](https://github.com/deckerweb/brand-admin-schemes/wiki/Workflows-Deutsch)
+
+## Multisite
+
+Die Netzwerkaktivierung stellt BAS im gesamten Netzwerk bereit. Branding und persönliche Farbüberschreibungen gehören zu jeder einzelnen Website. Eine benannte Netzwerk-Startvorlage erscheint in der Vorlagenauswahl der Websites auch bei ausgeschalteter automatischer Anwendung für neue Websites. Prüfe die Vorschau und speichere zum Anwenden. Bestehendes Branding wird nie stillschweigend ersetzt. Nur Netzwerkadministratoren können die gemeinsame Startvorlage ersetzen oder löschen.
+
+[Multisite-Anleitung](https://github.com/deckerweb/brand-admin-schemes/blob/main/docs/MULTISITE-de.md)
+
+## Hilfe und Sicherheit
+
+Nutze [Issues](https://github.com/deckerweb/brand-admin-schemes/issues) für Fehler und [Discussions](https://github.com/deckerweb/brand-admin-schemes/discussions) für Fragen. Melde Sicherheitslücken [vertraulich](https://github.com/deckerweb/brand-admin-schemes/security/advisories/new); beachte die [Sicherheitsrichtlinie](https://github.com/deckerweb/brand-admin-schemes/security/policy).

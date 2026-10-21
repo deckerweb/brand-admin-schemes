@@ -4,7 +4,7 @@
 
 **Deine Farben. Dein WordPress.** Wenige Markenfarben genügen für einen vertrauten WordPress-Admin, einen schönen Login und Browser-Tabs, die du sofort auseinanderhalten kannst. Verwende Core Framework, Bricks Builder, Automatic.css oder deine eigene Palette. Atmosphäre und Markennähe ausprobieren, Vorschau prüfen, speichern. Kein eigenes CSS nötig.
 
-**Version:** 1.0.0 · **Voraussetzungen:** WordPress 6.4+ / PHP 8.0+ · **Lizenz:** GPL v2 oder höher
+**Version:** 1.1.0 · **Voraussetzungen:** WordPress 6.4+ / PHP 8.1+ · **Lizenz:** GPL v2 oder höher
 
 [Download](https://github.com/deckerweb/brand-admin-schemes/releases/latest) · [Anleitung](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) · [English](README.md)
 
@@ -18,8 +18,7 @@
 - [Import, Export und Gutenberg](#import-export-und-gutenberg)
 - [Updates und Dokumentation](#updates-und-dokumentation)
 - [Häufige Fragen](#haeufige-fragen)
-- [Multisite und Leitstand](#multisite-und-leitstand)
-- [Screenshots](#screenshots)
+- [Multisite und Integrationen](#multisite-und-integrationen)
 - [Branding-Abläufe](#branding-ablaeufe)
 - [Changelog](#changelog)
 - [Über das Plugin](#ueber-das-plugin)
@@ -100,7 +99,7 @@ Die [deutsche Wiki-Anleitung](https://github.com/deckerweb/brand-admin-schemes/w
 
 **Wie funktioniert der Verlauf?** Auf dieser Website bleiben bis zu zehn frühere Einstellungsstände erhalten. Du kannst Einträge deines Kontos und Speicherbereichs wiederherstellen. Dabei wird auch deine vorherige persönliche Farbe übernommen und ein ungespeicherter Entwurf ersetzt; der aktuelle Stand wird zum neuen Verlaufseintrag.
 
-**Kann das Netzwerk Branding automatisch verteilen?** Eine optionale Netzwerk-Startvorlage wird einmalig auf neu angelegte Websites angewendet. Vorhandenes Branding wird nie überschrieben. Es gibt keine laufende Vererbung oder Synchronisierung. Leitstand ist optional.
+**Kann das Netzwerk Branding automatisch verteilen?** Eine optionale Netzwerk-Startvorlage wird einmalig auf neu angelegte Websites angewendet. Vorhandenes Branding wird nie überschrieben. Es gibt keine laufende Vererbung oder Synchronisierung. Die Verwaltungsanbindung ist optional.
 
 **Ersetzt BAS das WordPress-Website-Icon?** Im Frontend bleibt es standardmäßig erhalten. Nur die separate, ausdrücklich bestätigte Aktion Als offizielles Website-Icon verwenden ersetzt es. Medienaktionen wirken sofort und sind vom Speichern des Editorentwurfs unabhängig.
 
@@ -117,16 +116,16 @@ Die optionale geführte Einrichtung führt durch Farben, Atmosphäre, Login und 
 
 Ein kompakter, rein informativer Bereich unter Werkzeuge → Website-Zustand zeigt die Schema-Auswahl, Palettenquelle, den Standardmodus für Benutzer, optionale Gestaltung und die erkannte Umgebung. Es erfolgen keine Status-Tests, Dateiprüfungen oder externen Abfragen.
 
-## Multisite und Leitstand
+## Multisite und Integrationen
 
 Einzeln oder netzwerkweit aktivierbar. Jede Website verwaltet ihre eigenen Schemen, Login-Einstellungen, Toolbar, Browser-Tab-Icons und Medien. Auch die persönliche Farbauswahl bleibt je Website getrennt. Neue Unterwebsites erhalten die Administrator-Berechtigung für Tab-Icons automatisch; bestehende Websites beim ersten berechtigten Aufruf. Bewusst entzogene Rechte werden nicht wieder vergeben. Einstellungen findest du im Admin der jeweiligen Website.
 
-BAS funktioniert ohne Leitstand. Leitstand kann die regulären WordPress-Site-Optionen lesen und auf den dokumentierten Änderungshook reagieren. Ein optionales Leitstand-Modul verlinkt die Website-Einstellungen. Netzwerk-Startvorlagen lassen sich auf jeder Website prüfen und ausdrücklich übernehmen. Die deckerweb Plugin Library 0.6.0 ist eingebettet; BAS-Updates liefert weiterhin der Updater V2 über WordPress.
+BAS funktioniert ohne Verwaltungsanbindung. Verwaltungsanbindung kann die regulären WordPress-Site-Optionen lesen und auf den dokumentierten Änderungshook reagieren. Ein optionales Verwaltungsanbindung-Modul verlinkt die Website-Einstellungen. Netzwerk-Startvorlagen lassen sich auf jeder Website prüfen und ausdrücklich übernehmen. Die deckerweb Plugin Library 1.1.0 ist eingebettet; BAS-Updates liefert weiterhin der Updater 2.2.0 über WordPress.
 
 <a name="changelog"></a>
 
 
-[Daten und Deinstallation](docs/DATA-de.md) · [Sicherheit](SECURITY-de.md) · [Kompatibilität](docs/PROFILE-de.md)
+[Daten und Deinstallation](docs/DATA-de.md) · [Sicherheit](SECURITY-de.md) · [Kompatibilität](docs/MULTISITE-de.md)
 
 
 <a name="branding-ablaeufe"></a>
@@ -134,15 +133,17 @@ BAS funktioniert ohne Leitstand. Leitstand kann die regulären WordPress-Site-Op
 ## Branding-Abläufe
 
 Den Farbdialog für Marken-, Login-, Umgebungs- und Favicon-Farben verwenden. Gesperrte Rollen behalten exakte Markenfarben. Schemas duplizieren oder umbenennen, einen Abschnitt zurücksetzen, gespeicherten Stand und Entwurf vergleichen und Importe vor dem Speichern prüfen. Portable Vorlagen schließen lokale Bilder und Website-Texte aus. Der Verlauf behält bis zu zehn Einstellungsstände; Wiederherstellen ersetzt den Entwurf und betrifft die persönliche Farbe auf dieser Website.
-## Screenshots
-
-1. Eigene Markenfarben und Speicherleiste in einer echten WordPress-Testwebsite.
-
-![Eigene Markenfarben und Speicherleiste in einer echten WordPress-Testwebsite.](assets-github/screenshots/screenshot-1-de.jpg)
-
 ## Changelog
 
 Sieben jüngste Versionen; Wiki und lokaler vollständiger Verlauf erhalten alle dokumentierten Einträge.
+
+### 1.1.0
+
+2026-10-21
+
+- **Verbessert:** Gespeicherte Adminfarben und kontextabhängige Builder-Tab-Icons über die WordPress-Asset-APIs laden.
+- **Behoben:** Geschlossene Dokumentationsdialoge verborgen halten und natives Schließen sowie Dokumentationslinks bei Skriptkonflikten erhalten.
+- **Sonstiges:** Enthält deckerweb Plugin Library 1.1.0 und deckerweb Updater 2.2.0. Benötigt PHP 8.1 oder höher; WordPress 6.4 bleibt unterstützt.
 
 ### 1.0.0
 
@@ -152,7 +153,7 @@ Sieben jüngste Versionen; Wiki und lokaler vollständiger Verlauf erhalten alle
 - **Neu:** Markenfarben sperren, Kontrastanpassungen prüfen und gespeichertes Branding mit dem Entwurf vergleichen.
 - **Neu:** Portable Branding-Vorlagen speichern und bis zu zehn jüngste Einstellungsstände wiederherstellen.
 - **Neu:** Neue Multisite-Websites optional mit einer Netzwerk-Startvorlage einrichten; vorhandenes Branding bleibt unabhängig.
-- **Neu:** Website-Branding über die optionale Leitstand-Anbindung öffnen.
+- **Neu:** Website-Branding über optionale Verwaltungsintegrationen öffnen.
 - **Verbessert:** Portable Exporte unabhängig vom Schema benennen und Netzwerk-Startvorlagen auf einzelnen Websites vor dem Speichern prüfen. Netzwerkvorlagen bleiben durch Netzwerkadministratoren verwaltet.
 - **Verbessert:** Schemas duplizieren, umbenennen oder entfernen, einzelne Abschnitte zurücksetzen und Importänderungen vor der Übernahme prüfen.
 - **Verbessert:** Live-Vorschauen bündeln und Provider-Daten innerhalb eines Seitenaufrufs wiederverwenden.
@@ -176,12 +177,6 @@ Sieben jüngste Versionen; Wiki und lokaler vollständiger Verlauf erhalten alle
 - **Behoben:** Erhält benannte Schemafarben bei der Validierung und schützt spätere persönliche Farbänderungen vor Undo.
 - **Sonstiges:** Enthält deckerweb Plugin Library 0.5.0; Updater V2 bleibt erhalten.
 - **Sonstiges:** Dokumentiert Sicherheitsmeldungen und Datenhaltung; die Deinstallation bereinigt temporäres Undo und den Updater-Cache und erhält Branding, Medien und Benutzerauswahl.
-
-### 0.17.0 (Entwicklung)
-
-Veröffentlichungsdatum nicht dokumentiert
-
-- **Neu:** Kompakter, rein informativer Website-Zustand-Bericht ohne Status-Tests.
 
 ### 0.16.3
 

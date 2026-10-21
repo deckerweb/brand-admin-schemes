@@ -2,7 +2,7 @@
 
 [Deutsch](SECURITY-de.md)
 
-Report suspected vulnerabilities privately through [GitHub security reporting for Brand Admin Schemes](https://github.com/deckerweb/brand-admin-schemes/security/advisories/new). This is also the reporting repository for the embedded deckerweb Plugin Library. If private reporting is unavailable, ask the maintainer to enable it in a normal issue without posting vulnerability details. This local build does not establish that the repository setting is enabled.
+Report suspected vulnerabilities privately through [GitHub security reporting for Brand Admin Schemes](https://github.com/deckerweb/brand-admin-schemes/security/advisories/new). This is also the reporting repository for the embedded deckerweb Plugin Library. If private reporting is unavailable, ask the maintainer to enable it in a normal issue without posting vulnerability details.
 
 Include BAS and Library versions, WordPress/PHP versions, activation scope, a minimal reproduction and the potential impact. Do not include passwords, tokens, personal records or a customer database. Ordinary bugs and feature requests belong in public issues. The maintainer assesses the report privately, prepares and tests a fix, then coordinates disclosure. No response deadline is promised. Production sites should run the latest stable release; development packages require separate acceptance.
 

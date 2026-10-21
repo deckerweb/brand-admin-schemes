@@ -24,7 +24,7 @@ No. Enter your own colors; palette providers are optional.
 
 ### What are the requirements?
 
-WordPress 6.4 or later and PHP 8.0 or later. Install the plugin ZIP from GitHub Releases.
+WordPress 6.4 or later and PHP 8.1 or later. Install the plugin ZIP from GitHub Releases.
 
 ### Who can change settings?
 
@@ -275,7 +275,7 @@ Up to ten previous settings snapshots are stored on this website. You can restor
 
 ### Can the network distribute branding automatically?
 
-Optionally use a network starter template once for newly created websites. Existing branding is never overwritten. There is no continuing inheritance or synchronization. Leitstand is optional.
+Optionally use a network starter template once for newly created websites. Existing branding is never overwritten. There is no continuing inheritance or synchronization. The management integration is optional.
 
 ### Does BAS replace the WordPress Site Icon?
 

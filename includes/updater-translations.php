@@ -1,6 +1,11 @@
 <?php
-/** Translate shared updater messages through the BAS host catalog. */
+/** Copy into the host adapter and replace the brand-admin-schemes textdomain with its literal domain. */
 defined( 'ABSPATH' ) || exit;
+/**
+ * Resolve an updater source string in the host textdomain.
+ * @param string $message English updater message.
+ * @return string Translated host message, or original source text.
+ */
 return static function ( string $message ): string {
     // Literal calls let the host's normal translation extractor collect every source string.
     switch ( $message ) {
@@ -26,6 +31,20 @@ return static function ( string $message ): string {
             return __( 'Could not prepare the GitHub release package.', 'brand-admin-schemes' );
         case 'See the release on GitHub.':
             return __( 'See the release on GitHub.', 'brand-admin-schemes' );
+        case 'Git Updater is active. If a deckerweb installation or update fails, temporarily deactivate Git Updater and retry. Reactivate it afterwards if other plugins or themes need it. Only leave it disabled when those extensions have another reliable update provider.':
+            return __( 'Git Updater is active. If a deckerweb installation or update fails, temporarily deactivate Git Updater and retry. Reactivate it afterwards if other plugins or themes need it. Only leave it disabled when those extensions have another reliable update provider.', 'brand-admin-schemes' );
+        case 'Manage installed plugins':
+            return __( 'Manage installed plugins', 'brand-admin-schemes' );
+        case 'Dismiss this notice':
+            return __( 'Dismiss this notice', 'brand-admin-schemes' );
+        case 'Permission denied.':
+            return __( 'Permission denied.', 'brand-admin-schemes' );
+        case 'Public catalog callbacks require both providers and cannot be used in private mode.':
+            return __( 'Public catalog callbacks require both providers and cannot be used in private mode.', 'brand-admin-schemes' );
+        case 'The approved release could not be verified.':
+            return __( 'The approved release could not be verified.', 'brand-admin-schemes' );
+        case 'The approved release changed. Refresh updates first.':
+            return __( 'The approved release changed. Refresh updates first.', 'brand-admin-schemes' );
         default:
             return $message;
     }

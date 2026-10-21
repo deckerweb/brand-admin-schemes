@@ -2,6 +2,14 @@
 
 [Deutsch](CHANGELOG-de.md)
 
+### 1.1.0
+
+2026-10-21
+
+- **Improved:** Load saved admin colors and contextual builder-tab icons through WordPress asset APIs.
+- **Fixed:** Keep closed documentation dialogs hidden and preserve native closing and documentation links when scripts conflict.
+- **Misc:** Includes deckerweb Plugin Library 1.1.0 and deckerweb Updater 2.2.0. Requires PHP 8.1 or later; WordPress 6.4 remains supported.
+
 ### 1.0.0
 
 2026-10-06
@@ -10,7 +18,7 @@
 - **New:** Lock brand colors, review contrast adjustments and compare saved branding with your draft.
 - **New:** Save portable branding templates and restore up to ten recent settings snapshots.
 - **New:** Optionally seed new Multisite websites from a network starter template; existing branding stays independent.
-- **New:** Access website branding through the optional Leitstand integration.
+- **New:** Access website branding through optional management integrations.
 - **Improved:** Name portable exports independently of schemes and preview network starter templates on individual websites before saving. Network templates remain managed by network administrators.
 - **Improved:** Duplicate, rename or remove schemes, reset individual sections and review imported changes before applying them.
 - **Improved:** Batch live previews and reuse provider reads within a request.
@@ -34,12 +42,6 @@
 - **Fixed:** Preserves named scheme colors during validation and protects later personal color changes from Undo.
 - **Misc:** Includes deckerweb Plugin Library 0.5.0; preserves Updater V2.
 - **Misc:** Documents security reporting and data ownership; uninstall clears temporary Undo and updater cache while preserving branding, media and user choices.
-
-### 0.17.0 (development)
-
-Release date not recorded
-
-- **New:** Compact, read-only Site Health information without status tests.
 
 ### 0.16.3
 

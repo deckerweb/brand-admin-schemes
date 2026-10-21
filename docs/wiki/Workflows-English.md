@@ -1,6 +1,6 @@
 # Branding workflows
 
-[Deutsch](Workflows-Deutsch.md)
+[Deutsch](https://github.com/deckerweb/brand-admin-schemes/wiki/Workflows-Deutsch)
 
 ## How does the new color dialog work?
 
@@ -20,7 +20,7 @@ Up to ten previous settings snapshots are stored on this website. You can restor
 
 ## Can the network distribute branding automatically?
 
-Optionally use a network starter template once for newly created websites. Existing branding is never overwritten. There is no continuing inheritance or synchronization. Leitstand is optional.
+Optionally use a network starter template once for newly created websites. Existing branding is never overwritten. There is no continuing inheritance or synchronization. The management integration is optional.
 
 ## Does BAS replace the WordPress Site Icon?
 

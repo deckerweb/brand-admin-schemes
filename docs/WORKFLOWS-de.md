@@ -20,7 +20,7 @@ Auf dieser Website bleiben bis zu zehn frühere Einstellungsstände erhalten. Du
 
 ## Kann das Netzwerk Branding automatisch verteilen?
 
-Eine optionale Netzwerk-Startvorlage wird einmalig auf neu angelegte Websites angewendet. Vorhandenes Branding wird nie überschrieben. Es gibt keine laufende Vererbung oder Synchronisierung. Leitstand ist optional.
+Eine optionale Netzwerk-Startvorlage wird einmalig auf neu angelegte Websites angewendet. Vorhandenes Branding wird nie überschrieben. Es gibt keine laufende Vererbung oder Synchronisierung. Die Verwaltungsanbindung ist optional.
 
 ## Ersetzt BAS das WordPress-Website-Icon?
 

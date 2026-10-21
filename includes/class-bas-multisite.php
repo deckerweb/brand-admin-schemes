@@ -64,8 +64,8 @@ final class Multisite {
 			|| ! in_array( $pagenow, [ 'profile.php', 'user-edit.php' ], true ) ) {
 			return $check;
 		}
-		$nonce = $_POST['_wpnonce'] ?? '';
-		if ( ! is_string( $nonce ) || ! wp_verify_nonce( wp_unslash( $nonce ), 'update-user_' . $user_id )
+		$nonce = sanitize_text_field( wp_unslash( $_POST['_wpnonce'] ?? '' ) );
+		if ( ! is_string( $nonce ) || ! wp_verify_nonce( $nonce, 'update-user_' . $user_id )
 			|| ! current_user_can( 'edit_user', $user_id ) || ! is_string( $meta_value )
 			|| ! isset( $_wp_admin_css_colors[ $meta_value ] ) ) {
 			return $check;
@@ -92,9 +92,9 @@ final class Multisite {
 		global $_wp_admin_css_colors;
 		// Core does not set WP_NETWORK_ADMIN in admin-ajax.php. A user-bound
 		// nonce from the network profile supplies the missing context explicitly.
-		if ( is_multisite() && 'network' === ( $_POST['bas_color_scope'] ?? '' ) ) {
-			$nonce = $_POST['bas_color_scope_nonce'] ?? '';
-			if ( ! is_string( $nonce ) || ! wp_verify_nonce( wp_unslash( $nonce ), 'bas_network_color_' . get_current_blog_id() ) ) {
+		if ( is_multisite() && 'network' === sanitize_text_field( wp_unslash( $_POST['bas_color_scope'] ?? '' ) ) ) {
+			$nonce = sanitize_text_field( wp_unslash( $_POST['bas_color_scope_nonce'] ?? '' ) );
+			if ( ! is_string( $nonce ) || ! wp_verify_nonce( $nonce, 'bas_network_color_' . get_current_blog_id() ) ) {
 				wp_send_json_error( null, 403 );
 			}
 			// Core verifies its own nonce and stores the global preference.
@@ -104,8 +104,8 @@ final class Multisite {
 			return;
 		}
 		check_ajax_referer( 'save-color-scheme', 'nonce' );
-		$raw = $_POST['color_scheme'] ?? '';
-		$color = is_string( $raw ) ? sanitize_key( wp_unslash( $raw ) ) : '';
+		$raw = wp_unslash( $_POST['color_scheme'] ?? '' );
+		$color = is_string( $raw ) ? sanitize_key( $raw ) : '';
 		$user_id = get_current_user_id();
 		if ( ! $user_id || ! isset( $_wp_admin_css_colors[ $color ] ) ) {
 			wp_send_json_error();

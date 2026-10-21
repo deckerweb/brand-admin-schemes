@@ -30,11 +30,11 @@ final class BAS_Bundle {
 	 */
 		public static function export(): void {
 		self::authorize();
-		$payload = $_POST['settings'] ?? '';
+		$payload = wp_unslash( $_POST['settings'] ?? '' );
 		if ( !is_string( $payload ) ) {
 			wp_send_json_error( __( 'Invalid agency package.', 'brand-admin-schemes' ), 400 );
 		}
-		$raw = json_decode( wp_unslash( $payload ), true );
+		$raw = json_decode( $payload, true );
 		if ( !is_array( $raw ) ) {
 			wp_send_json_error( __( 'Invalid agency package.', 'brand-admin-schemes' ), 400 );
 		}
@@ -57,7 +57,7 @@ final class BAS_Bundle {
 		$temporary = wp_tempnam( 'bas-bundle.zip' );
 		$zip = new ZipArchive();
 		if ( !$temporary || true !== $zip->open( $temporary, ZipArchive::CREATE | ZipArchive::OVERWRITE ) ) {
-			if ( $temporary ) @unlink( $temporary );
+			if ( $temporary ) wp_delete_file( $temporary );
 			wp_send_json_error( __( 'Could not create the agency package.', 'brand-admin-schemes' ), 500 );
 		}
 		$manifest = wp_json_encode( ['format' => 'bas/bundle/v1', 'settings' => $settings, 'media' => $media] );
@@ -67,7 +67,7 @@ final class BAS_Bundle {
 		}
 		$success = $zip->close();
 		if ( !$success || !is_readable( $temporary ) ) {
-			@unlink( $temporary );
+			wp_delete_file( $temporary );
 			wp_send_json_error( __( 'Could not create the agency package.', 'brand-admin-schemes' ), 500 );
 		}
 		nocache_headers();
@@ -75,7 +75,7 @@ final class BAS_Bundle {
 		header( 'Content-Disposition: attachment; filename="brand-admin-schemes-agency.zip"' );
 		header( 'Content-Length: ' . filesize( $temporary ) );
 		readfile( $temporary );
-		@unlink( $temporary );
+		wp_delete_file( $temporary );
 		exit;
 	}
 
@@ -152,13 +152,13 @@ final class BAS_Bundle {
 			}
 			$tmp = wp_tempnam( $entries[$type]['name'] );
 			if ( !$tmp || false === file_put_contents( $tmp, $entries[$type]['bytes'] ) ) {
-				if ( $tmp ) { @unlink( $tmp ); }
+				if ( $tmp ) { wp_delete_file( $tmp ); }
 				self::rollback( $created );
 				wp_send_json_error( __( 'Could not import package images.', 'brand-admin-schemes' ), 500 );
 			}
 			$id = media_handle_sideload( ['name' => $entries[$type]['name'], 'tmp_name' => $tmp, 'size' => strlen( $entries[$type]['bytes'] ), 'error' => 0], 0 );
 			if ( is_wp_error( $id ) ) {
-				@unlink( $tmp );
+				wp_delete_file( $tmp );
 				self::rollback( $created );
 				wp_send_json_error( __( 'Could not import package images.', 'brand-admin-schemes' ), 400 );
 			}

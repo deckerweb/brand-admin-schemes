@@ -1,6 +1,6 @@
 <?php
 /**
- * Optional module for the verified Leitstand Module interface.
+ * Optional module for the verified external management interface.
  * @package BrandAdminSchemes
  * Copyright © 2022–2026 David Decker – DECKERWEB.
  * SPDX-License-Identifier: GPL-2.0-or-later
@@ -8,7 +8,7 @@
 namespace Deckerweb\BrandAdminSchemes;
 defined( 'ABSPATH' ) || exit;
 
-/** Link network branding workflows without copying or depending on Leitstand. */
+/** Link network branding workflows without requiring the external management plugin. */
 final class LeitstandModule implements \Deckerweb\Leitstand\Module {
 	/** Return the unique module key. @return string */
 	public function id(): string { return 'bas-branding'; }

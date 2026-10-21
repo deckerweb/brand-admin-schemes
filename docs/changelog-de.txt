@@ -1,5 +1,13 @@
 == Changelog ==
 
+= 1.1.0 =
+
+2026-10-21
+
+* Verbessert: Gespeicherte Adminfarben und kontextabhängige Builder-Tab-Icons über die WordPress-Asset-APIs laden.
+* Behoben: Geschlossene Dokumentationsdialoge verborgen halten und natives Schließen sowie Dokumentationslinks bei Skriptkonflikten erhalten.
+* Sonstiges: Enthält deckerweb Plugin Library 1.1.0 und deckerweb Updater 2.2.0. Benötigt PHP 8.1 oder höher; WordPress 6.4 bleibt unterstützt.
+
 = 1.0.0 =
 
 2026-10-06
@@ -8,7 +16,7 @@
 * Neu: Markenfarben sperren, Kontrastanpassungen prüfen und gespeichertes Branding mit dem Entwurf vergleichen.
 * Neu: Portable Branding-Vorlagen speichern und bis zu zehn jüngste Einstellungsstände wiederherstellen.
 * Neu: Neue Multisite-Websites optional mit einer Netzwerk-Startvorlage einrichten; vorhandenes Branding bleibt unabhängig.
-* Neu: Website-Branding über die optionale Leitstand-Anbindung öffnen.
+* Neu: Website-Branding über optionale Verwaltungsintegrationen öffnen.
 * Verbessert: Portable Exporte unabhängig vom Schema benennen und Netzwerk-Startvorlagen auf einzelnen Websites vor dem Speichern prüfen. Netzwerkvorlagen bleiben durch Netzwerkadministratoren verwaltet.
 * Verbessert: Schemas duplizieren, umbenennen oder entfernen, einzelne Abschnitte zurücksetzen und Importänderungen vor der Übernahme prüfen.
 * Verbessert: Live-Vorschauen bündeln und Provider-Daten innerhalb eines Seitenaufrufs wiederverwenden.
@@ -32,12 +40,6 @@
 * Behoben: Erhält benannte Schemafarben bei der Validierung und schützt spätere persönliche Farbänderungen vor Undo.
 * Sonstiges: Enthält deckerweb Plugin Library 0.5.0; Updater V2 bleibt erhalten.
 * Sonstiges: Dokumentiert Sicherheitsmeldungen und Datenhaltung; die Deinstallation bereinigt temporäres Undo und den Updater-Cache und erhält Branding, Medien und Benutzerauswahl.
-
-= 0.17.0 (Entwicklung) =
-
-Veröffentlichungsdatum nicht dokumentiert
-
-* Neu: Kompakter, rein informativer Website-Zustand-Bericht ohne Status-Tests.
 
 = 0.16.3 =
 

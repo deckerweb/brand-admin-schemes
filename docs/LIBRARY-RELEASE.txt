@@ -1,1 +1,1 @@
-BAS 1.0.0 includes original deckerweb Plugin Library 0.6.0 and deckerweb Updater 2.1.0. One shared Library runtime and one existing updater integration are retained. The online catalog is optional and disabled by default; BAS continues to use its own GitHub update adapter.
+BAS 1.1.0 includes original deckerweb Plugin Library 1.1.0 and deckerweb Updater 2.2.0. One shared Library runtime and one existing updater integration are retained. The online catalog is optional and disabled by default; BAS continues to use its own GitHub update adapter.

@@ -2,9 +2,9 @@
 Contributors: deckerweb
 Tags: admin colors, branding, login, favicon, gutenberg
 Requires at least: 6.4
-Requires PHP: 8.0
-Tested up to: 7.1.2
-Stable tag: 1.0.0
+Requires PHP: 8.1
+Tested up to: 7.1.3
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -91,7 +91,7 @@ Your stale save is rejected. Export your draft before reloading and compare it w
 Up to ten previous settings snapshots are stored on this website. You can restore entries from your own account and storage scope. Restoration also restores your prior personal color and replaces an unsaved draft; the current state becomes a new history entry.
 
 = Can the network distribute branding automatically? =
-Optionally use a network starter template once for newly created websites. Existing branding is never overwritten. There is no continuing inheritance or synchronization. Leitstand is optional.
+Optionally use a network starter template once for newly created websites. Existing branding is never overwritten. There is no continuing inheritance or synchronization. The management integration is optional.
 
 = Does BAS replace the WordPress Site Icon? =
 The frontend keeps it by default. Only the separate, explicitly confirmed Use as official Site Icon action replaces it. Media actions take effect immediately and are independent of saving the editor draft.
@@ -110,28 +110,32 @@ Optional guided setup walks through colors, atmosphere, login and tab icons, the
 
 A compact, read-only section in Tools → Site Health reports the selected scheme, palette source, user default mode, optional styling and resolved environment. No status tests, file checks or external requests are performed.
 
-== Multisite and Leitstand ==
+== Multisite and integrations ==
 
 Activate on an individual site or across the network. Each site owns its schemes, login settings, toolbar, browser-tab icons, and media. Personal color choices also stay separate per site. New subsites receive the administrator tab-icon permission automatically; existing sites receive it on their first authorized visit. Deliberately revoked permissions stay revoked. Configure branding in each site’s admin.
 
-BAS works independently of Leitstand. Leitstand can read standard WordPress site options and listen to the documented change hook. An optional Leitstand module links to website branding. Network starter templates can be previewed on individual websites and explicitly saved. The deckerweb Plugin Library 0.6.0 is embedded; Updater V2 continues to deliver BAS updates through WordPress.
+BAS works independently of management integration. management integration can read standard WordPress site options and listen to the documented change hook. An optional management integration module links to website branding. Network starter templates can be previewed on individual websites and explicitly saved. The deckerweb Plugin Library 1.1.0 is embedded; Updater 2.2.0 continues to deliver BAS updates through WordPress.
 
 
 
-[Data and uninstall](docs/DATA.md) · [Security](SECURITY.md) · [Compatibility](docs/PROFILE.md)
+[Data and uninstall](docs/DATA.md) · [Security](SECURITY.md) · [Compatibility](docs/MULTISITE.md)
 
 
 
 == Branding workflows ==
 
 Use the color dialog for brand, login, environment and favicon colors. Locked roles retain exact brand colors. Duplicate or rename schemes, reset one section, compare saved/draft previews and review imports before saving. Portable templates exclude local images and site-specific text. Recent changes retain up to ten snapshots; restoring replaces the draft and affects your personal color on this website.
-== Screenshots ==
-
-1. Manual brand colors and save controls in a real WordPress test site.
-
 == Changelog ==
 
 Seven recent versions; the Wiki and local full history retain all documented entries.
+
+= 1.1.0 =
+
+2026-10-21
+
+* Improved: Load saved admin colors and contextual builder-tab icons through WordPress asset APIs.
+* Fixed: Keep closed documentation dialogs hidden and preserve native closing and documentation links when scripts conflict.
+* Misc: Includes deckerweb Plugin Library 1.1.0 and deckerweb Updater 2.2.0. Requires PHP 8.1 or later; WordPress 6.4 remains supported.
 
 = 1.0.0 =
 
@@ -141,7 +145,7 @@ Seven recent versions; the Wiki and local full history retain all documented ent
 * New: Lock brand colors, review contrast adjustments and compare saved branding with your draft.
 * New: Save portable branding templates and restore up to ten recent settings snapshots.
 * New: Optionally seed new Multisite websites from a network starter template; existing branding stays independent.
-* New: Access website branding through the optional Leitstand integration.
+* New: Access website branding through optional management integrations.
 * Improved: Name portable exports independently of schemes and preview network starter templates on individual websites before saving. Network templates remain managed by network administrators.
 * Improved: Duplicate, rename or remove schemes, reset individual sections and review imported changes before applying them.
 * Improved: Batch live previews and reuse provider reads within a request.
@@ -165,12 +169,6 @@ Seven recent versions; the Wiki and local full history retain all documented ent
 * Fixed: Preserves named scheme colors during validation and protects later personal color changes from Undo.
 * Misc: Includes deckerweb Plugin Library 0.5.0; preserves Updater V2.
 * Misc: Documents security reporting and data ownership; uninstall clears temporary Undo and updater cache while preserving branding, media and user choices.
-
-= 0.17.0 (development) =
-
-Release date not recorded
-
-* New: Compact, read-only Site Health information without status tests.
 
 = 0.16.3 =
 

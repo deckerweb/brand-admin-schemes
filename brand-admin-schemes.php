@@ -3,9 +3,9 @@
  * Plugin Name: Brand Admin Schemes
  * Plugin URI: https://github.com/deckerweb/brand-admin-schemes
  * Description: Brand colors for your WordPress admin, login, toolbar and browser tabs. Use Core Framework, Bricks, ACSS or your own palette.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Requires at least: 6.4
- * Requires PHP: 8.0
+ * Requires PHP: 8.1
  * Author: David Decker – DECKERWEB
  * Author URI: https://github.com/deckerweb
  * License: GPL v2 or later
@@ -21,6 +21,8 @@
 if ( !defined( 'ABSPATH' ) ) {
 	exit;
 }
+if ( version_compare( PHP_VERSION, '8.1', '<' ) ) { return; }
+
 define( 'BAS_PLUGIN_FILE', __FILE__ );
 define( 'BAS_PLUGIN_DIR', __DIR__ . '/' );
 /**
@@ -31,7 +33,7 @@ define( 'BAS_PLUGIN_DIR', __DIR__ . '/' );
  */
 final class BAS_Plugin {
 	/** Current package version, shared by assets and the settings footer. */
-	const VERSION = '1.0.0';
+	const VERSION = '1.1.0';
 	/**
 	 * Site option containing the editor state and saved schemes.
 	 * @var string
@@ -106,384 +108,7 @@ final class BAS_Plugin {
 	 * @return array<string,string> Original English message to translation.
 	 */
 	private static function translations(): array {
-		$strings = [
-			'Close',
-			'Network',
-			'Manage this template in network settings.',
-			'Copy color value',
-			'Hue',
-			"Remove saved templates and history when uninstalling BAS. Branding, images and personal colors are retained.",
-			"Workflow cleanup",
-
-			'Highlight color',
-			"Link color",
-			"Text color",
-
-			'Confirm change',
-			"Choose a branding JSON before enabling the starter template.",
-			"Active scheme",
-			"Content alignment",
-			"Branding display",
-			"Image focal point X",
-			"Image focal point Y",
-			"Gradient overlay strength",
-			"Website tagline",
-			"Safe SVG logos",
-
-			"Choose color",
-			"Done",
-			"Color",
-			"Enter a six-digit hex color, for example #245A91.",
-			"Apply to draft",
-			"Another save is in progress. Try again shortly.",
-			"Settings changed in another editor. Export your draft before reloading.",
-			"Enter a template name. Up to ten templates can be stored.",
-			"This history entry cannot be restored in your current context.",
-			"Unknown action.",
-			"Initial settings",
-			"Branding starter template",
-			"Import a portable branding JSON. Apply it once to new websites or an explicitly selected empty website. Existing branding and personal colors are retained.",
-			"Branding JSON file",
-			"Use this starter template for new websites",
-			"Optional destination website ID",
-			"Images and website-specific text are excluded. Select images separately on each destination website.",
-			"Invalid template file.",
-			"The destination has existing branding or belongs to another network. Nothing was overwritten.",
-			"Branding templates",
-			"Choose a template",
-			"Preview template",
-			"Template loaded for review.",
-			"Delete template",
-			"Delete this template? Website branding is retained.",
-			"Restore saved branding",
-			"This restores website settings and your prior personal color. Current settings are retained in history. Unsaved drafts will be replaced.",
-			"Branding restored.",
-			"Recent changes",
-			"History begins with your next save. Up to ten entries are retained.",
-			"Color collection",
-			"None",
-			"Setting",
-			"Imported",
-			"Review imported changes",
-			"Nothing is applied to website branding until you save all changes.",
-			"Duplicate scheme",
-			"Rename scheme",
-			"Delete scheme",
-			"Copy",
-			"Delete the active scheme from this draft? Saving creates a new active scheme; other users may need to choose another scheme.",
-			"Reset this section",
-			"Reset this section in the draft? Save all changes to apply it.",
-			"Portable templates exclude images, site text, initials and forced user defaults.",
-			"Export portable template",
-			"Save branding template",
-			"Compare saved and draft",
-			"Template name",
-			"Template saved. Website branding is unchanged.",
-			"Lock color",
-			"Color origin",
-			"Locked roles retain their exact brand color.",
-			"An image is unavailable. Choose a local replacement or remove the selection.",
-			"Admin preview",
-			"Draft",
-			"Review contrast adjustment",
-			"Suggested",
-			"Only this draft changes. Review the previews before saving.",
-			"Review adjustment",
-			"Color mapping",
-			"Locked colors",
-			"Contrast adjustments",
-			"Website branding",
-			"Each website keeps independent branding. Open its editor to review or change settings.",
-			"Previous websites",
-			"More websites",
-			"Image selected",
-			"Missing color source. Saved colors remain available.",
-
-			'Who can see contextual tab icons?',
-			'Administrators and users with permission',
-			'Everyone, including visitors',
-			'Restricted by default using bas_view_context_icons. Everyone also makes generated frontend icons and their optional environment marker public. Save all changes to apply this choice.',
-			'Contextual tab icons are currently available to everyone, including visitors.',
-			'Use & export',
-			'Download SVG',
-			'Download PNG',
-			'Save to Media Library',
-			'Use as official Site Icon',
-			'Exports use the generated design. PNGs are 512 × 512 pixels. Media and Site Icon actions take effect immediately; the official Site Icon omits the environment marker.',
-			'The icon could not be rendered. Please try again.',
-			'PNG export is not supported by this browser.',
-			'Use this design as the official WordPress Site Icon? This immediately adds a PNG to the Media Library, replaces the Site Icon and switches the frontend to the WordPress Site Icon. Other draft settings are not saved.',
-			'Preparing icon…',
-			'Icon downloaded.',
-			'The icon could not be saved to the Media Library.',
-			'Official Site Icon updated. Other draft settings have not been saved.',
-			'Icon saved to the Media Library.',
-			'Open in Media Library',
-			'A valid 512 × 512 PNG icon is required.',
-			'Invalid icon action.',
-			'PNG uploads are not available on this site.',
-			'The upload quota is exhausted.',
-			'WordPress could not process the PNG icon.',
-
-			'Contextual tab icons are visible only to signed-in users with the bas_view_context_icons capability. Administrators receive it by default; a role editor can grant it to other roles or users. Visitors keep the WordPress Site Icon.',
-			'Contextual tab icons are available to administrators by default. Other users and visitors keep the WordPress Site Icon.',
-
-			'Guided setup',
-			'Four simple steps. Your existing settings stay available.',
-			'Choose your colors',
-			'Find your atmosphere',
-			'Optional finishing touches',
-			'Review and save',
-			'Your brand at a glance',
-			'Review the scheme name and user default below, then save in the fixed bar above.',
-			'Your Site Icon and site title are used when no custom logo or title is selected. Existing images and settings are retained.',
-			'Existing icon settings are retained. Colors and initials provide automatic fallbacks.',
-			'Previews show the optional designs, even when they are disabled.',
-			'Continue in full settings',
-			'Changes remain a draft until you save. You can leave setup at any time and continue in the full settings.',
-			'Back',
-			'Next',
-			'Use Save all changes in the fixed bar above to apply your design.',
-			'Enabled',
-			'Disabled',
-			'Browser tab icons',
-
-			'Symbol',
-			'Environment display',
-			'Displayed environment',
-			'Preview',
-			'Balanced',
-			'Calm',
-			'Bold',
-			'Dark',
-			'Save scheme',
-			'Reload page',
-			'Unsaved changes',
-			'All changes saved',
-			'Discard unsaved changes and reload the page?',
-			'Color contrast check',
-			'Estimated text contrast for this scheme and login palette. Other plugins can change the final appearance.',
-			'Admin menu',
-			'Admin submenu',
-			'Admin toolbar',
-			'Admin buttons',
-			'Login background',
-			'Login button',
-			'Readable',
-			'Check contrast',
-			'Try text',
-			'Try background',
-			'Mark the installation environment on generated favicons',
-			'A small letter and color distinguish Local, Development, Staging and Live tabs. A retained WordPress Site Icon stays unchanged.',
-			'Export agency package (.zip)',
-			'Import agency package (.zip)',
-			'An agency package includes settings and local PNG, JPEG, WebP or GIF images (up to 4 MB each). SVG files are excluded. On import, images are added to the Media Library immediately; review and save the settings afterward. ZIP support is required on the server.',
-			'Export failed',
-			'Import failed',
-			'Agency package is too large.',
-			'Agency package imported for review. Images were added to the Media Library; save all changes to apply settings.',
-			'Offer brand colors in the Gutenberg palette',
-			'Adds Primary, Secondary, Tertiary and Accent as extra editor colors. Existing theme colors stay available; the saved active scheme provides the values.',
-			'Save all changes',
-			'Jump to a section',
-			'Jump to:',
-			'Brand colors',
-			'Scheme & toolbar',
-			'Browser favicons',
-			'Import & export',
-			'Export settings as JSON',
-			'Import settings from JSON',
-			'Export your color schemes and plugin settings as JSON, or import a file to review it before saving. Images stay in the WordPress media library and are not included in the JSON file.',
-			'Use “Save all changes” in the fixed bar above to activate the selected scheme and apply settings across this page.',
-			'All settings saved. The selected admin scheme is active for your account. Reload the page to see every change.',
-			'Settings imported for review. Check the previews, then save all changes to apply them.',
-			'Browser tab icons (favicons)',
-			'These small icons appear in browser tabs, helping you tell the public website, WordPress admin and builder editor apart.',
-			'Use different icons in browser tabs',
-			'Website browser tab',
-			'WordPress admin browser tab',
-			'Builder editor browser tab',
-			'Generate a website favicon',
-			'Keep the WordPress Site Icon as favicon',
-			'In a detected builder editor tab, the favicon uses the builder color preset. Ordinary website tabs keep their website icon.',
-			'Color source',
-			'Source',
-			'Manual colors',
-			'Bricks palette',
-			'Core Framework, ACSS and Bricks are shown only when readable colors are available. Saved color values remain available without the source.',
-			'optional',
-			'Derive automatically',
-			'Atmosphere',
-			'Brand strength',
-			'Higher brand strength makes the brand colors more prominent. Text and button colors are adjusted for readability.',
-			'Save and assign',
-			'Scheme name',
-			'Saved schemes',
-			'New scheme',
-			'Default for users',
-			'No default',
-			'Default; allow personal selection',
-			'Force for all users',
-			'Color frontend admin bar',
-			'Frontend admin bar color',
-			'The default applies to users on the WordPress default scheme; forcing also overrides personal selections.',
-			'Preview and apply',
-			'Hover over a card or focus it with the keyboard. Escape ends the temporary preview.',
-			'Save and activate selected scheme',
-			'Export JSON',
-			'Import JSON',
-			'Save failed',
-			'Scheme saved and activated for your account. Reload the page to see the full result.',
-			'File too large.',
-			'Scheme imported. Check the preview and save to activate it.',
-			'Color sources could not be loaded. Manual colors remain available.',
-			'Primary',
-			'Secondary',
-			'Tertiary',
-			'Accent',
-			'Generate a WordPress admin color scheme from Core Framework, Bricks, or four manual brand colors.',
-			'Color scheme',
-			'Brand Admin',
-			'Brand Admin Schemes',
-			'Invalid scheme colors',
-			'Unknown file format',
-			'Forbidden',
-			'Brand colors create readable WordPress admin schemes.',
-			'Loading editor…',
-			'CI · ',
-			'Undo last save',
-			'No saved change to undo.',
-			'Last save undone. Reload the page to see the full result.',
-			'Undo is no longer available because settings changed.',
-			'Contrast',
-			'Menu',
-			'Button',
-			'Review source color changes',
-			'The source palette has changed since this scheme was saved. Review the old and new colors before updating it.',
-			'Confirm source changes before saving.',
-			'I reviewed the source color changes',
-			'Saved',
-			'Current',
-			'Installation environment',
-			'Automatic detection',
-			'Local',
-			'Development',
-			'Staging',
-			'Live',
-			'Detected environment',
-			'WordPress setting',
-			'Site address hint',
-			'WordPress default',
-			'Manual selection',
-			'PHP version',
-			'Enabled',
-			'Disabled',
-			'The badge appears in the admin bar on both the frontend and backend. Automatic detection uses the WordPress environment first and cautious site address hints only when no environment is configured.',
-			'Status colors',
-			'Custom color',
-			'Automatic color',
-			'Colors adapt to the visible toolbar. Custom colors keep their hue and change brightness only when needed for contrast.',
-			'Welcome back',
-			'Login design',
-			'Style the WordPress login',
-			'Layout',
-			'Image on the left',
-			'Image on the right',
-			'Centered',
-			'Content alignment',
-			'Align left',
-			'Align center',
-			'Customer logo',
-			'Tab icons',
-			'Distinguish frontend, admin and builder tabs at a glance.',
-			'Enable contextual tab icons',
-			'Generate frontend icon',
-			'Keep WordPress Site Icon',
-			'Frontend tab',
-			'Admin tab',
-			'Builder tab',
-			'Letters',
-			'Circle outline',
-			'Spark outline',
-			'Leaf outline',
-			'Shield outline',
-			'Diamond outline',
-			'Grid outline',
-			'Bricks outline',
-			'Oxygen outline',
-			'Automatic builder symbol',
-			'Builder color preset',
-			'Automatically detected',
-			'Leave colors empty to follow the active scheme or builder preset.',
-			'Abbreviation (up to 3 characters)',
-			'Background color',
-			'Foreground color',
-			'Automatic from scheme',
-			'Automatic contrast',
-			'Builder colors follow Bricks, Elementor or Oxygen when detected.',
-			'A short quote appears only on the image or gradient panel.',
-			'A banner replaces the logo and stays within the form width.',
-			'Gradient style',
-			'Attribution (optional)',
-			'Quote on image panel',
-			'Use banner',
-			'Use logo or Site Icon',
-			'Customer banner',
-			'Logo display',
-			'A wide image works best; its full shape remains visible.',
-			'Gradients use the current scheme colors. A selected background image takes priority.',
-			'Optional short quote',
-			'Dusk',
-			'Mist',
-			'Bloom',
-			'Horizon',
-			'Satin',
-			'Background image',
-			'Choose image',
-			'Remove image',
-			'Welcome heading',
-			'Welcome message',
-			'Image position',
-			'Overlay strength',
-			'Login colors',
-			'Use scheme colors',
-			'Customize login colors',
-			'Background',
-			'Surface',
-			'Button color',
-			'Desktop',
-			'Tablet',
-			'Mobile',
-			'Login preview',
-			'Username or email address',
-			'Password',
-			'Remember Me',
-			'Log In',
-			'Lost your password?',
-			'Preview login in a new tab',
-			'Logo and background image are optional. The standard WordPress forms remain available.',
-			'Media library unavailable.',
-			'Show site title',
-			'Show site tagline',
-			'Uses the WordPress site title when empty; falls back to Welcome back.',
-			'Uses the WordPress tagline when empty.',
-			'Site Icon is used automatically. Choose an image to override it.',
-			'Gradient style',
-			'Diagonal',
-			'Aurora',
-			'Radial',
-			'Surprise me (stable per site)',
-			'Page background',
-			'SVG logo (requires Safe SVG)',
-			'I understand: SVG files must be sanitized. Only administrators can choose one here.',
-			'Install and activate Safe SVG to use sanitized SVG logos.',
-			'Confirm sanitized SVG logos first.',
-		];
-		$out = [];
-		foreach ( $strings as $message ) {
-			$out[$message] = __( $message, 'brand-admin-schemes' );
-		}
-		return $out;
+		return require BAS_PLUGIN_DIR . 'includes/editor-translations.php';
 	}
 
 	/**
@@ -1050,8 +675,8 @@ final class BAS_Plugin {
 		if ( !current_user_can( 'manage_options' ) ) {
 			wp_send_json_error( __( 'Forbidden', 'brand-admin-schemes' ), 403 );
 		}
-		$payload = $_POST['settings'] ?? '';
-		$raw = is_string( $payload ) && strlen( $payload ) <= 300000 ? json_decode( wp_unslash( $payload ), true ) : null;
+		$payload = wp_unslash( $_POST['settings'] ?? '' );
+		$raw = is_string( $payload ) && strlen( $payload ) <= 300000 ? json_decode( $payload, true ) : null;
 		$o = self::validate( $raw );
 		if ( !self::valid_scheme( $o['scheme'] ) ) {
 			wp_send_json_error( __( 'Invalid scheme colors', 'brand-admin-schemes' ), 400 );
@@ -1136,8 +761,8 @@ final class BAS_Plugin {
 		if ( !current_user_can( 'manage_options' ) ) {
 			wp_send_json_error( __( 'Forbidden', 'brand-admin-schemes' ), 403 );
 		}
-		$payload = $_POST['settings'] ?? '';
-		$raw = is_string( $payload ) && strlen( $payload ) <= 300000 ? json_decode( wp_unslash( $payload ), true ) : null;
+		$payload = wp_unslash( $_POST['settings'] ?? '' );
+		$raw = is_string( $payload ) && strlen( $payload ) <= 300000 ? json_decode( $payload, true ) : null;
 		if ( !is_array( $raw ) || ( $raw['format'] ?? '' ) !== 'bas/v1' ) {
 			wp_send_json_error( __( 'Unknown file format', 'brand-admin-schemes' ), 400 );
 		}
@@ -1172,6 +797,9 @@ final class BAS_Plugin {
 	 * @return string Admin CSS rules.
 	 */
 	private static function css( array $s ): string {
+		foreach ( [ 'menu', 'submenu', 'bar', 'highlight', 'button', 'link', 'text' ] as $bas_color_key ) {
+			if ( ! is_string( $s[$bas_color_key] ?? null ) || ! sanitize_hex_color( $s[$bas_color_key] ) ) { return ''; }
+		}
 		$menu = $s['menu'];
 		$sub = $s['submenu'];
 		$bar = $s['bar'];
@@ -1495,7 +1123,8 @@ final class BAS_Plugin {
 	}
 
 	/**
-	 * Register saved schemes with WordPress and print their active admin CSS.
+	 * Register saved schemes and enqueue active per-user CSS after Core colors.
+	 * @return void Registers schemes and an admin asset callback.
 	 */
 	public static function register_scheme(): void {
 		$o = self::settings();
@@ -1503,16 +1132,19 @@ final class BAS_Plugin {
 			return;
 		}
 		foreach ( $o['schemes'] as $id => $item ) {
-			$colors = $item['colors'];
+			$colors = is_array( $item ) ? ( $item['colors'] ?? [] ) : [];
+			if ( ! is_array( $colors ) || ! self::valid_scheme( $colors ) || '' === self::css( $colors ) ) { continue; }
 			wp_admin_css_color( $id, $item['name'], plugins_url( 'assets/scheme.css', __FILE__ ), array_slice( array_values( $colors ), 0, 4 ) );
 		}
 		// wp_admin_css_color registers the picker entry; saved colors are injected per user.
-		add_action( 'admin_head', static function() use( $o ) {
+		add_action( 'admin_enqueue_scripts', static function() use( $o ) {
 			$id = get_user_option( 'admin_color' );
 			if ( !isset( $o['schemes'][$id] ) ) {
 				return;
 			}
-			echo '<style id="bas-active-scheme">' . self::css( $o['schemes'][$id]['colors'] ) . '</style>';
+			wp_register_style( 'bas-active-scheme', false, [ 'colors' ], self::VERSION );
+			wp_enqueue_style( 'bas-active-scheme' );
+			wp_add_inline_style( 'bas-active-scheme', self::css( $o['schemes'][$id]['colors'] ) );
 		}, 100 );
 	}
 }

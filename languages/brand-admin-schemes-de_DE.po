@@ -1,5 +1,5 @@
 msgid ""
-msgstr "Project-Id-Version: Brand Admin Schemes 1.0.0\nPO-Revision-Date: 2026-10-05 16:00+0200\nLast-Translator: David Decker – DECKERWEB\nLanguage: de_DE\nContent-Type: text/plain; charset=UTF-8\nPlural-Forms: nplurals=2; plural=(n != 1);\n"
+msgstr "Project-Id-Version: Brand Admin Schemes 1.1.0\nPO-Revision-Date: 2026-10-05 16:00+0200\nLast-Translator: David Decker – DECKERWEB\nLanguage: de_DE\nContent-Type: text/plain; charset=UTF-8\nPlural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "%s is installed but inactive. Activate it first."
 msgstr "%s ist installiert, aber inaktiv. Bitte zuerst aktivieren."
@@ -37,11 +37,23 @@ msgstr "Kürzel (bis zu 3 Zeichen)"
 msgid "Accent"
 msgstr "Akzent"
 
+msgid "Action cancelled."
+msgstr "Vorgang abgebrochen."
+
 msgid "Activate"
 msgstr "Aktivieren"
 
 msgid "Activate Bricks QuickNav per site after selecting the Bricks parent or child theme."
 msgstr "Bricks QuickNav bitte je Website aktivieren, nachdem das Bricks-Theme oder ein Child-Theme ausgewählt wurde."
+
+msgid "Activating…"
+msgstr "Wird aktiviert…"
+
+msgid "Active"
+msgstr "Aktiv"
+
+msgid "Active filters: "
+msgstr "Aktive Filter: "
 
 msgid "Active scheme"
 msgstr "Aktives Farbschema"
@@ -73,6 +85,9 @@ msgstr "Admin-Toolbar"
 msgid "Administrators and users with permission"
 msgstr "Administratoren und Benutzer mit Berechtigung"
 
+msgid "Affected features remain paused until their requirements are met."
+msgstr "Betroffene Funktionen pausieren, bis ihre Voraussetzungen erfüllt sind."
+
 msgid "Agency package imported for review. Images were added to the Media Library; save all changes to apply settings."
 msgstr "Agentur-Paket zur Prüfung importiert. Bilder wurden der Mediathek hinzugefügt; speichere alle Änderungen, um die Einstellungen zu übernehmen."
 
@@ -97,14 +112,26 @@ msgstr "Alle Einstellungen gespeichert. Das gewählte Admin-Schema ist für dein
 msgid "Already active"
 msgstr "Bereits aktiv"
 
+msgid "Already up to date."
+msgstr "Bereits aktuell."
+
 msgid "An agency package includes settings and local PNG, JPEG, WebP or GIF images (up to 4 MB each). SVG files are excluded. On import, images are added to the Media Library immediately; review and save the settings afterward. ZIP support is required on the server."
 msgstr "Ein Agentur-Paket enthält Einstellungen und lokale PNG-, JPEG-, WebP- oder GIF-Bilder (jeweils bis 4 MB). SVG-Dateien sind ausgeschlossen. Beim Import werden Bilder sofort in die Mediathek übernommen; prüfe und speichere anschließend die Einstellungen. Der Server muss ZIP unterstützen."
 
 msgid "An image is unavailable. Choose a local replacement or remove the selection."
 msgstr "Ein Bild ist nicht verfügbar. Ein lokales Ersatzbild wählen oder die Auswahl entfernen."
 
+msgid "Another action for this plugin is running. Please wait."
+msgstr "Für dieses Plugin läuft bereits eine Aktion. Bitte warten."
+
+msgid "Another component interrupted the request. If Git Updater is active, temporarily deactivate it and retry."
+msgstr "Eine andere Komponente hat die Anfrage unterbrochen. Falls Git Updater aktiv ist, deaktiviere ihn vorübergehend und wiederhole den Vorgang."
+
 msgid "Another save is in progress. Try again shortly."
 msgstr "Eine andere Speicherung läuft gerade. Bitte gleich erneut versuchen."
+
+msgid "Another updater provides a different release. Refresh updates before continuing."
+msgstr "Ein anderer Updater bietet einen abweichenden Release an. Bitte die Updateinformationen vor dem Fortfahren aktualisieren."
 
 msgid "Apply to draft"
 msgstr "In den Entwurf übernehmen"
@@ -265,6 +292,9 @@ msgstr "Browser-Tab des Builder-Editors"
 msgid "Builder tab"
 msgstr "Builder-Tab"
 
+msgid "Bundled catalog"
+msgstr "Mitgelieferter Katalog"
+
 msgid "Button"
 msgstr "Schaltfläche"
 
@@ -273,6 +303,9 @@ msgstr "Buttonfarbe"
 
 msgid "CI · "
 msgstr "CI · "
+
+msgid "Cached or bundled catalog"
+msgstr "Gespeicherter oder mitgelieferter Katalog"
 
 msgid "Calm"
 msgstr "Ruhig"
@@ -295,6 +328,9 @@ msgstr "Archiveintrag konnte nicht gelesen werden."
 msgid "Catalog URL"
 msgstr "Katalog-URL"
 
+msgid "Catalog refreshed."
+msgstr "Katalog aktualisiert."
+
 msgid "Centered"
 msgstr "Zentriert"
 
@@ -306,6 +342,12 @@ msgstr "Änderungen bleiben bis zum Speichern ein Entwurf. Du kannst die Einrich
 
 msgid "Check contrast"
 msgstr "Kontrast prüfen"
+
+msgid "Check status"
+msgstr "Status prüfen"
+
+msgid "Checking status…"
+msgstr "Status wird geprüft…"
 
 msgid "Choose a branding JSON before enabling the starter template."
 msgstr "Vor dem Aktivieren der Startvorlage eine Branding-JSON auswählen."
@@ -406,11 +448,17 @@ msgstr "Kontrast"
 msgid "Contrast adjustments"
 msgstr "Kontrastanpassungen"
 
+msgid "Copied."
+msgstr "Kopiert."
+
 msgid "Copy"
 msgstr "Kopie"
 
 msgid "Copy color value"
 msgstr "Farbwert kopieren"
+
+msgid "Copy diagnostic information"
+msgstr "Diagnoseinformationen kopieren"
 
 msgid "Core Framework, ACSS and Bricks are shown only when readable colors are available. Saved color values remain available without the source."
 msgstr "Core Framework, ACSS und Bricks erscheinen nur, wenn auslesbare Farben vorhanden sind. Gespeicherte Farbwerte bleiben auch ohne die Quelle erhalten."
@@ -508,8 +556,14 @@ msgstr "Ungespeicherte Änderungen verwerfen und die Seite neu laden?"
 msgid "Discover more plugins by deckerweb"
 msgstr "Weitere Plugins von deckerweb entdecken"
 
+msgid "Discover randomly"
+msgstr "Zufällig entdecken"
+
 msgid "Dismiss permanently"
 msgstr "Dauerhaft schließen"
+
+msgid "Dismiss this notice"
+msgstr "Diesen Hinweis ausblenden"
 
 msgid "Displayed environment"
 msgstr "Angezeigte Umgebung"
@@ -616,6 +670,12 @@ msgstr "Februar"
 msgid "File too large."
 msgstr "Datei zu groß."
 
+msgid "Filesystem credentials are required."
+msgstr "Zugangsdaten für das Dateisystem werden benötigt."
+
+msgid "Filesystem credentials are required. Use the catalog with JavaScript enabled or the native Plugins screen."
+msgstr "Dateisystem-Zugangsdaten sind erforderlich. Bitte den Katalog mit aktiviertem JavaScript oder die WordPress-Pluginverwaltung verwenden."
+
 msgid "Filter"
 msgstr "Filtern"
 
@@ -663,6 +723,9 @@ msgstr "Favicon für die Website erzeugen"
 
 msgid "Generate frontend icon"
 msgstr "Frontend-Icon erzeugen"
+
+msgid "Git Updater is active. If a deckerweb installation or update fails, temporarily deactivate Git Updater and retry. Reactivate it afterwards if other plugins or themes need it. Only leave it disabled when those extensions have another reliable update provider."
+msgstr "Git Updater ist aktiv. Wenn eine deckerweb-Installation oder ein Update fehlschlägt, deaktiviere Git Updater vorübergehend und versuche es erneut. Aktiviere ihn danach wieder, wenn andere Plugins oder Themes ihn benötigen. Lass ihn nur dauerhaft deaktiviert, wenn diese Erweiterungen einen anderen zuverlässigen Updateweg besitzen."
 
 msgid "GitHub Stars"
 msgstr "GitHub-Sterne"
@@ -781,17 +844,29 @@ msgstr "deckerweb-Plugin installieren"
 msgid "Install now"
 msgstr "Jetzt installieren"
 
+msgid "Installation cancelled."
+msgstr "Installation abgebrochen."
+
 msgid "Installation environment"
 msgstr "Installationsumgebung"
 
 msgid "Installation environment: %s"
 msgstr "Installationsumgebung: %s"
 
+msgid "Installation failed."
+msgstr "Installation fehlgeschlagen."
+
 msgid "Installed"
 msgstr "Installiert"
 
+msgid "Installed · inactive"
+msgstr "Installiert · inaktiv"
+
 msgid "Installed: "
 msgstr "Installiert: "
+
+msgid "Installing…"
+msgstr "Wird installiert…"
 
 msgid "Invalid GitHub repository URL."
 msgstr "Ungültige GitHub-Repository-URL."
@@ -868,6 +943,9 @@ msgstr "Ungültige Plugin-Serie."
 msgid "Invalid scheme colors"
 msgstr "Ungültige Schemafarben"
 
+msgid "Invalid sort order."
+msgstr "Ungültige Sortierung."
+
 msgid "Invalid star count."
 msgstr "Ungültige Anzahl der GitHub-Sterne."
 
@@ -909,6 +987,9 @@ msgstr "WordPress-Site-Icon als Favicon beibehalten"
 
 msgid "Last save undone. Reload the page to see the full result."
 msgstr "Letzte Speicherung rückgängig gemacht. Lade die Seite neu, um das Ergebnis vollständig zu sehen."
+
+msgid "Last successful check: "
+msgstr "Zuletzt erfolgreich geprüft: "
 
 msgid "Last uploaded"
 msgstr "Zuletzt hochgeladen"
@@ -1060,11 +1141,20 @@ msgstr "Multisite: Branding und Medien gehören zu dieser Website. Die Netzwerka
 msgid "Name"
 msgstr "Name"
 
+msgid "Name A–Z"
+msgstr "Name A–Z"
+
+msgid "Name Z–A"
+msgstr "Name Z–A"
+
 msgid "Network"
 msgstr "Netzwerk"
 
 msgid "Network activate"
 msgstr "Netzwerkweit aktivieren"
+
+msgid "Network active"
+msgstr "Netzwerkweit aktiv"
 
 msgid "Network permission denied."
 msgstr "Keine Berechtigung für das Netzwerk."
@@ -1098,6 +1188,9 @@ msgstr "Es wurden keine nicht verfügbaren ausgewählten Login-Bilder gefunden"
 
 msgid "None"
 msgstr "Keine"
+
+msgid "Not installed. You can try again."
+msgstr "Nicht installiert. Ein erneuter Versuch ist möglich."
 
 msgid "Nothing is applied to website branding until you save all changes."
 msgstr "Erst mit „Alle Änderungen speichern“ wird das Website-Branding geändert."
@@ -1190,7 +1283,10 @@ msgid "Password"
 msgstr "Passwort"
 
 msgid "Permission denied."
-msgstr "Keine Berechtigung."
+msgstr "Zugriff verweigert."
+
+msgid "Permission denied. Reload the page and check your permissions."
+msgstr "Zugriff verweigert. Lade die Seite neu und prüfe deine Berechtigungen."
 
 msgid "Planned: "
 msgstr "Geplant: "
@@ -1243,6 +1339,9 @@ msgstr "Der Private-Modus muss ein boolescher Wert sein."
 msgid "Product website"
 msgstr "Produktwebsite"
 
+msgid "Public catalog callbacks require both providers and cannot be used in private mode."
+msgstr "Öffentliche Katalog-Callbacks benötigen beide Anbieter und können nicht im Private-Modus verwendet werden."
+
 msgid "Quote on image panel"
 msgstr "Zitat auf der Bildfläche"
 
@@ -1254,6 +1353,9 @@ msgstr "Gut lesbar"
 
 msgid "Recent changes"
 msgstr "Letzte Änderungen"
+
+msgid "Recently updated"
+msgstr "Zuletzt aktualisiert"
 
 msgid "Refresh catalog"
 msgstr "Katalog aktualisieren"
@@ -1281,6 +1383,9 @@ msgstr "Seite neu laden"
 
 msgid "Remember Me"
 msgstr "Angemeldet bleiben"
+
+msgid "Remove filter: "
+msgstr "Filter entfernen: "
 
 msgid "Remove image"
 msgstr "Bild entfernen"
@@ -1317,6 +1422,9 @@ msgstr "Diesen Abschnitt zurücksetzen"
 
 msgid "Reset this section in the draft? Save all changes to apply it."
 msgstr "Diesen Abschnitt im Entwurf zurücksetzen? Mit „Alle Änderungen speichern“ übernehmen."
+
+msgid "Reset view"
+msgstr "Ansicht zurücksetzen"
 
 msgid "Restore saved branding"
 msgstr "Gespeichertes Branding wiederherstellen"
@@ -1429,6 +1537,9 @@ msgstr "Sekundär"
 msgid "See the release on GitHub."
 msgstr "Sieh dir den Release auf GitHub an."
 
+msgid "Select and copy the text."
+msgstr "Text markieren und kopieren."
+
 msgid "Selected by deckerweb · Installed from GitHub releases"
 msgstr "Von deckerweb ausgewählt · Installation aus GitHub-Releases"
 
@@ -1447,8 +1558,14 @@ msgstr "Die Einstellungen wurden in einem anderen Editor geändert. Exportiere d
 msgid "Settings imported for review. Check the previews, then save all changes to apply them."
 msgstr "Einstellungen zur Prüfung importiert. Kontrolliere die Vorschauen und speichere anschließend alle Änderungen."
 
+msgid "Settings saved."
+msgstr "Einstellungen gespeichert."
+
 msgid "Shield outline"
 msgstr "Schildumriss"
+
+msgid "Shop"
+msgstr "Shop"
 
 msgid "Show deckerweb under Add Plugins"
 msgstr "deckerweb unter „Plugins hinzufügen“ anzeigen"
@@ -1462,6 +1579,9 @@ msgstr "Website-Titel anzeigen"
 msgid "Shows plugins whose platform and dependency requirements are met in this site or network. Without this filter, plugins with missing requirements remain visible."
 msgstr "Zeigt Plugins, deren Plattform- und Abhängigkeitsanforderungen auf dieser Website oder im Netzwerk erfüllt sind. Ohne diesen Filter bleiben Plugins mit fehlenden Voraussetzungen sichtbar."
 
+msgid "Shuffle again"
+msgstr "Neu mischen"
+
 msgid "Site Icon is used automatically. Choose an image to override it."
 msgstr "Das Website-Icon wird automatisch verwendet. Ein eigenes Bild kann es ersetzen."
 
@@ -1473,6 +1593,9 @@ msgstr "Website-Farbschema ausgewählt"
 
 msgid "Small plugins. Practical improvements."
 msgstr "Kleine Plugins. Konkrete Verbesserungen."
+
+msgid "Sort by"
+msgstr "Sortieren nach"
 
 msgid "Source"
 msgstr "Quelle"
@@ -1488,6 +1611,9 @@ msgstr "Sternen-Umriss"
 
 msgid "Staging"
 msgstr "Staging"
+
+msgid "Standard"
+msgstr "Standard"
 
 msgid "Starter template removed. Existing website branding stays unchanged."
 msgstr "Startvorlage entfernt. Bestehendes Website-Branding bleibt unverändert."
@@ -1528,6 +1654,9 @@ msgstr "Tab-Icons"
 msgid "Tablet"
 msgstr "Tablet"
 
+msgid "Technical information"
+msgstr "Technische Informationen"
+
 msgid "Template loaded for review."
 msgstr "Vorlage zur Prüfung geladen."
 
@@ -1552,11 +1681,17 @@ msgstr "Das GitHub-Paket enthält nicht die Plugin-Datei von Brand Admin Schemes
 msgid "The GitHub release could not be downloaded."
 msgstr "Das GitHub-Release konnte nicht heruntergeladen werden."
 
+msgid "The action is still running. Check its status again."
+msgstr "Die Aktion läuft noch. Bitte den Status erneut prüfen."
+
+msgid "The approved package could not be verified."
+msgstr "Das freigegebene Paket konnte nicht geprüft werden."
+
 msgid "The approved release changed. Refresh updates first."
-msgstr "Das freigegebene Release hat sich geändert. Bitte zuerst die Updates aktualisieren."
+msgstr "Die freigegebene Version hat sich geändert. Suche zuerst erneut nach Updates."
 
 msgid "The approved release could not be verified."
-msgstr "Der freigegebene Release konnte nicht geprüft werden."
+msgstr "Die freigegebene Version konnte nicht geprüft werden."
 
 msgid "The badge appears in the admin bar on both the frontend and backend. Automatic detection uses the WordPress environment first and cautious site address hints only when no environment is configured."
 msgstr "Die Kennzeichnung erscheint in der Adminleiste im Frontend und Backend. Die automatische Erkennung verwendet zuerst die WordPress-Umgebung und zieht nur ohne konfigurierte Umgebung vorsichtige Hinweise aus der Website-Adresse heran."
@@ -1573,6 +1708,9 @@ msgstr "Der Katalog ist deaktiviert."
 msgid "The catalog is hidden."
 msgstr "Der Katalog ist ausgeblendet."
 
+msgid "The deckerweb catalog could not load. Check platform requirements and the complete Library integration in the host plugin."
+msgstr "Der deckerweb-Katalog konnte nicht geladen werden. Bitte PHP-/WordPress-Anforderungen und die vollständige Library-Einbindung im Host-Plugin prüfen."
+
 msgid "The default applies to users on the WordPress default scheme; forcing also overrides personal selections."
 msgstr "Der Standard gilt für Nutzer mit WordPress-Standardschema; „erzwingen“ überschreibt auch individuelle Auswahlen."
 
@@ -1584,6 +1722,9 @@ msgstr "Das Icon konnte nicht erzeugt werden. Bitte versuche es erneut."
 
 msgid "The icon could not be saved to the Media Library."
 msgstr "Das Icon konnte nicht in der Mediathek gespeichert werden."
+
+msgid "The installed plugin identity could not be verified for this catalog update."
+msgstr "Die Identität des installierten Plugins konnte für dieses Katalogupdate nicht bestätigt werden."
 
 msgid "The online catalog is unavailable. Showing cached or bundled entries; online approval is checked again before installation."
 msgstr "Der Online-Katalog ist nicht erreichbar. Angezeigt wird der gespeicherte oder mitgelieferte Katalog; vor der Installation wird die Online-Freigabe erneut geprüft."
@@ -1609,11 +1750,20 @@ msgstr "Der Download des privaten Updates ist fehlgeschlagen. Prüfe die Zugangs
 msgid "The release checksum does not match. Installation stopped."
 msgstr "Die Prüfsumme des Releases stimmt nicht überein. Installation gestoppt."
 
+msgid "The request could not be completed. Check the plugin status before trying again."
+msgstr "Die Anfrage konnte nicht abgeschlossen werden. Vor einem erneuten Versuch den Plugin-Status prüfen."
+
+msgid "The requirements below describe the offered release."
+msgstr "Die folgenden Voraussetzungen beziehen sich auf den angebotenen Release."
+
 msgid "The source palette has changed since this scheme was saved. Review the old and new colors before updating it."
 msgstr "Die Quellpalette hat sich seit dem Speichern geändert. Prüfe die alten und neuen Farben vor der Aktualisierung."
 
 msgid "The update filesystem is unavailable. Please try again."
 msgstr "Das Dateisystem für das Update ist nicht verfügbar. Bitte versuche es erneut."
+
+msgid "The update has not been confirmed. You can try again."
+msgstr "Die Aktualisierung wurde nicht bestätigt. Du kannst es erneut versuchen."
 
 msgid "The update package could not be checked."
 msgstr "Das Updatepaket konnte nicht geprüft werden."
@@ -1623,6 +1773,9 @@ msgstr "Die WordPress-/PHP-Voraussetzungen des Updatepakets fehlen oder sind ung
 
 msgid "The upload quota is exhausted."
 msgstr "Der verfügbare Speicherplatz für Uploads ist ausgeschöpft."
+
+msgid "These details contain component versions and catalog status, without credentials or site content."
+msgstr "Diese Angaben enthalten Komponentenversionen und den Katalogstatus, keine Zugangsdaten oder Website-Inhalte."
 
 msgid "These small icons appear in browser tabs, helping you tell the public website, WordPress admin and builder editor apart."
 msgstr "Diese kleinen Icons erscheinen in den Tabs deines Browsers. So erkennst du sofort, ob ein Tab die Website, den WordPress-Admin oder den Builder-Editor zeigt."
@@ -1653,6 +1806,9 @@ msgstr "Do"
 
 msgid "Thursday"
 msgstr "Donnerstag"
+
+msgid "Tools"
+msgstr "Werkzeuge"
 
 msgid "Try background"
 msgstr "Hintergrundvorschlag:"
@@ -1696,8 +1852,23 @@ msgstr "Nicht vertrauenswürdige Release-URL."
 msgid "Update %1$s to version %2$s or newer."
 msgstr "%1$s bitte auf Version %2$s oder neuer aktualisieren."
 
+msgid "Update available"
+msgstr "Update verfügbar"
+
+msgid "Update failed."
+msgstr "Aktualisierung fehlgeschlagen."
+
 msgid "Update the other active deckerweb plugins to use the current shared update component and translated update messages."
 msgstr "Die anderen aktiven deckerweb-Plugins aktualisieren, damit die aktuelle gemeinsame Update-Komponente und übersetzte Update-Meldungen verwendet werden."
+
+msgid "Update to %s"
+msgstr "Auf %s aktualisieren"
+
+msgid "Updated"
+msgstr "Aktualisiert"
+
+msgid "Updating…"
+msgstr "Wird aktualisiert…"
 
 msgid "Uploading another JSON replaces this starter template. Existing website branding stays unchanged."
 msgstr "Eine weitere JSON-Datei ersetzt diese Startvorlage. Bestehendes Website-Branding bleibt unverändert."

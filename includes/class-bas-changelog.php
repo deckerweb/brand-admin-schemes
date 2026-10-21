@@ -9,6 +9,7 @@ defined( 'ABSPATH' ) || exit;
 
 /** Render local history as escaped headings, dates, category badges and lists. */
 final class Changelog {
+	/** Detect the active German admin locale, including its formal variant. @return bool */
 	public static function is_german(): bool {
 		return 1 === preg_match( '/^de(?:_|$)/i', determine_locale() );
 	}
@@ -64,12 +65,13 @@ final class Changelog {
 		}
 		return $html;
 	}
+	/** Print the escaped local history with native close and link fallbacks. @return void */
 	public static function dialog(): void {
 		$content = self::content();
 		if ( '' === $content ) {
 			return;
 		}
-		echo '<dialog id="bas-document-changelog" class="bas-document-dialog" aria-labelledby="bas-document-changelog-title"><header class="bas-document-header"><h2 id="bas-document-changelog-title">Brand Admin Schemes · ' . esc_html__( 'Changelog', 'brand-admin-schemes' ) . '</h2><button type="button" class="button" data-bas-close autofocus>' . esc_html__( 'Close', 'brand-admin-schemes' ) . '</button></header><div class="bas-document-content" tabindex="0">';
+		echo '<dialog hidden id="bas-document-changelog" class="bas-document-dialog" aria-labelledby="bas-document-changelog-title"><header class="bas-document-header"><h2 id="bas-document-changelog-title">Brand Admin Schemes · ' . esc_html__( 'Changelog', 'brand-admin-schemes' ) . '</h2><form method="dialog"><button type="submit" class="button" data-bas-close autofocus>' . esc_html__( 'Close', 'brand-admin-schemes' ) . '</button></form></header><div class="bas-document-content" tabindex="0">';
 		echo $content; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- All JSON text is escaped in content(); markup is fixed.
 		echo '</div><p class="bas-document-source"><a href="' . esc_url( self::url() ) . '">' . esc_html__( 'Complete changelog', 'brand-admin-schemes' ) . '</a></p></dialog>';
 	}

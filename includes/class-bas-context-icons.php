@@ -82,6 +82,9 @@ final class BAS_Context_Icons {
 		add_action( 'init', [__CLASS__, 'provision_on_request'], 1 );
 		add_action( 'wp_initialize_site', [__CLASS__, 'initialize_site'], 200 );
 		add_filter( 'site_icon_meta_tags', [__CLASS__, 'filter_site_icon'], 100 );
+		add_action( 'wp_enqueue_scripts', [__CLASS__, 'enqueue_reapply'] );
+		add_action( 'admin_enqueue_scripts', [__CLASS__, 'enqueue_reapply'] );
+		add_action( 'login_enqueue_scripts', [__CLASS__, 'enqueue_reapply'] );
 		add_action( 'wp_head', [__CLASS__, 'render'], 101 );
 		add_action( 'admin_head', [__CLASS__, 'render'], 101 );
 		add_action( 'login_head', [__CLASS__, 'render'], 101 );
@@ -146,10 +149,19 @@ final class BAS_Context_Icons {
 			return;
 		}
 		echo '<link id="bas-context-icon" rel="icon" type="image/svg+xml" href="' . esc_attr( $icon ) . '">' . "\n";
-		// Builder shells can rewrite their head after load; apply the icon once more.
-		if ( self::builder() ) {
-			echo '<script>(function(){var u=' . wp_json_encode( $icon ) . ';function apply(){var l=document.querySelector("#bas-context-icon");if(!l){l=document.createElement("link");l.id="bas-context-icon";l.rel="icon";l.type="image/svg+xml";document.head.appendChild(l)}l.href=u}document.addEventListener("DOMContentLoaded",apply);window.addEventListener("load",apply);setTimeout(apply,1200)})();</script>' . "\n";
-		}
+
+	}
+
+	/**
+	 * Schedule favicon reapplication only for an eligible top-level builder shell.
+	 * @return void Enqueues a local script with JSON-encoded, constrained icon data.
+	 */
+	public static function enqueue_reapply(): void {
+		if ( ! self::builder() ) { return; }
+		$icon = self::current_icon();
+		if ( '' === $icon ) { return; }
+		wp_enqueue_script( 'bas-context-icon', plugins_url( 'assets/context-icon.js', BAS_PLUGIN_FILE ), [], \BAS_Plugin::VERSION, [ 'strategy' => 'defer', 'in_footer' => false ] );
+		wp_add_inline_script( 'bas-context-icon', 'window.BAS_CONTEXT_ICON = ' . wp_json_encode( $icon ) . ';', 'before' );
 	}
 
 	/** Return a generated favicon only for a configured top-level tab. */

@@ -2,7 +2,9 @@
 
 [Deutsch](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) · [Home](https://github.com/deckerweb/brand-admin-schemes/wiki)
 
-A practical guide to Brand Admin Schemes 1.0.0 (unpublished test build). Use the contents below to jump to a setting.
+A practical guide to Brand Admin Schemes 1.1.0. Use the contents below to jump to a setting.
+
+Requires WordPress 6.4+ and PHP 8.1+. Includes Library 1.1.0 and Updater 2.2.0.
 
 ## Contents
 
@@ -122,7 +124,7 @@ English source strings and German (`de_DE`) `.po`/`.mo` files are included. Word
 
 ## Extensions
 
-The documented bas_site_settings_changed hook reports site ID and save, undo or site_icon operation. A future Leitstand adapter must use actual interfaces; BAS has no Leitstand dependency.
+The documented bas_site_settings_changed hook reports site ID and save, undo or site_icon operation. BAS works independently. Optional management integrations use the documented interfaces.
 
 <a name="faq"></a>
 
@@ -162,7 +164,17 @@ Built by David Decker for the sites he works on at DECKERWEB. Have fun making th
 
 The footer links to the German or English Wiki guide. Changelog opens the complete bundled local history; without JavaScript, the link opens its localized changelog text file.
 
-[Current build and acceptance](../PROFILE.md) · [Data](../DATA.md) · [Full FAQ](FAQ-English.md)
+[Data and uninstall](https://github.com/deckerweb/brand-admin-schemes/blob/main/docs/DATA.md) · [Full FAQ](https://github.com/deckerweb/brand-admin-schemes/wiki/FAQ-English)
 
 
 [Branding workflows](https://github.com/deckerweb/brand-admin-schemes/wiki/Workflows-English)
+
+## Multisite
+
+Network activation makes BAS available across the network. Branding and personal color overrides belong to each website. A named network starter is available in each website’s template selector even when automatic use for new sites is disabled. Preview it and save to apply. Existing branding is never silently replaced. Only network administrators can replace or delete the shared starter.
+
+[Multisite guide](https://github.com/deckerweb/brand-admin-schemes/blob/main/docs/MULTISITE.md)
+
+## Support and security
+
+Use [Issues](https://github.com/deckerweb/brand-admin-schemes/issues) for bugs and [Discussions](https://github.com/deckerweb/brand-admin-schemes/discussions) for questions. Report vulnerabilities [privately](https://github.com/deckerweb/brand-admin-schemes/security/advisories/new); see the [security policy](https://github.com/deckerweb/brand-admin-schemes/security/policy).

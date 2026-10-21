@@ -48,7 +48,7 @@ for lang in ['en','de']:
  if D.get('publication_state')=='released':prefix=re.sub(r'^> .*\n\n','',prefix,count=1)
  md=prefix.replace('{{FAQ}}',faq)+screenshot+'## Changelog\n\n'+note+'\n\n'+history(short,lang)+'\n'+r['suffix']
  (P/('README.md'if lang=='en'else'README-de.md')).write_text(md)
- header='=== Brand Admin Schemes ===\nContributors: deckerweb\nTags: admin colors, branding, login, favicon, gutenberg\nRequires at least: 6.4\nRequires PHP: 8.0\nTested up to: 7.1.2\nStable tag: '+D['version']+'\nLicense: GPLv2 or later\nLicense URI: https://www.gnu.org/licenses/gpl-2.0.html\n\n'
+ header='=== Brand Admin Schemes ===\nContributors: deckerweb\nTags: admin colors, branding, login, favicon, gutenberg\nRequires at least: 6.4\nRequires PHP: 8.1\nTested up to: 7.1.3\nStable tag: '+D['version']+'\nLicense: GPLv2 or later\nLicense URI: https://www.gnu.org/licenses/gpl-2.0.html\n\n'
  (P/('readme.txt'if lang=='en'else'readme-de.txt')).write_text(header+('Brand colors for the WordPress admin, login, toolbar and browser tabs.' if lang=='en' else 'Markenfarben für WordPress-Admin, Login, Toolbar und Browser-Tabs.')+'\n\n== Description ==\n\n'+text_readme(md))
  other='[Deutsch](CHANGELOG-de.md)'if lang=='en'else'[English](CHANGELOG.md)'
  full='# Changelog\n\n'+other+'\n\n'+history(H,lang)
@@ -61,11 +61,12 @@ for lang in ['en','de']:
   filename=prefix+('-de.md' if prefix.endswith('WORKFLOWS') and lang=='de' else '.md' if prefix.endswith('WORKFLOWS') else '-Deutsch.md' if lang=='de' else '-English.md')
   other=filename.replace('-de.md','.md') if filename.endswith('-de.md') else filename.replace('.md','-de.md') if prefix.endswith('WORKFLOWS') else filename.replace('-Deutsch','-English') if lang=='de' else filename.replace('-English','-Deutsch')
   text=('# Branding workflows' if lang=='en' else '# Branding-Abläufe')+'\n\n['+('Deutsch' if lang=='en' else 'English')+']('+other.split('/')[-1]+')\n\n'+'\n\n'.join('## '+q['question']+'\n\n'+q['answer'] for q in D.get('workflow_faq',{}).get(lang,[]))+'\n'
+  if prefix == 'docs/wiki/Workflows': text=text.replace('Workflows-English.md','https://github.com/deckerweb/brand-admin-schemes/wiki/Workflows-English').replace('Workflows-Deutsch.md','https://github.com/deckerweb/brand-admin-schemes/wiki/Workflows-Deutsch')
   (P/filename).write_text(text)
  state=D.get('publication_state','development')
  notice=('Release prepared; publication is pending.' if lang=='en' else 'Release vorbereitet; Veröffentlichung steht noch aus.') if state=='prepared' else (('Published release.' if lang=='en' else 'Veröffentlichter Release.') if state=='released' else ('Unpublished test build; not a production release.' if lang=='en' else 'Unveröffentlichter Teststand; keine Produktionsfreigabe.'))
  notes='# Brand Admin Schemes '+D['version']+'\n\n'+notice+'\n\n'+history(H[:1],lang)
- notes+='\n'+('Requires WordPress 6.4+ and PHP 8.0+. Update from the WordPress Plugins screen or upload the release ZIP via Plugins → Add New → Upload Plugin. Branding, media and personal color choices are retained.' if lang=='en' else 'Benötigt WordPress 6.4+ und PHP 8.0+. Aktualisiere über die WordPress-Pluginseite oder lade das Release-ZIP unter Plugins → Installieren → Plugin hochladen hoch. Branding, Medien und persönliche Farbauswahl bleiben erhalten.')+'\n'
+ notes+='\n'+('Requires WordPress 6.4+ and PHP 8.1+. Update from the WordPress Plugins screen or upload the release ZIP via Plugins → Add New → Upload Plugin. Branding, media and personal color choices are retained.' if lang=='en' else 'Benötigt WordPress 6.4+ und PHP 8.1+. Aktualisiere über die WordPress-Pluginseite oder lade das Release-ZIP unter Plugins → Installieren → Plugin hochladen hoch. Branding, Medien und persönliche Farbauswahl bleiben erhalten.')+'\n'
  notes+='\n'+('[Deutsch](RELEASE-NOTES-de.md)'if lang=='en'else'[English](RELEASE-NOTES.md)')+'\n'
  (P/('RELEASE-NOTES.md'if lang=='en'else'RELEASE-NOTES-de.md')).write_text(notes)
 (P/'docs/history.json').write_text(json.dumps({'display_count':count,'versions':H},ensure_ascii=False,indent=2)+'\n')

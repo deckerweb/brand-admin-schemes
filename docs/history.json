@@ -2,6 +2,31 @@
   "display_count": 7,
   "versions": [
     {
+      "version": "1.1.0",
+      "status": "released",
+      "date": "2026-10-21",
+      "entries": [
+        {
+          "category": "Improved",
+          "en": "Load saved admin colors and contextual builder-tab icons through WordPress asset APIs.",
+          "de_DE": "Gespeicherte Adminfarben und kontextabhängige Builder-Tab-Icons über die WordPress-Asset-APIs laden.",
+          "de_DE_formal": "Gespeicherte Adminfarben und kontextabhängige Builder-Tab-Icons über die WordPress-Asset-APIs laden."
+        },
+        {
+          "category": "Fixed",
+          "en": "Keep closed documentation dialogs hidden and preserve native closing and documentation links when scripts conflict.",
+          "de_DE": "Geschlossene Dokumentationsdialoge verborgen halten und natives Schließen sowie Dokumentationslinks bei Skriptkonflikten erhalten.",
+          "de_DE_formal": "Geschlossene Dokumentationsdialoge verborgen halten und natives Schließen sowie Dokumentationslinks bei Skriptkonflikten erhalten."
+        },
+        {
+          "category": "Misc",
+          "en": "Includes deckerweb Plugin Library 1.1.0 and deckerweb Updater 2.2.0. Requires PHP 8.1 or later; WordPress 6.4 remains supported.",
+          "de_DE": "Enthält deckerweb Plugin Library 1.1.0 und deckerweb Updater 2.2.0. Benötigt PHP 8.1 oder höher; WordPress 6.4 bleibt unterstützt.",
+          "de_DE_formal": "Enthält deckerweb Plugin Library 1.1.0 und deckerweb Updater 2.2.0. Benötigt PHP 8.1 oder höher; WordPress 6.4 bleibt unterstützt."
+        }
+      ]
+    },
+    {
       "version": "1.0.0",
       "status": "released",
       "date": "2026-10-06",
@@ -32,9 +57,9 @@
         },
         {
           "category": "New",
-          "en": "Access website branding through the optional Leitstand integration.",
-          "de_DE": "Website-Branding über die optionale Leitstand-Anbindung öffnen.",
-          "de_DE_formal": "Website-Branding über die optionale Leitstand-Anbindung öffnen."
+          "en": "Access website branding through optional management integrations.",
+          "de_DE": "Website-Branding über optionale Verwaltungsintegrationen öffnen.",
+          "de_DE_formal": "Website-Branding über optionale Verwaltungsintegrationen öffnen."
         },
         {
           "category": "Improved",
@@ -150,19 +175,6 @@
           "en": "Documents security reporting and data ownership; uninstall clears temporary Undo and updater cache while preserving branding, media and user choices.",
           "de_DE": "Dokumentiert Sicherheitsmeldungen und Datenhaltung; die Deinstallation bereinigt temporäres Undo und den Updater-Cache und erhält Branding, Medien und Benutzerauswahl.",
           "de_DE_formal": "Dokumentiert Sicherheitsmeldungen und Datenhaltung; die Deinstallation bereinigt temporäres Undo und den Updater-Cache und erhält Branding, Medien und Benutzerauswahl."
-        }
-      ]
-    },
-    {
-      "version": "0.17.0",
-      "status": "development",
-      "date": null,
-      "entries": [
-        {
-          "category": "New",
-          "en": "Compact, read-only Site Health information without status tests.",
-          "de_DE": "Kompakter, rein informativer Website-Zustand-Bericht ohne Status-Tests.",
-          "de_DE_formal": "Kompakter, rein informativer Website-Zustand-Bericht ohne Status-Tests."
         }
       ]
     },

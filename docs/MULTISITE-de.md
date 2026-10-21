@@ -1,16 +1,23 @@
-# Multisite und Leitstand
+# Multisite und Integrationen
 
 [English](MULTISITE.md)
 
-BAS unterstützt Einzel- und Netzwerkaktivierung. bas_settings gehört immer zur jeweiligen Website. Es gibt keinen Netzwerk-Branding-Editor, keine automatische Verteilung oder Vererbung. Loginmedien und Website-Icon bleiben in der lokalen Mediathek und den Website-Optionen. Die Einstellungen werden auf jeder Website unter Einstellungen → Brand Admin Schemes verwaltet.
+BAS unterstützt Einzel- und Netzwerkaktivierung. Branding, Loginmedien und Website-Icon gehören zur jeweiligen Website. Die Einstellungen liegen unter Einstellungen → Markenfarben im Admin. Die Netzwerkaktivierung kopiert keine Einstellungen und erzeugt keine laufende Vererbung.
 
-Persönliche Farben verwenden in Multisite den websitebezogenen admin_color-Schlüssel. Profilformular, Core-Profil-AJAX, BAS Save und Undo verwenden denselben Website-Bereich. Netzwerk-Profil und Netzwerk-Admin behalten die globale Auswahl. Ein benutzergebundener signierter Kontext überträgt den Netzwerk-Profilbereich an Core-AJAX; Core prüft weiterhin seine eigene Nonce und speichert global. Single-Site bleibt global. Alte globale bas-Auswahlen ohne passendes lokales Schema fallen auf eine gültige Core-/Standardfarbe zurück; keine Massenmigration. Undo verweigert fremde Speicherbereiche und nachträglich geänderte persönliche Farbauswahlen.
+## Netzwerk-Startvorlage
 
-Einstellungen benötigen manage_options, Medien zusätzlich upload_files. bas_view_context_icons steuert das Standardpublikum; öffentliche Anzeige ist ausdrücklich optional. Neue Websites erhalten bei Netzwerkaktivierung das Administrator-Anzeigerecht erst nach Core-Initialisierung. Bestehende Websites werden beim ersten berechtigten Aufruf einmal provisioniert; bewusste Entzüge bleiben erhalten. Kein Aktivierungsdurchlauf über alle Websites. Bei Deinstallation gelten die dokumentierten [Datenregeln](DATA-de.md).
+Unter Netzwerk-Admin → Einstellungen → Branding-Startvorlage eine portable bas/v1-JSON hochladen. Name und Status bleiben sichtbar; neue Uploads zeigen zusätzlich Quelldatei und Zeitpunkt. Optional werden neu angelegte Websites einmalig eingerichtet, wenn BAS netzwerkaktiv ist. Alternativ eine ausdrücklich gewählte leere Zielwebsite per ID einrichten. Bestehendes Branding wird dabei nicht überschrieben; Medien-IDs und websitespezifische Texte werden nicht verteilt.
 
-BAS funktioniert ohne Leitstand. Eine spätere Anbindung kann get_blog_option oder sauber gepaarte switch_to_blog/restore_current_blog-Aufrufe nutzen. bas_site_settings_changed meldet nach save, undo oder site_icon nur Website-ID und Vorgang. Der Hook verteilt keine Einstellungen und gewährt keine Rechte. Beliebige programmgesteuerte Optionsänderungen lösen ihn nicht aus; dafür existieren Core-Optionshooks. Eine konkrete Leitstand-Oberfläche oder validierte direkte Anbindung ist nicht enthalten.
+Die gespeicherte Netzwerkvorlage steht auf den Untersites unter Branding-Vorlagen zur Auswahl, auch wenn ihre automatische Anwendung deaktiviert ist. Änderungen prüfen, in den Entwurf übernehmen und anschließend ausdrücklich speichern. Netzwerkvorlagen können nur in den Netzwerkeinstellungen mit Bestätigung gelöscht werden. Bereits übernommenes Website-Branding bleibt erhalten.
 
-Library 0.6.0 ist original eingebettet, wählt eine gemeinsame kompatible Runtime und verwaltet ihren Katalog unabhängig vom Branding. Updater V2 bleibt für BAS zuständig. Keine private GitHub-Authentifizierung wurde ergänzt. Vor stabilem Release tatsächliches ZIP auf Single-Site, zwei Multisite-Websites, gleichem Benutzer, Netzwerk-Profil, Undo, Einzel-/Netzwerkaktivierung, neuen Websites, Rechteentzug, Medien/Quota, gemischten Hosts und Browser-/Builder-Kontexten prüfen.
+## Persönliche Farben, Rechte und Lebenszyklus
 
+Persönliche Adminfarben sind in Multisite websitebezogen, im Netzwerk-Admin und Netzwerk-Profil global. Profilformular, Core-Profil-AJAX, BAS-Speichern und Undo verwenden denselben Speicherbereich. Ein benutzergebundener signierter Kontext sichert den Netzwerk-Profilpfad; Core prüft zusätzlich seine eigene AJAX-Nonce. Auf Einzelwebsites bleibt die globale WordPress-Auswahl erhalten. Undo verweigert fremde Speicherbereiche und nachträglich geänderte persönliche Farben.
 
-Optionale Netzwerk-Startvorlage: Netzwerk-Admin → Einstellungen → Branding-Startvorlage. Portable bas/v1-JSON hochladen, einmalige Einrichtung neuer Websites aktivieren oder eine leere Zielwebsite per ID wählen. Bestehendes Branding und persönliche Farbvorgaben werden nie überschrieben. Automatische Einrichtung neuer Websites erfordert Netzwerkaktivierung. Medien-IDs werden nicht übertragen. Das optionale Leitstand-Modul bietet Links; eine Leitstand-Installation ist nicht erforderlich.
+Einstellungen benötigen manage_options, Medien zusätzlich upload_files. bas_view_context_icons steuert das Standardpublikum der Kontext-Icons; öffentliche Anzeige ist optional. Neue Websites erhalten bei Netzwerkaktivierung das Administrator-Anzeigerecht nach Core-Initialisierung. Bestehende Websites werden beim ersten berechtigten Aufruf einmal provisioniert; bewusste Rechteentzüge bleiben erhalten. Kein Aktivierungsdurchlauf über sämtliche Websites. Siehe [Datenregeln](DATA-de.md) für Aufbewahrung und optionale Bereinigung.
+
+## Gemeinsame Komponenten und optionale Integrationen
+
+Die originale Library 1.1.0 wählt eine gemeinsame kompatible Runtime; ihr Katalog ist vom Branding unabhängig. Der Updater 2.2.0 bleibt über den BAS-Adapter zuständig. Bei aktivem Online-Katalog werden dessen freigegebene Metadaten und Pakete verwendet; standardmäßig ist Online deaktiviert. Frühere zuerst geladene Updater-Kopien werden anhand ihrer Fähigkeiten behandelt und nicht doppelt deklariert.
+
+BAS benötigt kein externes Verwaltungsplugin. Eine optionale Verwaltungsanbindung kann Website-Einstellungen verlinken. bas_site_settings_changed meldet nach Speichern, Undo oder Site-Icon-Aktion nur Website-ID und Vorgang; der Hook verteilt selbst keine Einstellungen und gewährt keine Rechte. Programmgesteuerte fremde Optionsänderungen verwenden die regulären Core-Hooks.

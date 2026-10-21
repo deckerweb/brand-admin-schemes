@@ -35,13 +35,17 @@ final class GitHubUpdates {
 					}
 				} );
 			}
+			$options = $supports_translation ? [ 'translate' => $translator ] : [];
+			if ( defined( '\\Deckerweb\\GitHubReleaseUpdater\\V2\\Updater::SUPPORTS_CATALOG_PROVIDER' ) && function_exists( 'deckerweb_library_updater_options_v1' ) ) {
+				$options = array_merge( $options, deckerweb_library_updater_options_v1( BAS_PLUGIN_FILE, self::REPOSITORY ) );
+			}
 			$updater = new \Deckerweb\GitHubReleaseUpdater\V2\Updater(
 				BAS_PLUGIN_FILE,
 				self::REPOSITORY,
 				'Brand Admin Schemes',
 				__( 'Bring your brand colors to the WordPress admin, login, toolbar, and browser tabs. Use Core Framework, Bricks, ACSS, or your own palette.', 'brand-admin-schemes' ),
 				$this->artwork(),
-				$supports_translation ? [ 'translate' => $translator ] : []
+				$options
 			);
 		} catch ( \InvalidArgumentException $error ) {
 			// An unsupported directory must not break the admin or login design.
