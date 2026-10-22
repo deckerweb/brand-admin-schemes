@@ -1,5 +1,12 @@
 == Changelog ==
 
+= 1.1.1 =
+
+2026-10-22
+
+* Fixed: Keep BAS updates on the bundled updater when another plugin loads an older updater first.
+* Misc: Includes deckerweb Updater 2.2.1; retains deckerweb Plugin Library 1.1.0.
+
 = 1.1.0 =
 
 2026-10-21

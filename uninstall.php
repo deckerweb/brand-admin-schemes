@@ -35,14 +35,18 @@ deckerweb_library_uninstall_v2( __DIR__ . '/brand-admin-schemes.php' );
 
 	// This repository-specific Updater V2 cache is temporary, not the shared
 	// WordPress update_plugins transient or another plugin's update state.
-	$brand_admin_schemes_cache = 'ddw_ghru_' . substr( md5( 'https://github.com/deckerweb/brand-admin-schemes' ), 0, 24 );
+	$brand_admin_schemes_updater_class = require __DIR__ . '/includes/deckerweb-github-release-updater-v2.php';
+	$brand_admin_schemes_updater_class::clear_repository_cache( 'https://github.com/deckerweb/brand-admin-schemes' );
 	if ( is_multisite() ) {
-		foreach ( get_networks( [ 'fields' => 'ids', 'number' => 0 ] ) as $network_id ) {
-			delete_network_option( (int) $network_id, '_site_transient_' . $brand_admin_schemes_cache );
-			delete_network_option( (int) $network_id, '_site_transient_timeout_' . $brand_admin_schemes_cache );
+		foreach ( [ 'https://github.com/deckerweb/brand-admin-schemes', 'https://github.com/deckerweb/brand-admin-schemes|' . $brand_admin_schemes_updater_class::IMPLEMENTATION_VERSION ] as $brand_admin_schemes_identity ) {
+			$brand_admin_schemes_cache = 'ddw_ghru_' . substr( md5( $brand_admin_schemes_identity ), 0, 24 );
+			foreach ( [ $brand_admin_schemes_cache, $brand_admin_schemes_cache . '_private' ] as $brand_admin_schemes_cache_key ) {
+				foreach ( get_networks( [ 'fields' => 'ids', 'number' => 0 ] ) as $brand_admin_schemes_network_id ) {
+					delete_network_option( (int) $brand_admin_schemes_network_id, '_site_transient_' . $brand_admin_schemes_cache_key );
+					delete_network_option( (int) $brand_admin_schemes_network_id, '_site_transient_timeout_' . $brand_admin_schemes_cache_key );
+				}
+				wp_cache_delete( $brand_admin_schemes_cache_key, 'site-transient' );
+			}
 		}
-		wp_cache_delete( $brand_admin_schemes_cache, 'site-transient' );
-	} else {
-		delete_site_transient( $brand_admin_schemes_cache );
 	}
 })();

@@ -4,7 +4,7 @@
 
 **Deine Farben. Dein WordPress.** Wenige Markenfarben genügen für einen vertrauten WordPress-Admin, einen schönen Login und Browser-Tabs, die du sofort auseinanderhalten kannst. Verwende Core Framework, Bricks Builder, Automatic.css oder deine eigene Palette. Atmosphäre und Markennähe ausprobieren, Vorschau prüfen, speichern. Kein eigenes CSS nötig.
 
-**Version:** 1.1.0 · **Voraussetzungen:** WordPress 6.4+ / PHP 8.1+ · **Lizenz:** GPL v2 oder höher
+**Version:** 1.1.1 · **Voraussetzungen:** WordPress 6.4+ / PHP 8.1+ · **Lizenz:** GPL v2 oder höher
 
 [Download](https://github.com/deckerweb/brand-admin-schemes/releases/latest) · [Anleitung](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) · [English](README.md)
 
@@ -120,7 +120,7 @@ Ein kompakter, rein informativer Bereich unter Werkzeuge → Website-Zustand zei
 
 Einzeln oder netzwerkweit aktivierbar. Jede Website verwaltet ihre eigenen Schemen, Login-Einstellungen, Toolbar, Browser-Tab-Icons und Medien. Auch die persönliche Farbauswahl bleibt je Website getrennt. Neue Unterwebsites erhalten die Administrator-Berechtigung für Tab-Icons automatisch; bestehende Websites beim ersten berechtigten Aufruf. Bewusst entzogene Rechte werden nicht wieder vergeben. Einstellungen findest du im Admin der jeweiligen Website.
 
-BAS funktioniert ohne Verwaltungsanbindung. Verwaltungsanbindung kann die regulären WordPress-Site-Optionen lesen und auf den dokumentierten Änderungshook reagieren. Ein optionales Verwaltungsanbindung-Modul verlinkt die Website-Einstellungen. Netzwerk-Startvorlagen lassen sich auf jeder Website prüfen und ausdrücklich übernehmen. Die deckerweb Plugin Library 1.1.0 ist eingebettet; BAS-Updates liefert weiterhin der Updater 2.2.0 über WordPress.
+BAS funktioniert ohne Verwaltungsanbindung. Verwaltungsanbindung kann die regulären WordPress-Site-Optionen lesen und auf den dokumentierten Änderungshook reagieren. Ein optionales Verwaltungsanbindung-Modul verlinkt die Website-Einstellungen. Netzwerk-Startvorlagen lassen sich auf jeder Website prüfen und ausdrücklich übernehmen. Die deckerweb Plugin Library 1.1.0 ist eingebettet; BAS-Updates liefert weiterhin der Updater 2.2.1 über WordPress.
 
 <a name="changelog"></a>
 
@@ -136,6 +136,13 @@ Den Farbdialog für Marken-, Login-, Umgebungs- und Favicon-Farben verwenden. Ge
 ## Changelog
 
 Sieben jüngste Versionen; Wiki und lokaler vollständiger Verlauf erhalten alle dokumentierten Einträge.
+
+### 1.1.1
+
+2026-10-22
+
+- **Behoben:** BAS-Updates verwenden den mitgelieferten Updater auch dann, wenn ein anderes Plugin zuerst einen älteren Updater lädt.
+- **Sonstiges:** Enthält deckerweb Updater 2.2.1; deckerweb Plugin Library 1.1.0 bleibt erhalten.
 
 ### 1.1.0
 
@@ -202,16 +209,6 @@ Sieben jüngste Versionen; Wiki und lokaler vollständiger Verlauf erhalten alle
 
 - **Verbessert:** Footer-Layout von Daily Scripture übernommen, Dokumentationslink neben dem Changelog ergänzt und einen übersetzten Markenslogan eingefügt.
 - **Sonstiges:** DECKERWEB-Copyright in Plugin und Dokumentation auf 2022–2026 gesetzt.
-
-### 0.16.0
-
-Veröffentlichungsdatum nicht dokumentiert
-
-- **Neu:** Kompakter Einstellungsfooter mit lokaler Dokumentation und Changelog-Dialogen.
-- **Verbessert:** Inhaltlich abgestimmte englische und deutsche Markdown- und Text-Readmes.
-- **Verbessert:** Einträge je Version nach Neu, Verbessert, Behoben und Sonstiges sortiert.
-- **Behoben:** HTML der Frontend-Toolbar-Checkbox korrigiert, fehlende deutsche Fehlermeldungen ergänzt und drei fehlende JavaScript-Übersetzungskennungen registriert.
-- **Sonstiges:** Lizenzdatei, Release-Notizen und Regeln für das Repository-Paket ergänzt.
 
 ## Über das Plugin
 

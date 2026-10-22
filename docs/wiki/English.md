@@ -2,9 +2,9 @@
 
 [Deutsch](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) · [Home](https://github.com/deckerweb/brand-admin-schemes/wiki)
 
-A practical guide to Brand Admin Schemes 1.1.0. Use the contents below to jump to a setting.
+A practical guide to Brand Admin Schemes 1.1.1. Use the contents below to jump to a setting.
 
-Requires WordPress 6.4+ and PHP 8.1+. Includes Library 1.1.0 and Updater 2.2.0.
+Requires WordPress 6.4+ and PHP 8.1+. Includes Library 1.1.0 and Updater 2.2.1.
 
 ## Contents
 

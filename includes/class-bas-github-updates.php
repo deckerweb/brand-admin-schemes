@@ -21,11 +21,9 @@ final class GitHubUpdates {
 
 	/** Load the shared versioned class once, including beside other deckerweb plugins. @return void */
 	public function boot(): void {
-		if ( ! class_exists( '\Deckerweb\GitHubReleaseUpdater\V2\Updater' ) ) {
-			require_once BAS_PLUGIN_DIR . 'includes/deckerweb-github-release-updater-v2.php';
-		}
+		$updater_class = require BAS_PLUGIN_DIR . 'includes/deckerweb-github-release-updater-v2.php';
 		try {
-			$supports_translation = defined( '\\Deckerweb\\GitHubReleaseUpdater\\V2\\Updater::SUPPORTS_HOST_TRANSLATIONS' );
+			$supports_translation = defined( $updater_class . '::SUPPORTS_HOST_TRANSLATIONS' );
 			$translator = require BAS_PLUGIN_DIR . 'includes/updater-translations.php';
 			if ( ! $supports_translation ) {
 				add_action( 'admin_notices', static function(): void {
@@ -36,10 +34,10 @@ final class GitHubUpdates {
 				} );
 			}
 			$options = $supports_translation ? [ 'translate' => $translator ] : [];
-			if ( defined( '\\Deckerweb\\GitHubReleaseUpdater\\V2\\Updater::SUPPORTS_CATALOG_PROVIDER' ) && function_exists( 'deckerweb_library_updater_options_v1' ) ) {
+			if ( defined( $updater_class . '::SUPPORTS_CATALOG_PROVIDER' ) && function_exists( 'deckerweb_library_updater_options_v1' ) ) {
 				$options = array_merge( $options, deckerweb_library_updater_options_v1( BAS_PLUGIN_FILE, self::REPOSITORY ) );
 			}
-			$updater = new \Deckerweb\GitHubReleaseUpdater\V2\Updater(
+			$updater = new $updater_class(
 				BAS_PLUGIN_FILE,
 				self::REPOSITORY,
 				'Brand Admin Schemes',

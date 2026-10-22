@@ -18,6 +18,6 @@ Einstellungen benötigen manage_options, Medien zusätzlich upload_files. bas_vi
 
 ## Gemeinsame Komponenten und optionale Integrationen
 
-Die originale Library 1.1.0 wählt eine gemeinsame kompatible Runtime; ihr Katalog ist vom Branding unabhängig. Der Updater 2.2.0 bleibt über den BAS-Adapter zuständig. Bei aktivem Online-Katalog werden dessen freigegebene Metadaten und Pakete verwendet; standardmäßig ist Online deaktiviert. Frühere zuerst geladene Updater-Kopien werden anhand ihrer Fähigkeiten behandelt und nicht doppelt deklariert.
+Die originale Library 1.1.0 wählt eine gemeinsame kompatible Runtime; ihr Katalog ist vom Branding unabhängig. Der Updater 2.2.1 bleibt über den BAS-Adapter zuständig. Bei aktivem Online-Katalog werden dessen freigegebene Metadaten und Pakete verwendet; standardmäßig ist Online deaktiviert. BAS verwendet den mitgelieferten Updater auch dann, wenn ein anderes Plugin zuerst eine ältere Kopie lädt. Vorhandene fremde Updater-Klassen und Hooks bleiben unverändert.
 
 BAS benötigt kein externes Verwaltungsplugin. Eine optionale Verwaltungsanbindung kann Website-Einstellungen verlinken. bas_site_settings_changed meldet nach Speichern, Undo oder Site-Icon-Aktion nur Website-ID und Vorgang; der Hook verteilt selbst keine Einstellungen und gewährt keine Rechte. Programmgesteuerte fremde Optionsänderungen verwenden die regulären Core-Hooks.

@@ -2,6 +2,13 @@
 
 [English](https://github.com/deckerweb/brand-admin-schemes/wiki/Changelog-English) · [Deutsch](https://github.com/deckerweb/brand-admin-schemes/wiki/Changelog-Deutsch)
 
+### 1.1.1
+
+2026-10-22
+
+- **Behoben:** BAS-Updates verwenden den mitgelieferten Updater auch dann, wenn ein anderes Plugin zuerst einen älteren Updater lädt.
+- **Sonstiges:** Enthält deckerweb Updater 2.2.1; deckerweb Plugin Library 1.1.0 bleibt erhalten.
+
 ### 1.1.0
 
 2026-10-21

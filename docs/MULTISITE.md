@@ -18,6 +18,6 @@ Settings require manage_options; media additionally require upload_files. bas_vi
 
 ## Shared components and optional integrations
 
-Original Library 1.1.0 elects one compatible shared runtime; its catalog is independent of branding. Updater 2.2.0 remains owned by the BAS adapter. When the online catalog is enabled, its approved metadata and packages are used; online mode is disabled by default. Older updater copies loaded first are capability-checked rather than redeclared.
+Original Library 1.1.0 elects one compatible shared runtime; its catalog is independent of branding. Updater 2.2.1 remains owned by the BAS adapter. When the online catalog is enabled, its approved metadata and packages are used; online mode is disabled by default. BAS uses its bundled updater even when another plugin loads an older copy first. Existing foreign updater classes and hooks remain unchanged.
 
 BAS does not require an external management plugin. An optional management integration can link website settings. bas_site_settings_changed announces only the website ID and operation after save, Undo or a Site Icon action; it does not distribute settings or grant permissions. Programmatic third-party option changes use the regular Core hooks.

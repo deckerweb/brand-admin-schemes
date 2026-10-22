@@ -2,6 +2,25 @@
   "display_count": 7,
   "versions": [
     {
+      "version": "1.1.1",
+      "status": "released",
+      "date": "2026-10-22",
+      "entries": [
+        {
+          "category": "Fixed",
+          "en": "Keep BAS updates on the bundled updater when another plugin loads an older updater first.",
+          "de_DE": "BAS-Updates verwenden den mitgelieferten Updater auch dann, wenn ein anderes Plugin zuerst einen älteren Updater lädt.",
+          "de_DE_formal": "BAS-Updates verwenden den mitgelieferten Updater auch dann, wenn ein anderes Plugin zuerst einen älteren Updater lädt."
+        },
+        {
+          "category": "Misc",
+          "en": "Includes deckerweb Updater 2.2.1; retains deckerweb Plugin Library 1.1.0.",
+          "de_DE": "Enthält deckerweb Updater 2.2.1; deckerweb Plugin Library 1.1.0 bleibt erhalten.",
+          "de_DE_formal": "Enthält deckerweb Updater 2.2.1; deckerweb Plugin Library 1.1.0 bleibt erhalten."
+        }
+      ]
+    },
+    {
       "version": "1.1.0",
       "status": "released",
       "date": "2026-10-21",

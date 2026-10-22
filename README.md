@@ -4,7 +4,7 @@
 
 **Your colors. Your WordPress.** Turn a few brand colors into a familiar WordPress admin, a welcoming login screen, and browser tabs you can tell apart. Use Core Framework, Bricks Builder, Automatic.css, or your own palette. Explore the mood and brand strength, preview, then save. No CSS homework.
 
-**Version:** 1.1.0 · **Requires:** WordPress 6.4+ / PHP 8.1+ · **License:** GPL v2 or later
+**Version:** 1.1.1 · **Requires:** WordPress 6.4+ / PHP 8.1+ · **License:** GPL v2 or later
 
 [Download](https://github.com/deckerweb/brand-admin-schemes/releases/latest) · [User guide](https://github.com/deckerweb/brand-admin-schemes/wiki/English) · [Deutsch](README-de.md)
 
@@ -122,7 +122,7 @@ A compact, read-only section in Tools → Site Health reports the selected schem
 
 Activate on an individual site or across the network. Each site owns its schemes, login settings, toolbar, browser-tab icons, and media. Personal color choices also stay separate per site. New subsites receive the administrator tab-icon permission automatically; existing sites receive it on their first authorized visit. Deliberately revoked permissions stay revoked. Configure branding in each site’s admin.
 
-BAS works independently of management integration. management integration can read standard WordPress site options and listen to the documented change hook. An optional management integration module links to website branding. Network starter templates can be previewed on individual websites and explicitly saved. The deckerweb Plugin Library 1.1.0 is embedded; Updater 2.2.0 continues to deliver BAS updates through WordPress.
+BAS works independently of management integration. management integration can read standard WordPress site options and listen to the documented change hook. An optional management integration module links to website branding. Network starter templates can be previewed on individual websites and explicitly saved. The deckerweb Plugin Library 1.1.0 is embedded; Updater 2.2.1 continues to deliver BAS updates through WordPress.
 
 <a name="changelog"></a>
 
@@ -138,6 +138,13 @@ Use the color dialog for brand, login, environment and favicon colors. Locked ro
 ## Changelog
 
 Seven recent versions; the Wiki and local full history retain all documented entries.
+
+### 1.1.1
+
+2026-10-22
+
+- **Fixed:** Keep BAS updates on the bundled updater when another plugin loads an older updater first.
+- **Misc:** Includes deckerweb Updater 2.2.1; retains deckerweb Plugin Library 1.1.0.
 
 ### 1.1.0
 
@@ -204,16 +211,6 @@ Seven recent versions; the Wiki and local full history retain all documented ent
 
 - **Improved:** Adopts the Daily Scripture footer layout, adds a documentation link beside the changelog, and includes a translated brand slogan.
 - **Misc:** Sets the DECKERWEB copyright range to 2022–2026 throughout the plugin and documentation.
-
-### 0.16.0
-
-Release date not recorded
-
-- **New:** Adds a compact settings footer with local documentation and changelog dialogs.
-- **Improved:** Includes matching English and German Markdown and WordPress-style text readmes.
-- **Improved:** Groups each release by New, Improved, Fixed, and Misc, in that order.
-- **Fixed:** Corrects the frontend-toolbar checkbox markup, translates missing German error messages, and registers three missing JavaScript translation labels.
-- **Misc:** Adds a license file, release notes and repository packaging rules.
 
 ## About
 
