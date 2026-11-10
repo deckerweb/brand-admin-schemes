@@ -2,7 +2,7 @@
 
 [English](TESTING-1.1.0.md)
 
-Brand Admin Schemes 1.1.0 benötigt WordPress 6.4+ und PHP 8.1+. Prüfe Updates auf einer gesicherten Testwebsite.
+Brand Admin Schemes 1.2.0-rc3 benötigt WordPress 6.4+ und PHP 8.1+. Prüfe Updates auf einer gesicherten Testwebsite.
 
 1. Von der vorherigen Version aktualisieren und gespeicherte Schemas, persönliche Farben, Loginmedien und Website-Icon vergleichen.
 2. Branding speichern, persönliche Profilfarbe ändern und Undo prüfen. Bei zwei geöffneten Editoren darf ein veralteter Entwurf keine neuere Speicherung überschreiben.

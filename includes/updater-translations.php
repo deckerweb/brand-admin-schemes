@@ -45,6 +45,46 @@ return static function ( string $message ): string {
             return __( 'The approved release could not be verified.', 'brand-admin-schemes' );
         case 'The approved release changed. Refresh updates first.':
             return __( 'The approved release changed. Refresh updates first.', 'brand-admin-schemes' );
+        case 'Catalog diagnostics require a public catalog provider.':
+            return __( 'Catalog diagnostics require a public catalog provider.', 'brand-admin-schemes' );
+        case 'Catalog approval':
+            return __( 'Catalog approval', 'brand-admin-schemes' );
+        case 'Package download':
+            return __( 'Package download', 'brand-admin-schemes' );
+        case 'Checksum verification':
+            return __( 'Checksum verification', 'brand-admin-schemes' );
+        case 'Archive verification':
+            return __( 'Archive verification', 'brand-admin-schemes' );
+        case 'The update server could not be reached. Try again later.':
+            return __( 'The update server could not be reached. Try again later.', 'brand-admin-schemes' );
+        case 'The update request timed out. Try again later.':
+            return __( 'The update request timed out. Try again later.', 'brand-admin-schemes' );
+        case 'The update server address could not be resolved.':
+            return __( 'The update server address could not be resolved.', 'brand-admin-schemes' );
+        case 'The secure connection to the update server failed.':
+            return __( 'The secure connection to the update server failed.', 'brand-admin-schemes' );
+        case 'The update server returned an unsuccessful HTTP response.':
+            return __( 'The update server returned an unsuccessful HTTP response.', 'brand-admin-schemes' );
+        case 'The update provider did not return valid update data.':
+            return __( 'The update provider did not return valid update data.', 'brand-admin-schemes' );
+        case 'The package does not match the approved checksum. Installation was stopped.':
+            return __( 'The package does not match the approved checksum. Installation was stopped.', 'brand-admin-schemes' );
+        case 'The archive or plugin identity could not be verified. Installation was stopped.':
+            return __( 'The archive or plugin identity could not be verified. Installation was stopped.', 'brand-admin-schemes' );
+        case 'Update stopped at %1$s: %2$s':
+            /* translators: 1: update stage, 2: fixed explanation. */
+            return __( 'Update stopped at %1$s: %2$s', 'brand-admin-schemes' );
+        case 'HTTP status: %d.':
+            /* translators: %d: HTTP error status. */
+            return __( 'HTTP status: %d.', 'brand-admin-schemes' );
+        case 'Invalid private download limits.':
+            return __( 'Invalid private download limits.', 'brand-admin-schemes' );
+        case 'Invalid package cleanup provider.':
+            return __( 'Invalid package cleanup provider.', 'brand-admin-schemes' );
+        case 'Safe package cleanup is unavailable for this update provider.':
+            return __( 'Safe package cleanup is unavailable for this update provider.', 'brand-admin-schemes' );
+        case 'The update package identity, version or requirements could not be verified.':
+            return __( 'The update package identity, version or requirements could not be verified.', 'brand-admin-schemes' );
         default:
             return $message;
     }

@@ -63,10 +63,10 @@ final class Workflow {
 	public static function revision(): string { return self::snapshot()['revision']; }
 
 	/**
-	 * Acquire a website mutex and compare the editor's revision before writing.
-	 * @return void Sends a 409 response when stale or another writer owns the lock.
+	 * Acquire the shared website mutex and invalidate cached branding reads.
+	 * @return void Sends a 409 response when another writer owns the lock.
 	 */
-	public static function begin(): void {
+	public static function lock(): void {
 		global $wpdb;
 		$existing = $wpdb->get_var( $wpdb->prepare( "SELECT option_value FROM {$wpdb->options} WHERE option_name = %s", 'bas_write_lock' ) );
 		if ( is_string( $existing ) && '' !== $existing && (float) $existing < microtime( true ) - 120 ) {
@@ -85,6 +85,14 @@ final class Workflow {
 		wp_cache_delete( \BAS_Plugin::OPTION, 'options' );
 		wp_cache_delete( 'bas_templates', 'options' );
 		wp_cache_delete( 'alloptions', 'options' );
+	}
+
+	/**
+	 * Lock website settings and reject a stale editor revision before writing.
+	 * @return void Sends a 409 response for concurrent or stale requests.
+	 */
+	public static function begin(): void {
+		self::lock();
 		$revision = sanitize_text_field( wp_unslash( $_POST['revision'] ?? '' ) );
 		if ( ! is_string( $revision ) || ! hash_equals( self::revision(), $revision ) ) {
 			self::unlock();
@@ -133,6 +141,7 @@ final class Workflow {
 		$settings['palette'] = '';
 		foreach ( $settings['manual'] as $role => $color ) { $settings['manual'][$role] = $settings['scheme']['brand_' . $role] ?? $color; $settings['mapping'][$role] = ''; }
 		$settings['environment_mode'] = 'auto';
+		$settings['environment_audience'] = 'administrators';
 		$settings['default_mode'] = 'off';
 		$settings['icons']['audience'] = 'capability';
 		foreach ( [ 'frontend', 'admin', 'builder' ] as $context ) { $settings['icons'][$context]['label'] = ''; }
@@ -221,7 +230,7 @@ final class Workflow {
 	public static function page(): void {
 		if ( ! current_user_can( 'manage_network_options' ) ) { return; }
 		$value = get_network_option( get_current_network_id(), 'bas_network_template', [] );
-		echo '<div class="wrap bas-root"><div class="bas-page-heading"><img src="' . esc_url( plugins_url( 'assets-github/icon.svg', BAS_PLUGIN_FILE ) ) . '" alt="" width="56" height="56"><h1>' . esc_html__( 'Brand Admin Schemes', 'brand-admin-schemes' ) . '</h1></div><h2>' . esc_html__( 'Branding starter template', 'brand-admin-schemes' ) . '</h2><p>' . esc_html__( 'Import a portable branding JSON. Apply it once to new websites or an explicitly selected empty website. Existing branding and personal colors are retained.', 'brand-admin-schemes' ) . '</p>';
+		echo '<div class="wrap bas-root"><div class="bas-page-heading"><img src="' . esc_url( plugins_url( 'assets-github/icon.svg', BAS_PLUGIN_FILE ) ) . '" alt="" width="56" height="56"><h1>' . esc_html__( 'Brand Admin Schemes', 'brand-admin-schemes' ) . '</h1></div><hr class="wp-header-end"><h2>' . esc_html__( 'Branding starter template', 'brand-admin-schemes' ) . '</h2><p>' . esc_html__( 'Import a portable branding JSON. Apply it once to new websites or an explicitly selected empty website. Existing branding and personal colors are retained.', 'brand-admin-schemes' ) . '</p>';
 
 		if ( ! empty( $value['settings'] ) ) {
 			echo '<section class="bas-panel" aria-labelledby="bas-stored-template"><h3 id="bas-stored-template">' . esc_html__( 'Saved starter template', 'brand-admin-schemes' ) . '</h3><dl><dt>' . esc_html__( 'Name', 'brand-admin-schemes' ) . '</dt><dd>' . esc_html( $value['name'] ?? $value['settings']['name'] ?? __( 'Branding starter template', 'brand-admin-schemes' ) ) . '</dd><dt>' . esc_html__( 'Status', 'brand-admin-schemes' ) . '</dt><dd>' . esc_html( ! empty( $value['enabled'] ) ? __( 'Enabled for new websites', 'brand-admin-schemes' ) : __( 'Saved; automatic use is disabled', 'brand-admin-schemes' ) ) . '</dd>';

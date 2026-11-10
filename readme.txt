@@ -3,8 +3,8 @@ Contributors: deckerweb
 Tags: admin colors, branding, login, favicon, gutenberg
 Requires at least: 6.4
 Requires PHP: 8.1
-Tested up to: 7.1.3
-Stable tag: 1.1.1
+Tested up to: 7.1
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,20 +12,24 @@ Brand colors for the WordPress admin, login, toolbar and browser tabs.
 
 == Description ==
 
-**Your colors. Your WordPress.** Turn a few brand colors into a familiar WordPress admin, a welcoming login screen, and browser tabs you can tell apart. Use Core Framework, Bricks Builder, Automatic.css, or your own palette. Explore the mood and brand strength, preview, then save. No CSS homework.
+**Your colors. Your WordPress.** Turn a few brand colors into a familiar WordPress admin, a welcoming login screen, and browser tabs you can tell apart. Use WordPress / Site Editor, Elementor, Oxygen Classic, Core Framework, Bricks Builder, Automatic.css, or your own palette. Explore the mood and brand strength, preview, then save. No CSS homework.
 
 
-[Download](https://github.com/deckerweb/brand-admin-schemes/releases/latest) · [User guide](https://github.com/deckerweb/brand-admin-schemes/wiki/English) · [Deutsch](README-de.md)
+[Website](https://deckerwebplugins.com/en/plugins/brand-admin-schemes/) · [Download](https://github.com/deckerweb/brand-admin-schemes/releases/latest) · [User guide](https://github.com/deckerweb/brand-admin-schemes/wiki/English) · [Deutsch](README-de.md)
 
 == At a glance ==
 
 * Make the admin yours: four moods, a brand strength slider, hover and keyboard previews, and up to 30 named schemes.
-* Use an existing palette: optional Core Framework, Bricks, and ACSS integrations; manual colors always work.
+* Use an existing palette: WordPress / Site Editor, Elementor, Oxygen Classic, Core Framework, Bricks, and ACSS; manual colors always work.
 * Welcome your client: responsive login layouts, a logo or small banner, a background photo or nine smooth gradients, editable text, and an optional quote.
 * Recognize every browser tab: separate favicons for the website, admin, and recognized builder editor.
 * Spot the environment: compact Local, Development, Staging, and Live badges on the frontend and backend toolbar, with matching colors and optional favicon markers.
 * Work across projects: JSON settings, agency ZIP packages with supported login images, source-color comparison, Undo, and unsaved-change reminders.
 * Keep WordPress familiar: optional default schemes, frontend toolbar colors, Gutenberg palette entries, bundled German translations, and regular WordPress updates.
+
+== See it in action ==
+
+Choose a source palette, review the colors, and save your own admin scheme.
 
 
 == Installation ==
@@ -78,14 +82,14 @@ The [English wiki guide](https://github.com/deckerweb/brand-admin-schemes/wiki/E
 
 == Frequently Asked Questions ==
 
-= How does the new color dialog work? =
-Click Choose color beside an editable HEX field. Preview a color visually or enter its HEX value. Done closes the dialog; save all changes to apply branding. Locked roles must be unlocked before editing.
+= Which color providers can I use? =
+WordPress / Site Editor, Elementor Free, Oxygen Classic, Bricks, Core Framework, Automatic.css, or manual colors. A provider appears only when usable colors are available. The source palette is read without being changed; saved BAS colors remain available without it.
 
 = Can I reuse branding on another website? =
 Export a portable template or an agency ZIP. Portable templates omit images, website text, initials and forced user defaults. Choose local images on the destination. An agency import adds images immediately; its settings still require review and saving.
 
 = What happens if another editor saves first? =
-Your stale save is rejected. Export your draft before reloading and compare it with the latest settings.
+Your stale save is rejected. Export your draft before reloading and compare it with the latest settings. The environment badge defaults to administrators only; its separate setting also allows signed-in toolbar users or turns it off.
 
 = How does the history work? =
 Up to ten previous settings snapshots are stored on this website. You can restore entries from your own account and storage scope. Restoration also restores your prior personal color and replaces an unsaved draft; the current state becomes a new history entry.
@@ -114,7 +118,7 @@ A compact, read-only section in Tools → Site Health reports the selected schem
 
 Activate on an individual site or across the network. Each site owns its schemes, login settings, toolbar, browser-tab icons, and media. Personal color choices also stay separate per site. New subsites receive the administrator tab-icon permission automatically; existing sites receive it on their first authorized visit. Deliberately revoked permissions stay revoked. Configure branding in each site’s admin.
 
-BAS works independently of management integration. management integration can read standard WordPress site options and listen to the documented change hook. An optional management integration module links to website branding. Network starter templates can be previewed on individual websites and explicitly saved. The deckerweb Plugin Library 1.1.0 is embedded; Updater 2.2.1 continues to deliver BAS updates through WordPress.
+BAS works independently. Optional management integrations can read standard WordPress site options, listen to the documented change hook, or link to website branding. Network starter templates can be previewed on individual websites and explicitly saved. The deckerweb Plugin Library 1.3.0 is embedded; Updater 2.4.0 continues to deliver BAS updates through WordPress.
 
 
 
@@ -125,9 +129,33 @@ BAS works independently of management integration. management integration can re
 == Branding workflows ==
 
 Use the color dialog for brand, login, environment and favicon colors. Locked roles retain exact brand colors. Duplicate or rename schemes, reset one section, compare saved/draft previews and review imports before saving. Portable templates exclude local images and site-specific text. Recent changes retain up to ten snapshots; restoring replaces the draft and affects your personal color on this website.
+
+== Native and builder palettes ==
+
+WordPress / Site Editor offers separate theme, custom global and WordPress default palettes. Elementor reads system and custom global colors from the active kit; Elementor Free is sufficient. Oxygen Classic 4.x reads its named global color sets, including set zero. Only active providers with readable colors appear. No palette is written back to its owner.
+
+Solid HEX and comma-separated RGB colors are normalized to HEX. Translucent values, CSS variables and expressions are omitted. BAS-generated Gutenberg entries are excluded from the WordPress source to avoid reading its own output. Saved schemes remain available when a provider or palette disappears; choose a source and save explicitly to update them.
+
+== Environment badge visibility ==
+
+Under Installation environment, choose Administrators only (default, also after an update), All signed-in users with a toolbar, or Off. The choice applies to both frontend and backend. PHP/debug details remain administrator-only. The favicon environment marker has its own unchanged setting.
+
 == Changelog ==
 
 Seven recent versions; the Wiki and local full history retain all documented entries.
+
+= 1.2.0 =
+
+2026-11-10
+
+* New: Show the environment badge to administrators by default, with options for all signed-in toolbar users or no one.
+* New: Read WordPress theme and custom global palettes, Elementor global colors, and Oxygen Classic color sets as optional branding sources.
+* Improved: Open the product website in the current interface language and keep admin notices outside the page heading.
+* Fixed: Keep saved brand colors when the selected source palette is no longer available.
+* Fixed: Keep late admin notices outside the plugin heading without hiding their messages.
+* Fixed: Preserve newer branding settings when adopting a Site Icon during another save.
+* Fixed: Initialize context-icon permissions only when the plugin is active in the new website’s network.
+* Misc: Includes deckerweb Plugin Library 1.3.0 and deckerweb Updater 2.4.0.
 
 = 1.1.1 =
 
@@ -195,16 +223,9 @@ Seven recent versions; the Wiki and local full history retain all documented ent
 * Improved: Adds checked contents links, presents browser-tab favicons alongside the main features, and explains GitHub updates through the regular WordPress update system.
 * Misc: Packages the updated English and German documentation with this release.
 
-= 0.16.1 =
-
-2026-09-29
-
-* Improved: Adopts the Daily Scripture footer layout, adds a documentation link beside the changelog, and includes a translated brand slogan.
-* Misc: Sets the DECKERWEB copyright range to 2022–2026 throughout the plugin and documentation.
-
 == About ==
 
-Built by **David Decker – DECKERWEB** to make client sites feel familiar on both sides of the login screen. Ideas behind the plugin grew from snippets used since 2022.
+Built by [**David Decker – DECKERWEB**](https://deckerwebplugins.com/) to make client sites feel familiar on both sides of the login screen. Ideas behind the plugin grew from snippets used since 2022.
 
 The scheme styles the WordPress admin shell; third-party CSS can affect individual elements. Gutenberg content and builder canvases keep their own design. SVG login images require Safe SVG and administrator confirmation. More details are in the wiki.
 

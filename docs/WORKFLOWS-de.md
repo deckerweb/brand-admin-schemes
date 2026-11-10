@@ -2,7 +2,13 @@
 
 [English](WORKFLOWS.md)
 
+![Branding-Startvorlage im Netzwerk](https://raw.githubusercontent.com/deckerweb/brand-admin-schemes/main/docs/screenshots/network-template-de.png)
+
+Eine benannte Netzwerkvorlage steht auf Unterwebsites zur Prüfung vor dem Speichern bereit.
+
 ## Wie funktioniert der neue Farbdialog?
+
+![WordPress-Farbwähler](https://raw.githubusercontent.com/deckerweb/brand-admin-schemes/main/docs/screenshots/color-picker-de.png)
 
 Neben einem bearbeitbaren HEX-Feld auf Farbe auswählen klicken. Eine Farbe visuell prüfen oder ihren HEX-Wert eingeben. Fertig schließt den Dialog; mit Alle Änderungen speichern das Branding übernehmen. Gesperrte Rollen vor dem Bearbeiten entsperren.
 

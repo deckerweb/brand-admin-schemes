@@ -3,8 +3,8 @@ Contributors: deckerweb
 Tags: admin colors, branding, login, favicon, gutenberg
 Requires at least: 6.4
 Requires PHP: 8.1
-Tested up to: 7.1.3
-Stable tag: 1.1.1
+Tested up to: 7.1
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,7 +15,7 @@ Markenfarben für WordPress-Admin, Login, Toolbar und Browser-Tabs.
 **Deine Farben. Dein WordPress.** Wenige Markenfarben genügen für einen vertrauten WordPress-Admin, einen schönen Login und Browser-Tabs, die du sofort auseinanderhalten kannst. Verwende Core Framework, Bricks Builder, Automatic.css oder deine eigene Palette. Atmosphäre und Markennähe ausprobieren, Vorschau prüfen, speichern. Kein eigenes CSS nötig.
 
 
-[Download](https://github.com/deckerweb/brand-admin-schemes/releases/latest) · [Anleitung](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) · [English](README.md)
+[Website](https://deckerwebplugins.com/de/plugins/brand-admin-schemes/) · [Download](https://github.com/deckerweb/brand-admin-schemes/releases/latest) · [Anleitung](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) · [English](README.md)
 
 == Auf einen Blick ==
 
@@ -26,6 +26,10 @@ Markenfarben für WordPress-Admin, Login, Toolbar und Browser-Tabs.
 * Die Umgebung im Blick behalten: kompakte Badges für Lokal, Entwicklung, Staging und Live in der Frontend- und Backend-Toolbar, mit passenden Farben und optionalen Favicon-Markern.
 * Projekte leichter betreuen: JSON-Einstellungen, Agentur-ZIP mit unterstützten Login-Bildern, Vergleich geänderter Quellfarben, Rücknahme und Hinweise auf ungespeicherte Änderungen.
 * WordPress vertraut bedienen: optionale Standardschemas, Frontend-Toolbarfarben, Gutenberg-Palette, mitgelieferte deutsche Übersetzungen und reguläre WordPress-Updates.
+
+== So sieht es aus ==
+
+Wähle eine Farbquelle, prüfe die Farben und speichere Dein eigenes Admin-Schema.
 
 
 == Installation ==
@@ -76,14 +80,14 @@ Die [deutsche Wiki-Anleitung](https://github.com/deckerweb/brand-admin-schemes/w
 
 == Frequently Asked Questions ==
 
-= Wie funktioniert der neue Farbdialog? =
-Neben einem bearbeitbaren HEX-Feld auf Farbe auswählen klicken. Eine Farbe visuell prüfen oder ihren HEX-Wert eingeben. Fertig schließt den Dialog; mit Alle Änderungen speichern das Branding übernehmen. Gesperrte Rollen vor dem Bearbeiten entsperren.
+= Welche Farbquellen kann ich verwenden? =
+WordPress / Site Editor, Elementor Free, Oxygen Classic, Bricks, Core Framework, Automatic.css oder eigene Farben. Eine Quelle erscheint nur mit auslesbaren Farben. Die Quellpalette wird nicht verändert; gespeicherte BAS-Farben bleiben auch ohne sie verfügbar.
 
 = Kann ich Branding auf einer anderen Website verwenden? =
 Eine portable Vorlage oder ein Agentur-ZIP exportieren. Portable Vorlagen schließen Bilder, Website-Texte, Kürzel und erzwungene Benutzervorgaben aus. Bilder auf der Zielwebsite auswählen. Beim Agenturimport werden Bilder sofort hinzugefügt; Einstellungen anschließend prüfen und speichern.
 
 = Was passiert, wenn ein anderer Editor zuerst speichert? =
-Die veraltete Speicherung wird abgewiesen. Deinen Entwurf vor dem Neuladen exportieren und mit dem aktuellen Stand vergleichen.
+Die veraltete Speicherung wird abgewiesen. Deinen Entwurf vor dem Neuladen exportieren und mit dem aktuellen Stand vergleichen. Die Umgebungsanzeige ist standardmäßig auf Administratoren beschränkt; ihre eigene Einstellung erlaubt auch angemeldete Toolbar-Benutzer oder schaltet sie aus.
 
 = Wie funktioniert der Verlauf? =
 Auf dieser Website bleiben bis zu zehn frühere Einstellungsstände erhalten. Du kannst Einträge deines Kontos und Speicherbereichs wiederherstellen. Dabei wird auch deine vorherige persönliche Farbe übernommen und ein ungespeicherter Entwurf ersetzt; der aktuelle Stand wird zum neuen Verlaufseintrag.
@@ -112,7 +116,7 @@ Ein kompakter, rein informativer Bereich unter Werkzeuge → Website-Zustand zei
 
 Einzeln oder netzwerkweit aktivierbar. Jede Website verwaltet ihre eigenen Schemen, Login-Einstellungen, Toolbar, Browser-Tab-Icons und Medien. Auch die persönliche Farbauswahl bleibt je Website getrennt. Neue Unterwebsites erhalten die Administrator-Berechtigung für Tab-Icons automatisch; bestehende Websites beim ersten berechtigten Aufruf. Bewusst entzogene Rechte werden nicht wieder vergeben. Einstellungen findest du im Admin der jeweiligen Website.
 
-BAS funktioniert ohne Verwaltungsanbindung. Verwaltungsanbindung kann die regulären WordPress-Site-Optionen lesen und auf den dokumentierten Änderungshook reagieren. Ein optionales Verwaltungsanbindung-Modul verlinkt die Website-Einstellungen. Netzwerk-Startvorlagen lassen sich auf jeder Website prüfen und ausdrücklich übernehmen. Die deckerweb Plugin Library 1.1.0 ist eingebettet; BAS-Updates liefert weiterhin der Updater 2.2.1 über WordPress.
+BAS funktioniert eigenständig. Optionale Verwaltungsanbindungen können reguläre WordPress-Site-Optionen lesen, auf den dokumentierten Änderungshook reagieren oder die Website-Einstellungen verlinken. Netzwerk-Startvorlagen lassen sich auf jeder Website prüfen und ausdrücklich übernehmen. Die deckerweb Plugin Library 1.3.0 ist eingebettet; BAS-Updates liefert weiterhin der Updater 2.4.0 über WordPress.
 
 
 
@@ -123,9 +127,33 @@ BAS funktioniert ohne Verwaltungsanbindung. Verwaltungsanbindung kann die regul�
 == Branding-Abläufe ==
 
 Den Farbdialog für Marken-, Login-, Umgebungs- und Favicon-Farben verwenden. Gesperrte Rollen behalten exakte Markenfarben. Schemas duplizieren oder umbenennen, einen Abschnitt zurücksetzen, gespeicherten Stand und Entwurf vergleichen und Importe vor dem Speichern prüfen. Portable Vorlagen schließen lokale Bilder und Website-Texte aus. Der Verlauf behält bis zu zehn Einstellungsstände; Wiederherstellen ersetzt den Entwurf und betrifft die persönliche Farbe auf dieser Website.
+
+== Native Paletten und Builder-Farben ==
+
+WordPress / Website-Editor bietet getrennte Paletten für Theme-Farben, eigene globale Farben und WordPress-Standardfarben. Elementor liest Systemfarben und eigene globale Farben aus dem aktiven Kit; Elementor Free genügt. Oxygen Classic 4.x liest seine benannten globalen Farbsets einschließlich Set null. Nur aktive Provider mit lesbaren Farben erscheinen. Die Originalpaletten werden nicht verändert.
+
+Deckende HEX- und kommagetrennte RGB-Farben werden in HEX umgewandelt. Teiltransparente Werte, CSS-Variablen und Ausdrücke entfallen. Von BAS ergänzte Gutenberg-Farben werden beim WordPress-Provider ausgeschlossen. Gespeicherte Schemas bleiben bei fehlendem Provider oder fehlender Palette erhalten; eine neue Quelle auswählen und bewusst speichern, um sie zu aktualisieren.
+
+== Sichtbarkeit der Umgebungsanzeige ==
+
+Unter Installationsumgebung stehen Nur Administratoren (Standard, auch nach einem Update), Alle angemeldeten Benutzer mit Toolbar und Aus zur Wahl. Die Auswahl gilt im Frontend und Backend. PHP-/Debug-Details bleiben Administratoren vorbehalten. Der Umgebungsmarker auf Favicons hat weiterhin seine eigene Einstellung.
+
 == Changelog ==
 
 Sieben jüngste Versionen; Wiki und lokaler vollständiger Verlauf erhalten alle dokumentierten Einträge.
+
+= 1.2.0 =
+
+2026-11-10
+
+* Neu: Umgebungsanzeige standardmäßig nur für Administratoren anzeigen; wahlweise für alle angemeldeten Toolbar-Benutzer oder ausschalten.
+* Neu: WordPress-Theme- und eigene globale Paletten, globale Elementor-Farben und Oxygen-Classic-Farbsets als optionale Branding-Quellen einlesen.
+* Verbessert: Produktwebsite in der aktiven Oberflächensprache öffnen und Admin-Hinweise außerhalb des Seitenkopfs anzeigen.
+* Behoben: Gespeicherte Markenfarben erhalten, wenn die gewählte Quellpalette nicht mehr verfügbar ist.
+* Behoben: Nachträgliche Admin-Hinweise außerhalb des Plugin-Kopfs halten, ohne ihre Meldungen auszublenden.
+* Behoben: Neuere Branding-Einstellungen bei gleichzeitiger Speicherung und Übernahme eines Website-Icons erhalten.
+* Behoben: Kontext-Icon-Rechte nur bei aktiver Netzwerkintegration im Netzwerk der neuen Website einrichten.
+* Sonstiges: Enthält deckerweb Plugin Library 1.3.0 und deckerweb Updater 2.4.0.
 
 = 1.1.1 =
 
@@ -193,16 +221,9 @@ Sieben jüngste Versionen; Wiki und lokaler vollständiger Verlauf erhalten alle
 * Verbessert: Ergänzt geprüfte Sprungmarken, stellt Browser-Tab-Favicons bei den Hauptfunktionen vor und erklärt GitHub-Updates über das reguläre WordPress-Updatesystem.
 * Sonstiges: Liefert die aktualisierte englische und deutsche Dokumentation mit diesem Release aus.
 
-= 0.16.1 =
-
-2026-09-29
-
-* Verbessert: Footer-Layout von Daily Scripture übernommen, Dokumentationslink neben dem Changelog ergänzt und einen übersetzten Markenslogan eingefügt.
-* Sonstiges: DECKERWEB-Copyright in Plugin und Dokumentation auf 2022–2026 gesetzt.
-
 == Über das Plugin ==
 
-Entwickelt von **David Decker – DECKERWEB**, damit Kunden ihre Marke auf beiden Seiten des Logins wiedererkennen. Einige Ideen wurden seit 2022 in eigenen Snippets eingesetzt.
+Entwickelt von [**David Decker – DECKERWEB**](https://deckerwebplugins.com/), damit Kunden ihre Marke auf beiden Seiten des Logins wiedererkennen. Einige Ideen wurden seit 2022 in eigenen Snippets eingesetzt.
 
 Das Schema gestaltet den WordPress-Adminrahmen; fremdes CSS kann einzelne Elemente beeinflussen. Gutenberg-Inhalte und Builder-Arbeitsflächen behalten ihr eigenes Design. SVG-Loginbilder benötigen Safe SVG und eine Administratorbestätigung. Mehr dazu im Wiki.
 

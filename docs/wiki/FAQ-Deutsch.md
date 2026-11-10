@@ -4,6 +4,19 @@
 
 Antworten zu den Funktionen der aktuellen Version.
 
+## Farbquellen
+
+### Wie wähle ich eine Site-Editor-, Elementor- oder Oxygen-Classic-Palette?
+
+Öffne Einstellungen → Markenfarben im Admin → Farbquelle. Wähle WordPress / Site Editor, Elementor oder Oxygen Classic und eine Palette, ordne die Markenfarben zu, prüfe die Vorschläge und klicke auf Alle Änderungen speichern. Nur auslesbare Paletten erscheinen. Die ursprüngliche Quellpalette wird nicht verändert. Elementor Pro ist für die globalen Farben aus Elementor Free nicht erforderlich. Oxygen Classic 4.9.8 wird unterstützt; Oxygen 6 ist eine andere Integration. Ein gespeichertes Schema bleibt nach Abschalten der Quelle verfügbar.
+
+## Sichtbarkeit der Umgebung
+
+### Wer sieht die Umgebungsanzeige?
+
+Nur Administratoren ist der Standard, auch bei bestehenden Installationen ohne gespeicherte Sichtbarkeitswahl. Wahlweise sind alle angemeldeten Benutzer mit Toolbar oder Aus möglich. Frontend und Backend verwenden dieselbe Einstellung. PHP-/Debug-Details bleiben Administratoren vorbehalten. Der Favicon-Umgebungsmarker hat eine eigene Einstellung.
+
+
 ## Themen
 
 - [Einstieg](#topic-1)
@@ -284,3 +297,8 @@ Im Frontend bleibt es standardmäßig erhalten. Nur die separate, ausdrücklich 
 ### Was passiert bei der Deinstallation?
 
 Branding, Bilder und persönliche Farben bleiben erhalten. Temporäres Undo und Schreibsperren werden entfernt. Die optionale Bereinigung entfernt nur gespeicherte Vorlagen und Verlauf dieser Website; sie ist standardmäßig aus. Netzwerk-Startvorlagen bleiben erhalten.
+
+
+### Welche nativen Paletten und Builder-Farben stehen zur Verfügung?
+
+WordPress / Website-Editor liest Theme-Farben, eigene globale Paletten und Core-Standardfarben. Elementor Free liefert Systemfarben und eigene Farben aus dem aktiven Kit. Oxygen Classic 4.x liefert benannte globale Farbsets. Quellen werden nur gelesen und je Website getrennt; teiltransparente oder dynamische Farbausdrücke entfallen.

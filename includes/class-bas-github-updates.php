@@ -34,9 +34,7 @@ final class GitHubUpdates {
 				} );
 			}
 			$options = $supports_translation ? [ 'translate' => $translator ] : [];
-			if ( defined( $updater_class . '::SUPPORTS_CATALOG_PROVIDER' ) && function_exists( 'deckerweb_library_updater_options_v1' ) ) {
-				$options = array_merge( $options, deckerweb_library_updater_options_v1( BAS_PLUGIN_FILE, self::REPOSITORY ) );
-			}
+
 			$updater = new $updater_class(
 				BAS_PLUGIN_FILE,
 				self::REPOSITORY,

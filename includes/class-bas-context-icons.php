@@ -60,11 +60,10 @@ final class BAS_Context_Icons {
 		if ( ! is_multisite() || ! wp_is_site_initialized( $site ) ) {
 			return;
 		}
-		// A site-active host must not grant capabilities on unrelated new sites.
-		if ( ! function_exists( 'is_plugin_active_for_network' ) ) {
-			require_once ABSPATH . 'wp-admin/includes/plugin.php';
-		}
-		if ( ! is_plugin_active_for_network( plugin_basename( BAS_PLUGIN_FILE ) ) ) {
+		// The caller can belong to a different network than the initialized site.
+		$network_id = (int) $site->network_id;
+		$active = $network_id > 0 ? get_network_option( $network_id, 'active_sitewide_plugins', [] ) : [];
+		if ( ! is_array( $active ) || ! isset( $active[ plugin_basename( BAS_PLUGIN_FILE ) ] ) ) {
 			return;
 		}
 		switch_to_blog( (int) $site->blog_id );

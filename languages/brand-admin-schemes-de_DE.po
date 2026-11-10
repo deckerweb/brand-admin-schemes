@@ -1,5 +1,8 @@
 msgid ""
-msgstr "Project-Id-Version: Brand Admin Schemes 1.1.0\nPO-Revision-Date: 2026-10-05 16:00+0200\nLast-Translator: David Decker – DECKERWEB\nLanguage: de_DE\nContent-Type: text/plain; charset=UTF-8\nPlural-Forms: nplurals=2; plural=(n != 1);\n"
+msgstr "Project-Id-Version: Brand Admin Schemes 1.2.0\nPO-Revision-Date: 2026-10-05 16:00+0200\nLast-Translator: David Decker – DECKERWEB\nLanguage: de_DE\nContent-Type: text/plain; charset=UTF-8\nPlural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "%1$s of %2$s plugins"
+msgstr "%1$s von %2$s Plugins"
 
 msgid "%s is installed but inactive. Activate it first."
 msgstr "%s ist installiert, aber inaktiv. Bitte zuerst aktivieren."
@@ -85,6 +88,12 @@ msgstr "Admin-Toolbar"
 msgid "Administrators and users with permission"
 msgstr "Administratoren und Benutzer mit Berechtigung"
 
+msgid "Administrators only"
+msgstr "Nur Administratoren"
+
+msgid "Administrators only is the default, including after updates. This applies to the frontend and backend toolbar. Technical details remain restricted to administrators."
+msgstr "Standardmäßig sehen nur Administratoren die Anzeige, auch nach Updates. Dies gilt für die Toolbar im Frontend und Backend. Technische Details bleiben auf Administratoren beschränkt."
+
 msgid "Affected features remain paused until their requirements are met."
 msgstr "Betroffene Funktionen pausieren, bis ihre Voraussetzungen erfüllt sind."
 
@@ -108,6 +117,9 @@ msgstr "Alles gespeichert"
 
 msgid "All settings saved. The selected admin scheme is active for your account. Reload the page to see every change."
 msgstr "Alle Einstellungen gespeichert. Das gewählte Admin-Schema ist für dein Konto aktiv. Lade die Seite neu, um alle Änderungen zu sehen."
+
+msgid "All signed-in users with a toolbar"
+msgstr "Alle angemeldeten Benutzer mit Toolbar"
 
 msgid "Already active"
 msgstr "Bereits aktiv"
@@ -147,6 +159,9 @@ msgstr "Das Archiv enthält zu viele Dateien."
 
 msgid "Archive symlinks are not permitted."
 msgstr "Symbolische Verknüpfungen sind im Archiv nicht erlaubt."
+
+msgid "Archive verification"
+msgstr "Archivprüfung"
 
 msgid "As of "
 msgstr "Stand: "
@@ -259,6 +274,9 @@ msgstr "Branding-Startvorlage"
 msgid "Branding templates"
 msgstr "Branding-Vorlagen"
 
+msgid "Bricks Builder"
+msgstr "Bricks Builder"
+
 msgid "Bricks outline"
 msgstr "Baustein-Umriss"
 
@@ -328,8 +346,20 @@ msgstr "Archiveintrag konnte nicht gelesen werden."
 msgid "Catalog URL"
 msgstr "Katalog-URL"
 
+msgid "Catalog approval"
+msgstr "Katalogfreigabe"
+
+msgid "Catalog diagnostics require a public catalog provider."
+msgstr "Die Katalogdiagnose benötigt einen öffentlichen Kataloganbieter."
+
 msgid "Catalog refreshed."
 msgstr "Katalog aktualisiert."
+
+msgid "Catalog retrieval does not limit updates of installed plugins. Those use their normal WordPress update provider."
+msgstr "Der Katalogabruf begrenzt keine Updates installierter Plugins. Diese verwenden ihren normalen WordPress-Updater."
+
+msgid "Catalog verification"
+msgstr "Katalogprüfung"
 
 msgid "Centered"
 msgstr "Zentriert"
@@ -348,6 +378,9 @@ msgstr "Status prüfen"
 
 msgid "Checking status…"
 msgstr "Status wird geprüft…"
+
+msgid "Checksum verification"
+msgstr "Prüfsummenprüfung"
 
 msgid "Choose a branding JSON before enabling the starter template."
 msgstr "Vor dem Aktivieren der Startvorlage eine Branding-JSON auswählen."
@@ -424,6 +457,9 @@ msgstr "Bestätige zuerst die Verwendung bereinigter SVG-Logos."
 msgid "Confirm source changes before saving."
 msgstr "Bitte bestätige die Änderungen der Quellfarben vor dem Speichern."
 
+msgid "Connection failed. Please try again later."
+msgstr "Die Verbindung ist fehlgeschlagen. Bitte später erneut versuchen."
+
 msgid "Content"
 msgstr "Inhalte"
 
@@ -483,6 +519,9 @@ msgstr "Aktuell"
 
 msgid "Custom color"
 msgstr "Eigene Farbe"
+
+msgid "Custom global colors"
+msgstr "Eigene globale Farben"
 
 msgid "Customer banner"
 msgstr "Kundenbanner"
@@ -598,6 +637,9 @@ msgstr "Abendlicht"
 msgid "Each website keeps independent branding. Open its editor to review or change settings."
 msgstr "Jede Website behält ihr eigenes Branding. Einstellungen im jeweiligen Editor prüfen oder ändern."
 
+msgid "Elementor"
+msgstr "Elementor"
+
 msgid "Enable contextual tab icons"
 msgstr "Kontextbezogene Tab-Icons aktivieren"
 
@@ -615,6 +657,9 @@ msgstr "Eine sechsstellige HEX-Farbe eingeben, zum Beispiel #245A91."
 
 msgid "Enter a template name. Up to ten templates can be stored."
 msgstr "Einen Vorlagennamen eingeben. Bis zu zehn Vorlagen sind möglich."
+
+msgid "Environment badge visibility"
+msgstr "Sichtbarkeit der Umgebungsanzeige"
 
 msgid "Environment display"
 msgstr "Umgebungsanzeige"
@@ -733,6 +778,9 @@ msgstr "GitHub-Sterne"
 msgid "GitHub release does not contain the plugin main file."
 msgstr "Der GitHub-Release enthält nicht die Hauptdatei des Plugins."
 
+msgid "Global colors"
+msgstr "Globale Farben"
+
 msgid "Gradient overlay strength"
 msgstr "Stärke des Farbverlaufs"
 
@@ -747,6 +795,9 @@ msgstr "Rasterumriss"
 
 msgid "Guided setup"
 msgstr "Geführte Einrichtung"
+
+msgid "HTTP status: %d."
+msgstr "HTTP-Status: %d."
 
 msgid "Hide catalog"
 msgstr "Katalog ausblenden"
@@ -829,6 +880,9 @@ msgstr "Verbessert"
 msgid "In a detected builder editor tab, the favicon uses the builder color preset. Ordinary website tabs keep their website icon."
 msgstr "Im erkannten Builder-Editor verwendet das Favicon die Farben der Builder-Vorlage. Normale Website-Tabs behalten ihr Website-Icon."
 
+msgid "Inactive"
+msgstr "Inaktiv"
+
 msgid "Initial settings"
 msgstr "Anfangseinstellungen"
 
@@ -858,6 +912,12 @@ msgstr "Installation fehlgeschlagen."
 
 msgid "Installed"
 msgstr "Installiert"
+
+msgid "Installed plugin identity does not match the approved release."
+msgstr "Die Identität des installierten Plugins stimmt nicht mit dem freigegebenen Release überein."
+
+msgid "Installed plugins use their normal update provider. Reload the update information and try again."
+msgstr "Installierte Plugins verwenden ihren normalen Updater. Aktualisiere die Updateinformationen und versuche es erneut."
 
 msgid "Installed · inactive"
 msgstr "Installiert · inaktiv"
@@ -934,11 +994,17 @@ msgstr "Ungültige Netzwerkanforderung."
 msgid "Invalid or oversized agency package."
 msgstr "Ungültiges oder zu großes Agentur-Paket."
 
+msgid "Invalid package cleanup provider."
+msgstr "Ungültiger Anbieter für die Paketbereinigung."
+
 msgid "Invalid platform version."
 msgstr "Ungültige Plattformversion."
 
 msgid "Invalid plugin series."
 msgstr "Ungültige Plugin-Serie."
+
+msgid "Invalid private download limits."
+msgstr "Ungültige Grenzen für private Downloads."
 
 msgid "Invalid scheme colors"
 msgstr "Ungültige Schemafarben"
@@ -951,6 +1017,9 @@ msgstr "Ungültige Anzahl der GitHub-Sterne."
 
 msgid "Invalid stars date."
 msgstr "Ungültiges Datum der GitHub-Sterne."
+
+msgid "Invalid status filter."
+msgstr "Ungültiger Statusfilter."
 
 msgid "Invalid template file."
 msgstr "Ungültige Vorlagendatei."
@@ -1186,8 +1255,14 @@ msgstr "Noch keine Startvorlage gespeichert."
 msgid "No unavailable selected login images were found"
 msgstr "Es wurden keine nicht verfügbaren ausgewählten Login-Bilder gefunden"
 
+msgid "No update reported."
+msgstr "Kein Update gemeldet."
+
 msgid "None"
 msgstr "Keine"
+
+msgid "Not installed"
+msgstr "Nicht installiert"
 
 msgid "Not installed. You can try again."
 msgstr "Nicht installiert. Ein erneuter Versuch ist möglich."
@@ -1206,6 +1281,9 @@ msgstr "Okt"
 
 msgid "October"
 msgstr "Oktober"
+
+msgid "Off"
+msgstr "Aus"
 
 msgid "Off by default. Applies only when no other host is installed, including inactive hosts. Removes Library settings, installation records and introduction status. Installed plugins, their content and other plugin settings remain unchanged. Network data is shared across sites."
 msgstr "Standardmäßig ausgeschaltet. Gilt nur, wenn kein weiterer Host installiert ist, auch kein deaktivierter. Entfernt Library-Einstellungen, Installationszuordnung und den Status des Einführungshinweises. Installierte Plugins, deren Inhalte und Einstellungen anderer Plugins bleiben erhalten. Netzwerkdaten werden gemeinsam von den Websites genutzt."
@@ -1255,6 +1333,9 @@ msgstr "Optional. Der mitgelieferte Katalog funktioniert sofort. Online-Anfragen
 msgid "Overlay strength"
 msgstr "Stärke des Farbverlaufs"
 
+msgid "Oxygen Classic"
+msgstr "Oxygen Classic"
+
 msgid "Oxygen outline"
 msgstr "Kreisringe"
 
@@ -1272,6 +1353,9 @@ msgstr "PNG-Uploads sind auf dieser Website nicht verfügbar."
 
 msgid "POST required."
 msgstr "Eine POST-Anfrage ist erforderlich."
+
+msgid "Package download"
+msgstr "Paketdownload"
 
 msgid "Page background"
 msgstr "Seitenhintergrund"
@@ -1302,6 +1386,9 @@ msgstr "Das Plugin ist nicht installiert."
 
 msgid "Plugin series"
 msgstr "Plugin-Serien"
+
+msgid "Plugin status"
+msgstr "Plugin-Status"
 
 msgid "Plugin website"
 msgstr "Plugin-Website"
@@ -1462,6 +1549,9 @@ msgstr "SVG-Logo (benötigt Safe SVG)"
 msgid "Safe SVG logos"
 msgstr "Bereinigte SVG-Logos"
 
+msgid "Safe package cleanup is unavailable for this update provider."
+msgstr "Für diesen Updateanbieter ist keine sichere Paketbereinigung verfügbar."
+
 msgid "Sat"
 msgstr "Sa"
 
@@ -1552,6 +1642,9 @@ msgstr "September"
 msgid "Setting"
 msgstr "Einstellung"
 
+msgid "Settings"
+msgstr "Einstellungen"
+
 msgid "Settings changed in another editor. Export your draft before reloading."
 msgstr "Die Einstellungen wurden in einem anderen Editor geändert. Exportiere deinen Entwurf vor dem Neuladen."
 
@@ -1606,8 +1699,14 @@ msgstr "Quelldatei"
 msgid "Source: GitHub"
 msgstr "Quelle: GitHub"
 
+msgid "Sources appear only when readable colors are available. Palettes are read without changing them. Saved colors remain available without the source."
+msgstr "Quellen erscheinen nur, wenn lesbare Farben verfügbar sind. Paletten werden unverändert eingelesen. Gespeicherte Farben bleiben ohne Quelle erhalten."
+
 msgid "Spark outline"
 msgstr "Sternen-Umriss"
+
+msgid "Stage: %1$s. %2$s"
+msgstr "Fehlerstufe: %1$s. %2$s"
 
 msgid "Staging"
 msgstr "Staging"
@@ -1681,6 +1780,9 @@ msgstr "Das GitHub-Paket enthält nicht die Plugin-Datei von Brand Admin Schemes
 msgid "The GitHub release could not be downloaded."
 msgstr "Das GitHub-Release konnte nicht heruntergeladen werden."
 
+msgid "The Site Icon settings could not be saved."
+msgstr "Die Website-Icon-Einstellungen konnten nicht gespeichert werden."
+
 msgid "The action is still running. Check its status again."
 msgstr "Die Aktion läuft noch. Bitte den Status erneut prüfen."
 
@@ -1692,6 +1794,9 @@ msgstr "Die freigegebene Version hat sich geändert. Suche zuerst erneut nach Up
 
 msgid "The approved release could not be verified."
 msgstr "Die freigegebene Version konnte nicht geprüft werden."
+
+msgid "The archive or plugin identity could not be verified. Installation was stopped."
+msgstr "Das Archiv oder die Pluginidentität konnte nicht geprüft werden. Die Installation wurde gestoppt."
 
 msgid "The badge appears in the admin bar on both the frontend and backend. Automatic detection uses the WordPress environment first and cautious site address hints only when no environment is configured."
 msgstr "Die Kennzeichnung erscheint in der Adminleiste im Frontend und Backend. Die automatische Erkennung verwendet zuerst die WordPress-Umgebung und zieht nur ohne konfigurierte Umgebung vorsichtige Hinweise aus der Website-Adresse heran."
@@ -1707,6 +1812,12 @@ msgstr "Der Katalog ist deaktiviert."
 
 msgid "The catalog is hidden."
 msgstr "Der Katalog ist ausgeblendet."
+
+msgid "The catalog response is invalid, incompatible or too large."
+msgstr "Die Katalogantwort ist ungültig, inkompatibel oder zu groß."
+
+msgid "The connection timed out. Please try again later."
+msgstr "Die Zeit für die Verbindung wurde überschritten. Bitte später erneut versuchen."
 
 msgid "The deckerweb catalog could not load. Check platform requirements and the complete Library integration in the host plugin."
 msgstr "Der deckerweb-Katalog konnte nicht geladen werden. Bitte PHP-/WordPress-Anforderungen und die vollständige Library-Einbindung im Host-Plugin prüfen."
@@ -1726,11 +1837,23 @@ msgstr "Das Icon konnte nicht in der Mediathek gespeichert werden."
 msgid "The installed plugin identity could not be verified for this catalog update."
 msgstr "Die Identität des installierten Plugins konnte für dieses Katalogupdate nicht bestätigt werden."
 
+msgid "The installed plugin identity could not be verified. Use the Plugins screen to review it."
+msgstr "Die Identität des installierten Plugins konnte nicht geprüft werden. Prüfe es auf der Plugins-Seite."
+
 msgid "The online catalog is unavailable. Showing cached or bundled entries; online approval is checked again before installation."
 msgstr "Der Online-Katalog ist nicht erreichbar. Angezeigt wird der gespeicherte oder mitgelieferte Katalog; vor der Installation wird die Online-Freigabe erneut geprüft."
 
 msgid "The online catalog source is not trusted."
 msgstr "Die Online-Katalogquelle ist nicht vertrauenswürdig."
+
+msgid "The package checksum does not match the approved release. Installation was stopped."
+msgstr "Die Paketprüfsumme stimmt nicht mit der freigegebenen Version überein. Die Installation wurde gestoppt."
+
+msgid "The package did not pass the archive or plugin identity checks. Installation was stopped."
+msgstr "Das Paket hat die Archiv- oder Plugin-Identitätsprüfung nicht bestanden. Die Installation wurde gestoppt."
+
+msgid "The package does not match the approved checksum. Installation was stopped."
+msgstr "Das Paket entspricht nicht der freigegebenen Prüfsumme. Die Installation wurde gestoppt."
 
 msgid "The package identity or version does not match a newer Brand Admin Schemes release."
 msgstr "Die Paketidentität oder Version entspricht keinem neueren Release von Brand Admin Schemes."
@@ -1753,8 +1876,23 @@ msgstr "Die Prüfsumme des Releases stimmt nicht überein. Installation gestoppt
 msgid "The request could not be completed. Check the plugin status before trying again."
 msgstr "Die Anfrage konnte nicht abgeschlossen werden. Vor einem erneuten Versuch den Plugin-Status prüfen."
 
+msgid "The requirements below describe the catalog version for first installation, not an installed-plugin update."
+msgstr "Die folgenden Voraussetzungen beschreiben die Katalogversion für die Erstinstallation, nicht ein Bestandsupdate."
+
 msgid "The requirements below describe the offered release."
 msgstr "Die folgenden Voraussetzungen beziehen sich auf den angebotenen Release."
+
+msgid "The secure connection could not be verified."
+msgstr "Die sichere Verbindung konnte nicht bestätigt werden."
+
+msgid "The secure connection to the update server failed."
+msgstr "Die sichere Verbindung zum Updateserver ist fehlgeschlagen."
+
+msgid "The server address could not be resolved."
+msgstr "Die Serveradresse konnte nicht aufgelöst werden."
+
+msgid "The server returned HTTP %d. Please try again later."
+msgstr "Der Server hat HTTP %d zurückgegeben. Bitte später erneut versuchen."
 
 msgid "The source palette has changed since this scheme was saved. Review the old and new colors before updating it."
 msgstr "Die Quellpalette hat sich seit dem Speichern geändert. Prüfe die alten und neuen Farben vor der Aktualisierung."
@@ -1771,8 +1909,29 @@ msgstr "Das Updatepaket konnte nicht geprüft werden."
 msgid "The update package has missing or invalid WordPress/PHP requirements."
 msgstr "Die WordPress-/PHP-Voraussetzungen des Updatepakets fehlen oder sind ungültig."
 
+msgid "The update package identity, version or requirements could not be verified."
+msgstr "Identität, Version oder Anforderungen des Updatepakets konnten nicht bestätigt werden."
+
+msgid "The update provider did not return valid update data."
+msgstr "Der Updateanbieter hat keine gültigen Updatedaten geliefert."
+
+msgid "The update request timed out. Try again later."
+msgstr "Die Updateanfrage hat zu lange gedauert. Versuche es später erneut."
+
+msgid "The update server address could not be resolved."
+msgstr "Die Adresse des Updateservers konnte nicht aufgelöst werden."
+
+msgid "The update server could not be reached. Try again later."
+msgstr "Der Updateserver ist nicht erreichbar. Versuche es später erneut."
+
+msgid "The update server returned an unsuccessful HTTP response."
+msgstr "Der Updateserver hat eine HTTP-Fehlerantwort zurückgegeben."
+
 msgid "The upload quota is exhausted."
 msgstr "Der verfügbare Speicherplatz für Uploads ist ausgeschöpft."
+
+msgid "Theme colors"
+msgstr "Theme-Farben"
 
 msgid "These details contain component versions and catalog status, without credentials or site content."
 msgstr "Diese Angaben enthalten Komponentenversionen und den Katalogstatus, keine Zugangsdaten oder Website-Inhalte."
@@ -1855,8 +2014,17 @@ msgstr "%1$s bitte auf Version %2$s oder neuer aktualisieren."
 msgid "Update available"
 msgstr "Update verfügbar"
 
+msgid "Update available: %s"
+msgstr "Update verfügbar: %s"
+
 msgid "Update failed."
 msgstr "Aktualisierung fehlgeschlagen."
+
+msgid "Update information changed. Reload the page and try again."
+msgstr "Die Updateinformationen haben sich geändert. Lade die Seite neu und versuche es erneut."
+
+msgid "Update stopped at %1$s: %2$s"
+msgstr "Update gestoppt bei %1$s: %2$s"
 
 msgid "Update the other active deckerweb plugins to use the current shared update component and translated update messages."
 msgstr "Die anderen aktiven deckerweb-Plugins aktualisieren, damit die aktuelle gemeinsame Update-Komponente und übersetzte Update-Meldungen verwendet werden."
@@ -1894,6 +2062,9 @@ msgstr "Logo oder Website-Icon"
 msgid "Use scheme colors"
 msgstr "Schemafarben verwenden"
 
+msgid "Use the Plugins screen to manage this installed plugin."
+msgstr "Verwalte dieses installierte Plugin auf der Plugins-Seite."
+
 msgid "Use this design as the official WordPress Site Icon? This immediately adds a PNG to the Media Library, replaces the Site Icon and switches the frontend to the WordPress Site Icon. Other draft settings are not saved."
 msgstr "Diese Gestaltung als offizielles WordPress-Website-Icon verwenden? Ein PNG wird sofort zur Mediathek hinzugefügt, das Website-Icon wird ersetzt und das Frontend auf das WordPress-Website-Icon umgestellt. Andere Einstellungen im Entwurf werden nicht gespeichert."
 
@@ -1911,6 +2082,9 @@ msgstr "Ohne eigene Eingabe erscheint der WordPress-Website-Titel, sonst „Will
 
 msgid "Uses the WordPress tagline when empty."
 msgstr "Ohne eigene Eingabe erscheint der WordPress-Untertitel."
+
+msgid "Verified first installations · Independent plugin updates"
+msgstr "Geprüfte Erstinstallationen · Unabhängige Pluginupdates"
 
 msgid "Version"
 msgstr "Version"
@@ -1951,6 +2125,9 @@ msgstr "Wer sieht die kontextabhängigen Tab-Icons?"
 msgid "WordPress"
 msgstr "WordPress"
 
+msgid "WordPress / Site Editor"
+msgstr "WordPress / Website-Editor"
+
 msgid "WordPress admin browser tab"
 msgstr "Browser-Tab des WordPress-Admins"
 
@@ -1959,6 +2136,9 @@ msgstr "WordPress konnte das PNG-Icon nicht verarbeiten."
 
 msgid "WordPress default"
 msgstr "WordPress-Standard"
+
+msgid "WordPress default colors"
+msgstr "WordPress-Standardfarben"
 
 msgid "WordPress setting"
 msgstr "WordPress-Einstellung"

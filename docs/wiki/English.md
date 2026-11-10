@@ -1,10 +1,15 @@
 # User guide
 
+[Product website](https://deckerwebplugins.com/en/plugins/brand-admin-schemes/)
+
 [Deutsch](https://github.com/deckerweb/brand-admin-schemes/wiki/Deutsch) · [Home](https://github.com/deckerweb/brand-admin-schemes/wiki)
 
-A practical guide to Brand Admin Schemes 1.1.1. Use the contents below to jump to a setting.
+A practical guide to Brand Admin Schemes 1.2.0. Use the contents below to jump to a setting.
 
-Requires WordPress 6.4+ and PHP 8.1+. Includes Library 1.1.0 and Updater 2.2.1.
+Requires WordPress 6.4+ and PHP 8.1+. Includes Library 1.3.0 and Updater 2.4.0.
+
+
+![Brand colors and available source palettes](https://raw.githubusercontent.com/deckerweb/brand-admin-schemes/main/docs/screenshots/overview-en.png)
 
 ## Contents
 
@@ -27,7 +32,7 @@ Requires WordPress 6.4+ and PHP 8.1+. Includes Library 1.1.0 and Updater 2.2.1.
 ## Installation and first scheme
 
 1. Download the plugin ZIP from [GitHub Releases](https://github.com/deckerweb/brand-admin-schemes/releases), upload it via **Plugins → Add New → Upload Plugin**, and activate it.
-2. Open **Settings → Brand Admin Schemes**. The **Color scheme** link on the Plugins screen takes you there too.
+2. Open **Settings → Brand Admin Schemes**. The **Settings** link on the Plugins screen takes you there too.
 3. Choose an available source palette or enter your own colors. Primary, Secondary, and Accent are enough to get going; Tertiary can be derived. Choose a mood and move the slider.
 4. Hover or focus a proposal to try it. Click the card you like, optionally name it, and use **Save scheme** in the sticky toolbar.
 5. Click **Reload page** in that toolbar to see the saved scheme throughout the current admin screen.
@@ -45,6 +50,9 @@ The brand roles are Primary, Secondary, Tertiary, and Accent. Map source colors 
 | Core Framework | Simple six-digit hex custom properties in its readable generated stylesheet, when its Helper exposes that file. |
 | Bricks Builder | Hex colors in available Bricks color palettes. |
 | Automatic.css | Enabled, readable hex role colors through the ACSS settings API; the adapter was inspected against ACSS 3.3.7 and 4.0.1. |
+| WordPress / Site Editor | Theme and custom global color palettes with usable color values. |
+| Elementor | Global colors from the active Elementor kit; Elementor Free is sufficient. |
+| Oxygen Classic | Global color sets from Oxygen Classic 4.x; verified with 4.9.8. |
 | Manual | Colors you enter in the editor, without any other plugin. |
 
 Only readable sources appear in the selector. Resulting colors are saved, so a scheme remains available if its source later disappears. **Source changes are not silently synchronized:** compare the old and new swatches and confirm before saving an updated scheme. The sample contrast check is a guide, not a complete accessibility audit.
@@ -71,6 +79,10 @@ Generated favicons may also show a tiny environment letter: **L** for Local, **D
 
 ## Installation environment badge
 
+![Environment badge visibility and colors](https://raw.githubusercontent.com/deckerweb/brand-admin-schemes/main/docs/screenshots/environment-en.png)
+
+Choose Administrators only (default), All signed-in users with a toolbar, or Off. This also applies after upgrading from a version without a saved visibility choice. Favicon markers have a separate setting.
+
 The toolbar badge displays the installation status in both the admin and the frontend whenever the WordPress admin bar is visible. Its color fills the full toolbar height. Its SVG icon and short label take little space; the full name and detection source appear in the tooltip and accessible text. For site administrators, hovering or focusing the badge opens a submenu with the current PHP version and whether `WP_DEBUG` is enabled. These runtime details are hidden from other users. The plugin icon also appears on the settings page.
 
 In **Settings → Brand Admin Schemes → Installation environment**, leave **Automatic detection** selected or manually choose **Local**, **Development**, **Staging**, or **Live**. Save the scheme and reload the page to see the toolbar update. A manual choice affects the badge and generated favicon markers; it does not change WordPress's actual environment setting. Four suggested status colors (turquoise for Local, amber for Development, violet for Staging, green for Live) shift subtly away from the visible toolbar color, keeping at least 3:1 contrast between the two areas. Select **Custom color** for any status to use your own hue; the plugin adjusts its lightness only if required for contrast. The badge text switches between dark and light for legibility. The editor previews the result against the selected admin scheme.
@@ -80,6 +92,8 @@ Auto-detection trusts `wp_get_environment_type()` first. An explicitly configure
 <a name="login-design"></a>
 
 ## Login design
+
+![Saved branded login](https://raw.githubusercontent.com/deckerweb/brand-admin-schemes/main/docs/screenshots/login-en.png)
 
 Open **Login design** below the environment controls. Enable the design, then choose **Image on the left**, **Image on the right**, or **Centered**. The default split layout gives a large visual panel to the image and a calm form area to the existing WordPress login form. On smaller screens the image becomes a short banner above the form. The centered layout uses a full-page gradient and a compact form. Independently choose left or centered alignment for the form-side content; left alignment is the default.
 
@@ -178,3 +192,5 @@ Network activation makes BAS available across the network. Branding and personal
 ## Support and security
 
 Use [Issues](https://github.com/deckerweb/brand-admin-schemes/issues) for bugs and [Discussions](https://github.com/deckerweb/brand-admin-schemes/discussions) for questions. Report vulnerabilities [privately](https://github.com/deckerweb/brand-admin-schemes/security/advisories/new); see the [security policy](https://github.com/deckerweb/brand-admin-schemes/security/policy).
+
+This is an unpublished test version. See the [palette provider guide](https://github.com/deckerweb/brand-admin-schemes/blob/main/docs/PROVIDERS.md).

@@ -2,6 +2,61 @@
   "display_count": 7,
   "versions": [
     {
+      "version": "1.2.0",
+      "status": "released",
+      "date": "2026-11-10",
+      "entries": [
+        {
+          "category": "New",
+          "en": "Show the environment badge to administrators by default, with options for all signed-in toolbar users or no one.",
+          "de_DE": "Umgebungsanzeige standardmäßig nur für Administratoren anzeigen; wahlweise für alle angemeldeten Toolbar-Benutzer oder ausschalten.",
+          "de_DE_formal": "Umgebungsanzeige standardmäßig nur für Administratoren anzeigen; wahlweise für alle angemeldeten Toolbar-Benutzer oder ausschalten."
+        },
+        {
+          "category": "New",
+          "en": "Read WordPress theme and custom global palettes, Elementor global colors, and Oxygen Classic color sets as optional branding sources.",
+          "de_DE": "WordPress-Theme- und eigene globale Paletten, globale Elementor-Farben und Oxygen-Classic-Farbsets als optionale Branding-Quellen einlesen.",
+          "de_DE_formal": "WordPress-Theme- und eigene globale Paletten, globale Elementor-Farben und Oxygen-Classic-Farbsets als optionale Branding-Quellen einlesen."
+        },
+        {
+          "category": "Improved",
+          "en": "Open the product website in the current interface language and keep admin notices outside the page heading.",
+          "de_DE": "Produktwebsite in der aktiven Oberflächensprache öffnen und Admin-Hinweise außerhalb des Seitenkopfs anzeigen.",
+          "de_DE_formal": "Produktwebsite in der aktiven Oberflächensprache öffnen und Admin-Hinweise außerhalb des Seitenkopfs anzeigen."
+        },
+        {
+          "category": "Fixed",
+          "en": "Keep saved brand colors when the selected source palette is no longer available.",
+          "de_DE": "Gespeicherte Markenfarben erhalten, wenn die gewählte Quellpalette nicht mehr verfügbar ist.",
+          "de_DE_formal": "Gespeicherte Markenfarben erhalten, wenn die gewählte Quellpalette nicht mehr verfügbar ist."
+        },
+        {
+          "category": "Fixed",
+          "en": "Keep late admin notices outside the plugin heading without hiding their messages.",
+          "de_DE": "Nachträgliche Admin-Hinweise außerhalb des Plugin-Kopfs halten, ohne ihre Meldungen auszublenden.",
+          "de_DE_formal": "Nachträgliche Admin-Hinweise außerhalb des Plugin-Kopfs halten, ohne ihre Meldungen auszublenden."
+        },
+        {
+          "category": "Fixed",
+          "en": "Preserve newer branding settings when adopting a Site Icon during another save.",
+          "de_DE": "Neuere Branding-Einstellungen bei gleichzeitiger Speicherung und Übernahme eines Website-Icons erhalten.",
+          "de_DE_formal": "Neuere Branding-Einstellungen bei gleichzeitiger Speicherung und Übernahme eines Website-Icons erhalten."
+        },
+        {
+          "category": "Fixed",
+          "en": "Initialize context-icon permissions only when the plugin is active in the new website’s network.",
+          "de_DE": "Kontext-Icon-Rechte nur bei aktiver Netzwerkintegration im Netzwerk der neuen Website einrichten.",
+          "de_DE_formal": "Kontext-Icon-Rechte nur bei aktiver Netzwerkintegration im Netzwerk der neuen Website einrichten."
+        },
+        {
+          "category": "Misc",
+          "en": "Includes deckerweb Plugin Library 1.3.0 and deckerweb Updater 2.4.0.",
+          "de_DE": "Enthält deckerweb Plugin Library 1.3.0 und deckerweb Updater 2.4.0.",
+          "de_DE_formal": "Enthält deckerweb Plugin Library 1.3.0 und deckerweb Updater 2.4.0."
+        }
+      ]
+    },
+    {
       "version": "1.1.1",
       "status": "released",
       "date": "2026-10-22",

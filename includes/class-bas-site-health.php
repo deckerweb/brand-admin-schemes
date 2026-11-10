@@ -37,7 +37,7 @@ final class SiteHealth {
 		$unknown  = __( 'Unknown', 'brand-admin-schemes' );
 		$enabled  = __( 'Enabled', 'brand-admin-schemes' );
 		$disabled = __( 'Disabled', 'brand-admin-schemes' );
-		$sources  = array( 'manual' => __( 'Manual', 'brand-admin-schemes' ), 'core' => 'Core Framework', 'bricks' => 'Bricks', 'acss' => 'Automatic.css' );
+		$sources  = array( 'manual' => __( 'Manual', 'brand-admin-schemes' ), 'core' => 'Core Framework', 'bricks' => 'Bricks', 'acss' => 'Automatic.css', 'wordpress' => __( 'WordPress / Site Editor', 'brand-admin-schemes' ), 'elementor' => 'Elementor', 'oxygen-classic' => 'Oxygen Classic' );
 		$modes    = array(
 			'off'     => __( 'No default', 'brand-admin-schemes' ),
 			'default' => __( 'Default; allow personal selection', 'brand-admin-schemes' ),

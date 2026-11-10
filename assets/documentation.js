@@ -3,6 +3,22 @@
  'use strict';
  if (window.BAS_DOCUMENT_CONTROLLER) return;
  window.BAS_DOCUMENT_CONTROLLER = true;
+ // Keep notices visible outside the branding header, including late third-party insertions.
+ const heading = document.querySelector('.bas-root > .bas-page-heading');
+ const noticeAnchor = heading?.parentElement.querySelector(':scope > .wp-header-end');
+ if (heading && noticeAnchor) {
+  /** Move complete notice nodes without changing their content or event listeners. @returns {void} */
+  const placeNotices = () => {
+   let cursor = noticeAnchor;
+   heading.querySelectorAll('.notice, .updated, .error').forEach(notice => {
+    if (notice.parentElement?.closest('.notice, .updated, .error')) return;
+    cursor.after(notice);
+    cursor = notice;
+   });
+  };
+  placeNotices();
+  new MutationObserver(placeNotices).observe(heading, { childList: true, subtree: true });
+ }
  const native = window.HTMLDialogElement?.prototype;
  let opener;
  /** @param {HTMLDialogElement} dialog Active dialog. @returns {void} Close via the native implementation. */

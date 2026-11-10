@@ -84,8 +84,9 @@ final class IconLibrary {
 		wp_update_attachment_metadata( $id, $metadata );
 		update_post_meta( $id, '_bas_icon_context', $context );
 		if ( 'siteicon' === $purpose ) {
-			update_option( 'site_icon', $id );
-			\BAS_Plugin::use_official_site_icon();
+			if ( ! \BAS_Plugin::use_official_site_icon( (int) $id ) ) {
+				wp_send_json_error( __( 'The Site Icon settings could not be saved.', 'brand-admin-schemes' ), 500 );
+			}
 		}
 		wp_send_json_success( array( 'id' => $id, 'url' => wp_get_attachment_url( $id ), 'purpose' => $purpose ) );
 	}

@@ -8,7 +8,7 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 	exit;
 }
 require_once __DIR__ . '/includes/deckerweb-plugin-library/lifecycle.php';
-deckerweb_library_uninstall_v2( __DIR__ . '/brand-admin-schemes.php' );
+deckerweb_library_uninstall_v4( __DIR__ . '/brand-admin-schemes.php' );
 
 /** Run owned cleanup in local scope without leaking temporary variables. @return void */
 (static function(): void {

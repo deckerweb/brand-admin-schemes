@@ -1,10 +1,15 @@
 # Anleitung
 
+[Plugin-Website](https://deckerwebplugins.com/de/plugins/brand-admin-schemes/)
+
 [English](https://github.com/deckerweb/brand-admin-schemes/wiki/English) · [Home](https://github.com/deckerweb/brand-admin-schemes/wiki)
 
-Die praktische Anleitung zu Brand Admin Schemes 1.1.1. Springe über das Inhaltsverzeichnis direkt zur gewünschten Einstellung.
+Die praktische Anleitung zu Brand Admin Schemes 1.2.0. Springe über das Inhaltsverzeichnis direkt zur gewünschten Einstellung.
 
-Benötigt WordPress 6.4+ und PHP 8.1+. Enthält Library 1.1.0 und Updater 2.2.1.
+Benötigt WordPress 6.4+ und PHP 8.1+. Enthält Library 1.3.0 und Updater 2.4.0.
+
+
+![Markenfarben und verfügbare Quellpaletten](https://raw.githubusercontent.com/deckerweb/brand-admin-schemes/main/docs/screenshots/overview-de.png)
 
 ## Inhaltsverzeichnis
 
@@ -71,6 +76,10 @@ Optional kennzeichnen **L** (Lokal), **D** (Entwicklung), **S** (Staging) und **
 
 ## Badge für die Installationsumgebung
 
+![Sichtbarkeit und Farben der Umgebungsanzeige](https://raw.githubusercontent.com/deckerweb/brand-admin-schemes/main/docs/screenshots/environment-de.png)
+
+Wähle Nur Administratoren (Standard), Alle angemeldeten Benutzer mit Toolbar oder Aus. Der Standard gilt auch nach einem Update ohne gespeicherte Sichtbarkeitswahl. Favicon-Marker haben eine eigene Einstellung.
+
 Das Badge erscheint im Admin und Frontend, wenn die WordPress-Toolbar sichtbar ist. Sein Hintergrund füllt die gesamte Toolbarhöhe; SVG-Icon und kurze Beschriftung benötigen wenig Breite. Tooltip und zugängliche Beschriftung nennen Umgebung und Erkennungsquelle. Für Administratoren zeigt das Untermenü bei Hover oder Tastaturfokus zusätzlich PHP-Version und `WP_DEBUG`-Status. Andere Benutzer sehen diese Laufzeitdetails nicht.
 
 Wähle **Automatische Erkennung** oder **Lokal**, **Entwicklung**, **Staging** oder **Live**, speichere und lade neu. Die manuelle Auswahl steuert die Pluginanzeige einschließlich Favicon-Marker; sie ändert nicht die tatsächliche WordPress-Umgebung. Türkis für Lokal, Bernstein für Entwicklung, Violett für Staging und Grün für Live passen sich der Toolbar an und streben mindestens 3:1 Kontrast zwischen den Flächen an. Eigene Statusfarben behalten ihren Farbton; bei Bedarf wird ihre Helligkeit für den Kontrast angepasst. Die Textfarbe wechselt zwischen Hell und Dunkel. Die Vorschau zeigt die Kombination mit dem ausgewählten Schema.
@@ -80,6 +89,8 @@ Die Erkennung nutzt zuerst `wp_get_environment_type()`. Ein explizites `WP_ENVIR
 <a name="login-gestaltung"></a>
 
 ## Login-Gestaltung
+
+![Gespeicherte Login-Gestaltung](https://raw.githubusercontent.com/deckerweb/brand-admin-schemes/main/docs/screenshots/login-de.png)
 
 Aktiviere **Login-Gestaltung** und wähle **Bild links**, **Bild rechts** oder **Zentriert**. Das Standardlayout zeigt eine große Bildfläche neben dem vorhandenen WordPress-Formular. Auf kleinen Bildschirmen wird daraus ein kurzer Bannerbereich über dem Formular. Das zentrierte Layout verwendet einen vollflächigen Verlauf. Die Formularseite lässt sich unabhängig linksbündig oder zentriert ausrichten; linksbündig ist Standard.
 
@@ -182,3 +193,5 @@ Die Netzwerkaktivierung stellt BAS im gesamten Netzwerk bereit. Branding und per
 ## Hilfe und Sicherheit
 
 Nutze [Issues](https://github.com/deckerweb/brand-admin-schemes/issues) für Fehler und [Discussions](https://github.com/deckerweb/brand-admin-schemes/discussions) für Fragen. Melde Sicherheitslücken [vertraulich](https://github.com/deckerweb/brand-admin-schemes/security/advisories/new); beachte die [Sicherheitsrichtlinie](https://github.com/deckerweb/brand-admin-schemes/security/policy).
+
+Dies ist eine unveröffentlichte Testversion. Hinweise stehen in der [Farbprovider-Anleitung](https://github.com/deckerweb/brand-admin-schemes/blob/main/docs/PROVIDERS-de.md).

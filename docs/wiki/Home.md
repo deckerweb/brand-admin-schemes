@@ -4,6 +4,8 @@
 
 **Your colors. Your WordPress. · Deine Farben. Dein WordPress.**
 
+[Website (EN)](https://deckerwebplugins.com/en/plugins/brand-admin-schemes/) · [Website (DE)](https://deckerwebplugins.com/de/plugins/brand-admin-schemes/)
+
 Choose your language. Both guides explain installation, brand colors, login design, toolbar badges, browser-tab favicons, import/export, Gutenberg colors, and updates.
 
 Wähle deine Sprache. Beide Anleitungen erklären Installation, Markenfarben, Login-Gestaltung, Toolbar-Badges, Favicons in Browser-Tabs, Import/Export, Gutenberg-Farben und Updates.

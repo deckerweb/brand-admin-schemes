@@ -2,7 +2,13 @@
 
 [Deutsch](WORKFLOWS-de.md)
 
+![Network starter template](https://raw.githubusercontent.com/deckerweb/brand-admin-schemes/main/docs/screenshots/network-template-en.png)
+
+A named network template is available on subsites for review before saving.
+
 ## How does the new color dialog work?
+
+![WordPress color dialog](https://raw.githubusercontent.com/deckerweb/brand-admin-schemes/main/docs/screenshots/color-picker-en.png)
 
 Click Choose color beside an editable HEX field. Preview a color visually or enter its HEX value. Done closes the dialog; save all changes to apply branding. Locked roles must be unlocked before editing.
 

@@ -4,6 +4,19 @@
 
 Answers about the current version.
 
+## Color providers
+
+### How do I choose a Site Editor, Elementor, or Oxygen Classic palette?
+
+Open Settings → Brand Admin Schemes → Color source. Select WordPress / Site Editor, Elementor, or Oxygen Classic and a palette, map its colors to the brand roles, review the proposals, then Save all changes. Only usable palettes appear. The original provider palette is never changed. Elementor Pro is not required for the global colors provided by Elementor Free. Oxygen Classic 4.9.8 is supported; Oxygen 6 is a different integration. A saved scheme remains available after its provider is disabled.
+
+## Environment visibility
+
+### Who can see the environment badge?
+
+Administrators only is the default, including existing installations without a saved visibility choice. You can explicitly choose all signed-in users with a toolbar, or Off. Frontend and backend follow the same setting. PHP/debug details remain administrator-only. The favicon environment marker is a separate setting.
+
+
 ## Topics
 
 - [Getting started](#topic-1)
@@ -284,3 +297,8 @@ The frontend keeps it by default. Only the separate, explicitly confirmed Use as
 ### What happens when I uninstall BAS?
 
 Branding, images and personal colors are retained. Temporary Undo and write locks are removed. The optional workflow cleanup setting removes only this website’s stored templates and history; it is off by default. Network starter templates are retained.
+
+
+### Which native and builder palettes are available?
+
+WordPress / Site Editor reads the resolved theme and custom global palettes plus Core defaults. Elementor Free supplies system and custom colors from its active kit. Oxygen Classic 4.x supplies named global color sets. Sources are read only and isolated per website; translucent or dynamic color expressions are omitted.
